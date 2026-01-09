@@ -1,0 +1,149 @@
+{
+    "day": 6,
+    "title": "Day 6 - Use the Side Hustle Selector to Compare Ideas",
+    "week": 2,
+    "mainPromise": "You will compare your top ideas using a consistent selector, then choose a primary and backup based on scores and written reasons.",
+    "timeEstimate": "34 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Make comparisons fair and fast",
+            "content": "When you compare ideas casually, the loudest idea wins. The loudest idea is usually the newest one or the one that feels exciting, not the one that will work.\n\nA selector makes the comparison fair. It forces each idea to answer the same questions using the same format. This reduces second-guessing later because you can point to the numbers and the reasons.\n\nYour selector should reward simplicity, speed, and a clear path to the first sale. You are not picking a forever business. You are picking a best next step that fits your constraints.",
+            "soWhat": "If you do not build a selector, you will keep switching based on mood instead of evidence."
+        },
+        {
+            "id": "t2",
+            "title": "Use weights only when needed",
+            "content": "Sometimes criteria are not equally important. If your time budget is tight, delivery simplicity may matter more than price potential. If you hate marketing, reachability may matter more than novelty.\n\nWeights can help, but they also add complexity. Use weights only if you have a strong constraint that should dominate decisions. Otherwise, keep it simple and let the numbers guide you.\n\nThe main value is not the final score. The value is the forced clarity: what makes this idea good, and what makes it risky.",
+            "soWhat": "If you do not score consistently, your decision will feel shaky and you will reopen it later."
+        },
+        {
+            "id": "t3",
+            "title": "Decide with a backup plan",
+            "content": "A clean decision reduces stress. You choose one primary idea and one backup. The backup is not a failure plan. It is insurance against a discovery next week, like buyers do not want this or delivery takes too long.\n\nYour decision should include a reason you can defend. I like it is not a reason. It has the fastest path to first sale and a repeatable delivery process is a reason.\n\nOnce you decide, you will treat the primary idea as the default until real evidence forces a change.",
+            "soWhat": "If you do not decide now, the rest of Week 2 becomes abstract and slower."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d6_do1",
+            "title": "Build your selector sheet",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Create a selector table with 6 criteria and a 1 to 5 scoring scale.",
+                "Add short scoring rules so 3 means the same across ideas.",
+                "Add a notes column for evidence and assumptions."
+            ],
+            "items": [
+                {
+                    "id": "d6_do1_i1",
+                    "label": "Created a selector table with 6 criteria and 1 to 5 scale",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your selector table headings and the 1 to 5 scale definition."
+                },
+                {
+                    "id": "d6_do1_i2",
+                    "label": "Wrote scoring rules for each criterion",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 6 short scoring rules, one per criterion."
+                },
+                {
+                    "id": "d6_do1_i3",
+                    "label": "Added a notes field for evidence and assumptions",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the notes field label or description you will use."
+                },
+                {
+                    "id": "d6_do1_i4",
+                    "label": "Listed your candidate ideas to compare",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 to 5 candidate idea titles added to the selector."
+                }
+            ],
+            "example": "Criteria: Speed to first sale, Delivery simplicity, Clear buyer pain, Price potential, Reachability, Repeatability. Rule example: Speed 5 = can sell within 7 days, 3 = within 14 days, 1 = unclear."
+        },
+        {
+            "id": "d6_do2",
+            "title": "Score and rank ideas",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Score each idea from 1 to 5 on all criteria.",
+                "Add one short evidence note per criterion where possible.",
+                "Total the scores and rank ideas."
+            ],
+            "items": [
+                {
+                    "id": "d6_do2_i1",
+                    "label": "Scored each idea on all 6 criteria",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your completed score grid (idea rows x 6 criteria)."
+                },
+                {
+                    "id": "d6_do2_i2",
+                    "label": "Wrote at least 6 evidence notes across the table",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List at least 6 evidence notes you added to the selector."
+                },
+                {
+                    "id": "d6_do2_i3",
+                    "label": "Calculated totals and ranked the ideas",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide totals per idea and a ranked list from best to worst."
+                },
+                {
+                    "id": "d6_do2_i4",
+                    "label": "Flagged the top 2 risks for the highest-ranked idea",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List the top 2 risks for the leading idea."
+                }
+            ],
+            "example": "Leading idea total: 24/30. Risks: Hard to reach buyers without audience and Scope could expand if intake is unclear."
+        },
+        {
+            "id": "d6_do3",
+            "title": "Make the week decision",
+            "estimatedMinutes": 10,
+            "steps": [
+                "Choose your primary idea and backup based on ranking and risks.",
+                "Write a one-paragraph decision note that explains why.",
+                "Define what evidence would cause you to switch to the backup."
+            ],
+            "items": [
+                {
+                    "id": "d6_do3_i1",
+                    "label": "Selected a primary idea and a backup idea",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write two titles labeled Primary and Backup."
+                },
+                {
+                    "id": "d6_do3_i2",
+                    "label": "Wrote a decision note paragraph",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your one-paragraph decision note."
+                },
+                {
+                    "id": "d6_do3_i3",
+                    "label": "Defined 2 switch triggers based on evidence",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write two rules in the form: If X evidence happens, I switch to backup."
+                },
+                {
+                    "id": "d6_do3_i4",
+                    "label": "Wrote one next action for tomorrow's detective work",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write one concrete action you will do in Day 7."
+                }
+            ],
+            "example": "Switch trigger: If fewer than 2 of 10 targeted people show interest at the stated price, switch. Next action: Find 10 existing offers that resemble this service and record prices and scope."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Selector table template with scoring rules and listed ideas",
+            "Completed scores, evidence notes, totals, and ranking",
+            "Primary and backup decision with a decision note",
+            "Evidence-based switch triggers and next action"
+        ],
+        "tomorrowPreview": "Tomorrow you will gather real-world clues about demand, pricing, and competition so your offer is grounded in what people already buy."
+    }
+}

@@ -442,961 +442,440 @@
     "6": {
         "fields": [
             {
-                "id": "idea_a_name",
-                "type": "TEXT",
-                "label": "Idea A: Name",
-                "helperText": "Example: Resume Review Service",
-                "required": true
-            },
-            {
-                "id": "idea_a_summary",
-                "type": "TEXTAREA",
-                "label": "Idea A: One sentence summary",
-                "helperText": "What is it and who is it for",
-                "required": true
-            },
-            {
-                "id": "idea_a_feasibility",
-                "type": "SELECT",
-                "label": "Idea A: Feasibility",
-                "helperText": "Can you do this with current skills and time",
+                "id": "d6_do1_i1",
+                "label": "Created a selector table with 6 criteria and 1 to 5 scale",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Paste your selector table headings and the 1 to 5 scale definition.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_a_profitability",
-                "type": "SELECT",
-                "label": "Idea A: Profitability",
-                "helperText": "Does the math look attractive",
+                "id": "d6_do1_i2",
+                "label": "Wrote scoring rules for each criterion",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "List 6 short scoring rules, one per criterion.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_a_persuasion",
-                "type": "SELECT",
-                "label": "Idea A: Persuasion (why now)",
-                "helperText": "Is there urgency or clear demand",
+                "id": "d6_do1_i3",
+                "label": "Added a notes field for evidence and assumptions",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Paste the notes field label or description you will use.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_a_efficiency",
-                "type": "SELECT",
-                "label": "Idea A: Efficiency (speed to execute)",
-                "helperText": "How fast can you launch and test",
+                "id": "d6_do1_i4",
+                "label": "Listed your candidate ideas to compare",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "List 3 to 5 candidate idea titles added to the selector.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_a_motivation",
-                "type": "SELECT",
-                "label": "Idea A: Motivation (excitement)",
-                "helperText": "How excited are you about this",
+                "id": "d6_do2_i1",
+                "label": "Scored each idea on all 6 criteria",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Paste your completed score grid (idea rows x 6 criteria).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_a_notes",
-                "type": "TEXTAREA",
-                "label": "Idea A: Notes",
-                "required": false
-            },
-            {
-                "id": "idea_b_name",
-                "type": "TEXT",
-                "label": "Idea B: Name",
-                "required": true
-            },
-            {
-                "id": "idea_b_summary",
-                "type": "TEXTAREA",
-                "label": "Idea B: One sentence summary",
-                "required": true
-            },
-            {
-                "id": "idea_b_feasibility",
-                "type": "SELECT",
-                "label": "Idea B: Feasibility",
+                "id": "d6_do2_i2",
+                "label": "Wrote at least 6 evidence notes across the table",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "List at least 6 evidence notes you added to the selector.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_b_profitability",
-                "type": "SELECT",
-                "label": "Idea B: Profitability",
+                "id": "d6_do2_i3",
+                "label": "Calculated totals and ranked the ideas",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Provide totals per idea and a ranked list from best to worst.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_b_persuasion",
-                "type": "SELECT",
-                "label": "Idea B: Persuasion",
+                "id": "d6_do2_i4",
+                "label": "Flagged the top 2 risks for the highest-ranked idea",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "List the top 2 risks for the leading idea.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_b_efficiency",
-                "type": "SELECT",
-                "label": "Idea B: Efficiency",
+                "id": "d6_do3_i1",
+                "label": "Selected a primary idea and a backup idea",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Write two titles labeled Primary and Backup.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_b_motivation",
-                "type": "SELECT",
-                "label": "Idea B: Motivation",
+                "id": "d6_do3_i2",
+                "label": "Wrote a decision note paragraph",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Paste your one-paragraph decision note.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_c_name",
-                "type": "TEXT",
-                "label": "Idea C: Name",
-                "required": true
-            },
-            {
-                "id": "idea_c_summary",
-                "type": "TEXTAREA",
-                "label": "Idea C: One sentence summary",
-                "required": true
-            },
-            {
-                "id": "idea_c_feasibility",
-                "type": "SELECT",
-                "label": "Idea C: Feasibility",
+                "id": "d6_do3_i3",
+                "label": "Defined 2 switch triggers based on evidence",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
+                "helperText": "Write two rules in the form: If X evidence happens, I switch to backup.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea_c_profitability",
-                "type": "SELECT",
-                "label": "Idea C: Profitability",
+                "id": "d6_do3_i4",
+                "label": "Wrote one next action for tomorrow's detective work",
                 "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "idea_c_persuasion",
-                "type": "SELECT",
-                "label": "Idea C: Persuasion",
-                "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "idea_c_efficiency",
-                "type": "SELECT",
-                "label": "Idea C: Efficiency",
-                "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "idea_c_motivation",
-                "type": "SELECT",
-                "label": "Idea C: Motivation",
-                "required": true,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "idea_d_name",
-                "type": "TEXT",
-                "label": "Idea D: Name",
-                "required": false
-            },
-            {
-                "id": "idea_d_feasibility",
-                "type": "SELECT",
-                "label": "Idea D: Feasibility",
-                "required": false,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "idea_d_profitability",
-                "type": "SELECT",
-                "label": "Idea D: Profitability",
-                "required": false,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "idea_d_motivation",
-                "type": "SELECT",
-                "label": "Idea D: Motivation",
-                "required": false,
-                "options": [
-                    "High",
-                    "Medium",
-                    "Low"
-                ]
-            },
-            {
-                "id": "final_pick",
-                "type": "RADIO",
-                "label": "Final pick to commit",
-                "helperText": "Your primary idea for the next 7 days",
-                "required": true,
-                "options": [
-                    "Idea A",
-                    "Idea B",
-                    "Idea C",
-                    "Idea D"
-                ]
-            },
-            {
-                "id": "backup_pick",
-                "type": "SELECT",
-                "label": "Backup pick",
-                "helperText": "Fallback if primary fails fast",
-                "required": true,
-                "options": [
-                    "Idea A",
-                    "Idea B",
-                    "Idea C",
-                    "Idea D"
-                ]
-            },
-            {
-                "id": "shelving",
-                "type": "TEXTAREA",
-                "label": "What you are shelving for now",
-                "helperText": "Ideas you are setting aside. You can return to them later.",
-                "required": true
-            },
-            {
-                "id": "commitment",
-                "type": "TEXT",
-                "label": "Your commitment",
-                "helperText": "Complete: For the next 7 days, I will focus on _____",
-                "required": true
+                "helperText": "Write one concrete action you will do in Day 7.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "7": {
         "fields": [
             {
-                "id": "chosen_idea",
-                "type": "TEXT",
-                "label": "Your chosen idea name",
-                "helperText": "From Day 6",
-                "required": true
-            },
-            {
-                "id": "platforms_searched",
-                "type": "CHECKBOX_GROUP",
-                "label": "Where you searched",
+                "id": "d7_do1_i1",
+                "label": "Saved 10 links related to your primary idea",
                 "required": true,
-                "options": [
-                    "Google",
-                    "YouTube",
-                    "TikTok",
-                    "Instagram",
-                    "Reddit",
-                    "Marketplace (Etsy/Fiverr/Upwork)",
-                    "App store",
-                    "Local businesses",
-                    "Other"
-                ]
+                "helperText": "List 10 URLs or reference links you collected.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "comp1_name",
-                "type": "TEXT",
-                "label": "Competitor 1: Name",
-                "helperText": "Example: ResumeWorded",
-                "required": true
-            },
-            {
-                "id": "comp1_link",
-                "type": "URL",
-                "label": "Competitor 1: Link",
-                "required": true
-            },
-            {
-                "id": "comp1_offer",
-                "type": "TEXT",
-                "label": "Competitor 1: What they sell in one line",
-                "required": true
-            },
-            {
-                "id": "comp1_price",
-                "type": "TEXT",
-                "label": "Competitor 1: Price range",
-                "helperText": "Example: $49 to $149",
-                "required": true
-            },
-            {
-                "id": "comp1_promise",
-                "type": "TEXT",
-                "label": "Competitor 1: Main promise",
-                "required": true
-            },
-            {
-                "id": "comp1_missing",
-                "type": "TEXTAREA",
-                "label": "Competitor 1: What is missing or annoying",
-                "required": true
-            },
-            {
-                "id": "comp2_name",
-                "type": "TEXT",
-                "label": "Competitor 2: Name",
-                "required": true
-            },
-            {
-                "id": "comp2_link",
-                "type": "URL",
-                "label": "Competitor 2: Link",
-                "required": true
-            },
-            {
-                "id": "comp2_offer",
-                "type": "TEXT",
-                "label": "Competitor 2: What they sell",
-                "required": true
-            },
-            {
-                "id": "comp2_price",
-                "type": "TEXT",
-                "label": "Competitor 2: Price range",
-                "required": true
-            },
-            {
-                "id": "comp2_missing",
-                "type": "TEXTAREA",
-                "label": "Competitor 2: What is missing",
-                "required": true
-            },
-            {
-                "id": "comp3_name",
-                "type": "TEXT",
-                "label": "Competitor 3: Name",
-                "required": true
-            },
-            {
-                "id": "comp3_link",
-                "type": "URL",
-                "label": "Competitor 3: Link",
-                "required": true
-            },
-            {
-                "id": "comp3_price",
-                "type": "TEXT",
-                "label": "Competitor 3: Price range",
-                "required": true
-            },
-            {
-                "id": "comp3_missing",
-                "type": "TEXTAREA",
-                "label": "Competitor 3: What is missing",
-                "required": true
-            },
-            {
-                "id": "comp4_name",
-                "type": "TEXT",
-                "label": "Competitor 4: Name",
-                "required": false
-            },
-            {
-                "id": "comp4_price",
-                "type": "TEXT",
-                "label": "Competitor 4: Price range",
-                "required": false
-            },
-            {
-                "id": "comp5_name",
-                "type": "TEXT",
-                "label": "Competitor 5: Name",
-                "required": false
-            },
-            {
-                "id": "comp5_price",
-                "type": "TEXT",
-                "label": "Competitor 5: Price range",
-                "required": false
-            },
-            {
-                "id": "customer_phrases",
-                "type": "TEXTAREA",
-                "label": "5 phrases customers use",
-                "helperText": "Copy short phrases from reviews or comments. Example: I needed this faster, The price was too high for what I got",
-                "required": true
-            },
-            {
-                "id": "gap1",
-                "type": "TEXTAREA",
-                "label": "Gap hypothesis 1",
-                "helperText": "Something you could do differently. Example: Offer same-day turnaround",
-                "required": true
-            },
-            {
-                "id": "gap2",
-                "type": "TEXTAREA",
-                "label": "Gap hypothesis 2",
-                "required": true
-            },
-            {
-                "id": "gap3",
-                "type": "TEXTAREA",
-                "label": "Gap hypothesis 3",
-                "required": true
-            },
-            {
-                "id": "differentiation_statement",
-                "type": "TEXT",
-                "label": "Your differentiation statement",
-                "helperText": "Complete: I am different because _____",
-                "required": true
-            },
-            {
-                "id": "differentiation_angle",
-                "type": "SELECT",
-                "label": "Your specific angle",
+                "id": "d7_do1_i2",
+                "label": "Recorded price points for at least 6 of them",
                 "required": true,
-                "options": [
-                    "Faster",
-                    "Cheaper",
-                    "More premium",
-                    "More personal",
-                    "More niche",
-                    "Done-for-you",
-                    "Done-with-you",
-                    "Templates/tools",
-                    "Local convenience",
-                    "Trust/safety",
-                    "Other"
-                ]
+                "helperText": "List at least 6 prices with currency and the matching link label.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "angle_proof",
-                "type": "TEXTAREA",
-                "label": "Proof you can deliver this angle",
-                "helperText": "What experience or capability backs this up",
-                "required": true
+                "id": "d7_do1_i3",
+                "label": "Recorded scope notes for all 10",
+                "required": true,
+                "helperText": "Provide 10 one-line scope notes, one per link.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do1_i4",
+                "label": "Recorded target customer signals for all 10",
+                "required": true,
+                "helperText": "Provide 10 one-line who it is for notes, one per link.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do2_i1",
+                "label": "Created 2 to 3 price bands with examples in each",
+                "required": true,
+                "helperText": "Write 2 to 3 price bands and list examples under each band.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do2_i2",
+                "label": "Listed the top 5 common deliverables or scope elements",
+                "required": true,
+                "helperText": "List 5 deliverables/scope elements that appeared repeatedly.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do2_i3",
+                "label": "Listed the top 5 common customer pain phrases or triggers",
+                "required": true,
+                "helperText": "List 5 phrases or triggers customers use to describe the problem.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do2_i4",
+                "label": "Identified one gap and one not-competing-on decision",
+                "required": true,
+                "helperText": "Write two lines: one gap you will target and one area you will not compete on.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do3_i1",
+                "label": "Selected a target price and a backup price using your bands",
+                "required": true,
+                "helperText": "Write your target price and backup price with a one-line justification for each.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do3_i2",
+                "label": "Wrote 5 scope boundaries for your service",
+                "required": true,
+                "helperText": "List 5 boundaries that define what is included and excluded.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do3_i3",
+                "label": "Chose a primary and secondary acquisition channel",
+                "required": true,
+                "helperText": "Name two channels and write one line on why each fits.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d7_do3_i4",
+                "label": "Wrote one test plan for tomorrow's customer coffee exercise",
+                "required": true,
+                "helperText": "Write 3 lines describing what you will test about the customer tomorrow.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "8": {
         "fields": [
             {
-                "id": "avatar_name",
-                "type": "TEXT",
-                "label": "Avatar name",
-                "helperText": "Give them a real name. Example: Sarah",
-                "required": true
-            },
-            {
-                "id": "just_like_me",
-                "type": "TEXT",
-                "label": "In what way is this person similar to you?",
-                "helperText": "Example: They are a working parent who feels overwhelmed",
-                "required": true
-            },
-            {
-                "id": "age_range",
-                "type": "SELECT",
-                "label": "Age range",
+                "id": "d8_do1_i1",
+                "label": "Wrote a 12 to 16 line transcript with both voices",
                 "required": true,
-                "options": [
-                    "Under 18",
-                    "18-24",
-                    "25-34",
-                    "35-44",
-                    "45-54",
-                    "55+"
-                ]
+                "helperText": "Paste your full transcript (12 to 16 lines) showing both voices.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "role",
-                "type": "TEXT",
-                "label": "Role (job, student, parent, etc.)",
-                "helperText": "Example: Marketing manager at a small company",
-                "required": true
-            },
-            {
-                "id": "location_type",
-                "type": "SELECT",
-                "label": "Location type",
+                "id": "d8_do1_i2",
+                "label": "Included the customer's current workaround and cost of it",
                 "required": true,
-                "options": [
-                    "Big city",
-                    "Small city",
-                    "Town",
-                    "Rural",
-                    "Online-only"
-                ]
+                "helperText": "Paste the 2 lines where the customer describes the workaround and its cost.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "biggest_frustration",
-                "type": "TEXTAREA",
-                "label": "Biggest frustration related to your offer",
-                "helperText": "What bothers them most. Example: I spend hours on my resume and still get no callbacks",
-                "required": true
-            },
-            {
-                "id": "fear_if_nothing_changes",
-                "type": "TEXTAREA",
-                "label": "What they fear will happen if nothing changes",
-                "helperText": "Example: I will stay stuck in this job I hate",
-                "required": true
-            },
-            {
-                "id": "secret_want",
-                "type": "TEXTAREA",
-                "label": "What they secretly want",
-                "helperText": "The outcome they dream about but might not say. Example: Confidence that my resume actually works",
-                "required": true
-            },
-            {
-                "id": "tried_before",
-                "type": "TEXTAREA",
-                "label": "What they tried before",
-                "helperText": "Example: Used free templates, asked a friend, hired a cheap service",
-                "required": true
-            },
-            {
-                "id": "hate_about_options",
-                "type": "TEXTAREA",
-                "label": "What they hate about current options",
-                "helperText": "Example: Too generic, too slow, too expensive for what I got",
-                "required": true
-            },
-            {
-                "id": "values_most",
-                "type": "SELECT",
-                "label": "What they value most",
+                "id": "d8_do1_i3",
+                "label": "Included a clear why-now trigger",
                 "required": true,
-                "options": [
-                    "Time",
-                    "Money",
-                    "Certainty",
-                    "Status",
-                    "Freedom",
-                    "Simplicity",
-                    "Support",
-                    "Other"
-                ]
+                "helperText": "Paste the line that shows why the customer wants a solution now.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "where_search",
-                "type": "CHECKBOX_GROUP",
-                "label": "Where they search for help",
+                "id": "d8_do1_i4",
+                "label": "Included at least 2 customer fears or objections",
                 "required": true,
-                "options": [
-                    "Google",
-                    "YouTube",
-                    "TikTok",
-                    "Instagram",
-                    "Reddit",
-                    "Friends",
-                    "Local groups",
-                    "Marketplaces",
-                    "Other"
-                ]
+                "helperText": "Paste 2 lines that show fears or objections.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "what_builds_trust",
-                "type": "TEXTAREA",
-                "label": "What would make them trust you",
-                "helperText": "Example: Seeing before/after examples, a quick response, a real person behind it",
-                "required": true
-            },
-            {
-                "id": "budget_comfort",
-                "type": "SELECT",
-                "label": "Budget comfort",
+                "id": "d8_do2_i1",
+                "label": "Collected 10 customer phrases",
                 "required": true,
-                "options": [
-                    "Under $20",
-                    "$20-$50",
-                    "$50-$100",
-                    "$100-$250",
-                    "$250+"
-                ]
+                "helperText": "List 10 phrases pulled from your transcript and evidence.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_1",
-                "type": "TEXTAREA",
-                "label": "Q&A 1: What question would you ask them?",
-                "required": true
+                "id": "d8_do2_i2",
+                "label": "Labeled each phrase by type",
+                "required": true,
+                "helperText": "Provide the same 10 phrases with labels: Pain, Outcome, Trigger, or Objection.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_1_answer",
-                "type": "TEXTAREA",
-                "label": "Q&A 1: What would they answer?",
-                "required": true
+                "id": "d8_do2_i3",
+                "label": "Selected 3 phrases to use in your offer",
+                "required": true,
+                "helperText": "List the 3 phrases you will use directly in offer copy.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_2",
-                "type": "TEXTAREA",
-                "label": "Q&A 2: Question",
-                "required": true
+                "id": "d8_do2_i4",
+                "label": "Wrote one job to be done sentence",
+                "required": true,
+                "helperText": "Write one plain-English sentence describing what the customer hires you to do.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_2_answer",
-                "type": "TEXTAREA",
-                "label": "Q&A 2: Answer",
-                "required": true
+                "id": "d8_do3_i1",
+                "label": "Listed your top 5 objections",
+                "required": true,
+                "helperText": "List 5 objections in the customer's words.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_3",
-                "type": "TEXTAREA",
-                "label": "Q&A 3: Question",
-                "required": true
+                "id": "d8_do3_i2",
+                "label": "Wrote an offer design response for each objection",
+                "required": true,
+                "helperText": "Write 5 paired lines: objection then design response.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_3_answer",
-                "type": "TEXTAREA",
-                "label": "Q&A 3: Answer",
-                "required": true
+                "id": "d8_do3_i3",
+                "label": "Wrote 3 reassurance lines using customer language",
+                "required": true,
+                "helperText": "Write 3 short lines you could send in a message to reduce worry.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "qa_4",
-                "type": "TEXTAREA",
-                "label": "Q&A 4: Question",
-                "required": true
-            },
-            {
-                "id": "qa_4_answer",
-                "type": "TEXTAREA",
-                "label": "Q&A 4: Answer",
-                "required": true
-            },
-            {
-                "id": "outcome_summary",
-                "type": "TEXT",
-                "label": "If I help them, the outcome is _____",
-                "helperText": "Example: They get callbacks within a week",
-                "required": true
-            },
-            {
-                "id": "letter_to_avatar",
-                "type": "TEXTAREA",
-                "label": "Short letter to your avatar (150-250 words)",
-                "helperText": "Write like a human to a human. Show you understand them. No marketing speak.",
-                "required": true
+                "id": "d8_do3_i4",
+                "label": "Updated your scope boundaries based on objections",
+                "required": true,
+                "helperText": "Paste your updated scope boundaries or list the 2 changes you made.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "9": {
         "fields": [
             {
-                "id": "offer_name",
-                "type": "TEXT",
-                "label": "Offer name",
-                "helperText": "Example: The 24-Hour Resume Fix",
-                "required": true
-            },
-            {
-                "id": "who_for",
-                "type": "TEXT",
-                "label": "Who it is for",
-                "helperText": "From your Day 8 avatar. Example: Job seekers with 3 to 10 years of experience",
-                "required": true
-            },
-            {
-                "id": "promise",
-                "type": "TEXTAREA",
-                "label": "The promise (plain language)",
-                "helperText": "In plain language, what change happens? Example: You get a resume that gets callbacks",
-                "required": true
-            },
-            {
-                "id": "deliverables",
-                "type": "TEXTAREA",
-                "label": "What exactly do they receive",
-                "helperText": "Be specific. Example: A rewritten resume plus a 10-minute video review",
-                "required": true
-            },
-            {
-                "id": "delivery_format",
-                "type": "SELECT",
-                "label": "Delivery format",
+                "id": "d9_do1_i1",
+                "label": "Wrote a one-paragraph offer summary",
                 "required": true,
-                "options": [
-                    "1:1 call",
-                    "Chat support",
-                    "Templates",
-                    "Video course",
-                    "Email service",
-                    "In-person",
-                    "Done-for-you",
-                    "Hybrid"
-                ]
+                "helperText": "Paste your one-paragraph offer summary.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "time_to_deliver",
-                "type": "SELECT",
-                "label": "Time to deliver",
+                "id": "d9_do1_i2",
+                "label": "Listed 3 to 6 deliverables with a timeline",
                 "required": true,
-                "options": [
-                    "Same day",
-                    "1-3 days",
-                    "1 week",
-                    "2 weeks",
-                    "1 month"
-                ]
+                "helperText": "List deliverables and include the delivery timeline next to each or overall.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "boundaries",
-                "type": "TEXTAREA",
-                "label": "What is not included",
-                "helperText": "Set expectations. Example: Does not include cover letters or LinkedIn rewrites",
-                "required": true
-            },
-            {
-                "id": "one_sentence_pitch",
-                "type": "TEXT",
-                "label": "One-sentence pitch",
-                "helperText": "I help [who] do [what] so that [result]",
-                "required": true
-            },
-            {
-                "id": "five_sentence_pitch",
-                "type": "TEXTAREA",
-                "label": "Five-sentence pitch",
-                "helperText": "Expand: problem, solution, how it works, outcome, call to action",
-                "required": true
-            },
-            {
-                "id": "price_model",
-                "type": "SELECT",
-                "label": "Price model",
+                "id": "d9_do1_i3",
+                "label": "Listed 5 scope boundaries",
                 "required": true,
-                "options": [
-                    "One-time",
-                    "Hourly",
-                    "Package",
-                    "Subscription"
-                ]
+                "helperText": "List 5 boundaries that define what is included and excluded.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "price_point",
-                "type": "NUMBER",
-                "label": "Price point (dollars)",
-                "helperText": "Example: 99",
-                "required": true
-            },
-            {
-                "id": "why_price_fair",
-                "type": "TEXTAREA",
-                "label": "Why this price is fair",
-                "helperText": "Connect price to outcome value",
-                "required": true
-            },
-            {
-                "id": "version_basic",
-                "type": "TEXT",
-                "label": "Version A (Basic) name",
-                "helperText": "Example: Resume Review",
-                "required": true
-            },
-            {
-                "id": "version_premium",
-                "type": "TEXT",
-                "label": "Version B (Premium) name",
-                "helperText": "Example: Full Resume Rewrite",
-                "required": true
-            },
-            {
-                "id": "version_differences",
-                "type": "TEXTAREA",
-                "label": "Differences between versions",
-                "helperText": "What does premium add",
-                "required": true
-            },
-            {
-                "id": "risk_reversal",
-                "type": "SELECT",
-                "label": "Risk reversal",
-                "helperText": "What if they are not happy",
+                "id": "d9_do1_i4",
+                "label": "Listed customer inputs required to start",
                 "required": true,
-                "options": [
-                    "No refund",
-                    "Partial refund",
-                    "Satisfaction guarantee",
-                    "Redo/extra session",
-                    "Other"
-                ]
+                "helperText": "List 3 to 5 inputs you need from the customer to begin.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "where_find_customers",
-                "type": "CHECKBOX_GROUP",
-                "label": "Where you will find first 3 customers",
+                "id": "d9_do2_i1",
+                "label": "Set a core package price and wrote the price justification",
                 "required": true,
-                "options": [
-                    "Friends",
-                    "Online community",
-                    "Local group",
-                    "Marketplace",
-                    "Social media",
-                    "Email list",
-                    "Other"
-                ]
+                "helperText": "Write your core price and a 2-line justification based on evidence and effort.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "what_ask_them",
-                "type": "TEXTAREA",
-                "label": "What you will ask them to do",
-                "helperText": "Example: Fill out a form and pay via link",
-                "required": true
+                "id": "d9_do2_i2",
+                "label": "Defined one add-on with price and scope",
+                "required": true,
+                "helperText": "Describe one add-on, include its price and what it includes.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d9_do2_i3",
+                "label": "Wrote a revision policy",
+                "required": true,
+                "helperText": "Write 3 to 5 lines that define revisions and limits.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d9_do2_i4",
+                "label": "Wrote a refund policy or satisfaction rule",
+                "required": true,
+                "helperText": "Write 2 to 4 lines describing refunds or satisfaction conditions.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d9_do3_i1",
+                "label": "Wrote a 6-step buyer flow",
+                "required": true,
+                "helperText": "Provide 6 numbered steps from first contact to delivery completion.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d9_do3_i2",
+                "label": "Drafted a short call-to-action message",
+                "required": true,
+                "helperText": "Write a 4 to 7 line message someone could send to start the process.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d9_do3_i3",
+                "label": "Wrote a what-you-get list with 5 bullets",
+                "required": true,
+                "helperText": "List 5 bullets describing what the customer receives.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d9_do3_i4",
+                "label": "Wrote a short scope warning line to prevent mismatch",
+                "required": true,
+                "helperText": "Write one sentence that warns about fit and scope.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "10": {
         "fields": [
             {
-                "id": "moment_noticed",
-                "type": "TEXTAREA",
-                "label": "The moment you noticed the problem",
-                "helperText": "Where were you, what happened. Example: I was applying for jobs and getting no responses despite years of experience",
-                "required": true
-            },
-            {
-                "id": "why_care",
-                "type": "TEXTAREA",
-                "label": "Why you care",
-                "helperText": "What made this personal. Example: I wasted months before I figured it out",
-                "required": true
-            },
-            {
-                "id": "credibility",
-                "type": "TEXTAREA",
-                "label": "Why you are credible",
-                "helperText": "What proof or experience do you have. Example: I have helped 50 friends land interviews",
-                "required": true
-            },
-            {
-                "id": "who_help",
-                "type": "TEXT",
-                "label": "Who you want to help",
-                "helperText": "Example: Job seekers who feel invisible",
-                "required": true
-            },
-            {
-                "id": "mission",
-                "type": "TEXT",
-                "label": "Your mission in one sentence",
-                "helperText": "Example: To help job seekers get seen",
-                "required": true
-            },
-            {
-                "id": "turning_point",
-                "type": "TEXTAREA",
-                "label": "The turning point that made you act",
-                "helperText": "What shifted. Example: A friend used my advice and got 3 interviews in a week",
-                "required": true
-            },
-            {
-                "id": "offer_tie_in",
-                "type": "TEXTAREA",
-                "label": "How your offer solves it",
-                "helperText": "Connect story to offer. Example: That is why I created the 24-Hour Resume Fix",
-                "required": true
-            },
-            {
-                "id": "story_50",
-                "type": "TEXTAREA",
-                "label": "50-word story",
-                "helperText": "Example: I spent 6 months applying with no results. When I rewrote my resume using a new approach, I got 5 interviews in 2 weeks. Now I help others do the same.",
-                "required": true
-            },
-            {
-                "id": "story_150",
-                "type": "TEXTAREA",
-                "label": "150-word story",
-                "required": true
-            },
-            {
-                "id": "story_300",
-                "type": "TEXTAREA",
-                "label": "300-word story",
-                "required": true
-            },
-            {
-                "id": "give_back",
-                "type": "TEXTAREA",
-                "label": "If your hustle has a give-back element, describe it",
-                "helperText": "Optional. Example: I offer free reviews for recent graduates",
-                "required": false
-            },
-            {
-                "id": "where_place_story",
-                "type": "CHECKBOX_GROUP",
-                "label": "Where you will place this story",
+                "id": "d10_do1_i1",
+                "label": "Wrote the scene in 2 to 3 sentences",
                 "required": true,
-                "options": [
-                    "Landing page",
-                    "About section",
-                    "First email",
-                    "Pinned post",
-                    "Sales DM",
-                    "Video intro",
-                    "Other"
-                ]
+                "helperText": "Paste your 2 to 3 sentence scene.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do1_i2",
+                "label": "Wrote the insight in 2 to 3 sentences",
+                "required": true,
+                "helperText": "Paste your 2 to 3 sentence insight.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do1_i3",
+                "label": "Wrote the decision and outcome link in 2 to 3 sentences",
+                "required": true,
+                "helperText": "Paste your 2 to 3 sentence decision and outcome link.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do1_i4",
+                "label": "Produced a single 120 to 170 word combined origin story",
+                "required": true,
+                "helperText": "Paste the final origin story (120 to 170 words).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do2_i1",
+                "label": "Wrote a 5-step delivery process",
+                "required": true,
+                "helperText": "List 5 numbered steps describing your delivery process.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do2_i2",
+                "label": "Wrote 3 credibility proof points",
+                "required": true,
+                "helperText": "List 3 proof points that do not require testimonials.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do2_i3",
+                "label": "Wrote one short bio line",
+                "required": true,
+                "helperText": "Write a one-sentence bio aligned to the offer.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do2_i4",
+                "label": "Wrote one what-I-will-not-do line",
+                "required": true,
+                "helperText": "Write one sentence that sets expectations by stating what you will not do.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do3_i1",
+                "label": "Wrote a one-sentence pitch",
+                "required": true,
+                "helperText": "Paste your one-sentence pitch with outcome and timeframe.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do3_i2",
+                "label": "Wrote a 70 to 100 word paragraph pitch",
+                "required": true,
+                "helperText": "Paste your paragraph pitch (70 to 100 words).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do3_i3",
+                "label": "Wrote a 6 to 9 line outreach message",
+                "required": true,
+                "helperText": "Paste the outreach message (6 to 9 lines) inviting a simple next step.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d10_do3_i4",
+                "label": "Wrote a subject line or opener for your message",
+                "required": true,
+                "helperText": "Write one subject line or opening line.",
+                "type": "TEXTAREA"
             }
         ]
     },

@@ -1,0 +1,149 @@
+{
+    "day": 10,
+    "title": "Day 10 - Create Your Origins Story",
+    "week": 2,
+    "mainPromise": "You will craft a believable origin story and credibility set that makes your offer trustworthy without overselling.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Trust comes from specificity",
+            "content": "People do not trust big claims. They trust specific reasons. Your origin story should answer: why you noticed this problem, why you care, and why you can deliver a good result.\n\nThis is not a dramatic life story. It is a short explanation that makes your offer feel real. A simple, honest origin story can reduce buyer risk more than a long list of features.\n\nThink in scenes. A scene is a moment where you saw the frustration clearly: a friend overwhelmed, a repeated issue in your own life, or a pattern you observed in work.",
+            "soWhat": "If you cannot explain why you are doing this, your offer will feel generic and easy to ignore."
+        },
+        {
+            "id": "t2",
+            "title": "Credibility is proof of process",
+            "content": "Credibility is not bragging. It is showing that you have a method and boundaries. Buyers want to know you can deliver consistently.\n\nEarly credibility can be light: a clear process, a clear scope, and a clear deliverable list. If you have relevant experience, mention it briefly and concretely. If not, do not invent it. Use your evidence and your design choices.\n\nA helpful credibility tool is a credibility set: three small proof points that can appear on a landing page or in a message.",
+            "soWhat": "If you do not define credibility, buyers will assume risk and delay."
+        },
+        {
+            "id": "t3",
+            "title": "Prepare words you can reuse",
+            "content": "You will use your story and credibility in multiple places: a landing page, a DM, an email, and a payment page. If you write them once in reusable formats, you move faster later.\n\nYou need three reusable assets: a one-sentence pitch, a short paragraph pitch, and a message you can send to a potential buyer.\n\nEach asset should reflect your customer language from Day 8 and your scope boundaries from Day 9.",
+            "soWhat": "If you do not prepare reusable assets, you will rewrite from scratch every time you talk to someone."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d10_do1",
+            "title": "Write your origin story draft",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write a 3-part origin story: the scene, the insight, the decision.",
+                "Keep it under 170 words.",
+                "End with one sentence that links to your offer outcome."
+            ],
+            "items": [
+                {
+                    "id": "d10_do1_i1",
+                    "label": "Wrote the scene in 2 to 3 sentences",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your 2 to 3 sentence scene."
+                },
+                {
+                    "id": "d10_do1_i2",
+                    "label": "Wrote the insight in 2 to 3 sentences",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your 2 to 3 sentence insight."
+                },
+                {
+                    "id": "d10_do1_i3",
+                    "label": "Wrote the decision and outcome link in 2 to 3 sentences",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your 2 to 3 sentence decision and outcome link."
+                },
+                {
+                    "id": "d10_do1_i4",
+                    "label": "Produced a single 120 to 170 word combined origin story",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the final origin story (120 to 170 words)."
+                }
+            ],
+            "example": "Scene: I watched a freelancer spend Sunday night rebuilding a plan from scratch again. Insight: The issue was not motivation. It was a messy system that kept breaking. Decision: I started packaging simple setups that remove weekly friction in 48 hours."
+        },
+        {
+            "id": "d10_do2",
+            "title": "Build your credibility set",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write your 5-step delivery process in plain language.",
+                "Write 3 credibility proof points that do not require testimonials.",
+                "Write one short bio line that matches the offer."
+            ],
+            "items": [
+                {
+                    "id": "d10_do2_i1",
+                    "label": "Wrote a 5-step delivery process",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 numbered steps describing your delivery process."
+                },
+                {
+                    "id": "d10_do2_i2",
+                    "label": "Wrote 3 credibility proof points",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 proof points that do not require testimonials."
+                },
+                {
+                    "id": "d10_do2_i3",
+                    "label": "Wrote one short bio line",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write a one-sentence bio aligned to the offer."
+                },
+                {
+                    "id": "d10_do2_i4",
+                    "label": "Wrote one what-I-will-not-do line",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence that sets expectations by stating what you will not do."
+                }
+            ],
+            "example": "Proof points: Fixed intake form, fixed scope checklist, delivery within 48 hours. Bio line: I build simple digital workflows that save busy people time and reduce frustration."
+        },
+        {
+            "id": "d10_do3",
+            "title": "Create your reusable scripts",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Write a one-sentence pitch with outcome and timeframe.",
+                "Write a 70 to 100 word paragraph pitch with deliverables.",
+                "Write a 6 to 9 line outreach message that invites a simple next step."
+            ],
+            "items": [
+                {
+                    "id": "d10_do3_i1",
+                    "label": "Wrote a one-sentence pitch",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your one-sentence pitch with outcome and timeframe."
+                },
+                {
+                    "id": "d10_do3_i2",
+                    "label": "Wrote a 70 to 100 word paragraph pitch",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your paragraph pitch (70 to 100 words)."
+                },
+                {
+                    "id": "d10_do3_i3",
+                    "label": "Wrote a 6 to 9 line outreach message",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the outreach message (6 to 9 lines) inviting a simple next step."
+                },
+                {
+                    "id": "d10_do3_i4",
+                    "label": "Wrote a subject line or opener for your message",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one subject line or opening line."
+                }
+            ],
+            "example": "One-sentence pitch: In 48 hours, I set up a simple workflow that saves you time each week and stops the recurring admin mess. Opener: Quick question: are you still rebuilding your weekly plan from scratch?"
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Final 120 to 170 word origin story",
+            "Credibility set: 5-step process, proof points, bio, expectation setter",
+            "Reusable scripts: one-sentence pitch, paragraph pitch, outreach message",
+            "A clean language pack you can paste into pages and messages"
+        ],
+        "tomorrowPreview": "Next week you will start building the simple assets that let you validate demand and collect first customers without overbuilding."
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "day": 8,
+    "title": "Day 8 - Have Imaginary Coffee with Your Ideal Customer",
+    "week": 2,
+    "mainPromise": "You will produce a realistic customer conversation transcript, then extract the exact language and buying triggers to improve your offer.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "You can model a customer without guessing wildly",
+            "content": "You may not have direct interviews yet. You can still create a useful model by combining three inputs: your Week 1 customer description, your Day 7 evidence, and common sense about busy people protecting time.\n\nAn imaginary conversation is not fantasy. It is a structured draft that reveals what you do not know and what you need to validate. It also forces you to write in the customer's language, not your own.\n\nThe goal is not to be right. The goal is to create a practical transcript that can be tested next week through outreach.",
+            "soWhat": "If you cannot write the customer's side of the conversation, your marketing will sound like you, not them."
+        },
+        {
+            "id": "t2",
+            "title": "Extract exact language for your offer",
+            "content": "Customers rarely buy features. They buy relief, clarity, speed, and lowered risk. Your offer should use the words customers use when they explain the problem to a friend.\n\nFrom your transcript, extract phrases that describe the pain, the desired outcome, and the decision trigger. These phrases become your headline, your bullets, and your follow-up messages.\n\nAlso identify the job to be done in plain language. For busy people, it is often: help me stop wasting time on this and trust that it is handled.",
+            "soWhat": "If you do not extract language, your offer will drift into vague promises."
+        },
+        {
+            "id": "t3",
+            "title": "Turn objections into design choices",
+            "content": "Objections are not only barriers. They are design requirements. If the customer fears complexity, your offer must feel simple. If they fear wasted money, your offer must reduce risk with a clear scope and outcome.\n\nYou do not need to argue with objections. You need to remove the cause. That often means tighter scope, clearer deliverables, and a defined handoff.\n\nToday you will translate objections into offer decisions you will use tomorrow when you build the offer.",
+            "soWhat": "If you do not design for objections, you will lose buyers right before they pay."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d8_do1",
+            "title": "Write a customer transcript",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Choose one customer type from your evidence (for example, freelancers, managers, students).",
+                "Write a 12 to 16 line conversation: you and the customer.",
+                "Include problem, current workaround, why now, and what they fear."
+            ],
+            "items": [
+                {
+                    "id": "d8_do1_i1",
+                    "label": "Wrote a 12 to 16 line transcript with both voices",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your full transcript (12 to 16 lines) showing both voices."
+                },
+                {
+                    "id": "d8_do1_i2",
+                    "label": "Included the customer's current workaround and cost of it",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste the 2 lines where the customer describes the workaround and its cost."
+                },
+                {
+                    "id": "d8_do1_i3",
+                    "label": "Included a clear why-now trigger",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste the line that shows why the customer wants a solution now."
+                },
+                {
+                    "id": "d8_do1_i4",
+                    "label": "Included at least 2 customer fears or objections",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste 2 lines that show fears or objections."
+                }
+            ],
+            "example": "Customer: I keep rewriting the same plan every week. I lose an hour and still miss tasks. You: If I set up a simple system in 48 hours, what would change? Customer: I would stop feeling behind by Monday morning."
+        },
+        {
+            "id": "d8_do2",
+            "title": "Build a voice-of-customer bank",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Pull 10 phrases from your transcript and Day 7 evidence.",
+                "Label each phrase as Pain, Outcome, Trigger, or Objection.",
+                "Choose 3 phrases to use directly in your offer copy."
+            ],
+            "items": [
+                {
+                    "id": "d8_do2_i1",
+                    "label": "Collected 10 customer phrases",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 10 phrases pulled from your transcript and evidence."
+                },
+                {
+                    "id": "d8_do2_i2",
+                    "label": "Labeled each phrase by type",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide the same 10 phrases with labels: Pain, Outcome, Trigger, or Objection."
+                },
+                {
+                    "id": "d8_do2_i3",
+                    "label": "Selected 3 phrases to use in your offer",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List the 3 phrases you will use directly in offer copy."
+                },
+                {
+                    "id": "d8_do2_i4",
+                    "label": "Wrote one job to be done sentence",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one plain-English sentence describing what the customer hires you to do."
+                }
+            ],
+            "example": "Pain: I keep fixing the same mess every week. Outcome: I want a system I do not have to think about. Objection: I'm worried this will become another tool I never use."
+        },
+        {
+            "id": "d8_do3",
+            "title": "Create objection handlers",
+            "estimatedMinutes": 8,
+            "steps": [
+                "List your top 5 objections from transcript and evidence.",
+                "For each, write an offer design response (scope, process, proof, guarantee).",
+                "Write one short reassurance line you can use in messages."
+            ],
+            "items": [
+                {
+                    "id": "d8_do3_i1",
+                    "label": "Listed your top 5 objections",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 objections in the customer's words."
+                },
+                {
+                    "id": "d8_do3_i2",
+                    "label": "Wrote an offer design response for each objection",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write 5 paired lines: objection then design response."
+                },
+                {
+                    "id": "d8_do3_i3",
+                    "label": "Wrote 3 reassurance lines using customer language",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Write 3 short lines you could send in a message to reduce worry."
+                },
+                {
+                    "id": "d8_do3_i4",
+                    "label": "Updated your scope boundaries based on objections",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Paste your updated scope boundaries or list the 2 changes you made."
+                }
+            ],
+            "example": "Objection: I do not have time to learn a new system. Design response: Done-for-you setup plus a 5-minute walkthrough video. Reassurance: You will not be maintaining this daily. It is built to run quietly."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "A realistic customer conversation transcript",
+            "A labeled voice-of-customer phrase bank with selected phrases",
+            "A list of objections with design responses and reassurance lines",
+            "Updated scope boundaries shaped by real objections"
+        ],
+        "tomorrowPreview": "Tomorrow you will turn your idea into a sellable offer with a clear scope, deliverables, process, and price."
+    }
+}

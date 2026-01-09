@@ -1,0 +1,149 @@
+{
+    "day": 9,
+    "title": "Day 9 - Transform Your Idea into an Offer",
+    "week": 2,
+    "mainPromise": "You will create a clear offer package that someone can understand quickly, including deliverables, process, boundaries, and price.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "An offer is a specific trade",
+            "content": "An idea is a direction. An offer is a trade: money exchanged for a defined result, delivered in a defined way, within a defined time.\n\nA strong offer reduces uncertainty. It tells the buyer what happens after they pay, what they receive, how long it takes, and what you need from them. It also tells them what is not included.\n\nFor a small online service, the offer should be simple enough to explain in one paragraph and deliver repeatedly without reinventing the work each time.",
+            "soWhat": "If you do not define the trade precisely, you will attract the wrong customers and create scope creep."
+        },
+        {
+            "id": "t2",
+            "title": "Price and packaging shape behavior",
+            "content": "Pricing is not only money. It sets expectations. Low prices often invite unclear requests and endless messages. Clear prices and clear scope invite better customers.\n\nPackaging is your way to protect delivery. Many service offers work best as one fixed package, at least at the start. If you add options, keep them limited and meaningful, like Basic vs Plus, not five confusing tiers.\n\nA practical approach is: one core package and one add-on that is easy to deliver. This keeps your sales conversation simple.",
+            "soWhat": "If you do not package intentionally, your offer will become custom work and your profit will collapse."
+        },
+        {
+            "id": "t3",
+            "title": "Make the offer easy to buy",
+            "content": "Even a good offer fails if the next step is unclear. Your buyer should know exactly how to start: what to click, what to submit, and what happens next.\n\nYou will draft the buyer flow in plain steps. This is not a full website build. It is a process map your future page and messages will follow.\n\nA good buyer flow also includes proof elements. Early proof can be simple: a short checklist of what they receive, a before-after description, and a clear scope statement.",
+            "soWhat": "If you do not define the buyer flow, you will lose interested people through friction and confusion."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d9_do1",
+            "title": "Write the offer one-pager",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write a one-paragraph offer summary using customer phrases from Day 8.",
+                "List deliverables and timeline.",
+                "List boundaries and what you need from the customer."
+            ],
+            "items": [
+                {
+                    "id": "d9_do1_i1",
+                    "label": "Wrote a one-paragraph offer summary",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your one-paragraph offer summary."
+                },
+                {
+                    "id": "d9_do1_i2",
+                    "label": "Listed 3 to 6 deliverables with a timeline",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List deliverables and include the delivery timeline next to each or overall."
+                },
+                {
+                    "id": "d9_do1_i3",
+                    "label": "Listed 5 scope boundaries",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 boundaries that define what is included and excluded."
+                },
+                {
+                    "id": "d9_do1_i4",
+                    "label": "Listed customer inputs required to start",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 to 5 inputs you need from the customer to begin."
+                }
+            ],
+            "example": "Summary: In 48 hours, I set up a simple workflow that stops you from rebuilding your plan every week and saves you time. Deliverables: Intake form, setup, checklist, 5-min walkthrough video, one revision."
+        },
+        {
+            "id": "d9_do2",
+            "title": "Build your price and package",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Choose one core package price (target price) and confirm it matches your unit economics.",
+                "Define one add-on and its price.",
+                "Write a simple refund or revision policy that protects your time."
+            ],
+            "items": [
+                {
+                    "id": "d9_do2_i1",
+                    "label": "Set a core package price and wrote the price justification",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write your core price and a 2-line justification based on evidence and effort."
+                },
+                {
+                    "id": "d9_do2_i2",
+                    "label": "Defined one add-on with price and scope",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Describe one add-on, include its price and what it includes."
+                },
+                {
+                    "id": "d9_do2_i3",
+                    "label": "Wrote a revision policy",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 3 to 5 lines that define revisions and limits."
+                },
+                {
+                    "id": "d9_do2_i4",
+                    "label": "Wrote a refund policy or satisfaction rule",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 2 to 4 lines describing refunds or satisfaction conditions."
+                }
+            ],
+            "example": "Core: $89 fixed scope, delivered in 48 hours. Add-on: $29 monthly check-in once, 20-minute review by email. Revision: One revision within 7 days, limited to agreed scope."
+        },
+        {
+            "id": "d9_do3",
+            "title": "Draft the buyer flow",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Write the 6-step buyer flow from first contact to delivery completion.",
+                "Draft a short call-to-action message you can send.",
+                "Draft a simple what you get bullet list for a landing page."
+            ],
+            "items": [
+                {
+                    "id": "d9_do3_i1",
+                    "label": "Wrote a 6-step buyer flow",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide 6 numbered steps from first contact to delivery completion."
+                },
+                {
+                    "id": "d9_do3_i2",
+                    "label": "Drafted a short call-to-action message",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Write a 4 to 7 line message someone could send to start the process."
+                },
+                {
+                    "id": "d9_do3_i3",
+                    "label": "Wrote a what-you-get list with 5 bullets",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 bullets describing what the customer receives."
+                },
+                {
+                    "id": "d9_do3_i4",
+                    "label": "Wrote a short scope warning line to prevent mismatch",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence that warns about fit and scope."
+                }
+            ],
+            "example": "CTA: If you want this done this week, reply with workflow and I will send a short intake form. You will get delivery in 48 hours after intake. Scope warning: This is a one-time setup, not ongoing daily management."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Offer one-pager: summary, deliverables, boundaries, customer inputs",
+            "Core package price plus one add-on, with policies",
+            "Buyer flow steps and CTA message",
+            "What-you-get bullets and a scope warning line"
+        ],
+        "tomorrowPreview": "Tomorrow you will write an origin story that makes your offer believable and human, without sounding like a sales pitch."
+    }
+}

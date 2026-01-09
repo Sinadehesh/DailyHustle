@@ -747,308 +747,748 @@
     },
     {
         "day": 6,
-        "title": "Use the Side Hustle Selector to Compare Ideas",
+        "title": "Day 6 - Use the Side Hustle Selector to Compare Ideas",
         "week": 2,
-        "goal": "Pick one primary idea and one backup using a five-factor scoring system",
-        "timeEstimate": "40-50 min",
-        "hook": "Debate ends today. You will score, rank, and commit to one idea for the next phase.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "You have been exploring. Now it is time to decide. Indecision is expensive. Every day you spend debating is a day you are not building, testing, or earning. Today you stop the loop.\n\nThe goal is not to find a perfect idea. Perfect ideas do not exist. The goal is to find a good enough idea that matches your situation and commit to testing it properly. Commitment unlocks energy. Hesitation drains it.\n\nYou will use a five-factor system to rank your ideas:\n\nFeasibility. Can you actually do this with your current skills, time, and resources? An idea you cannot execute is not an idea. It is a fantasy.\n\nProfitability. Does the math work? Can you sell this at a price that leaves meaningful profit after costs and your time?\n\nPersuasion. Is there a clear reason to buy now? Does this solve a problem that feels urgent or painful? Can you explain it in one sentence?\n\nEfficiency. How fast can you launch and test? Ideas that require months of prep before you can get feedback are dangerous for part-time hustlers.\n\nMotivation. How excited are you? You will need to push through hard moments. If you feel nothing, that matters.\n\nScore each idea on these five factors. Add the scores. Rank them. Then pick your primary and backup.\n\nYour primary idea is the one you commit to for the next seven days. Your backup is the fallback if something fundamental breaks. Everything else gets shelved. You can return to those ideas later if needed.\n\nDo not overthink the scoring. Use your gut combined with what you learned on Days 1 through 5. The point is to end debate, not to find mathematical certainty."
-        },
-        "practice": {
-            "title": "The Decision Reset (3-5 minutes)",
-            "content": "Before you score, reset your mental state.\n\nClose your eyes. Take three slow breaths. Notice any tightness in your body. That tension often comes from wanting to make the right choice. Acknowledge it.\n\nNow remind yourself: there is no perfect choice. There is only a choice you make and then work to validate. The goal today is forward motion, not perfection.\n\nSet a timer for 2 minutes. On paper or in your head, answer these questions without filtering:\n\n1. Which idea excites me most right now?\n2. Which idea feels most doable this week?\n3. Which idea do I keep coming back to?\n\nWrite down your answers. These are signals. Now open your eyes and begin the scoring process."
-        },
-        "mission": [
+        "mainPromise": "You will compare your top ideas using a consistent selector, then choose a primary and backup based on scores and written reasons.",
+        "timeEstimate": "34 min",
+        "teachings": [
             {
-                "task": "Complete the Decision Reset practice",
-                "time": "5 min"
+                "id": "t1",
+                "title": "Make comparisons fair and fast",
+                "content": "When you compare ideas casually, the loudest idea wins. The loudest idea is usually the newest one or the one that feels exciting, not the one that will work.\n\nA selector makes the comparison fair. It forces each idea to answer the same questions using the same format. This reduces second-guessing later because you can point to the numbers and the reasons.\n\nYour selector should reward simplicity, speed, and a clear path to the first sale. You are not picking a forever business. You are picking a best next step that fits your constraints.",
+                "soWhat": "If you do not build a selector, you will keep switching based on mood instead of evidence."
             },
             {
-                "task": "List your top 4 ideas from Days 3 through 5",
-                "time": "3 min"
+                "id": "t2",
+                "title": "Use weights only when needed",
+                "content": "Sometimes criteria are not equally important. If your time budget is tight, delivery simplicity may matter more than price potential. If you hate marketing, reachability may matter more than novelty.\n\nWeights can help, but they also add complexity. Use weights only if you have a strong constraint that should dominate decisions. Otherwise, keep it simple and let the numbers guide you.\n\nThe main value is not the final score. The value is the forced clarity: what makes this idea good, and what makes it risky.",
+                "soWhat": "If you do not score consistently, your decision will feel shaky and you will reopen it later."
             },
             {
-                "task": "Score each idea on Feasibility (1 to 5)",
-                "time": "5 min"
-            },
-            {
-                "task": "Score each idea on Profitability (1 to 5)",
-                "time": "5 min"
-            },
-            {
-                "task": "Score each idea on Persuasion (1 to 5)",
-                "time": "5 min"
-            },
-            {
-                "task": "Score each idea on Efficiency (1 to 5)",
-                "time": "5 min"
-            },
-            {
-                "task": "Score each idea on Motivation (1 to 5)",
-                "time": "5 min"
-            },
-            {
-                "task": "Total scores and rank ideas from highest to lowest",
-                "time": "3 min"
-            },
-            {
-                "task": "Choose your primary idea and backup idea",
-                "time": "5 min"
-            },
-            {
-                "task": "Write your commitment: For the next 7 days, I will focus on _____",
-                "time": "3 min"
+                "id": "t3",
+                "title": "Decide with a backup plan",
+                "content": "A clean decision reduces stress. You choose one primary idea and one backup. The backup is not a failure plan. It is insurance against a discovery next week, like buyers do not want this or delivery takes too long.\n\nYour decision should include a reason you can defend. I like it is not a reason. It has the fastest path to first sale and a repeatable delivery process is a reason.\n\nOnce you decide, you will treat the primary idea as the default until real evidence forces a change.",
+                "soWhat": "If you do not decide now, the rest of Week 2 becomes abstract and slower."
             }
         ],
-        "commonMistakes": "Scoring all ideas the same to avoid deciding. The point of scoring is to create separation. Be honest about differences.\n\nIgnoring motivation because it seems soft. Low motivation kills execution. If you dread the work, factor that in.\n\nPicking the hardest idea because it feels more impressive. Harder is not better. Faster feedback is better.\n\nNot committing to one primary idea. Keeping two ideas equally active splits your energy and guarantees slower progress.\n\nOverthinking the scoring. This is not a math test. Use your judgment and move on.\n\nForgetting to pick a backup. If your primary idea fails fast, you want a clear fallback so you do not stall.",
-        "doneMeans": "You have scored and ranked your ideas, chosen one primary and one backup, and written a commitment sentence.",
-        "reviewCTA": "Want feedback on your scoring logic? Submit your Day 6 workbook for review and get suggestions on your idea selection."
+        "doBlocks": [
+            {
+                "id": "d6_do1",
+                "title": "Build your selector sheet",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Create a selector table with 6 criteria and a 1 to 5 scoring scale.",
+                    "Add short scoring rules so 3 means the same across ideas.",
+                    "Add a notes column for evidence and assumptions."
+                ],
+                "items": [
+                    {
+                        "id": "d6_do1_i1",
+                        "label": "Created a selector table with 6 criteria and 1 to 5 scale",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your selector table headings and the 1 to 5 scale definition."
+                    },
+                    {
+                        "id": "d6_do1_i2",
+                        "label": "Wrote scoring rules for each criterion",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 6 short scoring rules, one per criterion."
+                    },
+                    {
+                        "id": "d6_do1_i3",
+                        "label": "Added a notes field for evidence and assumptions",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the notes field label or description you will use."
+                    },
+                    {
+                        "id": "d6_do1_i4",
+                        "label": "Listed your candidate ideas to compare",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 3 to 5 candidate idea titles added to the selector."
+                    }
+                ],
+                "example": "Criteria: Speed to first sale, Delivery simplicity, Clear buyer pain, Price potential, Reachability, Repeatability. Rule example: Speed 5 = can sell within 7 days, 3 = within 14 days, 1 = unclear."
+            },
+            {
+                "id": "d6_do2",
+                "title": "Score and rank ideas",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Score each idea from 1 to 5 on all criteria.",
+                    "Add one short evidence note per criterion where possible.",
+                    "Total the scores and rank ideas."
+                ],
+                "items": [
+                    {
+                        "id": "d6_do2_i1",
+                        "label": "Scored each idea on all 6 criteria",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your completed score grid (idea rows x 6 criteria)."
+                    },
+                    {
+                        "id": "d6_do2_i2",
+                        "label": "Wrote at least 6 evidence notes across the table",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List at least 6 evidence notes you added to the selector."
+                    },
+                    {
+                        "id": "d6_do2_i3",
+                        "label": "Calculated totals and ranked the ideas",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide totals per idea and a ranked list from best to worst."
+                    },
+                    {
+                        "id": "d6_do2_i4",
+                        "label": "Flagged the top 2 risks for the highest-ranked idea",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List the top 2 risks for the leading idea."
+                    }
+                ],
+                "example": "Leading idea total: 24/30. Risks: Hard to reach buyers without audience and Scope could expand if intake is unclear."
+            },
+            {
+                "id": "d6_do3",
+                "title": "Make the week decision",
+                "estimatedMinutes": 10,
+                "steps": [
+                    "Choose your primary idea and backup based on ranking and risks.",
+                    "Write a one-paragraph decision note that explains why.",
+                    "Define what evidence would cause you to switch to the backup."
+                ],
+                "items": [
+                    {
+                        "id": "d6_do3_i1",
+                        "label": "Selected a primary idea and a backup idea",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write two titles labeled Primary and Backup."
+                    },
+                    {
+                        "id": "d6_do3_i2",
+                        "label": "Wrote a decision note paragraph",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your one-paragraph decision note."
+                    },
+                    {
+                        "id": "d6_do3_i3",
+                        "label": "Defined 2 switch triggers based on evidence",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write two rules in the form: If X evidence happens, I switch to backup."
+                    },
+                    {
+                        "id": "d6_do3_i4",
+                        "label": "Wrote one next action for tomorrow's detective work",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write one concrete action you will do in Day 7."
+                    }
+                ],
+                "example": "Switch trigger: If fewer than 2 of 10 targeted people show interest at the stated price, switch. Next action: Find 10 existing offers that resemble this service and record prices and scope."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Selector table template with scoring rules and listed ideas",
+                "Completed scores, evidence notes, totals, and ranking",
+                "Primary and backup decision with a decision note",
+                "Evidence-based switch triggers and next action"
+            ],
+            "tomorrowPreview": "Tomorrow you will gather real-world clues about demand, pricing, and competition so your offer is grounded in what people already buy."
+        }
     },
     {
         "day": 7,
-        "title": "Become a Detective",
+        "title": "Day 7 - Become a Detective",
         "week": 2,
-        "goal": "Research your market and find a clear angle to differentiate",
-        "timeEstimate": "45-55 min",
-        "hook": "Competition is proof of demand. Today you study it, find the gaps, and claim your angle.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "You picked an idea. Now you need to know what you are walking into. The worst mistake is to build in a vacuum. If you do not know what exists, you cannot position yourself differently.\n\nToday you become a detective. You will research competitors, study their offers, read their reviews, and look for patterns. This is not about copying. It is about understanding.\n\nHere is the good news: competition means demand. If people are already paying for something similar, there is a market. The absence of competition usually means the absence of buyers, not untapped opportunity.\n\nHere is what you are looking for:\n\nWhat do competitors offer? Study the specifics. What is included, what is not, how is it priced, how is it delivered?\n\nWhat do customers complain about? Read reviews, comments, and forum threads. Complaints are opportunities. Each frustration is a chance to do something better or different.\n\nWhat is missing? Sometimes no one offers exactly what a segment wants. That gap is your angle.\n\nYour goal is not to be the best in the world. That is unrealistic and unnecessary. Your goal is to be different enough that you have a reason to exist. You need a clear answer to: why would someone choose you instead of the others?\n\nThe answer might be: you are faster, cheaper, more personal, more specialized, local, or more trustworthy. Any angle works if it is true and you can deliver on it.\n\nBy the end of today, you will have a short statement: I am different because _____. That statement guides everything you build."
-        },
-        "practice": {
-            "title": "The Detective Scan (5-7 minutes)",
-            "content": "Set a timer for 6 minutes. You are going to do a quick reconnaissance sweep.\n\nOpen Google, YouTube, and one marketplace (Etsy, Fiverr, Upwork, or similar depending on your idea).\n\nSearch for your offer or problem in simple terms. Example: resume help, meal planning service, logo design.\n\nFor the first 3 minutes, skim results. Do not click. Just notice: how many results? What prices do you see? What promises?\n\nFor the next 3 minutes, click into 2 or 3 competitors. Skim their offer page and read 2 reviews or comments.\n\nWhen the timer ends, write down three things:\n\n1. One thing competitors do well.\n2. One thing customers complain about.\n3. One gap no one seems to fill.\n\nThese notes are your starting point for deeper research."
-        },
-        "mission": [
+        "mainPromise": "You will collect market clues about pricing, buyers, and competing offers, then convert them into practical decisions for your offer.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Detective Scan practice",
-                "time": "7 min"
+                "id": "t1",
+                "title": "Evidence beats opinions",
+                "content": "You do not need a perfect market study. You need enough clues to avoid obvious mistakes: pricing far below value, selling to the wrong people, or offering something no one buys.\n\nMarket clues are everywhere: listings, landing pages, reviews, forums, and job posts. You are not copying anyone. You are learning what customers already pay for and how they describe the problem.\n\nYour job today is to collect evidence in a consistent way so you can compare offers and extract patterns.",
+                "soWhat": "If you do not collect evidence, your offer will be built on guesses and you will waste time rewriting later."
             },
             {
-                "task": "Search 3 to 5 platforms for competitors (Google, YouTube, Etsy, Fiverr, Reddit, etc.)",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Patterns reveal what to offer",
+                "content": "A single example can mislead you. Patterns protect you. Look for repeated elements: common deliverables, common timelines, common pricing bands, and common pain language.\n\nAlso note gaps. A gap is not no competitors. A gap is a mismatch, like offers that are expensive and slow, or offers that are broad and unclear. Your advantage can be clarity, speed, focus, or a better-defined outcome.\n\nYou will convert patterns into decisions: what you include, what you exclude, and where you can price without feeling dishonest.",
+                "soWhat": "If you do not extract patterns, your evidence stays as noise instead of guiding choices."
             },
             {
-                "task": "Document details for 5 competitors: name, link, offer, price, main promise",
-                "time": "15 min"
-            },
-            {
-                "task": "For each competitor, note what seems weak or missing",
-                "time": "10 min"
-            },
-            {
-                "task": "Collect 5 phrases customers use in reviews or comments",
-                "time": "5 min"
-            },
-            {
-                "task": "Write 3 gap hypotheses: things you could do differently",
-                "time": "5 min"
-            },
-            {
-                "task": "Choose your differentiation angle",
-                "time": "3 min"
-            },
-            {
-                "task": "Write your statement: I am different because _____",
-                "time": "3 min"
+                "id": "t3",
+                "title": "Turn clues into next steps",
+                "content": "Detective work should end in action. Today you will produce three outputs that directly shape your offer: a target price range, a scope boundary, and a channel hypothesis.\n\nA channel hypothesis is your best guess about where the first customers will come from, based on what you observed. If discussions happen on a forum, that may be your first outreach. If offers sell on marketplaces, that may be your first listing.\n\nKeep it simple. Your first customers often come from direct outreach and small communities, not from elaborate marketing.",
+                "soWhat": "If you do not convert clues into decisions, research becomes a hiding place."
             }
         ],
-        "commonMistakes": "Panicking at competition. Competition confirms demand. It is a good sign.\n\nOnly looking at the first page of Google. Check marketplaces, social media, and forums too.\n\nStopping after 2 competitors. Look at 5. Patterns appear after you see more examples.\n\nIgnoring negative reviews. Complaints are signals. They tell you what to fix.\n\nCopying competitors instead of differentiating. The goal is to find your unique angle, not to clone someone else.\n\nChoosing an angle you cannot deliver. Your differentiation must be true. Do not claim premium if you cannot deliver premium.",
-        "doneMeans": "You have documented 5 competitors, found 3 gaps, and written a differentiation statement.",
-        "reviewCTA": "Want feedback on your differentiation angle? Submit your Day 7 workbook for review."
+        "doBlocks": [
+            {
+                "id": "d7_do1",
+                "title": "Collect 10 market clues",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Find 10 examples related to your primary idea (offers, listings, or discussions).",
+                    "For each, capture price, scope, and who it is for.",
+                    "Save links and a one-line note."
+                ],
+                "items": [
+                    {
+                        "id": "d7_do1_i1",
+                        "label": "Saved 10 links related to your primary idea",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 10 URLs or reference links you collected."
+                    },
+                    {
+                        "id": "d7_do1_i2",
+                        "label": "Recorded price points for at least 6 of them",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List at least 6 prices with currency and the matching link label."
+                    },
+                    {
+                        "id": "d7_do1_i3",
+                        "label": "Recorded scope notes for all 10",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide 10 one-line scope notes, one per link."
+                    },
+                    {
+                        "id": "d7_do1_i4",
+                        "label": "Recorded target customer signals for all 10",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide 10 one-line who it is for notes, one per link."
+                    }
+                ],
+                "example": "Link: Example offer page. Price: $99. Scope: One setup, one revision, delivered in 72 hours. Customer signal: Freelancers, solo founders."
+            },
+            {
+                "id": "d7_do2",
+                "title": "Extract pricing and scope patterns",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Group your evidence into 2 to 3 price bands.",
+                    "List the most common deliverables and promises you saw.",
+                    "Identify one gap you can target and one thing you will not compete on."
+                ],
+                "items": [
+                    {
+                        "id": "d7_do2_i1",
+                        "label": "Created 2 to 3 price bands with examples in each",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write 2 to 3 price bands and list examples under each band."
+                    },
+                    {
+                        "id": "d7_do2_i2",
+                        "label": "Listed the top 5 common deliverables or scope elements",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 deliverables/scope elements that appeared repeatedly."
+                    },
+                    {
+                        "id": "d7_do2_i3",
+                        "label": "Listed the top 5 common customer pain phrases or triggers",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 phrases or triggers customers use to describe the problem."
+                    },
+                    {
+                        "id": "d7_do2_i4",
+                        "label": "Identified one gap and one not-competing-on decision",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write two lines: one gap you will target and one area you will not compete on."
+                    }
+                ],
+                "example": "Bands: $25 to $50 quick templates, $75 to $150 done-for-you setup. Gap: Fast done-for-you with fixed scope and clear handoff. Not competing on: Unlimited revisions."
+            },
+            {
+                "id": "d7_do3",
+                "title": "Make evidence-based decisions",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "Choose your target price and one backup price.",
+                    "Define your offer boundaries in 5 bullets.",
+                    "Choose one primary channel to test first and one secondary."
+                ],
+                "items": [
+                    {
+                        "id": "d7_do3_i1",
+                        "label": "Selected a target price and a backup price using your bands",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write your target price and backup price with a one-line justification for each."
+                    },
+                    {
+                        "id": "d7_do3_i2",
+                        "label": "Wrote 5 scope boundaries for your service",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 boundaries that define what is included and excluded."
+                    },
+                    {
+                        "id": "d7_do3_i3",
+                        "label": "Chose a primary and secondary acquisition channel",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Name two channels and write one line on why each fits."
+                    },
+                    {
+                        "id": "d7_do3_i4",
+                        "label": "Wrote one test plan for tomorrow's customer coffee exercise",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write 3 lines describing what you will test about the customer tomorrow."
+                    }
+                ],
+                "example": "Target price: $89 because it sits in the done-for-you band and supports a 48-hour promise. Boundaries: One workspace, one workflow, one revision, no ongoing support, delivered digitally."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Evidence list of 10 links with prices, scope, and customer signals",
+                "Extracted patterns: price bands, common deliverables, common pain language",
+                "Decisions: target price, scope boundaries, and channels to test",
+                "A short test plan for tomorrow"
+            ],
+            "tomorrowPreview": "Tomorrow you will simulate a realistic customer conversation to clarify what they care about, what they fear, and what would make them buy."
+        }
     },
     {
         "day": 8,
-        "title": "Have Imaginary Coffee with Your Ideal Customer",
+        "title": "Day 8 - Have Imaginary Coffee with Your Ideal Customer",
         "week": 2,
-        "goal": "Create a vivid avatar and understand what drives them to pay",
-        "timeEstimate": "45-55 min",
-        "hook": "Stop selling to everyone. Today you meet the one person your offer is built for.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Everyone is not your customer. If you try to serve everyone, you will resonate with no one. The most effective side hustles are built for a specific person with a specific problem.\n\nToday you create your avatar. Not a demographic profile. A real human you can picture.\n\nThink about someone who would genuinely benefit from your offer. Maybe it is someone you know. Maybe it is a version of yourself from a few years ago. Maybe it is someone you have observed online or in real life.\n\nGive them a name. Picture their day. Understand their frustration.\n\nGo beyond surface details. Yes, know their age and job. But more importantly, know what keeps them up at night. Know what they have tried and why it failed. Know what they secretly want and what they fear will happen if nothing changes.\n\nKnow their objections. What makes them hesitate to spend money? What would make them trust you? What outcome would make them feel like they got their money's worth?\n\nWhen you understand this person deeply, your marketing becomes easier. You stop guessing what to say. You just say what they need to hear.\n\nBy the end of today, you will have a one-page avatar summary. You will also write a short letter to this person. The letter is not something you send. It is an exercise to prove you understand them. If you can write it without sounding fake, you are ready to sell."
-        },
-        "practice": {
-            "title": "The Coffee Chat Visualization (5-7 minutes)",
-            "content": "Close your eyes. Imagine you are sitting across from your ideal customer at a quiet coffee shop.\n\nThey look tired. They have a problem they want to solve. They are skeptical but open.\n\nFor 2 minutes, imagine them talking. What do they say? What words do they use? What frustration shows in their voice?\n\nNow imagine yourself responding. You are not pitching. You are just listening and occasionally asking questions. What do you ask?\n\nOpen your eyes. Set a timer for 3 minutes. Write down:\n\n1. Their biggest complaint in their own words.\n2. What they tried before and why it disappointed them.\n3. What they secretly want but feel embarrassed to admit.\n\nThese notes become the foundation of your avatar."
-        },
-        "mission": [
+        "mainPromise": "You will produce a realistic customer conversation transcript, then extract the exact language and buying triggers to improve your offer.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Coffee Chat Visualization practice",
-                "time": "7 min"
+                "id": "t1",
+                "title": "You can model a customer without guessing wildly",
+                "content": "You may not have direct interviews yet. You can still create a useful model by combining three inputs: your Week 1 customer description, your Day 7 evidence, and common sense about busy people protecting time.\n\nAn imaginary conversation is not fantasy. It is a structured draft that reveals what you do not know and what you need to validate. It also forces you to write in the customer's language, not your own.\n\nThe goal is not to be right. The goal is to create a practical transcript that can be tested next week through outreach.",
+                "soWhat": "If you cannot write the customer's side of the conversation, your marketing will sound like you, not them."
             },
             {
-                "task": "Give your avatar a name and a one-line identity",
-                "time": "3 min"
+                "id": "t2",
+                "title": "Extract exact language for your offer",
+                "content": "Customers rarely buy features. They buy relief, clarity, speed, and lowered risk. Your offer should use the words customers use when they explain the problem to a friend.\n\nFrom your transcript, extract phrases that describe the pain, the desired outcome, and the decision trigger. These phrases become your headline, your bullets, and your follow-up messages.\n\nAlso identify the job to be done in plain language. For busy people, it is often: help me stop wasting time on this and trust that it is handled.",
+                "soWhat": "If you do not extract language, your offer will drift into vague promises."
             },
             {
-                "task": "Fill in basic profile: age range, role, location type",
-                "time": "5 min"
-            },
-            {
-                "task": "Describe their biggest frustration related to your offer",
-                "time": "5 min"
-            },
-            {
-                "task": "Describe what they fear will happen if nothing changes",
-                "time": "5 min"
-            },
-            {
-                "task": "Describe what they secretly want",
-                "time": "5 min"
-            },
-            {
-                "task": "List what they have tried before and why it failed",
-                "time": "5 min"
-            },
-            {
-                "task": "Describe what would make them trust you",
-                "time": "5 min"
-            },
-            {
-                "task": "Write 8 quick Q and A notes from your imaginary conversation",
-                "time": "10 min"
-            },
-            {
-                "task": "Write a short letter to your avatar (150 to 250 words)",
-                "time": "10 min"
+                "id": "t3",
+                "title": "Turn objections into design choices",
+                "content": "Objections are not only barriers. They are design requirements. If the customer fears complexity, your offer must feel simple. If they fear wasted money, your offer must reduce risk with a clear scope and outcome.\n\nYou do not need to argue with objections. You need to remove the cause. That often means tighter scope, clearer deliverables, and a defined handoff.\n\nToday you will translate objections into offer decisions you will use tomorrow when you build the offer.",
+                "soWhat": "If you do not design for objections, you will lose buyers right before they pay."
             }
         ],
-        "commonMistakes": "Making the avatar too broad. Everyone aged 25 to 45 is not specific enough.\n\nFocusing only on demographics. Age and income matter less than problems and motivations.\n\nInventing a fictional person with no grounding in reality. Base your avatar on real observations.\n\nSkipping the letter exercise. Writing to them forces you to prove you understand them.\n\nUsing marketing language in the letter. Write like a human, not a brochure.\n\nIgnoring objections and distrust. Knowing what makes them hesitate is as important as knowing what they want.",
-        "doneMeans": "You have a one-page avatar summary with profile, frustrations, desires, and a short letter written to them.",
-        "reviewCTA": "Want feedback on your avatar? Submit your Day 8 workbook for review and get suggestions on deepening your understanding."
+        "doBlocks": [
+            {
+                "id": "d8_do1",
+                "title": "Write a customer transcript",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Choose one customer type from your evidence (for example, freelancers, managers, students).",
+                    "Write a 12 to 16 line conversation: you and the customer.",
+                    "Include problem, current workaround, why now, and what they fear."
+                ],
+                "items": [
+                    {
+                        "id": "d8_do1_i1",
+                        "label": "Wrote a 12 to 16 line transcript with both voices",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your full transcript (12 to 16 lines) showing both voices."
+                    },
+                    {
+                        "id": "d8_do1_i2",
+                        "label": "Included the customer's current workaround and cost of it",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste the 2 lines where the customer describes the workaround and its cost."
+                    },
+                    {
+                        "id": "d8_do1_i3",
+                        "label": "Included a clear why-now trigger",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste the line that shows why the customer wants a solution now."
+                    },
+                    {
+                        "id": "d8_do1_i4",
+                        "label": "Included at least 2 customer fears or objections",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste 2 lines that show fears or objections."
+                    }
+                ],
+                "example": "Customer: I keep rewriting the same plan every week. I lose an hour and still miss tasks. You: If I set up a simple system in 48 hours, what would change? Customer: I would stop feeling behind by Monday morning."
+            },
+            {
+                "id": "d8_do2",
+                "title": "Build a voice-of-customer bank",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Pull 10 phrases from your transcript and Day 7 evidence.",
+                    "Label each phrase as Pain, Outcome, Trigger, or Objection.",
+                    "Choose 3 phrases to use directly in your offer copy."
+                ],
+                "items": [
+                    {
+                        "id": "d8_do2_i1",
+                        "label": "Collected 10 customer phrases",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 10 phrases pulled from your transcript and evidence."
+                    },
+                    {
+                        "id": "d8_do2_i2",
+                        "label": "Labeled each phrase by type",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Provide the same 10 phrases with labels: Pain, Outcome, Trigger, or Objection."
+                    },
+                    {
+                        "id": "d8_do2_i3",
+                        "label": "Selected 3 phrases to use in your offer",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List the 3 phrases you will use directly in offer copy."
+                    },
+                    {
+                        "id": "d8_do2_i4",
+                        "label": "Wrote one job to be done sentence",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one plain-English sentence describing what the customer hires you to do."
+                    }
+                ],
+                "example": "Pain: I keep fixing the same mess every week. Outcome: I want a system I do not have to think about. Objection: I'm worried this will become another tool I never use."
+            },
+            {
+                "id": "d8_do3",
+                "title": "Create objection handlers",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "List your top 5 objections from transcript and evidence.",
+                    "For each, write an offer design response (scope, process, proof, guarantee).",
+                    "Write one short reassurance line you can use in messages."
+                ],
+                "items": [
+                    {
+                        "id": "d8_do3_i1",
+                        "label": "Listed your top 5 objections",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 objections in the customer's words."
+                    },
+                    {
+                        "id": "d8_do3_i2",
+                        "label": "Wrote an offer design response for each objection",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write 5 paired lines: objection then design response."
+                    },
+                    {
+                        "id": "d8_do3_i3",
+                        "label": "Wrote 3 reassurance lines using customer language",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Write 3 short lines you could send in a message to reduce worry."
+                    },
+                    {
+                        "id": "d8_do3_i4",
+                        "label": "Updated your scope boundaries based on objections",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Paste your updated scope boundaries or list the 2 changes you made."
+                    }
+                ],
+                "example": "Objection: I do not have time to learn a new system. Design response: Done-for-you setup plus a 5-minute walkthrough video. Reassurance: You will not be maintaining this daily. It is built to run quietly."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "A realistic customer conversation transcript",
+                "A labeled voice-of-customer phrase bank with selected phrases",
+                "A list of objections with design responses and reassurance lines",
+                "Updated scope boundaries shaped by real objections"
+            ],
+            "tomorrowPreview": "Tomorrow you will turn your idea into a sellable offer with a clear scope, deliverables, process, and price."
+        }
     },
     {
         "day": 9,
-        "title": "Transform Your Idea into an Offer",
+        "title": "Day 9 - Transform Your Idea into an Offer",
         "week": 2,
-        "goal": "Package your idea into a clear, sellable offer with promise, pitch, and price",
-        "timeEstimate": "50-60 min",
-        "hook": "An idea is a thought. An offer is something someone can buy. Today you build the package.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "You have an idea and an avatar. But ideas do not sell. Offers do. An offer is specific, bounded, and priced. It answers the question: what exactly do I get if I pay you?\n\nVague offers create confusion. Confusion kills sales. If a potential customer cannot understand your offer in 30 seconds, they will not buy.\n\nToday you define your offer with precision:\n\nWhat do they receive? List the deliverables. A course? A call? A template? A product? Be concrete.\n\nWhat problem does it solve? State the problem in their words, not industry jargon. If your avatar would not use a word, do not use it.\n\nWhat outcome can they expect? Outcomes are what people pay for. Not the thing itself, but what the thing does for them.\n\nHow is it delivered? In person, online, via email, on a call? Be clear.\n\nHow long does it take? Same day, a week, a month?\n\nWhat is not included? Boundaries prevent scope creep and set expectations.\n\nWhat does it cost? Price it simply. One-time, hourly, package, or subscription.\n\nYou will also write two pitches. The first is one sentence. This is your cocktail party answer to what do you do. The second is five sentences. This is for a landing page or longer conversation.\n\nFinally, you will consider a basic version and a premium version. Not because you need both, but because thinking in tiers helps clarify value.\n\nBy the end of today, you have a sellable offer. Not perfect. Not final. But clear enough that you could describe it to a stranger and they would understand."
-        },
-        "practice": {
-            "title": "The Promise and Boundaries Exercise (4-6 minutes)",
-            "content": "Set a timer for 5 minutes.\n\nAnswer these questions without stopping to edit:\n\n1. After someone pays me, what do they walk away with? (The deliverable)\n2. What changes for them? (The outcome)\n3. What am I definitely not doing for them? (The boundary)\n\nNow reread your answers. Circle any vague words. Replace them with specifics.\n\nExample: Help them with their resume becomes Rewrite their resume and record a 10-minute video explaining the changes.\n\nExample: Support during the process becomes Two 30-minute calls plus unlimited email for 14 days.\n\nSpecificity is your friend. Vague promises sound weak."
-        },
-        "mission": [
+        "mainPromise": "You will create a clear offer package that someone can understand quickly, including deliverables, process, boundaries, and price.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Promise and Boundaries exercise",
-                "time": "6 min"
+                "id": "t1",
+                "title": "An offer is a specific trade",
+                "content": "An idea is a direction. An offer is a trade: money exchanged for a defined result, delivered in a defined way, within a defined time.\n\nA strong offer reduces uncertainty. It tells the buyer what happens after they pay, what they receive, how long it takes, and what you need from them. It also tells them what is not included.\n\nFor a small online service, the offer should be simple enough to explain in one paragraph and deliver repeatedly without reinventing the work each time.",
+                "soWhat": "If you do not define the trade precisely, you will attract the wrong customers and create scope creep."
             },
             {
-                "task": "Write your offer name",
-                "time": "3 min"
+                "id": "t2",
+                "title": "Price and packaging shape behavior",
+                "content": "Pricing is not only money. It sets expectations. Low prices often invite unclear requests and endless messages. Clear prices and clear scope invite better customers.\n\nPackaging is your way to protect delivery. Many service offers work best as one fixed package, at least at the start. If you add options, keep them limited and meaningful, like Basic vs Plus, not five confusing tiers.\n\nA practical approach is: one core package and one add-on that is easy to deliver. This keeps your sales conversation simple.",
+                "soWhat": "If you do not package intentionally, your offer will become custom work and your profit will collapse."
             },
             {
-                "task": "Write who it is for (from your Day 8 avatar)",
-                "time": "3 min"
-            },
-            {
-                "task": "Write the promise in plain language",
-                "time": "5 min"
-            },
-            {
-                "task": "List the deliverables: what exactly do they receive",
-                "time": "5 min"
-            },
-            {
-                "task": "Choose delivery format and time to deliver",
-                "time": "5 min"
-            },
-            {
-                "task": "Write what is not included",
-                "time": "5 min"
-            },
-            {
-                "task": "Write your one-sentence pitch",
-                "time": "5 min"
-            },
-            {
-                "task": "Write your five-sentence pitch",
-                "time": "10 min"
-            },
-            {
-                "task": "Set your price model and price point",
-                "time": "5 min"
-            },
-            {
-                "task": "Describe basic version and premium version differences",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Make the offer easy to buy",
+                "content": "Even a good offer fails if the next step is unclear. Your buyer should know exactly how to start: what to click, what to submit, and what happens next.\n\nYou will draft the buyer flow in plain steps. This is not a full website build. It is a process map your future page and messages will follow.\n\nA good buyer flow also includes proof elements. Early proof can be simple: a short checklist of what they receive, a before-after description, and a clear scope statement.",
+                "soWhat": "If you do not define the buyer flow, you will lose interested people through friction and confusion."
             }
         ],
-        "commonMistakes": "Being vague about deliverables. They get a course is not enough. How many modules? How long? What format?\n\nUsing jargon the avatar would not understand. Write in their language.\n\nSkipping boundaries. Without clear limits, you risk scope creep and resentment.\n\nPricing before understanding value. Think about what outcome is worth to them, not just what it costs you.\n\nWriting the pitch in marketing speak. Write like you talk. Authenticity beats polish.\n\nTrying to be everything to everyone. A focused offer beats a broad one.\n\nForgetting risk reversal. What happens if they are not happy? Have an answer.\n\nNot thinking about where to find the first 3 customers. Your offer is useless if no one sees it.",
-        "doneMeans": "You have a clear offer with name, promise, deliverables, boundaries, pitches, and price.",
-        "reviewCTA": "Want feedback on your offer? Submit your Day 9 workbook for review and get suggestions on clarity and pricing."
+        "doBlocks": [
+            {
+                "id": "d9_do1",
+                "title": "Write the offer one-pager",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write a one-paragraph offer summary using customer phrases from Day 8.",
+                    "List deliverables and timeline.",
+                    "List boundaries and what you need from the customer."
+                ],
+                "items": [
+                    {
+                        "id": "d9_do1_i1",
+                        "label": "Wrote a one-paragraph offer summary",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your one-paragraph offer summary."
+                    },
+                    {
+                        "id": "d9_do1_i2",
+                        "label": "Listed 3 to 6 deliverables with a timeline",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List deliverables and include the delivery timeline next to each or overall."
+                    },
+                    {
+                        "id": "d9_do1_i3",
+                        "label": "Listed 5 scope boundaries",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 boundaries that define what is included and excluded."
+                    },
+                    {
+                        "id": "d9_do1_i4",
+                        "label": "Listed customer inputs required to start",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 3 to 5 inputs you need from the customer to begin."
+                    }
+                ],
+                "example": "Summary: In 48 hours, I set up a simple workflow that stops you from rebuilding your plan every week and saves you time. Deliverables: Intake form, setup, checklist, 5-min walkthrough video, one revision."
+            },
+            {
+                "id": "d9_do2",
+                "title": "Build your price and package",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Choose one core package price (target price) and confirm it matches your unit economics.",
+                    "Define one add-on and its price.",
+                    "Write a simple refund or revision policy that protects your time."
+                ],
+                "items": [
+                    {
+                        "id": "d9_do2_i1",
+                        "label": "Set a core package price and wrote the price justification",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write your core price and a 2-line justification based on evidence and effort."
+                    },
+                    {
+                        "id": "d9_do2_i2",
+                        "label": "Defined one add-on with price and scope",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Describe one add-on, include its price and what it includes."
+                    },
+                    {
+                        "id": "d9_do2_i3",
+                        "label": "Wrote a revision policy",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write 3 to 5 lines that define revisions and limits."
+                    },
+                    {
+                        "id": "d9_do2_i4",
+                        "label": "Wrote a refund policy or satisfaction rule",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write 2 to 4 lines describing refunds or satisfaction conditions."
+                    }
+                ],
+                "example": "Core: $89 fixed scope, delivered in 48 hours. Add-on: $29 monthly check-in once, 20-minute review by email. Revision: One revision within 7 days, limited to agreed scope."
+            },
+            {
+                "id": "d9_do3",
+                "title": "Draft the buyer flow",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "Write the 6-step buyer flow from first contact to delivery completion.",
+                    "Draft a short call-to-action message you can send.",
+                    "Draft a simple what you get bullet list for a landing page."
+                ],
+                "items": [
+                    {
+                        "id": "d9_do3_i1",
+                        "label": "Wrote a 6-step buyer flow",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide 6 numbered steps from first contact to delivery completion."
+                    },
+                    {
+                        "id": "d9_do3_i2",
+                        "label": "Drafted a short call-to-action message",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Write a 4 to 7 line message someone could send to start the process."
+                    },
+                    {
+                        "id": "d9_do3_i3",
+                        "label": "Wrote a what-you-get list with 5 bullets",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 bullets describing what the customer receives."
+                    },
+                    {
+                        "id": "d9_do3_i4",
+                        "label": "Wrote a short scope warning line to prevent mismatch",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one sentence that warns about fit and scope."
+                    }
+                ],
+                "example": "CTA: If you want this done this week, reply with workflow and I will send a short intake form. You will get delivery in 48 hours after intake. Scope warning: This is a one-time setup, not ongoing daily management."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Offer one-pager: summary, deliverables, boundaries, customer inputs",
+                "Core package price plus one add-on, with policies",
+                "Buyer flow steps and CTA message",
+                "What-you-get bullets and a scope warning line"
+            ],
+            "tomorrowPreview": "Tomorrow you will write an origin story that makes your offer believable and human, without sounding like a sales pitch."
+        }
     },
     {
         "day": 10,
-        "title": "Create Your Origins Story",
+        "title": "Day 10 - Create Your Origins Story",
         "week": 2,
-        "goal": "Craft a true, simple story that builds trust and connection",
-        "timeEstimate": "40-50 min",
-        "hook": "People buy from people they trust. Your story is how they decide to trust you.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "You have an offer. Now you need a reason for people to listen. That reason is your story.\n\nPeople do not buy from faceless businesses. They buy from humans with motives, experiences, and credibility. Your origin story answers the questions: Why are you doing this? Why should I believe you can help me?\n\nThis is not about bragging. It is not about inventing drama. It is about honest connection.\n\nA good origin story follows a simple arc:\n\nYou noticed a problem. Something bothered you or someone you cared about. You saw a gap, a frustration, a need.\n\nYou cared enough to act. Most people notice problems and do nothing. You decided to do something. Why?\n\nYou figured something out. Through experience, trial, or study, you learned how to solve it or make progress on it.\n\nNow you are sharing that solution. You are offering your knowledge, skill, or service to others who face the same problem.\n\nThat is the arc. Keep it simple and true.\n\nYour credibility does not need to be a degree or a decade of experience. It can be lived experience. It can be intensive research. It can be relatability. I struggled with this too is powerful. I spent 200 hours learning this so you do not have to is powerful.\n\nDo not fake drama. Do not exaggerate. Authenticity beats polish. If your story is simple, keep it simple. Real resonates.\n\nToday you will write three versions of your story: short (50 words), medium (150 words), and full (300 words). Each has its use. The short version is for introductions and bios. The medium is for about pages. The full is for landing pages and sales conversations."
-        },
-        "practice": {
-            "title": "The Turning Point Reflection (4-6 minutes)",
-            "content": "Set a timer for 5 minutes.\n\nClose your eyes briefly. Think back to the moment when you first noticed the problem your offer solves. Where were you? What triggered it? Who was involved?\n\nNow think about the moment you decided to act. What shifted? Was it frustration reaching a peak? Was it seeing someone else succeed? Was it a specific insight?\n\nOpen your eyes and write:\n\n1. The moment I noticed the problem was when _____.\n2. What pushed me to act was _____.\n3. What I figured out was _____.\n\nThese three answers form the skeleton of your story."
-        },
-        "mission": [
+        "mainPromise": "You will craft a believable origin story and credibility set that makes your offer trustworthy without overselling.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Turning Point Reflection practice",
-                "time": "6 min"
+                "id": "t1",
+                "title": "Trust comes from specificity",
+                "content": "People do not trust big claims. They trust specific reasons. Your origin story should answer: why you noticed this problem, why you care, and why you can deliver a good result.\n\nThis is not a dramatic life story. It is a short explanation that makes your offer feel real. A simple, honest origin story can reduce buyer risk more than a long list of features.\n\nThink in scenes. A scene is a moment where you saw the frustration clearly: a friend overwhelmed, a repeated issue in your own life, or a pattern you observed in work.",
+                "soWhat": "If you cannot explain why you are doing this, your offer will feel generic and easy to ignore."
             },
             {
-                "task": "Write: when you first noticed the problem",
-                "time": "5 min"
+                "id": "t2",
+                "title": "Credibility is proof of process",
+                "content": "Credibility is not bragging. It is showing that you have a method and boundaries. Buyers want to know you can deliver consistently.\n\nEarly credibility can be light: a clear process, a clear scope, and a clear deliverable list. If you have relevant experience, mention it briefly and concretely. If not, do not invent it. Use your evidence and your design choices.\n\nA helpful credibility tool is a credibility set: three small proof points that can appear on a landing page or in a message.",
+                "soWhat": "If you do not define credibility, buyers will assume risk and delay."
             },
             {
-                "task": "Write: why you cared enough to act",
-                "time": "5 min"
-            },
-            {
-                "task": "Write: what experience or proof makes you credible",
-                "time": "5 min"
-            },
-            {
-                "task": "Write: who you want to help",
-                "time": "3 min"
-            },
-            {
-                "task": "Write: your mission in one sentence",
-                "time": "3 min"
-            },
-            {
-                "task": "Write: the turning point that made you act",
-                "time": "5 min"
-            },
-            {
-                "task": "Write your 50-word story",
-                "time": "5 min"
-            },
-            {
-                "task": "Write your 150-word story",
-                "time": "7 min"
-            },
-            {
-                "task": "Write your 300-word story",
-                "time": "10 min"
-            },
-            {
-                "task": "Choose where you will place this story",
-                "time": "3 min"
+                "id": "t3",
+                "title": "Prepare words you can reuse",
+                "content": "You will use your story and credibility in multiple places: a landing page, a DM, an email, and a payment page. If you write them once in reusable formats, you move faster later.\n\nYou need three reusable assets: a one-sentence pitch, a short paragraph pitch, and a message you can send to a potential buyer.\n\nEach asset should reflect your customer language from Day 8 and your scope boundaries from Day 9.",
+                "soWhat": "If you do not prepare reusable assets, you will rewrite from scratch every time you talk to someone."
             }
         ],
-        "commonMistakes": "Inventing credentials you do not have. Fake stories backfire. Authenticity matters.\n\nMaking it all about you. The story should explain why you can help them, not just why you are great.\n\nBeing too vague. I always loved helping people is weak. Be specific about what, when, and how.\n\nAdding unnecessary drama. If your story is simple, keep it simple. Forced drama feels fake.\n\nUsing marketing language. Write like a human talking to another human.\n\nForgetting the mission. Your story should end with what you are offering and why it matters.\n\nNot tying the story to the offer. The story should naturally lead to why your offer exists.\n\nWriting only one version. Different contexts need different lengths. Write all three.",
-        "doneMeans": "You have a true origin story in three lengths (50, 150, 300 words) and know where you will use it.",
-        "reviewCTA": "Want feedback on your story? Submit your Day 10 workbook for review and get suggestions on clarity and connection."
+        "doBlocks": [
+            {
+                "id": "d10_do1",
+                "title": "Write your origin story draft",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write a 3-part origin story: the scene, the insight, the decision.",
+                    "Keep it under 170 words.",
+                    "End with one sentence that links to your offer outcome."
+                ],
+                "items": [
+                    {
+                        "id": "d10_do1_i1",
+                        "label": "Wrote the scene in 2 to 3 sentences",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your 2 to 3 sentence scene."
+                    },
+                    {
+                        "id": "d10_do1_i2",
+                        "label": "Wrote the insight in 2 to 3 sentences",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your 2 to 3 sentence insight."
+                    },
+                    {
+                        "id": "d10_do1_i3",
+                        "label": "Wrote the decision and outcome link in 2 to 3 sentences",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your 2 to 3 sentence decision and outcome link."
+                    },
+                    {
+                        "id": "d10_do1_i4",
+                        "label": "Produced a single 120 to 170 word combined origin story",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the final origin story (120 to 170 words)."
+                    }
+                ],
+                "example": "Scene: I watched a freelancer spend Sunday night rebuilding a plan from scratch again. Insight: The issue was not motivation. It was a messy system that kept breaking. Decision: I started packaging simple setups that remove weekly friction in 48 hours."
+            },
+            {
+                "id": "d10_do2",
+                "title": "Build your credibility set",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write your 5-step delivery process in plain language.",
+                    "Write 3 credibility proof points that do not require testimonials.",
+                    "Write one short bio line that matches the offer."
+                ],
+                "items": [
+                    {
+                        "id": "d10_do2_i1",
+                        "label": "Wrote a 5-step delivery process",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 numbered steps describing your delivery process."
+                    },
+                    {
+                        "id": "d10_do2_i2",
+                        "label": "Wrote 3 credibility proof points",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 3 proof points that do not require testimonials."
+                    },
+                    {
+                        "id": "d10_do2_i3",
+                        "label": "Wrote one short bio line",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write a one-sentence bio aligned to the offer."
+                    },
+                    {
+                        "id": "d10_do2_i4",
+                        "label": "Wrote one what-I-will-not-do line",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one sentence that sets expectations by stating what you will not do."
+                    }
+                ],
+                "example": "Proof points: Fixed intake form, fixed scope checklist, delivery within 48 hours. Bio line: I build simple digital workflows that save busy people time and reduce frustration."
+            },
+            {
+                "id": "d10_do3",
+                "title": "Create your reusable scripts",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "Write a one-sentence pitch with outcome and timeframe.",
+                    "Write a 70 to 100 word paragraph pitch with deliverables.",
+                    "Write a 6 to 9 line outreach message that invites a simple next step."
+                ],
+                "items": [
+                    {
+                        "id": "d10_do3_i1",
+                        "label": "Wrote a one-sentence pitch",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your one-sentence pitch with outcome and timeframe."
+                    },
+                    {
+                        "id": "d10_do3_i2",
+                        "label": "Wrote a 70 to 100 word paragraph pitch",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your paragraph pitch (70 to 100 words)."
+                    },
+                    {
+                        "id": "d10_do3_i3",
+                        "label": "Wrote a 6 to 9 line outreach message",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the outreach message (6 to 9 lines) inviting a simple next step."
+                    },
+                    {
+                        "id": "d10_do3_i4",
+                        "label": "Wrote a subject line or opener for your message",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one subject line or opening line."
+                    }
+                ],
+                "example": "One-sentence pitch: In 48 hours, I set up a simple workflow that saves you time each week and stops the recurring admin mess. Opener: Quick question: are you still rebuilding your weekly plan from scratch?"
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Final 120 to 170 word origin story",
+                "Credibility set: 5-step process, proof points, bio, expectation setter",
+                "Reusable scripts: one-sentence pitch, paragraph pitch, outreach message",
+                "A clean language pack you can paste into pages and messages"
+            ],
+            "tomorrowPreview": "Next week you will start building the simple assets that let you validate demand and collect first customers without overbuilding."
+        }
     },
     {
         "day": 11,

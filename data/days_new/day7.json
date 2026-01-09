@@ -1,0 +1,149 @@
+{
+    "day": 7,
+    "title": "Day 7 - Become a Detective",
+    "week": 2,
+    "mainPromise": "You will collect market clues about pricing, buyers, and competing offers, then convert them into practical decisions for your offer.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Evidence beats opinions",
+            "content": "You do not need a perfect market study. You need enough clues to avoid obvious mistakes: pricing far below value, selling to the wrong people, or offering something no one buys.\n\nMarket clues are everywhere: listings, landing pages, reviews, forums, and job posts. You are not copying anyone. You are learning what customers already pay for and how they describe the problem.\n\nYour job today is to collect evidence in a consistent way so you can compare offers and extract patterns.",
+            "soWhat": "If you do not collect evidence, your offer will be built on guesses and you will waste time rewriting later."
+        },
+        {
+            "id": "t2",
+            "title": "Patterns reveal what to offer",
+            "content": "A single example can mislead you. Patterns protect you. Look for repeated elements: common deliverables, common timelines, common pricing bands, and common pain language.\n\nAlso note gaps. A gap is not no competitors. A gap is a mismatch, like offers that are expensive and slow, or offers that are broad and unclear. Your advantage can be clarity, speed, focus, or a better-defined outcome.\n\nYou will convert patterns into decisions: what you include, what you exclude, and where you can price without feeling dishonest.",
+            "soWhat": "If you do not extract patterns, your evidence stays as noise instead of guiding choices."
+        },
+        {
+            "id": "t3",
+            "title": "Turn clues into next steps",
+            "content": "Detective work should end in action. Today you will produce three outputs that directly shape your offer: a target price range, a scope boundary, and a channel hypothesis.\n\nA channel hypothesis is your best guess about where the first customers will come from, based on what you observed. If discussions happen on a forum, that may be your first outreach. If offers sell on marketplaces, that may be your first listing.\n\nKeep it simple. Your first customers often come from direct outreach and small communities, not from elaborate marketing.",
+            "soWhat": "If you do not convert clues into decisions, research becomes a hiding place."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d7_do1",
+            "title": "Collect 10 market clues",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Find 10 examples related to your primary idea (offers, listings, or discussions).",
+                "For each, capture price, scope, and who it is for.",
+                "Save links and a one-line note."
+            ],
+            "items": [
+                {
+                    "id": "d7_do1_i1",
+                    "label": "Saved 10 links related to your primary idea",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 10 URLs or reference links you collected."
+                },
+                {
+                    "id": "d7_do1_i2",
+                    "label": "Recorded price points for at least 6 of them",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List at least 6 prices with currency and the matching link label."
+                },
+                {
+                    "id": "d7_do1_i3",
+                    "label": "Recorded scope notes for all 10",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide 10 one-line scope notes, one per link."
+                },
+                {
+                    "id": "d7_do1_i4",
+                    "label": "Recorded target customer signals for all 10",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide 10 one-line who it is for notes, one per link."
+                }
+            ],
+            "example": "Link: Example offer page. Price: $99. Scope: One setup, one revision, delivered in 72 hours. Customer signal: Freelancers, solo founders."
+        },
+        {
+            "id": "d7_do2",
+            "title": "Extract pricing and scope patterns",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Group your evidence into 2 to 3 price bands.",
+                "List the most common deliverables and promises you saw.",
+                "Identify one gap you can target and one thing you will not compete on."
+            ],
+            "items": [
+                {
+                    "id": "d7_do2_i1",
+                    "label": "Created 2 to 3 price bands with examples in each",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write 2 to 3 price bands and list examples under each band."
+                },
+                {
+                    "id": "d7_do2_i2",
+                    "label": "Listed the top 5 common deliverables or scope elements",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 deliverables/scope elements that appeared repeatedly."
+                },
+                {
+                    "id": "d7_do2_i3",
+                    "label": "Listed the top 5 common customer pain phrases or triggers",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 phrases or triggers customers use to describe the problem."
+                },
+                {
+                    "id": "d7_do2_i4",
+                    "label": "Identified one gap and one not-competing-on decision",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write two lines: one gap you will target and one area you will not compete on."
+                }
+            ],
+            "example": "Bands: $25 to $50 quick templates, $75 to $150 done-for-you setup. Gap: Fast done-for-you with fixed scope and clear handoff. Not competing on: Unlimited revisions."
+        },
+        {
+            "id": "d7_do3",
+            "title": "Make evidence-based decisions",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Choose your target price and one backup price.",
+                "Define your offer boundaries in 5 bullets.",
+                "Choose one primary channel to test first and one secondary."
+            ],
+            "items": [
+                {
+                    "id": "d7_do3_i1",
+                    "label": "Selected a target price and a backup price using your bands",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write your target price and backup price with a one-line justification for each."
+                },
+                {
+                    "id": "d7_do3_i2",
+                    "label": "Wrote 5 scope boundaries for your service",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 boundaries that define what is included and excluded."
+                },
+                {
+                    "id": "d7_do3_i3",
+                    "label": "Chose a primary and secondary acquisition channel",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Name two channels and write one line on why each fits."
+                },
+                {
+                    "id": "d7_do3_i4",
+                    "label": "Wrote one test plan for tomorrow's customer coffee exercise",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 3 lines describing what you will test about the customer tomorrow."
+                }
+            ],
+            "example": "Target price: $89 because it sits in the done-for-you band and supports a 48-hour promise. Boundaries: One workspace, one workflow, one revision, no ongoing support, delivered digitally."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Evidence list of 10 links with prices, scope, and customer signals",
+            "Extracted patterns: price bands, common deliverables, common pain language",
+            "Decisions: target price, scope boundaries, and channels to test",
+            "A short test plan for tomorrow"
+        ],
+        "tomorrowPreview": "Tomorrow you will simulate a realistic customer conversation to clarify what they care about, what they fear, and what would make them buy."
+    }
+}
