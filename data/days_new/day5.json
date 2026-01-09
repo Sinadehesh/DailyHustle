@@ -1,0 +1,149 @@
+{
+    "day": 5,
+    "title": "Day 5 - Forecast Your Profit on the Back of a Napkin",
+    "week": 1,
+    "mainPromise": "You will estimate profit potential for your leading ideas using simple math, written assumptions, and realistic capacity.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Profit is a few simple numbers",
+            "content": "You do not need advanced finance to forecast profit. You need a small set of inputs and honest assumptions.\n\nStart with units: price per sale, time per delivery, and variable costs. Then add capacity: how many sales you can deliver per week within your time budget.\n\nWhen you write these numbers down, you can compare ideas that feel similar. One idea may look exciting but collapses when you realize it needs 6 hours per customer. Another may look boring but pays well because it is repeatable and fast.",
+            "soWhat": "If you do not quantify effort and price, you cannot choose ideas that actually improve your life."
+        },
+        {
+            "id": "t2",
+            "title": "Capacity makes forecasts real",
+            "content": "Your calendar is the real limit. A side hustle that requires high touch time has a hard ceiling.\n\nCapacity is: weekly time budget divided by time per delivery. If you have 3 hours per week and each delivery takes 90 minutes, your weekly capacity is 2 customers. That is not a judgment. It is a fact you can work with.\n\nAlso consider support time. Digital services still create questions, revisions, and follow-up. Add a small buffer so you do not lie to yourself.",
+            "soWhat": "If you do not calculate capacity, you will set goals that create stress instead of freedom."
+        },
+        {
+            "id": "t3",
+            "title": "Choose based on payback and simplicity",
+            "content": "Your best idea for this sprint is usually the one that pays back your time quickly and stays simple enough to deliver repeatedly.\n\nUse two final checks. First, payback: profit per hour should beat what you could earn from an extra shift or basic freelancing. Second, simplicity: the idea should not require heavy customization to be valuable.\n\nYou are not picking a forever business. You are picking the best next step. A good week-one choice is an idea you can sell, deliver, and learn from without burning out.",
+            "soWhat": "If you do not choose decisively now, you will drift into Week 2 without a strong candidate."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d5_do1",
+            "title": "Build a unit economics sheet",
+            "estimatedMinutes": 12,
+            "steps": [
+                "For your top 3 ideas, write price, delivery time, and variable cost.",
+                "Calculate gross profit per sale (price minus variable cost).",
+                "Calculate profit per hour (gross profit divided by delivery hours)."
+            ],
+            "items": [
+                {
+                    "id": "d5_do1_i1",
+                    "label": "Wrote price, delivery time, and variable cost for Idea #1",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter the three numbers in your log for Idea #1 and note units/currency."
+                },
+                {
+                    "id": "d5_do1_i2",
+                    "label": "Wrote price, delivery time, and variable cost for Idea #2",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter the three numbers in your log for Idea #2 and note units/currency."
+                },
+                {
+                    "id": "d5_do1_i3",
+                    "label": "Wrote price, delivery time, and variable cost for Idea #3",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter the three numbers in your log for Idea #3 and note units/currency."
+                },
+                {
+                    "id": "d5_do1_i4",
+                    "label": "Calculated gross profit per sale and profit per hour for all three",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide six calculated values: three gross profits and three profit-per-hour numbers."
+                }
+            ],
+            "example": "Price: $79, Variable cost: $4 (software), Time: 1.5 hours. Gross profit per sale: $75. Profit per hour: $50."
+        },
+        {
+            "id": "d5_do2",
+            "title": "Forecast month-one revenue",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Use your time budget to calculate weekly capacity for each idea.",
+                "Create three scenarios: cautious, base, stretch.",
+                "Convert scenarios into month-one revenue and profit estimates."
+            ],
+            "items": [
+                {
+                    "id": "d5_do2_i1",
+                    "label": "Calculated weekly delivery capacity for each of the top 3 ideas",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide three capacity numbers (customers per week), one per idea."
+                },
+                {
+                    "id": "d5_do2_i2",
+                    "label": "Wrote cautious, base, and stretch scenarios for each idea",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide 9 scenario lines total (3 scenarios x 3 ideas)."
+                },
+                {
+                    "id": "d5_do2_i3",
+                    "label": "Estimated month-one revenue for each idea under base scenario",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide three base-scenario revenue numbers with currency noted in your log."
+                },
+                {
+                    "id": "d5_do2_i4",
+                    "label": "Estimated month-one profit for each idea under base scenario",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide three base-scenario profit numbers and one assumption line for each."
+                }
+            ],
+            "example": "Weekly time: 180 minutes, Time per client: 90 minutes, Capacity: 2 clients/week. Base: 6 clients/month at $79 = $474 revenue. Profit: $474 minus $24 software = $450 (before taxes)."
+        },
+        {
+            "id": "d5_do3",
+            "title": "Make your Week 1 decision",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Choose one primary idea and one backup idea.",
+                "Write your pricing hypothesis and what must be true for it to work.",
+                "Write the next three actions you will take in Week 2."
+            ],
+            "items": [
+                {
+                    "id": "d5_do3_i1",
+                    "label": "Selected one primary idea and one backup idea",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write the two idea titles and label them primary and backup."
+                },
+                {
+                    "id": "d5_do3_i2",
+                    "label": "Wrote a pricing hypothesis for the primary idea",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste one sentence with price and promised outcome."
+                },
+                {
+                    "id": "d5_do3_i3",
+                    "label": "Listed 3 assumptions that must be true for the primary idea to work",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three must-be-true assumptions."
+                },
+                {
+                    "id": "d5_do3_i4",
+                    "label": "Wrote the next 3 actions you will take in Week 2",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write three numbered next actions."
+                }
+            ],
+            "example": "Primary: 48-hour admin workflow setup for freelancers. Backup: Weekly planning reset. Pricing hypothesis: $79 for a 48-hour delivery that saves 2 hours/week. Next actions: 1) Research competitors, 2) Draft offer page, 3) Talk to 5 target customers."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Unit economics for three ideas (price, cost, time, profit per hour)",
+            "Capacity calculations and month-one scenario forecasts",
+            "Primary and backup idea decision with a pricing hypothesis",
+            "Three assumptions and next three actions for Week 2"
+        ],
+        "tomorrowPreview": "In Week 2 you will compare ideas more sharply and start validating with real-world evidence, so you can move toward a launchable offer."
+    }
+}

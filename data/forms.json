@@ -2,866 +2,440 @@
     "1": {
         "fields": [
             {
-                "id": "five_year_snapshot",
-                "type": "TEXTAREA",
-                "label": "Five Year Snapshot",
-                "helperText": "What did you imagine in the practice? What are people worried about, using, or doing differently in 5 years?",
-                "required": true
-            },
-            {
-                "id": "goals",
-                "type": "CHECKBOX_GROUP",
-                "label": "Why are you building a side hustle?",
+                "id": "d1_do1_i1",
+                "label": "Wrote a one-sentence 27-day outcome statement",
                 "required": true,
-                "options": [
-                    "Extra income",
-                    "Pay off debt",
-                    "Build savings",
-                    "Fund travel or experiences",
-                    "Eventually replace my job",
-                    "Other"
-                ]
+                "helperText": "Paste your exact one-sentence outcome.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend1",
-                "type": "TEXT",
-                "label": "Trend 1: What change have you noticed?",
-                "helperText": "Example: More people working remotely and needing home office setups",
-                "required": true
+                "id": "d1_do1_i2",
+                "label": "Set a numeric money target for day 27",
+                "required": true,
+                "helperText": "Enter your target amount (number only) and note currency in your log.",
+                "type": "NUMBER"
             },
             {
-                "id": "trend1_prediction",
-                "type": "TEXTAREA",
-                "label": "Trend 1: Where does this lead in 2-5 years?",
-                "helperText": "Example: More demand for productivity tools, ergonomic furniture, and remote collaboration",
-                "required": true
+                "id": "d1_do1_i3",
+                "label": "Set a weekly time budget and schedule windows",
+                "required": true,
+                "helperText": "List days of week with minutes available each day.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend2",
-                "type": "TEXT",
-                "label": "Trend 2: What change have you noticed?",
-                "required": true
+                "id": "d1_do1_i4",
+                "label": "Listed 3 to 5 constraints you will not violate",
+                "required": true,
+                "helperText": "List 3 to 5 constraints (one per line).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend2_prediction",
-                "type": "TEXTAREA",
-                "label": "Trend 2: Where does this lead?",
-                "required": true
+                "id": "d1_do2_i1",
+                "label": "Described the ideal customer in 2 sentences",
+                "required": true,
+                "helperText": "Paste the two sentences describing the customer.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend3",
-                "type": "TEXT",
-                "label": "Trend 3: What change have you noticed?",
-                "required": true
+                "id": "d1_do2_i2",
+                "label": "Wrote a one-sentence offer promise with a measurable outcome",
+                "required": true,
+                "helperText": "Paste the promise sentence.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend3_prediction",
-                "type": "TEXTAREA",
-                "label": "Trend 3: Where does this lead?",
-                "required": true
+                "id": "d1_do2_i3",
+                "label": "Defined the delivery method in one sentence",
+                "required": true,
+                "helperText": "Paste the delivery sentence.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend4",
-                "type": "TEXT",
-                "label": "Trend 4: What change have you noticed?",
-                "required": false
+                "id": "d1_do2_i4",
+                "label": "Wrote one purchase-trigger scenario",
+                "required": true,
+                "helperText": "Write 3 to 5 lines describing the moment they decide to pay.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "trend5",
-                "type": "TEXT",
-                "label": "Trend 5: What change have you noticed?",
-                "required": false
+                "id": "d1_do3_i1",
+                "label": "Created a decision log template with fields",
+                "required": true,
+                "helperText": "Paste the template fields you will reuse daily.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "who_struggles",
-                "type": "TEXTAREA",
-                "label": "Who will struggle most because of these changes?",
-                "helperText": "Example: Small business owners who lack tech skills, parents juggling remote work and childcare",
-                "required": true
+                "id": "d1_do3_i2",
+                "label": "Wrote 3 Week 1 decision rules",
+                "required": true,
+                "helperText": "List your three decision rules.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "what_problem_worse",
-                "type": "TEXTAREA",
-                "label": "What specific problem will get worse for them?",
-                "helperText": "Example: Spending too much time on admin tasks, feeling isolated and unproductive",
-                "required": true
+                "id": "d1_do3_i3",
+                "label": "Listed 3 assumptions you will test later",
+                "required": true,
+                "helperText": "List three assumptions (one per line).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "what_help_paid",
-                "type": "TEXTAREA",
-                "label": "What kind of help would they pay for?",
-                "helperText": "Example: Systems setup, coaching, templates, done-for-you services",
-                "required": true
-            },
-            {
-                "id": "opportunity1",
-                "type": "TEXTAREA",
-                "label": "Opportunity Direction 1",
-                "helperText": "One area where you see potential. Example: Helping freelancers set up client management systems",
-                "required": true
-            },
-            {
-                "id": "opportunity2",
-                "type": "TEXTAREA",
-                "label": "Opportunity Direction 2",
-                "required": true
-            },
-            {
-                "id": "opportunity3",
-                "type": "TEXTAREA",
-                "label": "Opportunity Direction 3",
-                "required": true
-            },
-            {
-                "id": "opportunity4",
-                "type": "TEXTAREA",
-                "label": "Opportunity Direction 4",
-                "required": false
-            },
-            {
-                "id": "opportunity5",
-                "type": "TEXTAREA",
-                "label": "Opportunity Direction 5",
-                "required": false
-            },
-            {
-                "id": "personal_connection",
-                "type": "TEXTAREA",
-                "label": "Which directions connect to your skills or interests?",
-                "helperText": "Note any connections between your life and these opportunities",
-                "required": true
+                "id": "d1_do3_i4",
+                "label": "Wrote a stop rule for daily work",
+                "required": true,
+                "helperText": "Paste your one-sentence stop rule.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "2": {
         "fields": [
             {
-                "id": "skills",
-                "type": "TEXTAREA",
-                "label": "Skills: What do you know how to do?",
-                "helperText": "Include work skills, hobbies, and random knowledge. Example: Excel, cooking, photography, fixing bikes",
-                "required": true
+                "id": "d2_do1_i1",
+                "label": "Wrote a one-paragraph feasibility definition for this course",
+                "required": true,
+                "helperText": "Paste your feasibility definition paragraph.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "access",
-                "type": "TEXTAREA",
-                "label": "Access: What communities, groups, or networks do you belong to?",
-                "helperText": "Example: Parent groups, professional networks, online forums, student communities, languages you speak",
-                "required": true
+                "id": "d2_do1_i2",
+                "label": "Listed your existing tools and skills that support a digital service",
+                "required": true,
+                "helperText": "List 6 to 12 tools/skills you already have.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "tools",
-                "type": "TEXTAREA",
-                "label": "Tools: What equipment, software, or resources do you already have?",
-                "helperText": "Example: Camera, design software, car, large garage, spare room, professional licenses",
-                "required": true
+                "id": "d2_do1_i3",
+                "label": "Drafted a 7-day launch path with numbered steps",
+                "required": true,
+                "helperText": "Write 5 to 7 numbered steps for the first week.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "wins",
-                "type": "TEXTAREA",
-                "label": "Wins: What have people thanked you for or asked your help with?",
-                "helperText": "Example: Friends always ask me to edit their photos, coworkers ask me to explain spreadsheets",
-                "required": true
+                "id": "d2_do1_i4",
+                "label": "Identified one feasibility red flag you will reject immediately",
+                "required": true,
+                "helperText": "Write one sentence naming your feasibility red flag.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "top_assets",
-                "type": "TEXTAREA",
-                "label": "Your 5 to 8 strongest assets (circle the best from above)",
-                "helperText": "The ones that could create value for others",
-                "required": true
+                "id": "d2_do2_i1",
+                "label": "Wrote 3 first-transaction options with buyer, trigger, and price",
+                "required": true,
+                "helperText": "Paste three options. Each must include buyer, trigger, and price.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "money_tree_1",
-                "type": "TEXT",
-                "label": "Money Tree 1: Name this asset source",
-                "helperText": "Example: Photography skills",
-                "required": true
+                "id": "d2_do2_i2",
+                "label": "Estimated delivery effort for each option in minutes",
+                "required": true,
+                "helperText": "Provide three minute estimates, one per option.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "money_tree_1_value",
-                "type": "TEXTAREA",
-                "label": "Why is this valuable to someone?",
-                "helperText": "Example: People need photos but lack time or skill to take good ones themselves",
-                "required": true
+                "id": "d2_do2_i3",
+                "label": "Chose one option as your Month 1 $100 path",
+                "required": true,
+                "helperText": "Write one sentence: I choose option X because...",
+                "type": "TEXTAREA"
             },
             {
-                "id": "seed_1a",
-                "type": "TEXT",
-                "label": "Idea Seed 1A from this tree",
-                "helperText": "Example: Event photography for small businesses",
-                "required": true
+                "id": "d2_do2_i4",
+                "label": "Wrote one sentence explaining why the chosen path is worth paying for",
+                "required": true,
+                "helperText": "Paste your value explanation sentence.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "seed_1b",
-                "type": "TEXT",
-                "label": "Idea Seed 1B from this tree",
-                "helperText": "Example: Product photography for Etsy sellers",
-                "required": true
+                "id": "d2_do3_i1",
+                "label": "Created a persuasion card template with 5 fields",
+                "required": true,
+                "helperText": "Paste your 5-field template.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "money_tree_2",
-                "type": "TEXT",
-                "label": "Money Tree 2: Name this asset source",
-                "required": true
+                "id": "d2_do3_i2",
+                "label": "Filled 3 persuasion cards for 3 service angles",
+                "required": true,
+                "helperText": "Paste three filled persuasion cards.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "money_tree_2_value",
-                "type": "TEXTAREA",
-                "label": "Why is this valuable to someone?",
-                "required": true
+                "id": "d2_do3_i3",
+                "label": "Wrote a clear why-now sentence for the best card",
+                "required": true,
+                "helperText": "Paste the why-now sentence.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "seed_2a",
-                "type": "TEXT",
-                "label": "Idea Seed 2A from this tree",
-                "required": true
-            },
-            {
-                "id": "seed_2b",
-                "type": "TEXT",
-                "label": "Idea Seed 2B from this tree",
-                "required": true
-            },
-            {
-                "id": "money_tree_3",
-                "type": "TEXT",
-                "label": "Money Tree 3: Name this asset source",
-                "required": true
-            },
-            {
-                "id": "seed_3a",
-                "type": "TEXT",
-                "label": "Idea Seed 3A from this tree",
-                "required": true
-            },
-            {
-                "id": "seed_3b",
-                "type": "TEXT",
-                "label": "Idea Seed 3B from this tree",
-                "required": false
-            },
-            {
-                "id": "money_tree_4",
-                "type": "TEXT",
-                "label": "Money Tree 4: Name this asset source",
-                "required": false
-            },
-            {
-                "id": "seed_4a",
-                "type": "TEXT",
-                "label": "Idea Seed 4A from this tree",
-                "required": false
-            },
-            {
-                "id": "money_tree_5",
-                "type": "TEXT",
-                "label": "Money Tree 5: Name this asset source",
-                "required": false
-            },
-            {
-                "id": "seed_5a",
-                "type": "TEXT",
-                "label": "Idea Seed 5A from this tree",
-                "required": false
-            },
-            {
-                "id": "trend_overlap",
-                "type": "TEXTAREA",
-                "label": "Which idea seeds connect to your Day 1 opportunity directions?",
-                "helperText": "Star any seeds that match both an asset and a trend",
-                "required": true
-            },
-            {
-                "id": "total_seeds",
-                "type": "NUMBER",
-                "label": "Total idea seeds generated today",
-                "helperText": "Aim for 10 to 20",
-                "required": true
+                "id": "d2_do3_i4",
+                "label": "Wrote one risk-reducer for the best card",
+                "required": true,
+                "helperText": "Write one line that reduces buyer risk (scope, timeline, guarantee, or clarity).",
+                "type": "TEXTAREA"
             }
         ]
     },
     "3": {
         "fields": [
             {
-                "id": "methods_used",
-                "type": "CHECKBOX_GROUP",
-                "label": "Which methods did you use today?",
+                "id": "d3_do1_i1",
+                "label": "Wrote 4 time waster idea seeds",
                 "required": true,
-                "options": [
-                    "Brainstorm",
-                    "Borrow",
-                    "Steal"
-                ]
+                "helperText": "List four idea seeds based on time-wasting problems.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "brainstorm_ideas",
-                "type": "TEXTAREA",
-                "label": "Brainstorm ideas: List 8 to 12 problems or frustrations you could solve",
-                "helperText": "Each problem is an idea. Example: People hate meal planning, parents need babysitter backup, freelancers lose receipts",
-                "required": true
+                "id": "d3_do1_i2",
+                "label": "Wrote 4 confusion to clarity idea seeds",
+                "required": true,
+                "helperText": "List four idea seeds where the customer wants clarity.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "borrow_1_source",
-                "type": "TEXT",
-                "label": "Borrow 1: What successful side hustle did you find?",
-                "helperText": "Example: Local dog walking service",
-                "required": true
+                "id": "d3_do1_i3",
+                "label": "Wrote 4 adapt an existing offer idea seeds",
+                "required": true,
+                "helperText": "List four idea seeds adapted from existing offers you have seen.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "borrow_1_adapt",
-                "type": "TEXT",
-                "label": "How would you adapt it for a different audience?",
-                "helperText": "Example: Cat sitting for apartment dwellers in my area",
-                "required": true
+                "id": "d3_do1_i4",
+                "label": "Starred your top 5 idea seeds",
+                "required": true,
+                "helperText": "Mark five items in your 12-idea list as top candidates.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "borrow_2_source",
-                "type": "TEXT",
-                "label": "Borrow 2: What successful side hustle did you find?",
-                "required": true
+                "id": "d3_do2_i1",
+                "label": "Created an idea snapshot template with 7 fields",
+                "required": true,
+                "helperText": "Paste your 7-field snapshot template.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "borrow_2_adapt",
-                "type": "TEXT",
-                "label": "How would you adapt it?",
-                "required": true
+                "id": "d3_do2_i2",
+                "label": "Completed 5 idea snapshots using the template",
+                "required": true,
+                "helperText": "Paste five filled snapshots.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "borrow_3_source",
-                "type": "TEXT",
-                "label": "Borrow 3: What successful side hustle did you find?",
-                "required": true
+                "id": "d3_do2_i3",
+                "label": "Added a price guess for each snapshot",
+                "required": true,
+                "helperText": "Provide five price guesses, one per snapshot.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "borrow_3_adapt",
-                "type": "TEXT",
-                "label": "How would you adapt it?",
-                "required": true
+                "id": "d3_do2_i4",
+                "label": "Added a first-transaction channel for each snapshot",
+                "required": true,
+                "helperText": "List five channels, one per snapshot (DM, email, marketplace, landing page, etc.).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "steal_1_format",
-                "type": "TEXT",
-                "label": "Steal 1: What proven offer format did you identify?",
-                "helperText": "Example: Online course, membership, done-for-you service, templates",
-                "required": true
+                "id": "d3_do3_i1",
+                "label": "Scored all 5 ideas on three criteria",
+                "required": true,
+                "helperText": "Provide 5 entries with feasibility, profit potential, and persuasion scores (1 to 5).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "steal_1_apply",
-                "type": "TEXT",
-                "label": "How would you apply this format?",
-                "helperText": "Example: A course teaching home organization using my decluttering method",
-                "required": true
+                "id": "d3_do3_i2",
+                "label": "Ranked the 5 ideas from best to worst",
+                "required": true,
+                "helperText": "List ideas ranked 1 to 5.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "steal_1_differentiate",
-                "type": "TEXT",
-                "label": "How would you differentiate?",
-                "helperText": "Example: Focus on parents with small apartments, include video walkthroughs",
-                "required": true
+                "id": "d3_do3_i3",
+                "label": "Selected the top 3 candidates",
+                "required": true,
+                "helperText": "List the three selected idea titles.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "steal_2_format",
-                "type": "TEXT",
-                "label": "Steal 2: What proven offer format?",
-                "required": true
-            },
-            {
-                "id": "steal_2_apply",
-                "type": "TEXT",
-                "label": "How would you apply it?",
-                "required": true
-            },
-            {
-                "id": "steal_3_format",
-                "type": "TEXT",
-                "label": "Steal 3: What proven offer format?",
-                "required": false
-            },
-            {
-                "id": "steal_3_apply",
-                "type": "TEXT",
-                "label": "How would you apply it?",
-                "required": false
-            },
-            {
-                "id": "mashups",
-                "type": "TEXTAREA",
-                "label": "Mashups: What 2 to 3 weird combinations emerged?",
-                "helperText": "Example: Photography plus meal planning equals food styling tutorials for home cooks",
-                "required": true
-            },
-            {
-                "id": "total_ideas",
-                "type": "NUMBER",
-                "label": "Total ideas generated today",
-                "helperText": "Count all ideas from all methods. Aim for at least 15",
-                "required": true
-            },
-            {
-                "id": "shortlist_1",
-                "type": "TEXT",
-                "label": "Shortlist Idea 1 (gut favorite)",
-                "required": true
-            },
-            {
-                "id": "shortlist_1_why",
-                "type": "TEXTAREA",
-                "label": "Why might this work?",
-                "helperText": "2 sentences on why this has potential",
-                "required": true
-            },
-            {
-                "id": "shortlist_2",
-                "type": "TEXT",
-                "label": "Shortlist Idea 2",
-                "required": true
-            },
-            {
-                "id": "shortlist_2_why",
-                "type": "TEXTAREA",
-                "label": "Why might this work?",
-                "required": true
-            },
-            {
-                "id": "shortlist_3",
-                "type": "TEXT",
-                "label": "Shortlist Idea 3",
-                "required": true
-            },
-            {
-                "id": "shortlist_3_why",
-                "type": "TEXTAREA",
-                "label": "Why might this work?",
-                "required": true
+                "id": "d3_do3_i4",
+                "label": "Wrote a one-sentence why-this-could-work for each top 3",
+                "required": true,
+                "helperText": "Paste three one-sentence reasons, one per selected idea.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "4": {
         "fields": [
             {
-                "id": "clarity_first_pick",
-                "type": "TEXT",
-                "label": "Clarity Check: If you had to start one idea tomorrow, which would you pick?",
-                "helperText": "Your gut reaction before analysis",
-                "required": true
-            },
-            {
-                "id": "clarity_drop",
-                "type": "TEXT",
-                "label": "If you had to drop one idea right now, which would go?",
-                "required": true
-            },
-            {
-                "id": "clarity_fears",
-                "type": "TEXTAREA",
-                "label": "What are you afraid of with each idea?",
-                "helperText": "One fear per idea. Example: Idea 1 fear is no one will pay, Idea 2 fear is it will take too long",
-                "required": true
-            },
-            {
-                "id": "idea1_name",
-                "type": "TEXT",
-                "label": "Idea 1: Name",
-                "required": true
-            },
-            {
-                "id": "idea1_description",
-                "type": "TEXTAREA",
-                "label": "Idea 1: One sentence description",
-                "helperText": "Example: Weekly meal planning service for busy parents who hate cooking decisions",
-                "required": true
-            },
-            {
-                "id": "idea1_startup_days",
-                "type": "NUMBER",
-                "label": "Idea 1: Estimated days to launch first version",
-                "helperText": "Example: 7",
-                "required": true
-            },
-            {
-                "id": "idea1_startup_cost",
-                "type": "NUMBER",
-                "label": "Idea 1: Estimated startup cost in dollars",
-                "helperText": "Example: 50",
-                "required": true
-            },
-            {
-                "id": "idea1_skill_gap",
-                "type": "SELECT",
-                "label": "Idea 1: Skill gap",
+                "id": "d4_do1_i1",
+                "label": "Listed 6 obstacles for Idea #1",
                 "required": true,
-                "options": [
-                    "None",
-                    "Small",
-                    "Medium",
-                    "Large"
-                ]
+                "helperText": "List six obstacles for your first idea.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea1_complexity",
-                "type": "SELECT",
-                "label": "Idea 1: Complexity",
+                "id": "d4_do1_i2",
+                "label": "Listed 6 obstacles for Idea #2",
                 "required": true,
-                "options": [
-                    "Low",
-                    "Medium",
-                    "High"
-                ]
+                "helperText": "List six obstacles for your second idea.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea1_speed_to_sale",
-                "type": "SELECT",
-                "label": "Idea 1: Speed to first sale",
+                "id": "d4_do1_i3",
+                "label": "Listed 6 obstacles for Idea #3",
                 "required": true,
-                "options": [
-                    "1-3 days",
-                    "1 week",
-                    "2-4 weeks",
-                    "More than 1 month"
-                ]
+                "helperText": "List six obstacles for your third idea.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea1_repeat",
-                "type": "SELECT",
-                "label": "Idea 1: Repeat potential",
+                "id": "d4_do1_i4",
+                "label": "Marked top 2 launch blockers per idea and wrote mitigations",
                 "required": true,
-                "options": [
-                    "One-time",
-                    "Occasional repeat",
-                    "Subscription/recurring"
-                ]
+                "helperText": "Provide 6 blocker lines total, each followed by a mitigation line.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea1_opportunity_score",
-                "type": "NUMBER",
-                "label": "Idea 1: Opportunity score (1-10)",
-                "helperText": "How good is the upside? 10 is best",
-                "required": true
-            },
-            {
-                "id": "idea1_obstacle_score",
-                "type": "NUMBER",
-                "label": "Idea 1: Obstacle score (1-10)",
-                "helperText": "How hard are the obstacles? 10 is hardest",
-                "required": true
-            },
-            {
-                "id": "idea2_name",
-                "type": "TEXT",
-                "label": "Idea 2: Name",
-                "required": true
-            },
-            {
-                "id": "idea2_description",
-                "type": "TEXTAREA",
-                "label": "Idea 2: One sentence description",
-                "required": true
-            },
-            {
-                "id": "idea2_startup_days",
-                "type": "NUMBER",
-                "label": "Idea 2: Estimated days to launch",
-                "required": true
-            },
-            {
-                "id": "idea2_startup_cost",
-                "type": "NUMBER",
-                "label": "Idea 2: Estimated startup cost",
-                "required": true
-            },
-            {
-                "id": "idea2_skill_gap",
-                "type": "SELECT",
-                "label": "Idea 2: Skill gap",
+                "id": "d4_do2_i1",
+                "label": "Listed 6 opportunities for each of the top 3 ideas",
                 "required": true,
-                "options": [
-                    "None",
-                    "Small",
-                    "Medium",
-                    "Large"
-                ]
+                "helperText": "Paste three lists, each with six opportunities.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea2_speed_to_sale",
-                "type": "SELECT",
-                "label": "Idea 2: Speed to first sale",
+                "id": "d4_do2_i2",
+                "label": "Selected top 2 leverage points per idea",
                 "required": true,
-                "options": [
-                    "1-3 days",
-                    "1 week",
-                    "2-4 weeks",
-                    "More than 1 month"
-                ]
+                "helperText": "List six leverage points total, labeled by idea.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "idea2_opportunity_score",
-                "type": "NUMBER",
-                "label": "Idea 2: Opportunity score (1-10)",
-                "required": true
-            },
-            {
-                "id": "idea2_obstacle_score",
-                "type": "NUMBER",
-                "label": "Idea 2: Obstacle score (1-10)",
-                "required": true
-            },
-            {
-                "id": "idea3_name",
-                "type": "TEXT",
-                "label": "Idea 3: Name",
-                "required": true
-            },
-            {
-                "id": "idea3_description",
-                "type": "TEXTAREA",
-                "label": "Idea 3: One sentence description",
-                "required": true
-            },
-            {
-                "id": "idea3_startup_days",
-                "type": "NUMBER",
-                "label": "Idea 3: Estimated days to launch",
-                "required": true
-            },
-            {
-                "id": "idea3_startup_cost",
-                "type": "NUMBER",
-                "label": "Idea 3: Estimated startup cost",
-                "required": true
-            },
-            {
-                "id": "idea3_opportunity_score",
-                "type": "NUMBER",
-                "label": "Idea 3: Opportunity score (1-10)",
-                "required": true
-            },
-            {
-                "id": "idea3_obstacle_score",
-                "type": "NUMBER",
-                "label": "Idea 3: Obstacle score (1-10)",
-                "required": true
-            },
-            {
-                "id": "winner",
-                "type": "RADIO",
-                "label": "Which idea wins today?",
+                "id": "d4_do2_i3",
+                "label": "Wrote one design choice per leverage point",
                 "required": true,
-                "options": [
-                    "Idea 1",
-                    "Idea 2",
-                    "Idea 3"
-                ]
+                "helperText": "Write six design-choice lines, one per leverage point.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "why_wins",
-                "type": "TEXTAREA",
-                "label": "Why does this idea win?",
-                "helperText": "What made the difference in your evaluation",
-                "required": true
+                "id": "d4_do2_i4",
+                "label": "Wrote one unfair advantage sentence for each idea",
+                "required": true,
+                "helperText": "Paste three unfair-advantage sentences.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "top_concern",
-                "type": "TEXTAREA",
-                "label": "What concerns you most about your winner?",
-                "required": true
+                "id": "d4_do3_i1",
+                "label": "Identified one biggest uncertainty for each of the top 3 ideas",
+                "required": true,
+                "helperText": "List three uncertainties, one per idea.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "still_need_learn",
-                "type": "TEXTAREA",
-                "label": "What do you still need to learn before committing?",
-                "helperText": "Questions to answer before running numbers tomorrow",
-                "required": true
+                "id": "d4_do3_i2",
+                "label": "Designed a 48-hour experiment for each uncertainty",
+                "required": true,
+                "helperText": "Describe three experiments, one per uncertainty.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d4_do3_i3",
+                "label": "Wrote a kill rule for each idea",
+                "required": true,
+                "helperText": "Write three kill rules, one per idea.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d4_do3_i4",
+                "label": "Chose one leading idea to take into Day 5 forecasting",
+                "required": true,
+                "helperText": "Write one sentence naming your leading idea and why.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "5": {
         "fields": [
             {
-                "id": "idea_name",
-                "type": "TEXT",
-                "label": "Chosen idea name",
-                "helperText": "The idea you selected from Day 4. Example: Resume Review Service",
-                "required": true
-            },
-            {
-                "id": "offer_name",
-                "type": "TEXT",
-                "label": "Offer name",
-                "helperText": "What you will call this when you sell it. Example: The 24-Hour Resume Fix",
-                "required": true
-            },
-            {
-                "id": "who_pays",
-                "type": "TEXT",
-                "label": "Who pays",
-                "helperText": "Describe the person who would pay for this. Example: Job seekers with 3 to 10 years of experience",
-                "required": true
-            },
-            {
-                "id": "what_they_get",
-                "type": "TEXTAREA",
-                "label": "What they get",
-                "helperText": "Describe what the customer receives. Be specific. Example: A rewritten resume plus a 15 minute video review",
-                "required": true
-            },
-            {
-                "id": "price_low",
-                "type": "NUMBER",
-                "label": "Price Option A (low)",
-                "helperText": "Your lowest reasonable price in dollars. Example: 50",
-                "required": true
-            },
-            {
-                "id": "price_mid",
-                "type": "NUMBER",
-                "label": "Price Option B (middle)",
-                "helperText": "Your middle price in dollars. Example: 100",
-                "required": true
-            },
-            {
-                "id": "price_high",
-                "type": "NUMBER",
-                "label": "Price Option C (high)",
-                "helperText": "Your highest reasonable price in dollars. Example: 200",
-                "required": true
-            },
-            {
-                "id": "price_chosen",
-                "type": "TEXT",
-                "label": "Price you will test first",
-                "helperText": "Which price option will you start with and why. Example: Option B at $100 because it matches competitors",
-                "required": true
-            },
-            {
-                "id": "sales_optimistic",
-                "type": "NUMBER",
-                "label": "Expected sales per month (optimistic)",
-                "helperText": "How many sales per month in your best reasonable case. Example: 10",
-                "required": true
-            },
-            {
-                "id": "sales_conservative",
-                "type": "NUMBER",
-                "label": "Expected sales per month (conservative)",
-                "helperText": "How many sales per month if things go slower than hoped. Example: 4",
-                "required": true
-            },
-            {
-                "id": "cost_per_sale",
-                "type": "NUMBER",
-                "label": "Direct cost per sale",
-                "helperText": "Variable cost for each sale in dollars. Include materials, transaction fees, etc. Example: 5",
-                "required": true
-            },
-            {
-                "id": "fixed_costs",
-                "type": "NUMBER",
-                "label": "Monthly fixed costs",
-                "helperText": "Total fixed monthly costs in dollars. Include software, hosting, subscriptions. Example: 30",
-                "required": true
-            },
-            {
-                "id": "minutes_per_sale",
-                "type": "NUMBER",
-                "label": "Minutes to fulfill one sale",
-                "helperText": "How many minutes of your time to deliver one sale. Example: 90",
-                "required": true
-            },
-            {
-                "id": "target_profit",
-                "type": "NUMBER",
-                "label": "Your target monthly profit",
-                "helperText": "How much profit per month would make this worthwhile for you. Example: 500",
-                "required": true
-            },
-            {
-                "id": "revenue_optimistic",
-                "type": "NUMBER",
-                "label": "Optimistic monthly revenue",
-                "helperText": "Price times optimistic sales. Example: 100 times 10 equals 1000",
-                "required": true
-            },
-            {
-                "id": "revenue_conservative",
-                "type": "NUMBER",
-                "label": "Conservative monthly revenue",
-                "helperText": "Price times conservative sales. Example: 100 times 4 equals 400",
-                "required": true
-            },
-            {
-                "id": "profit_optimistic",
-                "type": "NUMBER",
-                "label": "Optimistic monthly profit",
-                "helperText": "Optimistic revenue minus all costs. Example: 1000 minus 50 minus 30 equals 920",
-                "required": true
-            },
-            {
-                "id": "profit_conservative",
-                "type": "NUMBER",
-                "label": "Conservative monthly profit",
-                "helperText": "Conservative revenue minus all costs. Example: 400 minus 20 minus 30 equals 350",
-                "required": true
-            },
-            {
-                "id": "breakeven_sales",
-                "type": "NUMBER",
-                "label": "Break-even sales count",
-                "helperText": "How many sales needed to cover fixed costs. Fixed costs divided by profit per sale. Example: 30 divided by 95 equals 1",
-                "required": true
-            },
-            {
-                "id": "hours_optimistic",
-                "type": "NUMBER",
-                "label": "Hours per month (optimistic scenario)",
-                "helperText": "Minutes per sale times optimistic sales divided by 60. Example: 90 times 10 divided by 60 equals 15 hours",
-                "required": false
-            },
-            {
-                "id": "hourly_rate_optimistic",
-                "type": "NUMBER",
-                "label": "Effective hourly rate (optimistic)",
-                "helperText": "Optimistic profit divided by optimistic hours. Example: 920 divided by 15 equals 61 dollars per hour",
-                "required": false
-            },
-            {
-                "id": "summary_conservative",
-                "type": "TEXTAREA",
-                "label": "Conservative scenario summary",
-                "helperText": "Describe the conservative case in plain language. Example: At 4 sales per month at $100, I profit $350 and work about 6 hours. That is $58 per hour.",
-                "required": true
-            },
-            {
-                "id": "summary_optimistic",
-                "type": "TEXTAREA",
-                "label": "Optimistic scenario summary",
-                "helperText": "Describe the optimistic case in plain language. Example: At 10 sales per month at $100, I profit $920 and work about 15 hours. That is $61 per hour.",
-                "required": true
-            },
-            {
-                "id": "improve_numbers",
-                "type": "TEXTAREA",
-                "label": "What would improve the numbers fastest",
-                "helperText": "Name 1 to 3 things that would make the math better. Example: Raising the price to $150, reducing time per sale by using templates",
-                "required": true
-            },
-            {
-                "id": "meets_target",
-                "type": "RADIO",
-                "label": "Does conservative profit meet your target",
-                "helperText": "Compare conservative profit to your target",
+                "id": "d5_do1_i1",
+                "label": "Wrote price, delivery time, and variable cost for Idea #1",
                 "required": true,
-                "options": [
-                    "Yes it meets or exceeds my target",
-                    "No but it is close",
-                    "No it falls significantly short"
-                ]
+                "helperText": "Enter the three numbers in your log for Idea #1 and note units/currency.",
+                "type": "NUMBER"
             },
             {
-                "id": "final_decision",
-                "type": "TEXTAREA",
-                "label": "Decision: Is this idea worth pursuing",
-                "helperText": "Based on your forecast, should you continue with this idea into Week 2. Explain your reasoning.",
-                "required": true
+                "id": "d5_do1_i2",
+                "label": "Wrote price, delivery time, and variable cost for Idea #2",
+                "required": true,
+                "helperText": "Enter the three numbers in your log for Idea #2 and note units/currency.",
+                "type": "NUMBER"
+            },
+            {
+                "id": "d5_do1_i3",
+                "label": "Wrote price, delivery time, and variable cost for Idea #3",
+                "required": true,
+                "helperText": "Enter the three numbers in your log for Idea #3 and note units/currency.",
+                "type": "NUMBER"
+            },
+            {
+                "id": "d5_do1_i4",
+                "label": "Calculated gross profit per sale and profit per hour for all three",
+                "required": true,
+                "helperText": "Provide six calculated values: three gross profits and three profit-per-hour numbers.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do2_i1",
+                "label": "Calculated weekly delivery capacity for each of the top 3 ideas",
+                "required": true,
+                "helperText": "Provide three capacity numbers (customers per week), one per idea.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do2_i2",
+                "label": "Wrote cautious, base, and stretch scenarios for each idea",
+                "required": true,
+                "helperText": "Provide 9 scenario lines total (3 scenarios x 3 ideas).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do2_i3",
+                "label": "Estimated month-one revenue for each idea under base scenario",
+                "required": true,
+                "helperText": "Provide three base-scenario revenue numbers with currency noted in your log.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do2_i4",
+                "label": "Estimated month-one profit for each idea under base scenario",
+                "required": true,
+                "helperText": "Provide three base-scenario profit numbers and one assumption line for each.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do3_i1",
+                "label": "Selected one primary idea and one backup idea",
+                "required": true,
+                "helperText": "Write the two idea titles and label them primary and backup.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do3_i2",
+                "label": "Wrote a pricing hypothesis for the primary idea",
+                "required": true,
+                "helperText": "Paste one sentence with price and promised outcome.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do3_i3",
+                "label": "Listed 3 assumptions that must be true for the primary idea to work",
+                "required": true,
+                "helperText": "List three must-be-true assumptions.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d5_do3_i4",
+                "label": "Wrote the next 3 actions you will take in Week 2",
+                "required": true,
+                "helperText": "Write three numbered next actions.",
+                "type": "TEXTAREA"
             }
         ]
     },
@@ -2209,7 +1783,7 @@
             {
                 "id": "flow_tested",
                 "type": "CHECKBOX",
-                "label": "Complete flow tested (view → buy → payment)",
+                "label": "Complete flow tested (view \u2192 buy \u2192 payment)",
                 "required": true
             },
             {

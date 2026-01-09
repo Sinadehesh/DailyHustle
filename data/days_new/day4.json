@@ -1,0 +1,149 @@
+{
+    "day": 4,
+    "title": "Day 4 - Weigh the Obstacles and Opportunities of Each Idea",
+    "week": 1,
+    "mainPromise": "You will identify what could block each top idea, what could make it easier, and what you will do about it.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Obstacles are not excuses",
+            "content": "An obstacle is any factor that increases time, cost, or uncertainty. Naming obstacles is not negativity. It is planning.\n\nMost obstacles fall into a few buckets: unclear customer, hard delivery, hard to get attention, high competition, or too much custom work. When you label the bucket, you can choose a response.\n\nThe goal today is not to solve everything. The goal is to see the real shape of the work so you can avoid ideas that become heavy too fast.",
+            "soWhat": "If you do not list obstacles now, you will discover them later when they are expensive."
+        },
+        {
+            "id": "t2",
+            "title": "Opportunities are leverage",
+            "content": "Opportunities are not vague upsides. They are specific advantages that reduce effort or increase willingness to pay.\n\nCommon opportunities for a small online service include: repeatable demand, clear urgency windows, easy referrals, a niche where people already pay, and assets you already have (templates, skills, experience, audience).\n\nIf you can name opportunities clearly, you can design the offer to use them. For example, if urgency peaks weekly, you can sell a weekly reset service. If referrals are natural, you can build a referral ask into delivery.",
+            "soWhat": "If you do not name opportunities, you will build a generic offer that competes on price."
+        },
+        {
+            "id": "t3",
+            "title": "Reduce the work to experiments",
+            "content": "You do not have to solve every risk. You need a small experiment that reduces the biggest uncertainty.\n\nExperiments should be cheap and fast. Examples: write a one-paragraph offer and see if someone replies, post a simple form and see if anyone fills it, or run a 10-minute call with a friend to test clarity (only if calls fit your constraints).\n\nToday you will decide what you can test next week, and what you should avoid entirely.",
+            "soWhat": "If you do not convert risks into experiments, you will keep thinking instead of moving."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d4_do1",
+            "title": "Build obstacle maps",
+            "estimatedMinutes": 12,
+            "steps": [
+                "For each of your top 3 ideas, list 6 obstacles.",
+                "Mark the top 2 launch blockers per idea.",
+                "Write one mitigation for each blocker."
+            ],
+            "items": [
+                {
+                    "id": "d4_do1_i1",
+                    "label": "Listed 6 obstacles for Idea #1",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List six obstacles for your first idea."
+                },
+                {
+                    "id": "d4_do1_i2",
+                    "label": "Listed 6 obstacles for Idea #2",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List six obstacles for your second idea."
+                },
+                {
+                    "id": "d4_do1_i3",
+                    "label": "Listed 6 obstacles for Idea #3",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List six obstacles for your third idea."
+                },
+                {
+                    "id": "d4_do1_i4",
+                    "label": "Marked top 2 launch blockers per idea and wrote mitigations",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide 6 blocker lines total, each followed by a mitigation line."
+                }
+            ],
+            "example": "Obstacle: Delivery may take too long if every client is different. Blocker: No clear intake process. Mitigation: Use a fixed intake form and a fixed scope checklist."
+        },
+        {
+            "id": "d4_do2",
+            "title": "Build opportunity maps",
+            "estimatedMinutes": 12,
+            "steps": [
+                "For each top idea, list 6 opportunities.",
+                "Choose the top 2 leverage points per idea.",
+                "Write one design choice that uses each leverage point."
+            ],
+            "items": [
+                {
+                    "id": "d4_do2_i1",
+                    "label": "Listed 6 opportunities for each of the top 3 ideas",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste three lists, each with six opportunities."
+                },
+                {
+                    "id": "d4_do2_i2",
+                    "label": "Selected top 2 leverage points per idea",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List six leverage points total, labeled by idea."
+                },
+                {
+                    "id": "d4_do2_i3",
+                    "label": "Wrote one design choice per leverage point",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write six design-choice lines, one per leverage point."
+                },
+                {
+                    "id": "d4_do2_i4",
+                    "label": "Wrote one unfair advantage sentence for each idea",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste three unfair-advantage sentences."
+                }
+            ],
+            "example": "Opportunity: Busy people need weekly resets. Design choice: Offer a Friday delivery option and a Monday morning handoff. Unfair advantage: I deliver fast with a fixed template library."
+        },
+        {
+            "id": "d4_do3",
+            "title": "Choose next actions per idea",
+            "estimatedMinutes": 8,
+            "steps": [
+                "For each top idea, pick one biggest uncertainty.",
+                "Design a 48-hour experiment to reduce it.",
+                "Define a kill rule that tells you when to stop investing."
+            ],
+            "items": [
+                {
+                    "id": "d4_do3_i1",
+                    "label": "Identified one biggest uncertainty for each of the top 3 ideas",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three uncertainties, one per idea."
+                },
+                {
+                    "id": "d4_do3_i2",
+                    "label": "Designed a 48-hour experiment for each uncertainty",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Describe three experiments, one per uncertainty."
+                },
+                {
+                    "id": "d4_do3_i3",
+                    "label": "Wrote a kill rule for each idea",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write three kill rules, one per idea."
+                },
+                {
+                    "id": "d4_do3_i4",
+                    "label": "Chose one leading idea to take into Day 5 forecasting",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one sentence naming your leading idea and why."
+                }
+            ],
+            "example": "Uncertainty: Will anyone pay $79 for this setup? Experiment: Send a short offer to 10 people and track replies within 48 hours. Kill rule: If zero replies show interest at $79, re-scope or drop."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Obstacle maps for three ideas with blockers and mitigations",
+            "Opportunity maps for three ideas with leverage design choices",
+            "Three 48-hour experiments and three kill rules",
+            "One leading idea selected for profit forecasting"
+        ],
+        "tomorrowPreview": "Tomorrow you will forecast profit using simple assumptions so you can choose ideas that pay back your time quickly."
+    }
+}

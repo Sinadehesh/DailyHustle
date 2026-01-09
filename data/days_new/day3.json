@@ -1,0 +1,149 @@
+{
+    "day": 3,
+    "title": "Day 3 - Brainstorm, Borrow, or Steal Ideas",
+    "week": 1,
+    "mainPromise": "You will generate a set of qualified ideas and capture the best ones in consistent idea snapshots.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Generate ideas in batches",
+            "content": "Waiting for inspiration is unreliable. Instead, you will generate ideas in batches using repeatable prompts. Batches reduce pressure and increase variety.\n\nUse three sources: your own recurring frustrations, other people's visible problems, and existing offers you can adapt. This keeps your ideas grounded in reality and payment behavior.\n\nDo not judge too early. The goal in the first pass is volume with basic fit to your filter: can it be delivered digitally, can it be sold soon, and is the benefit clear.",
+            "soWhat": "If you do not create volume, you will over-commit to your first idea and miss better options."
+        },
+        {
+            "id": "t2",
+            "title": "Turn seeds into snapshots",
+            "content": "A seed is a headline. A snapshot is an idea you can compare. Snapshots force you to define customer, promise, delivery, and payment path without writing a business plan.\n\nKeep snapshots short. You are not trying to be clever. You are trying to be clear. A snapshot should fit on one screen and be easy to score later.\n\nUse your default learner context if you have nothing else: a small online service for busy people, promising time savings and less frustration, delivered digitally.",
+            "soWhat": "If you do not standardize your idea descriptions, you cannot compare them fairly."
+        },
+        {
+            "id": "t3",
+            "title": "Select candidates worth deeper work",
+            "content": "Selection is not commitment. It is prioritization. You are choosing which ideas deserve more thinking tomorrow.\n\nA good candidate usually has one of these advantages: easy delivery, clear buyer pain, repeatable demand, or an obvious reason to choose you (speed, clarity, niche focus).\n\nUse simple scoring. Avoid long debates with yourself. Write down why an idea wins. That written reason becomes a useful constraint later.",
+            "soWhat": "If you do not narrow down today, Day 4 becomes messy and slow."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d3_do1",
+            "title": "Generate 12 idea seeds",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write 4 ideas based on time wasters you see in daily life.",
+                "Write 4 ideas based on confusion problems where people want clarity.",
+                "Write 4 ideas by adapting an existing online service you have seen."
+            ],
+            "items": [
+                {
+                    "id": "d3_do1_i1",
+                    "label": "Wrote 4 time waster idea seeds",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List four idea seeds based on time-wasting problems."
+                },
+                {
+                    "id": "d3_do1_i2",
+                    "label": "Wrote 4 confusion to clarity idea seeds",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List four idea seeds where the customer wants clarity."
+                },
+                {
+                    "id": "d3_do1_i3",
+                    "label": "Wrote 4 adapt an existing offer idea seeds",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List four idea seeds adapted from existing offers you have seen."
+                },
+                {
+                    "id": "d3_do1_i4",
+                    "label": "Starred your top 5 idea seeds",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Mark five items in your 12-idea list as top candidates."
+                }
+            ],
+            "example": "Time waster seed: Weekly meal plan and grocery list generator for busy couples. Confusion seed: One-page travel document checklist for students moving abroad. Adapt seed: Resume rewrite service, but focused on one job role and one page."
+        },
+        {
+            "id": "d3_do2",
+            "title": "Create 5 idea snapshots",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Copy your top 5 seeds into a snapshot template.",
+                "Fill the template fields for each idea in plain language.",
+                "Add one price guess and one first-transaction channel per idea."
+            ],
+            "items": [
+                {
+                    "id": "d3_do2_i1",
+                    "label": "Created an idea snapshot template with 7 fields",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your 7-field snapshot template."
+                },
+                {
+                    "id": "d3_do2_i2",
+                    "label": "Completed 5 idea snapshots using the template",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste five filled snapshots."
+                },
+                {
+                    "id": "d3_do2_i3",
+                    "label": "Added a price guess for each snapshot",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide five price guesses, one per snapshot."
+                },
+                {
+                    "id": "d3_do2_i4",
+                    "label": "Added a first-transaction channel for each snapshot",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List five channels, one per snapshot (DM, email, marketplace, landing page, etc.)."
+                }
+            ],
+            "example": "Customer: Busy freelancer drowning in admin. Promise: Set up a simple system that saves 2 hours per week. Delivery: Shared doc plus 15-min video walkthrough. Price: $49. Channel: Email to 10 contacts."
+        },
+        {
+            "id": "d3_do3",
+            "title": "Pick your top 3 candidates",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Score each of your 5 snapshots from 1 to 5 on feasibility, profit potential, and persuasion.",
+                "Total the scores and rank them.",
+                "Pick the top 3 and write a one-sentence reason for each."
+            ],
+            "items": [
+                {
+                    "id": "d3_do3_i1",
+                    "label": "Scored all 5 ideas on three criteria",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide 5 entries with feasibility, profit potential, and persuasion scores (1 to 5)."
+                },
+                {
+                    "id": "d3_do3_i2",
+                    "label": "Ranked the 5 ideas from best to worst",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List ideas ranked 1 to 5."
+                },
+                {
+                    "id": "d3_do3_i3",
+                    "label": "Selected the top 3 candidates",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List the three selected idea titles."
+                },
+                {
+                    "id": "d3_do3_i4",
+                    "label": "Wrote a one-sentence why-this-could-work for each top 3",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste three one-sentence reasons, one per selected idea."
+                }
+            ],
+            "example": "Rank #1: Inbox cleanup service for founders because clear pain, easy delivery, fast turnaround. Rank #2: Weekly planning setup because repeatable demand and low variable cost."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "List of 12 idea seeds with top 5 marked",
+            "Idea snapshot template with 5 completed snapshots",
+            "Price guesses and first-transaction channels for each snapshot",
+            "Scored and ranked list with top 3 candidates chosen"
+        ],
+        "tomorrowPreview": "Tomorrow you will pressure-test your top ideas by listing real obstacles and real advantages, then deciding what is worth solving now."
+    }
+}

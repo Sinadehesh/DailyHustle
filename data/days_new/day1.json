@@ -1,0 +1,150 @@
+{
+    "day": 1,
+    "title": "Day 1 - Predict the Future",
+    "week": 1,
+    "mainPromise": "You will define what success in 27 days means for you, with clear constraints that keep your idea search realistic.",
+    "timeEstimate": "34 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Define the change you want",
+            "content": "A side hustle is not only an activity. It is a change in your life. If you do not name the change, you will chase random ideas and waste time.\n\nThink in outcomes, not tasks. Start a small online service is a task. Reduce my monthly money stress by earning $200 is an outcome. Outcomes help you choose ideas that fit.\n\nKeep the timeframe honest. You are building something alongside a normal life. Your target should be specific and reachable within 27 days, even if it is small.",
+            "soWhat": "If you cannot state your 27-day outcome clearly, you cannot evaluate ideas or make tradeoffs."
+        },
+        {
+            "id": "t2",
+            "title": "Choose a focus lens",
+            "content": "Ideas multiply when you look through a lens. The simplest lens is: who is the customer, what result do they want, and what is the smallest promise you can deliver digitally.\n\nBusy people who want a clear result is a fine starting customer. It is broad, but it points you toward problems that feel urgent: time, confusion, missed deadlines, repeated frustration.\n\nA good promise has a before and after that someone can recognize. Save time and reduce frustration becomes stronger when you tie it to a concrete situation like inbox overload, messy scheduling, or unclear study plans.",
+            "soWhat": "If you define the customer and promise today, your idea list tomorrow will be specific instead of random."
+        },
+        {
+            "id": "t3",
+            "title": "Set your decision rules",
+            "content": "You will have more ideas than time. Decision rules protect your time. They also reduce regret because you can explain why you chose something.\n\nA decision rule is not a motivational quote. It is a boundary like: I only pursue ideas I can deliver digitally within 7 days, or I only pursue ideas where I can explain the value in one sentence.\n\nAlso create a place to store assumptions. Assumptions are not bad. Unwritten assumptions are bad. When you write them down, you can test them later.",
+            "soWhat": "If you do not set decision rules, you will keep changing direction and calling it research."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d1_do1",
+            "title": "Write your 27-day target",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write one sentence describing what will be different in 27 days.",
+                "Choose one money target (even if small) and one time budget.",
+                "Write your must not break constraints."
+            ],
+            "items": [
+                {
+                    "id": "d1_do1_i1",
+                    "label": "Wrote a one-sentence 27-day outcome statement",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your exact one-sentence outcome."
+                },
+                {
+                    "id": "d1_do1_i2",
+                    "label": "Set a numeric money target for day 27",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter your target amount (number only) and note currency in your log."
+                },
+                {
+                    "id": "d1_do1_i3",
+                    "label": "Set a weekly time budget and schedule windows",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List days of week with minutes available each day."
+                },
+                {
+                    "id": "d1_do1_i4",
+                    "label": "Listed 3 to 5 constraints you will not violate",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 to 5 constraints (one per line)."
+                }
+            ],
+            "example": "Outcome: In 27 days, I earn my first $150 from a small online service that saves busy people time. Time budget: Mon, Wed, Sat: 45 minutes. Tue, Thu: 25 minutes. Constraints: No phone calls, digital delivery only, max 2 hours per customer per week."
+        },
+        {
+            "id": "d1_do2",
+            "title": "Draft your customer and promise",
+            "estimatedMinutes": 10,
+            "steps": [
+                "Write a 2-sentence description of your ideal customer's typical day.",
+                "Write a one-sentence promise with a clear outcome.",
+                "Write one delivery sentence describing how the service is delivered digitally.",
+                "Write one short scenario that shows the moment they decide to pay."
+            ],
+            "items": [
+                {
+                    "id": "d1_do2_i1",
+                    "label": "Described the ideal customer in 2 sentences",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the two sentences describing the customer."
+                },
+                {
+                    "id": "d1_do2_i2",
+                    "label": "Wrote a one-sentence offer promise with a measurable outcome",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the promise sentence."
+                },
+                {
+                    "id": "d1_do2_i3",
+                    "label": "Defined the delivery method in one sentence",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the delivery sentence."
+                },
+                {
+                    "id": "d1_do2_i4",
+                    "label": "Wrote one purchase-trigger scenario",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 3 to 5 lines describing the moment they decide to pay."
+                }
+            ],
+            "example": "Customer: They juggle work, family, and admin tasks. They often lose time to messy systems and repeated small mistakes. Promise: In 48 hours, you get a simple workflow that cuts your weekly admin time by 2 hours. Delivery: Delivered as a shared doc plus a short screen-recorded walkthrough."
+        },
+        {
+            "id": "d1_do3",
+            "title": "Create your decision log",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Create a simple decision log template you will reuse daily.",
+                "Write 3 decision rules for Week 1.",
+                "Write your top 3 assumptions about what people will pay for."
+            ],
+            "items": [
+                {
+                    "id": "d1_do3_i1",
+                    "label": "Created a decision log template with fields",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the template fields you will reuse daily."
+                },
+                {
+                    "id": "d1_do3_i2",
+                    "label": "Wrote 3 Week 1 decision rules",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List your three decision rules."
+                },
+                {
+                    "id": "d1_do3_i3",
+                    "label": "Listed 3 assumptions you will test later",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three assumptions (one per line)."
+                },
+                {
+                    "id": "d1_do3_i4",
+                    "label": "Wrote a stop rule for daily work",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your one-sentence stop rule."
+                }
+            ],
+            "example": "Log fields: Date, Idea, Customer, Promise, Price guess, Evidence found, Next action. Decision rule: If I cannot describe delivery in 2 sentences, it is not ready. Stop rule: When today's checkboxes are done, I stop and save artifacts."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "27-day outcome statement and money target",
+            "Weekly time budget schedule and constraints list",
+            "Ideal customer description, promise, and delivery sentence",
+            "Decision log template with rules and assumptions"
+        ],
+        "tomorrowPreview": "Tomorrow you will learn how to judge ideas quickly using a simple quality filter, so you can generate ideas that are realistic and likely to sell."
+    }
+}

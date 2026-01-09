@@ -1,0 +1,149 @@
+{
+    "day": 2,
+    "title": "Day 2 - Learn How Money Grows on Trees",
+    "week": 1,
+    "mainPromise": "You will build a practical idea-quality filter and use it to shape idea seeds that can realistically earn money soon.",
+    "timeEstimate": "34 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Feasibility is about shipping",
+            "content": "A feasible idea is not the easiest idea. It is the idea you can actually deliver without breaking your constraints from Day 1.\n\nFeasibility is mostly logistics: time, skills, tools, and steps. If you cannot outline the first week of delivery, the idea is not ready for this 27-day sprint.\n\nThink like a small online service operator. The service should be deliverable digitally, repeatable, and simple enough to start while you are still learning. Complexity can come later if it earns the right to exist.",
+            "soWhat": "If you do not define feasibility in concrete terms, you will pick ideas that sound good but cannot launch."
+        },
+        {
+            "id": "t2",
+            "title": "Profit needs a clear path",
+            "content": "Profit is not only revenue. It is revenue minus the real costs of delivery, including your time. Early on, your best path is usually a simple first transaction, not a long-term grand plan.\n\nA profitable idea has a buyer, a reason they pay, and a price that makes sense against effort. If you cannot see how money changes hands, you do not have an idea yet. You have a wish.\n\nKeep it grounded. In the first month, aim for small but real income, like $100 to $300. That forces clarity: how many customers, at what price, through what channel.",
+            "soWhat": "If you do not map the first transaction, you will build a service that cannot sell."
+        },
+        {
+            "id": "t3",
+            "title": "Persuasion is about timing",
+            "content": "People buy when the pain is present, the result is clear, and the risk feels low. Persuasion is not hype. It is fit between a moment and an offer.\n\nA persuasive idea can be explained quickly. It has a why now that makes sense. It reduces uncertainty by making the next step obvious: what happens after payment, what they receive, and when.\n\nFor a small online service, persuasion often comes from specificity: a clear deliverable, a tight timeframe, and a narrow problem that is common among busy people.",
+            "soWhat": "If your offer does not feel timely and low-risk, people delay, and delayed buyers do not become buyers."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d2_do1",
+            "title": "Build a feasibility checklist",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write your feasibility definition in one paragraph.",
+                "List the minimum tools and skills you already have.",
+                "Draft a 7-day launch path with 5 to 7 steps."
+            ],
+            "items": [
+                {
+                    "id": "d2_do1_i1",
+                    "label": "Wrote a one-paragraph feasibility definition for this course",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your feasibility definition paragraph."
+                },
+                {
+                    "id": "d2_do1_i2",
+                    "label": "Listed your existing tools and skills that support a digital service",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 6 to 12 tools/skills you already have."
+                },
+                {
+                    "id": "d2_do1_i3",
+                    "label": "Drafted a 7-day launch path with numbered steps",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write 5 to 7 numbered steps for the first week."
+                },
+                {
+                    "id": "d2_do1_i4",
+                    "label": "Identified one feasibility red flag you will reject immediately",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence naming your feasibility red flag."
+                }
+            ],
+            "example": "Definition: Feasible means I can deliver the first version with tools I already have and no more than 3 hours per week per customer. Launch path: 1) Pick one problem, 2) Write offer, 3) Set up payment link, 4) Create intake form, 5) Deliver first client."
+        },
+        {
+            "id": "d2_do2",
+            "title": "Map first-transaction paths",
+            "estimatedMinutes": 11,
+            "steps": [
+                "Write three first-transaction options for a small online service (each must include buyer, trigger, and price).",
+                "For each option, write the delivery effort in minutes.",
+                "Choose one option that could realistically reach $100 in month one."
+            ],
+            "items": [
+                {
+                    "id": "d2_do2_i1",
+                    "label": "Wrote 3 first-transaction options with buyer, trigger, and price",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste three options. Each must include buyer, trigger, and price."
+                },
+                {
+                    "id": "d2_do2_i2",
+                    "label": "Estimated delivery effort for each option in minutes",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide three minute estimates, one per option."
+                },
+                {
+                    "id": "d2_do2_i3",
+                    "label": "Chose one option as your Month 1 $100 path",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one sentence: I choose option X because..."
+                },
+                {
+                    "id": "d2_do2_i4",
+                    "label": "Wrote one sentence explaining why the chosen path is worth paying for",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your value explanation sentence."
+                }
+            ],
+            "example": "Option: Busy professionals pay $39 for a Notion cleanup and weekly plan delivered in 48 hours. Effort: 75 minutes. Why pay: It removes weekly planning friction and prevents missed tasks."
+        },
+        {
+            "id": "d2_do3",
+            "title": "Write persuasion test cards",
+            "estimatedMinutes": 11,
+            "steps": [
+                "Create a persuasion card template with 5 fields.",
+                "Fill three cards for three possible service angles.",
+                "Choose the one with the strongest why now."
+            ],
+            "items": [
+                {
+                    "id": "d2_do3_i1",
+                    "label": "Created a persuasion card template with 5 fields",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your 5-field template."
+                },
+                {
+                    "id": "d2_do3_i2",
+                    "label": "Filled 3 persuasion cards for 3 service angles",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste three filled persuasion cards."
+                },
+                {
+                    "id": "d2_do3_i3",
+                    "label": "Wrote a clear why-now sentence for the best card",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the why-now sentence."
+                },
+                {
+                    "id": "d2_do3_i4",
+                    "label": "Wrote one risk-reducer for the best card",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write one line that reduces buyer risk (scope, timeline, guarantee, or clarity)."
+                }
+            ],
+            "example": "Card fields: Customer, Moment, Promise, Deliverable, Why now. Why now: End of month reporting is due and their current system is messy. Risk reducer: Fixed scope: one workspace, one workflow, delivered in 48 hours."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Feasibility definition, tool inventory, and 7-day launch path",
+            "Three mapped first-transaction options with effort estimates",
+            "Persuasion card template and three filled cards",
+            "Chosen Month 1 $100 path with a risk reducer"
+        ],
+        "tomorrowPreview": "Tomorrow you will generate multiple qualified ideas quickly, then capture them in a consistent format so you can compare them."
+    }
+}

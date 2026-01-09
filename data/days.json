@@ -1,260 +1,749 @@
 [
     {
         "day": 1,
-        "title": "Predict the Future",
+        "title": "Day 1 - Predict the Future",
         "week": 1,
-        "goal": "Identify 3 to 5 opportunity directions by looking at where the world is heading",
-        "timeEstimate": "35-45 min",
-        "hook": "The best side hustles solve tomorrow's problems. Today you learn to see what others miss.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Most people start with themselves. What am I good at? What do I like? Those questions matter, but they come later. Today you start with the world.\n\nThe side hustles that grow fastest are the ones that ride a wave. They meet a need that is getting bigger, not smaller. They help people with problems that are becoming more common, not less. If you pick the right wave, everything else gets easier. Marketing is easier because people are already looking for help. Sales are easier because the pain is fresh. Growth is easier because the trend is on your side.\n\nSo before you brainstorm business ideas, you are going to brainstorm changes. What is shifting in the world around you? What do you notice that most people ignore? What problems are getting worse? What new behaviors are spreading?\n\nYou do not need to be a futurist. You just need to pay attention. Think about the past two or three years. What surprised you? What frustrated you? What did you start doing that you did not do before? What did your friends or coworkers start doing? These observations are raw material.\n\nToday is not about choosing one idea. It is about opening your eyes. You will end the day with 3 to 5 opportunity directions, not a final decision. That comes later. Right now, the goal is to see more clearly where the world is going, so you can position yourself to help."
-        },
-        "practice": {
-            "title": "The Five Year Snapshot (3-5 minutes)",
-            "content": "Close your eyes for 30 seconds. Take a few slow breaths.\n\nNow imagine yourself five years from now. You are reading the news, scrolling your phone, or talking to a friend. What are people worried about? What new technologies are they using? What jobs have changed? What new problems have appeared?\n\nOpen your eyes. Grab a piece of paper or open a notes app. Set a timer for 3 minutes. Write down everything you imagined, even if it feels obvious or strange. Do not edit yourself. Just write.\n\nWhen the timer ends, circle the two or three observations that feel most real to you. These are your starting points for today."
-        },
-        "mission": [
+        "mainPromise": "You will define what success in 27 days means for you, with clear constraints that keep your idea search realistic.",
+        "timeEstimate": "34 min",
+        "teachings": [
             {
-                "task": "Complete the Five Year Snapshot practice",
-                "time": "5 min"
+                "id": "t1",
+                "title": "Define the change you want",
+                "content": "A side hustle is not only an activity. It is a change in your life. If you do not name the change, you will chase random ideas and waste time.\n\nThink in outcomes, not tasks. Start a small online service is a task. Reduce my monthly money stress by earning $200 is an outcome. Outcomes help you choose ideas that fit.\n\nKeep the timeframe honest. You are building something alongside a normal life. Your target should be specific and reachable within 27 days, even if it is small.",
+                "soWhat": "If you cannot state your 27-day outcome clearly, you cannot evaluate ideas or make tradeoffs."
             },
             {
-                "task": "List 5 changes or trends you have noticed in the past 1 to 3 years",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Choose a focus lens",
+                "content": "Ideas multiply when you look through a lens. The simplest lens is: who is the customer, what result do they want, and what is the smallest promise you can deliver digitally.\n\nBusy people who want a clear result is a fine starting customer. It is broad, but it points you toward problems that feel urgent: time, confusion, missed deadlines, repeated frustration.\n\nA good promise has a before and after that someone can recognize. Save time and reduce frustration becomes stronger when you tie it to a concrete situation like inbox overload, messy scheduling, or unclear study plans.",
+                "soWhat": "If you define the customer and promise today, your idea list tomorrow will be specific instead of random."
             },
             {
-                "task": "For each trend, write where you think it leads in the next 2 to 5 years",
-                "time": "10 min"
-            },
-            {
-                "task": "Identify who will struggle most because of these changes",
-                "time": "5 min"
-            },
-            {
-                "task": "List what kind of help those people might pay for",
-                "time": "5 min"
-            },
-            {
-                "task": "Write down 3 to 5 opportunity directions that interest you",
-                "time": "5 min"
-            },
-            {
-                "task": "Note any personal skills or interests that connect to these directions",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Set your decision rules",
+                "content": "You will have more ideas than time. Decision rules protect your time. They also reduce regret because you can explain why you chose something.\n\nA decision rule is not a motivational quote. It is a boundary like: I only pursue ideas I can deliver digitally within 7 days, or I only pursue ideas where I can explain the value in one sentence.\n\nAlso create a place to store assumptions. Assumptions are not bad. Unwritten assumptions are bad. When you write them down, you can test them later.",
+                "soWhat": "If you do not set decision rules, you will keep changing direction and calling it research."
             }
         ],
-        "commonMistakes": "Trying to predict the exact future. You are not writing a research report. You are noticing patterns. Rough is fine.\n\nOnly thinking about technology. Trends also happen in behavior, culture, work, health, relationships, and money. Look wider.\n\nCensoring yourself. If an observation feels too obvious or too weird, write it down anyway. Obvious often means overlooked.\n\nLooking for the one perfect trend. You are generating options. Aim for 5 trends, not 1.\n\nForgetting your own life. The best observations often come from problems you have personally noticed or experienced.",
-        "doneMeans": "You have at least 5 trends documented with predictions, and 3 to 5 opportunity directions written down with notes on who needs help.",
-        "reviewCTA": "Want feedback on your opportunity directions? Submit your Day 1 workbook for review and get suggestions within 48 hours."
+        "doBlocks": [
+            {
+                "id": "d1_do1",
+                "title": "Write your 27-day target",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write one sentence describing what will be different in 27 days.",
+                    "Choose one money target (even if small) and one time budget.",
+                    "Write your must not break constraints."
+                ],
+                "items": [
+                    {
+                        "id": "d1_do1_i1",
+                        "label": "Wrote a one-sentence 27-day outcome statement",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your exact one-sentence outcome."
+                    },
+                    {
+                        "id": "d1_do1_i2",
+                        "label": "Set a numeric money target for day 27",
+                        "evidenceType": "number",
+                        "evidencePrompt": "Enter your target amount (number only) and note currency in your log."
+                    },
+                    {
+                        "id": "d1_do1_i3",
+                        "label": "Set a weekly time budget and schedule windows",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List days of week with minutes available each day."
+                    },
+                    {
+                        "id": "d1_do1_i4",
+                        "label": "Listed 3 to 5 constraints you will not violate",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 3 to 5 constraints (one per line)."
+                    }
+                ],
+                "example": "Outcome: In 27 days, I earn my first $150 from a small online service that saves busy people time. Time budget: Mon, Wed, Sat: 45 minutes. Tue, Thu: 25 minutes. Constraints: No phone calls, digital delivery only, max 2 hours per customer per week."
+            },
+            {
+                "id": "d1_do2",
+                "title": "Draft your customer and promise",
+                "estimatedMinutes": 10,
+                "steps": [
+                    "Write a 2-sentence description of your ideal customer's typical day.",
+                    "Write a one-sentence promise with a clear outcome.",
+                    "Write one delivery sentence describing how the service is delivered digitally.",
+                    "Write one short scenario that shows the moment they decide to pay."
+                ],
+                "items": [
+                    {
+                        "id": "d1_do2_i1",
+                        "label": "Described the ideal customer in 2 sentences",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the two sentences describing the customer."
+                    },
+                    {
+                        "id": "d1_do2_i2",
+                        "label": "Wrote a one-sentence offer promise with a measurable outcome",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the promise sentence."
+                    },
+                    {
+                        "id": "d1_do2_i3",
+                        "label": "Defined the delivery method in one sentence",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the delivery sentence."
+                    },
+                    {
+                        "id": "d1_do2_i4",
+                        "label": "Wrote one purchase-trigger scenario",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write 3 to 5 lines describing the moment they decide to pay."
+                    }
+                ],
+                "example": "Customer: They juggle work, family, and admin tasks. They often lose time to messy systems and repeated small mistakes. Promise: In 48 hours, you get a simple workflow that cuts your weekly admin time by 2 hours. Delivery: Delivered as a shared doc plus a short screen-recorded walkthrough."
+            },
+            {
+                "id": "d1_do3",
+                "title": "Create your decision log",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Create a simple decision log template you will reuse daily.",
+                    "Write 3 decision rules for Week 1.",
+                    "Write your top 3 assumptions about what people will pay for."
+                ],
+                "items": [
+                    {
+                        "id": "d1_do3_i1",
+                        "label": "Created a decision log template with fields",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the template fields you will reuse daily."
+                    },
+                    {
+                        "id": "d1_do3_i2",
+                        "label": "Wrote 3 Week 1 decision rules",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List your three decision rules."
+                    },
+                    {
+                        "id": "d1_do3_i3",
+                        "label": "Listed 3 assumptions you will test later",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List three assumptions (one per line)."
+                    },
+                    {
+                        "id": "d1_do3_i4",
+                        "label": "Wrote a stop rule for daily work",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your one-sentence stop rule."
+                    }
+                ],
+                "example": "Log fields: Date, Idea, Customer, Promise, Price guess, Evidence found, Next action. Decision rule: If I cannot describe delivery in 2 sentences, it is not ready. Stop rule: When today's checkboxes are done, I stop and save artifacts."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "27-day outcome statement and money target",
+                "Weekly time budget schedule and constraints list",
+                "Ideal customer description, promise, and delivery sentence",
+                "Decision log template with rules and assumptions"
+            ],
+            "tomorrowPreview": "Tomorrow you will learn how to judge ideas quickly using a simple quality filter, so you can generate ideas that are realistic and likely to sell."
+        }
     },
     {
         "day": 2,
-        "title": "Learn How Money Grows on Trees",
+        "title": "Day 2 - Learn How Money Grows on Trees",
         "week": 1,
-        "goal": "Discover your hidden assets and generate 10 to 20 idea seeds from them",
-        "timeEstimate": "35-45 min",
-        "hook": "You already have more than you think. Today you inventory your unfair advantages and turn them into hustle ideas.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Almost everyone underestimates what they already have. When asked what assets they bring to a side hustle, most people shrug and say nothing special. But that is almost never true.\n\nYou have skills, even if they feel ordinary to you. You have access to communities, tools, or information that others lack. You have experiences that taught you things. You have connections. You have routines and habits that could be valuable. These are your money trees. They are sources of value that already exist in your life.\n\nToday you will inventory those trees. Then you will shake them to see what falls out.\n\nThink about what people already ask you for help with. Think about what you know how to do that others find confusing. Think about where you spend your time and what insider knowledge that gives you. Think about what tools or equipment you already own. Think about what communities you belong to and what access that creates.\n\nNone of these assets are business ideas on their own. But combined with the opportunity directions from yesterday, they become seeds. Each seed is a possible side hustle waiting to be tested.\n\nBy the end of today, you will have a list of 10 to 20 idea seeds. Not polished ideas. Not business plans. Just seeds. Some will grow. Some will not. But you need volume before you can choose."
-        },
-        "practice": {
-            "title": "The Asset Inventory (4-6 minutes)",
-            "content": "Set a timer for 5 minutes. You are going to write as fast as you can without stopping.\n\nDivide your paper or screen into four sections:\n\n1. Skills: Things you know how to do. Include obvious ones. Include weird ones. Include things you do at work and things you do at home.\n\n2. Access: Communities, groups, workplaces, forums, or networks you belong to. Languages you speak. Locations you know well.\n\n3. Tools: Equipment, software, spaces, or resources you already own or have access to.\n\n4. Wins: Times people thanked you, asked for your help, or paid you for something. Compliments you have received.\n\nWrite until the timer ends. Do not stop to judge or rank. Just list everything you can think of."
-        },
-        "mission": [
+        "mainPromise": "You will build a practical idea-quality filter and use it to shape idea seeds that can realistically earn money soon.",
+        "timeEstimate": "34 min",
+        "teachings": [
             {
-                "task": "Complete the Asset Inventory practice",
-                "time": "6 min"
+                "id": "t1",
+                "title": "Feasibility is about shipping",
+                "content": "A feasible idea is not the easiest idea. It is the idea you can actually deliver without breaking your constraints from Day 1.\n\nFeasibility is mostly logistics: time, skills, tools, and steps. If you cannot outline the first week of delivery, the idea is not ready for this 27-day sprint.\n\nThink like a small online service operator. The service should be deliverable digitally, repeatable, and simple enough to start while you are still learning. Complexity can come later if it earns the right to exist.",
+                "soWhat": "If you do not define feasibility in concrete terms, you will pick ideas that sound good but cannot launch."
             },
             {
-                "task": "Review your list and circle the 5 to 8 strongest assets",
-                "time": "5 min"
+                "id": "t2",
+                "title": "Profit needs a clear path",
+                "content": "Profit is not only revenue. It is revenue minus the real costs of delivery, including your time. Early on, your best path is usually a simple first transaction, not a long-term grand plan.\n\nA profitable idea has a buyer, a reason they pay, and a price that makes sense against effort. If you cannot see how money changes hands, you do not have an idea yet. You have a wish.\n\nKeep it grounded. In the first month, aim for small but real income, like $100 to $300. That forces clarity: how many customers, at what price, through what channel.",
+                "soWhat": "If you do not map the first transaction, you will build a service that cannot sell."
             },
             {
-                "task": "For each circled asset, write why it could be valuable to someone",
-                "time": "10 min"
-            },
-            {
-                "task": "Pick your top 3 to 5 money trees and name them",
-                "time": "5 min"
-            },
-            {
-                "task": "For each money tree, generate 2 to 4 hustle idea seeds",
-                "time": "10 min"
-            },
-            {
-                "task": "Cross-reference with your Day 1 opportunity directions",
-                "time": "5 min"
-            },
-            {
-                "task": "Star any idea seeds that connect to a trend and an asset",
-                "time": "3 min"
+                "id": "t3",
+                "title": "Persuasion is about timing",
+                "content": "People buy when the pain is present, the result is clear, and the risk feels low. Persuasion is not hype. It is fit between a moment and an offer.\n\nA persuasive idea can be explained quickly. It has a why now that makes sense. It reduces uncertainty by making the next step obvious: what happens after payment, what they receive, and when.\n\nFor a small online service, persuasion often comes from specificity: a clear deliverable, a tight timeframe, and a narrow problem that is common among busy people.",
+                "soWhat": "If your offer does not feel timely and low-risk, people delay, and delayed buyers do not become buyers."
             }
         ],
-        "commonMistakes": "Saying you have nothing special. Everyone has assets. You just need to look.\n\nOnly listing professional skills. Hobbies, life experiences, and random knowledge count too.\n\nSkipping the wins section. What people already asked you for is the strongest signal of value.\n\nNot generating enough seeds. Aim for 10 to 20. Quantity now, quality later.\n\nJudging ideas while generating them. Save judgment for Day 4. Right now just list.",
-        "doneMeans": "You have an inventory of your assets, 3 to 5 named money trees, and 10 to 20 idea seeds generated from them.",
-        "reviewCTA": "Want help identifying your strongest money trees? Submit your Day 2 workbook for personalized feedback."
+        "doBlocks": [
+            {
+                "id": "d2_do1",
+                "title": "Build a feasibility checklist",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write your feasibility definition in one paragraph.",
+                    "List the minimum tools and skills you already have.",
+                    "Draft a 7-day launch path with 5 to 7 steps."
+                ],
+                "items": [
+                    {
+                        "id": "d2_do1_i1",
+                        "label": "Wrote a one-paragraph feasibility definition for this course",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your feasibility definition paragraph."
+                    },
+                    {
+                        "id": "d2_do1_i2",
+                        "label": "Listed your existing tools and skills that support a digital service",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 6 to 12 tools/skills you already have."
+                    },
+                    {
+                        "id": "d2_do1_i3",
+                        "label": "Drafted a 7-day launch path with numbered steps",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Write 5 to 7 numbered steps for the first week."
+                    },
+                    {
+                        "id": "d2_do1_i4",
+                        "label": "Identified one feasibility red flag you will reject immediately",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one sentence naming your feasibility red flag."
+                    }
+                ],
+                "example": "Definition: Feasible means I can deliver the first version with tools I already have and no more than 3 hours per week per customer. Launch path: 1) Pick one problem, 2) Write offer, 3) Set up payment link, 4) Create intake form, 5) Deliver first client."
+            },
+            {
+                "id": "d2_do2",
+                "title": "Map first-transaction paths",
+                "estimatedMinutes": 11,
+                "steps": [
+                    "Write three first-transaction options for a small online service (each must include buyer, trigger, and price).",
+                    "For each option, write the delivery effort in minutes.",
+                    "Choose one option that could realistically reach $100 in month one."
+                ],
+                "items": [
+                    {
+                        "id": "d2_do2_i1",
+                        "label": "Wrote 3 first-transaction options with buyer, trigger, and price",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste three options. Each must include buyer, trigger, and price."
+                    },
+                    {
+                        "id": "d2_do2_i2",
+                        "label": "Estimated delivery effort for each option in minutes",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide three minute estimates, one per option."
+                    },
+                    {
+                        "id": "d2_do2_i3",
+                        "label": "Chose one option as your Month 1 $100 path",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write one sentence: I choose option X because..."
+                    },
+                    {
+                        "id": "d2_do2_i4",
+                        "label": "Wrote one sentence explaining why the chosen path is worth paying for",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your value explanation sentence."
+                    }
+                ],
+                "example": "Option: Busy professionals pay $39 for a Notion cleanup and weekly plan delivered in 48 hours. Effort: 75 minutes. Why pay: It removes weekly planning friction and prevents missed tasks."
+            },
+            {
+                "id": "d2_do3",
+                "title": "Write persuasion test cards",
+                "estimatedMinutes": 11,
+                "steps": [
+                    "Create a persuasion card template with 5 fields.",
+                    "Fill three cards for three possible service angles.",
+                    "Choose the one with the strongest why now."
+                ],
+                "items": [
+                    {
+                        "id": "d2_do3_i1",
+                        "label": "Created a persuasion card template with 5 fields",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your 5-field template."
+                    },
+                    {
+                        "id": "d2_do3_i2",
+                        "label": "Filled 3 persuasion cards for 3 service angles",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste three filled persuasion cards."
+                    },
+                    {
+                        "id": "d2_do3_i3",
+                        "label": "Wrote a clear why-now sentence for the best card",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the why-now sentence."
+                    },
+                    {
+                        "id": "d2_do3_i4",
+                        "label": "Wrote one risk-reducer for the best card",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write one line that reduces buyer risk (scope, timeline, guarantee, or clarity)."
+                    }
+                ],
+                "example": "Card fields: Customer, Moment, Promise, Deliverable, Why now. Why now: End of month reporting is due and their current system is messy. Risk reducer: Fixed scope: one workspace, one workflow, delivered in 48 hours."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Feasibility definition, tool inventory, and 7-day launch path",
+                "Three mapped first-transaction options with effort estimates",
+                "Persuasion card template and three filled cards",
+                "Chosen Month 1 $100 path with a risk reducer"
+            ],
+            "tomorrowPreview": "Tomorrow you will generate multiple qualified ideas quickly, then capture them in a consistent format so you can compare them."
+        }
     },
     {
         "day": 3,
-        "title": "Brainstorm, Borrow, or Steal Ideas",
+        "title": "Day 3 - Brainstorm, Borrow, or Steal Ideas",
         "week": 1,
-        "goal": "Generate at least 15 candidate ideas and narrow to a shortlist of 3",
-        "timeEstimate": "40-50 min",
-        "hook": "Forget originality. The best ideas are borrowed, mixed, and adapted. Today you fill the pipeline.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Most people get stuck looking for the perfect idea. They want something completely original. They want it to feel right immediately. They want to be sure before they start.\n\nThat is backwards. The way to find good ideas is to generate many ideas first, then filter. You cannot evaluate options you have not created. So today is about volume.\n\nYou will use three methods:\n\nBrainstorm. Start with problems, frustrations, and requests you have noticed. What annoys people? What takes too long? What is confusing? What do people complain about? What do they wish existed? Turn each problem into a possible solution you could offer.\n\nBorrow. Look at what is already working. Find successful side hustles in other industries, other cities, or other audiences. Ask yourself: could I adapt this model for a different group? Could I do this locally? Could I do this for a niche I understand?\n\nSteal. This is ethical imitation. Find a proven offer structure and replicate it with your own spin. You are not copying the work. You are copying the format. Then you differentiate with your unique voice, audience, or angle.\n\nDo not filter while you generate. That kills momentum. Write down every idea, even the bad ones. You will evaluate later."
-        },
-        "practice": {
-            "title": "The Idea Sprint (5-7 minutes)",
-            "content": "Set a timer for 6 minutes. You are going to generate ideas without stopping.\n\nStart with brainstorm mode (2 minutes). Write every problem, frustration, or request you can think of. Turn each one into a possible side hustle. Write fast.\n\nSwitch to borrow mode (2 minutes). Think of side hustles you have seen succeed. Write down how you could adapt each one for a different audience or market.\n\nSwitch to steal mode (2 minutes). Think of offer formats that work. Courses. Consulting. Templates. Rental. Subscription. Write down how you could apply each format to something you know.\n\nWhen the timer ends, count your ideas. If you have fewer than 12, set another 3 minute timer and keep going."
-        },
-        "mission": [
+        "mainPromise": "You will generate a set of qualified ideas and capture the best ones in consistent idea snapshots.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Idea Sprint practice",
-                "time": "7 min"
+                "id": "t1",
+                "title": "Generate ideas in batches",
+                "content": "Waiting for inspiration is unreliable. Instead, you will generate ideas in batches using repeatable prompts. Batches reduce pressure and increase variety.\n\nUse three sources: your own recurring frustrations, other people's visible problems, and existing offers you can adapt. This keeps your ideas grounded in reality and payment behavior.\n\nDo not judge too early. The goal in the first pass is volume with basic fit to your filter: can it be delivered digitally, can it be sold soon, and is the benefit clear.",
+                "soWhat": "If you do not create volume, you will over-commit to your first idea and miss better options."
             },
             {
-                "task": "Review and expand your brainstorm list to at least 8 ideas",
-                "time": "5 min"
+                "id": "t2",
+                "title": "Turn seeds into snapshots",
+                "content": "A seed is a headline. A snapshot is an idea you can compare. Snapshots force you to define customer, promise, delivery, and payment path without writing a business plan.\n\nKeep snapshots short. You are not trying to be clever. You are trying to be clear. A snapshot should fit on one screen and be easy to score later.\n\nUse your default learner context if you have nothing else: a small online service for busy people, promising time savings and less frustration, delivered digitally.",
+                "soWhat": "If you do not standardize your idea descriptions, you cannot compare them fairly."
             },
             {
-                "task": "Find 3 successful side hustles online and write how you could borrow them",
-                "time": "10 min"
-            },
-            {
-                "task": "Identify 3 proven offer formats and write how you could steal ethically",
-                "time": "8 min"
-            },
-            {
-                "task": "Combine random ideas from your list to create 2 to 3 mashups",
-                "time": "5 min"
-            },
-            {
-                "task": "Count your total ideas, aim for at least 15",
-                "time": "2 min"
-            },
-            {
-                "task": "Use gut feeling to shortlist your top 3 ideas",
-                "time": "5 min"
-            },
-            {
-                "task": "Write 2 sentences on why each shortlisted idea might work",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Select candidates worth deeper work",
+                "content": "Selection is not commitment. It is prioritization. You are choosing which ideas deserve more thinking tomorrow.\n\nA good candidate usually has one of these advantages: easy delivery, clear buyer pain, repeatable demand, or an obvious reason to choose you (speed, clarity, niche focus).\n\nUse simple scoring. Avoid long debates with yourself. Write down why an idea wins. That written reason becomes a useful constraint later.",
+                "soWhat": "If you do not narrow down today, Day 4 becomes messy and slow."
             }
         ],
-        "commonMistakes": "Judging while generating. Save evaluation for tomorrow. Today is about quantity.\n\nWaiting for inspiration. Inspiration comes from motion. Start writing and ideas will follow.\n\nThinking borrowed ideas are cheating. Every business is built on existing models. Adaptation is innovation.\n\nStopping at 5 or 10 ideas. Push past the obvious. The best ideas often come after the first wave.\n\nChoosing a final idea today. You are shortlisting, not deciding. The real evaluation happens on Day 4.",
-        "doneMeans": "You have at least 15 documented ideas using all three methods, and a shortlist of 3 favorites with brief notes on why each could work.",
-        "reviewCTA": "Want a second opinion on your shortlist? Submit your Day 3 workbook for feedback on which ideas have the most potential."
+        "doBlocks": [
+            {
+                "id": "d3_do1",
+                "title": "Generate 12 idea seeds",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write 4 ideas based on time wasters you see in daily life.",
+                    "Write 4 ideas based on confusion problems where people want clarity.",
+                    "Write 4 ideas by adapting an existing online service you have seen."
+                ],
+                "items": [
+                    {
+                        "id": "d3_do1_i1",
+                        "label": "Wrote 4 time waster idea seeds",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List four idea seeds based on time-wasting problems."
+                    },
+                    {
+                        "id": "d3_do1_i2",
+                        "label": "Wrote 4 confusion to clarity idea seeds",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List four idea seeds where the customer wants clarity."
+                    },
+                    {
+                        "id": "d3_do1_i3",
+                        "label": "Wrote 4 adapt an existing offer idea seeds",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List four idea seeds adapted from existing offers you have seen."
+                    },
+                    {
+                        "id": "d3_do1_i4",
+                        "label": "Starred your top 5 idea seeds",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Mark five items in your 12-idea list as top candidates."
+                    }
+                ],
+                "example": "Time waster seed: Weekly meal plan and grocery list generator for busy couples. Confusion seed: One-page travel document checklist for students moving abroad. Adapt seed: Resume rewrite service, but focused on one job role and one page."
+            },
+            {
+                "id": "d3_do2",
+                "title": "Create 5 idea snapshots",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Copy your top 5 seeds into a snapshot template.",
+                    "Fill the template fields for each idea in plain language.",
+                    "Add one price guess and one first-transaction channel per idea."
+                ],
+                "items": [
+                    {
+                        "id": "d3_do2_i1",
+                        "label": "Created an idea snapshot template with 7 fields",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your 7-field snapshot template."
+                    },
+                    {
+                        "id": "d3_do2_i2",
+                        "label": "Completed 5 idea snapshots using the template",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste five filled snapshots."
+                    },
+                    {
+                        "id": "d3_do2_i3",
+                        "label": "Added a price guess for each snapshot",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide five price guesses, one per snapshot."
+                    },
+                    {
+                        "id": "d3_do2_i4",
+                        "label": "Added a first-transaction channel for each snapshot",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List five channels, one per snapshot (DM, email, marketplace, landing page, etc.)."
+                    }
+                ],
+                "example": "Customer: Busy freelancer drowning in admin. Promise: Set up a simple system that saves 2 hours per week. Delivery: Shared doc plus 15-min video walkthrough. Price: $49. Channel: Email to 10 contacts."
+            },
+            {
+                "id": "d3_do3",
+                "title": "Pick your top 3 candidates",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "Score each of your 5 snapshots from 1 to 5 on feasibility, profit potential, and persuasion.",
+                    "Total the scores and rank them.",
+                    "Pick the top 3 and write a one-sentence reason for each."
+                ],
+                "items": [
+                    {
+                        "id": "d3_do3_i1",
+                        "label": "Scored all 5 ideas on three criteria",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Provide 5 entries with feasibility, profit potential, and persuasion scores (1 to 5)."
+                    },
+                    {
+                        "id": "d3_do3_i2",
+                        "label": "Ranked the 5 ideas from best to worst",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List ideas ranked 1 to 5."
+                    },
+                    {
+                        "id": "d3_do3_i3",
+                        "label": "Selected the top 3 candidates",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List the three selected idea titles."
+                    },
+                    {
+                        "id": "d3_do3_i4",
+                        "label": "Wrote a one-sentence why-this-could-work for each top 3",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste three one-sentence reasons, one per selected idea."
+                    }
+                ],
+                "example": "Rank #1: Inbox cleanup service for founders because clear pain, easy delivery, fast turnaround. Rank #2: Weekly planning setup because repeatable demand and low variable cost."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "List of 12 idea seeds with top 5 marked",
+                "Idea snapshot template with 5 completed snapshots",
+                "Price guesses and first-transaction channels for each snapshot",
+                "Scored and ranked list with top 3 candidates chosen"
+            ],
+            "tomorrowPreview": "Tomorrow you will pressure-test your top ideas by listing real obstacles and real advantages, then deciding what is worth solving now."
+        }
     },
     {
         "day": 4,
-        "title": "Weigh the Obstacles and Opportunities",
+        "title": "Day 4 - Weigh the Obstacles and Opportunities of Each Idea",
         "week": 1,
-        "goal": "Evaluate your shortlist and choose 1 or 2 ideas to test with numbers tomorrow",
-        "timeEstimate": "40-50 min",
-        "hook": "Every idea has trade-offs. Today you see them clearly so you can choose wisely.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "You have a shortlist of 3 ideas. They all seem interesting. But they are not equal. Some will be easier to start. Some will be faster to validate. Some will have more upside. Some will have hidden obstacles that trip you up later.\n\nToday you evaluate. You look at each idea honestly and ask two questions: What could go wrong? What could go right?\n\nObstacles include: time required to start, upfront money needed, skills you lack, dependence on other people, legal or platform risks, and complexity. The more obstacles, the harder the path.\n\nOpportunities include: speed to first sale, clarity of the customer pain, potential for repeat buyers, pricing power, low delivery time, and room to grow. The more opportunities, the better the potential.\n\nYou will score each idea on both sides. Then you will compare. The goal is not to find a perfect idea. There is no such thing. The goal is to find the idea with the best balance given your situation.\n\nBy the end of today, you will have a clear winner or a clear top two. Tomorrow you will run the numbers on that winner to see if the math makes sense."
-        },
-        "practice": {
-            "title": "The Decision Clarity Check (2-4 minutes)",
-            "content": "Before you start scoring, take a moment to clear your head.\n\nSit quietly for 30 seconds. Notice any attachment you have to a particular idea. Notice any resistance to ideas that feel harder. These biases are normal, but you want to see them so they do not control you.\n\nNow ask yourself:\n\n1. If I had to start one of these ideas tomorrow with no more research, which would I pick? Write it down.\n\n2. If I had to drop one idea right now, which would go? Write it down.\n\n3. What am I afraid of with each idea? Write one fear per idea.\n\nThese answers are data. They reveal your intuition. Now you will check that intuition against a structured evaluation."
-        },
-        "mission": [
+        "mainPromise": "You will identify what could block each top idea, what could make it easier, and what you will do about it.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Decision Clarity Check",
-                "time": "4 min"
+                "id": "t1",
+                "title": "Obstacles are not excuses",
+                "content": "An obstacle is any factor that increases time, cost, or uncertainty. Naming obstacles is not negativity. It is planning.\n\nMost obstacles fall into a few buckets: unclear customer, hard delivery, hard to get attention, high competition, or too much custom work. When you label the bucket, you can choose a response.\n\nThe goal today is not to solve everything. The goal is to see the real shape of the work so you can avoid ideas that become heavy too fast.",
+                "soWhat": "If you do not list obstacles now, you will discover them later when they are expensive."
             },
             {
-                "task": "Write a one sentence description for each of your 3 shortlisted ideas",
-                "time": "5 min"
+                "id": "t2",
+                "title": "Opportunities are leverage",
+                "content": "Opportunities are not vague upsides. They are specific advantages that reduce effort or increase willingness to pay.\n\nCommon opportunities for a small online service include: repeatable demand, clear urgency windows, easy referrals, a niche where people already pay, and assets you already have (templates, skills, experience, audience).\n\nIf you can name opportunities clearly, you can design the offer to use them. For example, if urgency peaks weekly, you can sell a weekly reset service. If referrals are natural, you can build a referral ask into delivery.",
+                "soWhat": "If you do not name opportunities, you will build a generic offer that competes on price."
             },
             {
-                "task": "For each idea, estimate startup time, startup cost, and skill gap",
-                "time": "10 min"
-            },
-            {
-                "task": "For each idea, rate complexity, speed to first sale, and repeat potential",
-                "time": "10 min"
-            },
-            {
-                "task": "Score each idea: opportunity rating 1 to 10, obstacle rating 1 to 10",
-                "time": "5 min"
-            },
-            {
-                "task": "Compare scores and choose your top 1 or 2 ideas",
-                "time": "5 min"
-            },
-            {
-                "task": "Write why your winner wins and what concerns you most about it",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Reduce the work to experiments",
+                "content": "You do not have to solve every risk. You need a small experiment that reduces the biggest uncertainty.\n\nExperiments should be cheap and fast. Examples: write a one-paragraph offer and see if someone replies, post a simple form and see if anyone fills it, or run a 10-minute call with a friend to test clarity (only if calls fit your constraints).\n\nToday you will decide what you can test next week, and what you should avoid entirely.",
+                "soWhat": "If you do not convert risks into experiments, you will keep thinking instead of moving."
             }
         ],
-        "commonMistakes": "Letting excitement override analysis. The fun idea is not always the smart idea.\n\nIgnoring obstacles because you want the idea to work. Obstacles do not disappear when you ignore them.\n\nOverweighting obstacles because of fear. Many obstacles are smaller than they feel.\n\nNot being honest about skill gaps. If you lack a critical skill, factor in the time to learn it.\n\nChoosing based on complexity alone. Simple ideas are good, but upside matters too.\n\nTrying to pick a final idea today. You are narrowing to 1 or 2 for tomorrow's numbers test. The final decision comes after you run the math.",
-        "doneMeans": "Your 3 ideas are scored on obstacles and opportunities, and you have chosen 1 or 2 winners with written reasoning.",
-        "reviewCTA": "Not sure if you are weighing obstacles fairly? Submit your Day 4 workbook for objective feedback on your evaluation."
+        "doBlocks": [
+            {
+                "id": "d4_do1",
+                "title": "Build obstacle maps",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "For each of your top 3 ideas, list 6 obstacles.",
+                    "Mark the top 2 launch blockers per idea.",
+                    "Write one mitigation for each blocker."
+                ],
+                "items": [
+                    {
+                        "id": "d4_do1_i1",
+                        "label": "Listed 6 obstacles for Idea #1",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List six obstacles for your first idea."
+                    },
+                    {
+                        "id": "d4_do1_i2",
+                        "label": "Listed 6 obstacles for Idea #2",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List six obstacles for your second idea."
+                    },
+                    {
+                        "id": "d4_do1_i3",
+                        "label": "Listed 6 obstacles for Idea #3",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List six obstacles for your third idea."
+                    },
+                    {
+                        "id": "d4_do1_i4",
+                        "label": "Marked top 2 launch blockers per idea and wrote mitigations",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Provide 6 blocker lines total, each followed by a mitigation line."
+                    }
+                ],
+                "example": "Obstacle: Delivery may take too long if every client is different. Blocker: No clear intake process. Mitigation: Use a fixed intake form and a fixed scope checklist."
+            },
+            {
+                "id": "d4_do2",
+                "title": "Build opportunity maps",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "For each top idea, list 6 opportunities.",
+                    "Choose the top 2 leverage points per idea.",
+                    "Write one design choice that uses each leverage point."
+                ],
+                "items": [
+                    {
+                        "id": "d4_do2_i1",
+                        "label": "Listed 6 opportunities for each of the top 3 ideas",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste three lists, each with six opportunities."
+                    },
+                    {
+                        "id": "d4_do2_i2",
+                        "label": "Selected top 2 leverage points per idea",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List six leverage points total, labeled by idea."
+                    },
+                    {
+                        "id": "d4_do2_i3",
+                        "label": "Wrote one design choice per leverage point",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write six design-choice lines, one per leverage point."
+                    },
+                    {
+                        "id": "d4_do2_i4",
+                        "label": "Wrote one unfair advantage sentence for each idea",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste three unfair-advantage sentences."
+                    }
+                ],
+                "example": "Opportunity: Busy people need weekly resets. Design choice: Offer a Friday delivery option and a Monday morning handoff. Unfair advantage: I deliver fast with a fixed template library."
+            },
+            {
+                "id": "d4_do3",
+                "title": "Choose next actions per idea",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "For each top idea, pick one biggest uncertainty.",
+                    "Design a 48-hour experiment to reduce it.",
+                    "Define a kill rule that tells you when to stop investing."
+                ],
+                "items": [
+                    {
+                        "id": "d4_do3_i1",
+                        "label": "Identified one biggest uncertainty for each of the top 3 ideas",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List three uncertainties, one per idea."
+                    },
+                    {
+                        "id": "d4_do3_i2",
+                        "label": "Designed a 48-hour experiment for each uncertainty",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Describe three experiments, one per uncertainty."
+                    },
+                    {
+                        "id": "d4_do3_i3",
+                        "label": "Wrote a kill rule for each idea",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write three kill rules, one per idea."
+                    },
+                    {
+                        "id": "d4_do3_i4",
+                        "label": "Chose one leading idea to take into Day 5 forecasting",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write one sentence naming your leading idea and why."
+                    }
+                ],
+                "example": "Uncertainty: Will anyone pay $79 for this setup? Experiment: Send a short offer to 10 people and track replies within 48 hours. Kill rule: If zero replies show interest at $79, re-scope or drop."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Obstacle maps for three ideas with blockers and mitigations",
+                "Opportunity maps for three ideas with leverage design choices",
+                "Three 48-hour experiments and three kill rules",
+                "One leading idea selected for profit forecasting"
+            ],
+            "tomorrowPreview": "Tomorrow you will forecast profit using simple assumptions so you can choose ideas that pay back your time quickly."
+        }
     },
     {
         "day": 5,
-        "title": "Forecast Your Profit on the Back of a Napkin",
+        "title": "Day 5 - Forecast Your Profit on the Back of a Napkin",
         "week": 1,
-        "goal": "Do a fast profit forecast to test if your top idea is worth pursuing",
-        "timeEstimate": "45-60 min",
-        "hook": "Your idea means nothing until the math works. Today, you test viability in 30 minutes with a napkin and basic arithmetic.",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Most people skip this step. They dive into building, branding, and perfecting before they know if the numbers make sense. Then, six months later, they wonder why they are exhausted and broke. You will not be that person.\n\nToday is about protection. You are protecting your future time and energy by doing simple math now. If the numbers look bad, you find out today, not after you have invested hundreds of hours. If the numbers look good, you move forward with confidence instead of hope.\n\nHere is the truth about profit forecasting: it does not need to be precise. You are not submitting a report to investors. You are testing whether an idea is worth your attention. Round numbers are fine. Estimates are expected. The goal is direction, not decimals.\n\nYou will work with three core numbers: what you charge, how many you sell, and what it costs to deliver. Multiply the first two, subtract the third, and you have profit. That is the entire formula. Everything else is detail.\n\nThe hard part is not the math. The hard part is being honest about your assumptions. People consistently overestimate how many sales they will get and underestimate how much time each sale takes. Today, you will build two scenarios: one conservative and one optimistic. The conservative scenario assumes things go slower than you hope. The optimistic scenario assumes your best reasonable case. Reality usually lands somewhere between.\n\nOne more thing: your time has a cost. If you spend 10 hours a week on a side hustle that generates $100 per month, you are earning $2.50 per hour. That might be fine if you love the work and see growth potential. But you should know that number, not discover it accidentally.\n\nBy the end of today, you will have a simple forecast that tells you whether this idea deserves your next three weeks. No guessing. No hoping. Just numbers on paper that either say keep going or try another idea."
-        },
-        "practice": {
-            "title": "The Assumption Check (2-7 minutes)",
-            "content": "Before you touch any numbers, take a few minutes to calm the math anxiety and surface your hidden assumptions.\n\nSit quietly for 30 seconds. Notice any tension you feel about money or math. Acknowledge it. This exercise is not a test. There are no wrong answers, only honest ones.\n\nOn a blank piece of paper or in a notes app, complete these sentences without overthinking:\n\n1. I think I could charge $____ for this.\n2. I think I could realistically sell ____ per month.\n3. I think each sale would take me about ____ minutes to deliver.\n4. I think my monthly costs would be around $____.\n\nDo not research. Do not calculate. Just write your gut answers.\n\nNow look at those numbers. Ask yourself: where did these come from? Are they based on research, comparison, or pure imagination? Put a star next to any number that feels more like a guess than an estimate.\n\nThis practice surfaces the assumptions you are about to test. Now you know which numbers need extra scrutiny."
-        },
-        "mission": [
+        "mainPromise": "You will estimate profit potential for your leading ideas using simple math, written assumptions, and realistic capacity.",
+        "timeEstimate": "32 min",
+        "teachings": [
             {
-                "task": "Complete the Assumption Check practice above",
-                "time": "3 min"
+                "id": "t1",
+                "title": "Profit is a few simple numbers",
+                "content": "You do not need advanced finance to forecast profit. You need a small set of inputs and honest assumptions.\n\nStart with units: price per sale, time per delivery, and variable costs. Then add capacity: how many sales you can deliver per week within your time budget.\n\nWhen you write these numbers down, you can compare ideas that feel similar. One idea may look exciting but collapses when you realize it needs 6 hours per customer. Another may look boring but pays well because it is repeatable and fast.",
+                "soWhat": "If you do not quantify effort and price, you cannot choose ideas that actually improve your life."
             },
             {
-                "task": "Write down your chosen idea name and what the offer is",
-                "time": "5 min"
+                "id": "t2",
+                "title": "Capacity makes forecasts real",
+                "content": "Your calendar is the real limit. A side hustle that requires high touch time has a hard ceiling.\n\nCapacity is: weekly time budget divided by time per delivery. If you have 3 hours per week and each delivery takes 90 minutes, your weekly capacity is 2 customers. That is not a judgment. It is a fact you can work with.\n\nAlso consider support time. Digital services still create questions, revisions, and follow-up. Add a small buffer so you do not lie to yourself.",
+                "soWhat": "If you do not calculate capacity, you will set goals that create stress instead of freedom."
             },
             {
-                "task": "Research 2 to 3 comparable offers and note their prices",
-                "time": "10 min"
-            },
-            {
-                "task": "Set three price options: low, middle, high",
-                "time": "5 min"
-            },
-            {
-                "task": "Estimate conservative and optimistic monthly sales for each price",
-                "time": "10 min"
-            },
-            {
-                "task": "List your direct costs per sale and monthly fixed costs",
-                "time": "10 min"
-            },
-            {
-                "task": "Estimate minutes to fulfill one sale",
-                "time": "5 min"
-            },
-            {
-                "task": "Calculate monthly revenue, costs, and profit for both scenarios",
-                "time": "10 min"
-            },
-            {
-                "task": "Answer: Is this idea worth pursuing? Write your decision.",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Choose based on payback and simplicity",
+                "content": "Your best idea for this sprint is usually the one that pays back your time quickly and stays simple enough to deliver repeatedly.\n\nUse two final checks. First, payback: profit per hour should beat what you could earn from an extra shift or basic freelancing. Second, simplicity: the idea should not require heavy customization to be valuable.\n\nYou are not picking a forever business. You are picking the best next step. A good week-one choice is an idea you can sell, deliver, and learn from without burning out.",
+                "soWhat": "If you do not choose decisively now, you will drift into Week 2 without a strong candidate."
             }
         ],
-        "commonMistakes": "Underpricing because of fear. New sellers often set prices too low because they worry no one will pay. Check comparable offers. Your price should be based on value and market, not insecurity.\n\nIgnoring time cost. If you spend 5 hours per sale and charge $50, you are earning $10 per hour before expenses. Factor your time in when judging viability.\n\nUsing optimistic numbers only. Everyone wants to believe the best case. Build a conservative scenario first. If the conservative numbers work, the optimistic ones are a bonus.\n\nForgetting recurring costs. Software subscriptions, transaction fees, and supplies add up. List every monthly cost, even small ones.\n\nSkipping comparable research. You cannot estimate your price in a vacuum. Spend 10 minutes finding similar offers and their price ranges.\n\nTreating the forecast as permanent. This is a snapshot based on current assumptions. It will change as you learn more. The goal is not perfection, just a checkpoint.",
-        "doneMeans": "You have calculated profit for both conservative and optimistic scenarios, compared them to your target, and made a clear decision about whether to continue with this idea.",
-        "reviewCTA": "Want a second opinion on your numbers? Submit your Day 5 workbook for review and get feedback on your pricing logic and profit assumptions within 48 hours."
+        "doBlocks": [
+            {
+                "id": "d5_do1",
+                "title": "Build a unit economics sheet",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "For your top 3 ideas, write price, delivery time, and variable cost.",
+                    "Calculate gross profit per sale (price minus variable cost).",
+                    "Calculate profit per hour (gross profit divided by delivery hours)."
+                ],
+                "items": [
+                    {
+                        "id": "d5_do1_i1",
+                        "label": "Wrote price, delivery time, and variable cost for Idea #1",
+                        "evidenceType": "number",
+                        "evidencePrompt": "Enter the three numbers in your log for Idea #1 and note units/currency."
+                    },
+                    {
+                        "id": "d5_do1_i2",
+                        "label": "Wrote price, delivery time, and variable cost for Idea #2",
+                        "evidenceType": "number",
+                        "evidencePrompt": "Enter the three numbers in your log for Idea #2 and note units/currency."
+                    },
+                    {
+                        "id": "d5_do1_i3",
+                        "label": "Wrote price, delivery time, and variable cost for Idea #3",
+                        "evidenceType": "number",
+                        "evidencePrompt": "Enter the three numbers in your log for Idea #3 and note units/currency."
+                    },
+                    {
+                        "id": "d5_do1_i4",
+                        "label": "Calculated gross profit per sale and profit per hour for all three",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide six calculated values: three gross profits and three profit-per-hour numbers."
+                    }
+                ],
+                "example": "Price: $79, Variable cost: $4 (software), Time: 1.5 hours. Gross profit per sale: $75. Profit per hour: $50."
+            },
+            {
+                "id": "d5_do2",
+                "title": "Forecast month-one revenue",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Use your time budget to calculate weekly capacity for each idea.",
+                    "Create three scenarios: cautious, base, stretch.",
+                    "Convert scenarios into month-one revenue and profit estimates."
+                ],
+                "items": [
+                    {
+                        "id": "d5_do2_i1",
+                        "label": "Calculated weekly delivery capacity for each of the top 3 ideas",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide three capacity numbers (customers per week), one per idea."
+                    },
+                    {
+                        "id": "d5_do2_i2",
+                        "label": "Wrote cautious, base, and stretch scenarios for each idea",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Provide 9 scenario lines total (3 scenarios x 3 ideas)."
+                    },
+                    {
+                        "id": "d5_do2_i3",
+                        "label": "Estimated month-one revenue for each idea under base scenario",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide three base-scenario revenue numbers with currency noted in your log."
+                    },
+                    {
+                        "id": "d5_do2_i4",
+                        "label": "Estimated month-one profit for each idea under base scenario",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide three base-scenario profit numbers and one assumption line for each."
+                    }
+                ],
+                "example": "Weekly time: 180 minutes, Time per client: 90 minutes, Capacity: 2 clients/week. Base: 6 clients/month at $79 = $474 revenue. Profit: $474 minus $24 software = $450 (before taxes)."
+            },
+            {
+                "id": "d5_do3",
+                "title": "Make your Week 1 decision",
+                "estimatedMinutes": 8,
+                "steps": [
+                    "Choose one primary idea and one backup idea.",
+                    "Write your pricing hypothesis and what must be true for it to work.",
+                    "Write the next three actions you will take in Week 2."
+                ],
+                "items": [
+                    {
+                        "id": "d5_do3_i1",
+                        "label": "Selected one primary idea and one backup idea",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write the two idea titles and label them primary and backup."
+                    },
+                    {
+                        "id": "d5_do3_i2",
+                        "label": "Wrote a pricing hypothesis for the primary idea",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste one sentence with price and promised outcome."
+                    },
+                    {
+                        "id": "d5_do3_i3",
+                        "label": "Listed 3 assumptions that must be true for the primary idea to work",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List three must-be-true assumptions."
+                    },
+                    {
+                        "id": "d5_do3_i4",
+                        "label": "Wrote the next 3 actions you will take in Week 2",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Write three numbered next actions."
+                    }
+                ],
+                "example": "Primary: 48-hour admin workflow setup for freelancers. Backup: Weekly planning reset. Pricing hypothesis: $79 for a 48-hour delivery that saves 2 hours/week. Next actions: 1) Research competitors, 2) Draft offer page, 3) Talk to 5 target customers."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Unit economics for three ideas (price, cost, time, profit per hour)",
+                "Capacity calculations and month-one scenario forecasts",
+                "Primary and backup idea decision with a pricing hypothesis",
+                "Three assumptions and next three actions for Week 2"
+            ],
+            "tomorrowPreview": "In Week 2 you will compare ideas more sharply and start validating with real-world evidence, so you can move toward a launchable offer."
+        }
     },
     {
         "day": 6,
@@ -887,7 +1376,7 @@
         "timeEstimate": "35-45 min",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "This is the day. Whatever you've built—simple or complex—it's time to make it available to the world. The gap between 'working on it' and 'it's live' is one click.\n\nPublishing doesn't mean perfect. It means available. Someone, somewhere, can now see your offer and decide whether to buy.\n\nThis might be a simple landing page, a product listing on a marketplace, or even a direct message to your first prospect. The format matters less than the action.\n\nHit publish. You can improve it later."
+            "content": "This is the day. Whatever you've built\u2014simple or complex\u2014it's time to make it available to the world. The gap between 'working on it' and 'it's live' is one click.\n\nPublishing doesn't mean perfect. It means available. Someone, somewhere, can now see your offer and decide whether to buy.\n\nThis might be a simple landing page, a product listing on a marketplace, or even a direct message to your first prospect. The format matters less than the action.\n\nHit publish. You can improve it later."
         },
         "mission": [
             {
@@ -899,7 +1388,7 @@
                 "time": "10 min"
             },
             {
-                "task": "Publish it—make it accessible via a live URL or marketplace",
+                "task": "Publish it\u2014make it accessible via a live URL or marketplace",
                 "time": "5 min"
             },
             {
@@ -918,7 +1407,7 @@
         "timeEstimate": "30-40 min",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Girl Scouts don't wait for customers to find their cookie table. They knock on doors, set up in high-traffic areas, and ask directly. Today, you do the same.\n\nDirect outreach isn't spam—it's service. If your offer genuinely helps people, telling them about it is a favor, not an imposition.\n\nThe key is targeting. Don't blast everyone; reach out to people who actually fit your ideal customer profile. Personalize. Explain why you thought of them. Make it easy to say yes or no."
+            "content": "Girl Scouts don't wait for customers to find their cookie table. They knock on doors, set up in high-traffic areas, and ask directly. Today, you do the same.\n\nDirect outreach isn't spam\u2014it's service. If your offer genuinely helps people, telling them about it is a favor, not an imposition.\n\nThe key is targeting. Don't blast everyone; reach out to people who actually fit your ideal customer profile. Personalize. Explain why you thought of them. Make it easy to say yes or no."
         },
         "mission": [
             {
@@ -949,7 +1438,7 @@
         "timeEstimate": "25-35 min",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Beyond direct sales, your network can amplify your reach. Today you ask for help—not sales, but introductions, shares, and feedback.\n\nPeople want to help, but they need to be asked specifically. 'Can you share this?' is better than hoping they notice. 'Do you know anyone who…?' is better than waiting for referrals.\n\nThe ask should be easy to fulfill. Don't ask people to write a novel—ask them to forward an email, share a link, or make an introduction."
+            "content": "Beyond direct sales, your network can amplify your reach. Today you ask for help\u2014not sales, but introductions, shares, and feedback.\n\nPeople want to help, but they need to be asked specifically. 'Can you share this?' is better than hoping they notice. 'Do you know anyone who\u2026?' is better than waiting for referrals.\n\nThe ask should be easy to fulfill. Don't ask people to write a novel\u2014ask them to forward an email, share a link, or make an introduction."
         },
         "mission": [
             {
@@ -1042,7 +1531,7 @@
         "timeEstimate": "20-30 min",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Whether you've made a sale already or you're still working toward it, today is about the milestone of the first dollar.\n\nIf you've made a sale: celebrate it. Document exactly what happened—the channel, the person, the moment. This is the proof that your side hustle works.\n\nIf you haven't yet: analyze why and plan your next actions. The first sale often takes longer than expected. That's normal. Keep going.\n\nThe first dollar matters more than the amount. It's proof of concept."
+            "content": "Whether you've made a sale already or you're still working toward it, today is about the milestone of the first dollar.\n\nIf you've made a sale: celebrate it. Document exactly what happened\u2014the channel, the person, the moment. This is the proof that your side hustle works.\n\nIf you haven't yet: analyze why and plan your next actions. The first sale often takes longer than expected. That's normal. Keep going.\n\nThe first dollar matters more than the amount. It's proof of concept."
         },
         "mission": [
             {
@@ -1135,7 +1624,7 @@
         "timeEstimate": "25-35 min",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Sometimes the best opportunities are hiding in plain sight. Today you look for money you're leaving on the table—upsells, add-ons, referral opportunities, or underpriced services.\n\nAsk: who's already interested but hasn't bought? What else could current customers need? Where is demand showing up that you haven't addressed?\n\nThese 'rocks' often represent easier revenue than acquiring entirely new customers. The hardest sale is the first one; subsequent sales to satisfied customers are much easier."
+            "content": "Sometimes the best opportunities are hiding in plain sight. Today you look for money you're leaving on the table\u2014upsells, add-ons, referral opportunities, or underpriced services.\n\nAsk: who's already interested but hasn't bought? What else could current customers need? Where is demand showing up that you haven't addressed?\n\nThese 'rocks' often represent easier revenue than acquiring entirely new customers. The hardest sale is the first one; subsequent sales to satisfied customers are much easier."
         },
         "mission": [
             {
@@ -1197,7 +1686,7 @@
         "timeEstimate": "30-40 min",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Congratulations—you've completed the 27-day program. You've moved from idea to offer to (hopefully) first sales. That's not nothing. That's real progress.\n\nBut a side hustle isn't a project; it's an ongoing practice. Today you zoom out and plan what happens next.\n\nWhat did you learn? What would you do differently? What are your goals for the next 90 days? The work continues, but now you have momentum, experience, and data to guide you."
+            "content": "Congratulations\u2014you've completed the 27-day program. You've moved from idea to offer to (hopefully) first sales. That's not nothing. That's real progress.\n\nBut a side hustle isn't a project; it's an ongoing practice. Today you zoom out and plan what happens next.\n\nWhat did you learn? What would you do differently? What are your goals for the next 90 days? The work continues, but now you have momentum, experience, and data to guide you."
         },
         "mission": [
             {
