@@ -1,0 +1,149 @@
+{
+    "day": 22,
+    "title": "Day 22 - Frame Your First Dollar",
+    "week": 4,
+    "mainPromise": "You will capture proof of your first dollar or strongest commitment, document what caused it, and set a short plan to repeat it.",
+    "timeEstimate": "34 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "The first dollar is proof, not a prize",
+            "content": "The first paid order is a signal that someone will exchange money for your outcome. If you have a payment, treat it as proof that your offer can work. If you do not have a payment yet, use the strongest commitment you received, like an intake request, a serious reply, or a scheduled call.\n\nFraming matters. If you frame early results as too small, you miss the learning. If you frame them as everything, you overreact. The useful frame is: what happened, why it happened, and how to repeat it.\n\nYou will capture evidence and write a short win report you can use to improve your next outreach.",
+            "soWhat": "If you do not document the first signal, you will forget what worked and drift back into random changes."
+        },
+        {
+            "id": "t2",
+            "title": "Turn the first result into a repeatable pattern",
+            "content": "A single win becomes useful when you extract a pattern. Look for what was true: which channel, which phrasing, which customer type, which pain, and which timing.\n\nAlso capture what almost broke. Did the buyer ask clarifying questions? Did they hesitate at the price? Did the intake cause confusion? These details become your next improvements.\n\nYou will produce a short pattern memo and three changes to improve the next sale.",
+            "soWhat": "If you do not extract the pattern, you will treat the first result as luck and fail to repeat it."
+        },
+        {
+            "id": "t3",
+            "title": "Close the loop with delivery and feedback",
+            "content": "If you have a paying customer, your best marketing is delivery. Clean delivery creates referrals, repeat work, and the confidence to sell again. If you do not have a paying customer yet, treat the next strongest commitment as a mini-delivery: respond quickly, provide the link pack, and remove friction.\n\nFeedback should be structured. Do not ask what do you think? Ask for specific signals: what was confusing, what made it feel safe, and what outcome they expect. That feedback improves your offer faster than more brainstorming.\n\nToday you will set a short 7-day plan focused on repeating what worked.",
+            "soWhat": "If you do not close the loop, you will lose momentum right after the first signal."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d22_do1",
+            "title": "Capture your first-dollar evidence",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Identify your first payment or strongest commitment.",
+                "Capture the proof (receipt, message, screenshot description, or link).",
+                "Record the exact path that led to it."
+            ],
+            "items": [
+                {
+                    "id": "d22_do1_i1",
+                    "label": "Selected the first payment or strongest commitment event",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write one sentence describing the event (payment, intake request, strong reply, scheduled call)."
+                },
+                {
+                    "id": "d22_do1_i2",
+                    "label": "Captured proof of the event",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the receipt details, copied message text, or a precise proof description."
+                },
+                {
+                    "id": "d22_do1_i3",
+                    "label": "Wrote the path that led to it as 6 to 10 steps",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide 6 to 10 numbered steps showing the path to the event."
+                },
+                {
+                    "id": "d22_do1_i4",
+                    "label": "Recorded the offer version tag used",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write the version tag and where it was used (page, DM, post)."
+                }
+            ],
+            "example": "Event: One person paid $89 via the payment link. Proof: Receipt ID recorded in notes. Path: DM opener T1A -> replied 'link' -> sent link pack -> paid -> intake completed."
+        },
+        {
+            "id": "d22_do2",
+            "title": "Write the repeatability memo",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write what triggered the yes: pain, timing, and wording.",
+                "Write what reduced risk: scope, timeline, proof, or trust.",
+                "Choose three improvements to apply immediately."
+            ],
+            "items": [
+                {
+                    "id": "d22_do2_i1",
+                    "label": "Wrote a why-they-said-yes paragraph",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste 120 to 180 words explaining why the person said yes (or almost said yes)."
+                },
+                {
+                    "id": "d22_do2_i2",
+                    "label": "Listed 5 factors that reduced buyer risk",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 risk-reduction factors (scope, timeline, clarity, proof, trust)."
+                },
+                {
+                    "id": "d22_do2_i3",
+                    "label": "Listed 3 friction points that still exist",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 friction points you observed."
+                },
+                {
+                    "id": "d22_do2_i4",
+                    "label": "Chose 3 improvements with owner and deadline",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write three improvement lines with owner (you) and a deadline date."
+                }
+            ],
+            "example": "Risk reducer: Fixed scope and 48-hour delivery. Friction: They asked what tools are required. Improvement: Add 'no new tools required' line to page and DM by tomorrow."
+        },
+        {
+            "id": "d22_do3",
+            "title": "Create your 7-day repeat plan",
+            "estimatedMinutes": 10,
+            "steps": [
+                "Write your next 7 days as a simple schedule: outreach, follow-up, delivery, test.",
+                "Set weekly targets for the metrics that matter.",
+                "Draft a short feedback request message."
+            ],
+            "items": [
+                {
+                    "id": "d22_do3_i1",
+                    "label": "Wrote a 7-day schedule with daily actions",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List Day 1 to Day 7 actions in one line each."
+                },
+                {
+                    "id": "d22_do3_i2",
+                    "label": "Set 5 weekly metric targets",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Write 5 metrics and numeric weekly targets (for example, outreach sent: 30)."
+                },
+                {
+                    "id": "d22_do3_i3",
+                    "label": "Drafted a feedback request message for the buyer or lead",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste a short feedback request message."
+                },
+                {
+                    "id": "d22_do3_i4",
+                    "label": "Updated your launch log with a next version note",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste the launch log line that states what you will change next and why."
+                }
+            ],
+            "example": "Schedule: Mon: 10 DMs, Tue: follow-ups + 1 test, Wed: deliver, Thu: 10 DMs, Fri: follow-ups. Feedback ask: What part felt unclear, and what made it feel safe to proceed?"
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "First-dollar or strongest-commitment proof and a recorded path to it",
+            "Repeatability memo with risk reducers, friction points, and improvements",
+            "7-day plan with metric targets",
+            "Feedback request message and updated launch log"
+        ],
+        "tomorrowPreview": "Next week you will scale what works, improve what causes hesitation, and keep delivery clean so sales do not create stress."
+    }
+}

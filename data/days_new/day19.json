@@ -1,0 +1,149 @@
+{
+    "day": 19,
+    "title": "Day 19 - Ask Ten People for Help",
+    "week": 4,
+    "mainPromise": "You will ask ten specific people for introductions or referrals using a forwardable message that makes helping you easy.",
+    "timeEstimate": "38 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Help requests work when they are specific",
+            "content": "A vague request like can you share this? creates work for the helper. They have to decide who to send it to and how to describe it. Most people will postpone and forget.\n\nA good help request is narrow. It names the customer type, the problem, the offer, and the exact action you want: an introduction, a forward, or permission to mention their name.\n\nYou are not asking for a favor in the abstract. You are inviting the helper to match you with someone they already know who has the problem.",
+            "soWhat": "If you do not make the ask specific, you will get polite encouragement instead of introductions."
+        },
+        {
+            "id": "t2",
+            "title": "Make a forwardable packet",
+            "content": "Your helper should not have to write anything. You will give them a ready-made packet: a two-sentence description, one link, and one optional credibility line.\n\nForwardable text works best when it sounds like a personal note, not marketing. It should focus on the outcome and the buyer fit, not on your life story.\n\nYou will also create a short if not you, who? question to make introductions easier.",
+            "soWhat": "If you do not provide a packet, your helper will delay because helping feels like writing."
+        },
+        {
+            "id": "t3",
+            "title": "Ask, track, and thank",
+            "content": "A help request is a small project. You send it, you track it, you follow up once, and you say thank you. That is how you turn a favor into a repeatable channel.\n\nYou are not measuring kindness. You are measuring outcomes: intros made, forwards sent, replies received, and leads created.\n\nToday you will send your requests and record them in your tracker with follow-up dates.",
+            "soWhat": "If you do not send and track the requests, your helper plan stays theoretical."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d19_do1",
+            "title": "Choose your ten helpers",
+            "estimatedMinutes": 12,
+            "steps": [
+                "List 20 possible helpers, then pick the best ten.",
+                "For each helper, write why they are a good connector.",
+                "Decide the type of help you will ask for."
+            ],
+            "items": [
+                {
+                    "id": "d19_do1_i1",
+                    "label": "Listed 20 possible helpers",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 20 people or identifiers who could help you connect to buyers."
+                },
+                {
+                    "id": "d19_do1_i2",
+                    "label": "Selected ten helpers and wrote a one-line reason for each",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 10 helpers with one-line reasons."
+                },
+                {
+                    "id": "d19_do1_i3",
+                    "label": "Chose the help type per person (intro, forward, or signal boost)",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Add a help type label next to each of the 10 helpers."
+                },
+                {
+                    "id": "d19_do1_i4",
+                    "label": "Set a send order for the ten",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Rank the 10 helpers from 1 to 10 in send order."
+                }
+            ],
+            "example": "Helper: Former coworker who manages a small team reason: Sees workflow problems weekly ask: intro. Helper: Friend in a freelancer group reason: Can forward to active buyers ask: forward."
+        },
+        {
+            "id": "d19_do2",
+            "title": "Write your helper packet",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write a 70 to 110 word forwardable blurb.",
+                "Write a one-sentence credibility line and a scope warning line.",
+                "Write two subject lines or openers a helper can use."
+            ],
+            "items": [
+                {
+                    "id": "d19_do2_i1",
+                    "label": "Wrote a 70 to 110 word forwardable blurb",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the blurb (70 to 110 words)."
+                },
+                {
+                    "id": "d19_do2_i2",
+                    "label": "Wrote one credibility line and one scope warning line",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the credibility line and the scope warning line."
+                },
+                {
+                    "id": "d19_do2_i3",
+                    "label": "Wrote two helper-friendly subject lines or openers",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write two subject lines or opening lines a helper can copy."
+                },
+                {
+                    "id": "d19_do2_i4",
+                    "label": "Wrote one who-else-should-see-this question",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one question that invites referrals."
+                }
+            ],
+            "example": "Blurb: I'm testing a small service that sets up a simple workflow in 48 hours to cut weekly admin time. Fixed scope, $89. It's best for busy people who want a clear result without learning new tools. If you want the link, reply and I'll send it. Referral question: If this isn't you, who do you know who would want this handled this week?"
+        },
+        {
+            "id": "d19_do3",
+            "title": "Send ten help requests",
+            "estimatedMinutes": 14,
+            "steps": [
+                "Personalize the first line for each helper.",
+                "Send the request with the forwardable packet.",
+                "Log the request and schedule one follow-up."
+            ],
+            "items": [
+                {
+                    "id": "d19_do3_i1",
+                    "label": "Sent help requests to ten helpers",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste the message you sent and list the ten recipients (names or identifiers)."
+                },
+                {
+                    "id": "d19_do3_i2",
+                    "label": "Logged each request in your tracker",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste 10 tracker entries or a table showing the requests."
+                },
+                {
+                    "id": "d19_do3_i3",
+                    "label": "Scheduled one follow-up date for each helper",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List follow-up dates for the 10 helpers."
+                },
+                {
+                    "id": "d19_do3_i4",
+                    "label": "Wrote a thank-you message template for when they help",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the thank-you template message."
+                }
+            ],
+            "example": "Personal line: You mentioned last month that your team keeps rebuilding the same process. Thank-you: Thank you for connecting us. I'll keep it simple and respect their time."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Ten-helper list with reasons, help types, and send order",
+            "Forwardable helper packet (blurb, credibility, scope, openers)",
+            "Ten sent help requests recorded in your tracker",
+            "Follow-up schedule and thank-you template"
+        ],
+        "tomorrowPreview": "Tomorrow you will run controlled tests on your message and page so you can improve results without guessing."
+    }
+}

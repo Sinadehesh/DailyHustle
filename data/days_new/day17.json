@@ -1,0 +1,149 @@
+{
+    "day": 17,
+    "title": "Day 17 - Publish Your Offer!",
+    "week": 4,
+    "mainPromise": "You will publish a simple offer page or listing that a stranger can understand and buy, then announce it to a small, relevant audience.",
+    "timeEstimate": "38 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Publish a minimum buying path",
+            "content": "Publishing is not the same as building a full website. Publishing means: a buyer can read what you do, understand the scope, know the price, pay, and complete intake without confusion.\n\nYour publish surface can be one page, one post, or one listing. The format matters less than clarity. You are aiming for a clean buying path, not perfect branding.\n\nA simple online service benefits from a tight structure: who it is for, the outcome, what they get, what you need, price, timeline, and how to start. Anything else is optional.",
+            "soWhat": "If your offer is not published as a complete buying path, you cannot measure real demand."
+        },
+        {
+            "id": "t2",
+            "title": "Announce to the smallest right crowd",
+            "content": "A launch does not require a big audience. It requires the right people. Your first goal is not going viral. Your first goal is getting conversations with people who recognize the problem.\n\nStart with warm and adjacent networks: coworkers, friends in similar roles, small communities, alumni groups, creators you already follow, professional groups, and niche forums where your customer spends time.\n\nYour announcement should be short and direct. It should describe the outcome, the price, and the next step. If it reads like a generic ad, it will be ignored.",
+            "soWhat": "If you do not announce intentionally, your offer will sit unpublished and untested."
+        },
+        {
+            "id": "t3",
+            "title": "Publish means track and follow through",
+            "content": "The moment you publish, you become a tester. Your job is to observe what happens and respond quickly. That means tracking: where you posted, who you messaged, who clicked, who replied, who asked for intake, who paid.\n\nTracking is not busywork. It is the only way to know whether you should change your opener, your scope, your price, or your channel. Most early launches fail because people do not follow up, not because the offer is bad.\n\nToday you will set up a simple launch log and publish your first version.",
+            "soWhat": "If you do not track and follow up, you will confuse silence with failure and change random things."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d17_do1",
+            "title": "Create your publish page",
+            "estimatedMinutes": 14,
+            "steps": [
+                "Draft the page in a single document using the structure below.",
+                "Insert your payment method and intake link locations.",
+                "Add one scope warning line and your key policies."
+            ],
+            "items": [
+                {
+                    "id": "d17_do1_i1",
+                    "label": "Wrote a publish page draft with 7 required sections",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your full draft with section headings (who it's for, outcome, what you get, what you need, price, timeline, how to start)."
+                },
+                {
+                    "id": "d17_do1_i2",
+                    "label": "Added price, timeline, and a clear start step",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the exact lines that show price, timeline, and how to start."
+                },
+                {
+                    "id": "d17_do1_i3",
+                    "label": "Added what-you-get and what-you-provide lists",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide two lists with 5 bullets each: what you get and what you provide."
+                },
+                {
+                    "id": "d17_do1_i4",
+                    "label": "Added scope warning plus revision and refund lines",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste your scope warning and policy block (4 to 8 lines)."
+                }
+            ],
+            "example": "Headline: A simple workflow setup delivered in 48 hours. Price line: $89 fixed scope, delivered after intake. Start step: Pay here, then complete the intake form in 5 minutes. Scope warning: This is a one-time setup, not ongoing daily management."
+        },
+        {
+            "id": "d17_do2",
+            "title": "Build a launch list and post plan",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Create a list of 15 to 25 places or people to announce to.",
+                "Choose 3 channels for today: one post, one message, one community.",
+                "Draft one announcement for each channel."
+            ],
+            "items": [
+                {
+                    "id": "d17_do2_i1",
+                    "label": "Created a launch list with 15 to 25 targets",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 15 to 25 targets with a one-line reason each."
+                },
+                {
+                    "id": "d17_do2_i2",
+                    "label": "Chose 3 channels for today's announcement",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Name three channels and what you will do in each (post, DM, community, etc.)."
+                },
+                {
+                    "id": "d17_do2_i3",
+                    "label": "Drafted 3 announcement texts tailored to each channel",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste three short announcements, one per channel."
+                },
+                {
+                    "id": "d17_do2_i4",
+                    "label": "Defined one call to action for each announcement",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write three CTAs, one per announcement."
+                }
+            ],
+            "example": "DM draft: I'm testing a small service that sets up a simple workflow in 48 hours to cut weekly admin time. Fixed scope, $89. If you want the link, reply 'workflow'. Community post CTA: Comment 'link' and I will send details."
+        },
+        {
+            "id": "d17_do3",
+            "title": "Publish and log version 1",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Publish your page or listing (or paste it into your chosen platform).",
+                "Send or post your three announcements.",
+                "Create a launch log entry for today with version notes."
+            ],
+            "items": [
+                {
+                    "id": "d17_do3_i1",
+                    "label": "Published the offer page or listing",
+                    "evidenceType": "link",
+                    "evidencePrompt": "Provide the published link or describe exactly where it is posted (platform + location)."
+                },
+                {
+                    "id": "d17_do3_i2",
+                    "label": "Posted or sent the 3 announcements",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the final texts exactly as posted/sent."
+                },
+                {
+                    "id": "d17_do3_i3",
+                    "label": "Created a launch log entry with date, channels, and version tag",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste the log entry including a version tag like v1 and the channels used."
+                },
+                {
+                    "id": "d17_do3_i4",
+                    "label": "Wrote 3 follow-up tasks for tomorrow",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three follow-up tasks with who/where and a time."
+                }
+            ],
+            "example": "Version tag: v1: $89, 48 hours, fixed scope, one revision. Follow-up task: Tomorrow: reply to anyone who comments 'link' within 2 hours."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Published offer page or listing link/location",
+            "Launch list plus 3 tailored announcement drafts and final texts",
+            "Launch log entry with version tag",
+            "Follow-up task list for tomorrow"
+        ],
+        "tomorrowPreview": "Tomorrow you will sell directly and respectfully using simple scripts and clear asks, then follow up without awkwardness."
+    }
+}

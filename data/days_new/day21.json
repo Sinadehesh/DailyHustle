@@ -1,0 +1,149 @@
+{
+    "day": 21,
+    "title": "Day 21 - Burn Down the Furniture Store",
+    "week": 4,
+    "mainPromise": "You will simplify your offer and selling process by removing nonessential parts that add friction, confusion, or delivery risk.",
+    "timeEstimate": "38 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Complexity is a hidden tax",
+            "content": "Complexity shows up as extra decisions, extra messages, extra tools, and extra options. It is a tax on you and on the buyer. Buyers delay when they feel they must think too much.\n\nIn early launch, the best version of your offer is often the smallest version that still delivers the promised outcome. Fixed scope beats custom scope. One package beats three packages. One clear CTA beats multiple paths.\n\nYour goal today is not to make it cheaper. Your goal is to make it easier to buy and easier to deliver.",
+            "soWhat": "If you do not reduce complexity, your launch will slow down and your delivery will feel heavier than it needs to be."
+        },
+        {
+            "id": "t2",
+            "title": "Simplify the words first",
+            "content": "Often the biggest friction is language. If your headline is broad, buyers ask questions. If your scope is unclear, buyers ask for custom changes before paying.\n\nSimplification usually means fewer claims and more specifics. Replace optimize your life with set up a workflow in 48 hours. Replace custom solution with fixed scope, one revision.\n\nToday you will rewrite your top-of-page content and your DM script so a buyer can understand it in 15 seconds.",
+            "soWhat": "If your words are not simple, you will spend time explaining instead of selling."
+        },
+        {
+            "id": "t3",
+            "title": "Simplify the system, not only the message",
+            "content": "If you simplify words but keep a complex backend, delivery will still feel heavy. Remove tools you do not need. Remove steps that exist only for perfection. Keep quality checks, but make them quick.\n\nA simple system usually has: one tracker, one payment path, one intake form, one delivery template, one follow-up rule. That is enough to sell and deliver repeatedly.\n\nToday you will implement your top cuts in the workflow and update your launch kit.",
+            "soWhat": "If you do not implement the cuts, simplification stays theoretical and your week remains overloaded."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d21_do1",
+            "title": "Identify friction and cut list",
+            "estimatedMinutes": 12,
+            "steps": [
+                "List every step a buyer takes from first message to intake completion.",
+                "Mark where people hesitate, ask questions, or drop off.",
+                "Create a cut list of at least 7 items to remove or simplify."
+            ],
+            "items": [
+                {
+                    "id": "d21_do1_i1",
+                    "label": "Wrote the buyer path as 8 to 12 steps",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide your buyer path steps from first contact to intake completion."
+                },
+                {
+                    "id": "d21_do1_i2",
+                    "label": "Marked the top 5 friction points",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List five friction points with one-line explanations."
+                },
+                {
+                    "id": "d21_do1_i3",
+                    "label": "Created a cut list with at least 7 simplifications",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List at least 7 simplifications you will make."
+                },
+                {
+                    "id": "d21_do1_i4",
+                    "label": "Selected the top 3 cuts to implement today",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Name your top 3 cuts and one-line reasons for each."
+                }
+            ],
+            "example": "Friction point: People ask what tools are required cut: Add one line: No new tools required. Cut: Remove secondary package option and keep one core package."
+        },
+        {
+            "id": "d21_do2",
+            "title": "Rewrite your offer copy for clarity",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Rewrite headline, promise sentence, and first five bullets.",
+                "Rewrite the DM script to match the same words.",
+                "Add one sentence that prevents mismatch."
+            ],
+            "items": [
+                {
+                    "id": "d21_do2_i1",
+                    "label": "Rewrote the headline and promise sentence",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the updated headline and one-sentence promise."
+                },
+                {
+                    "id": "d21_do2_i2",
+                    "label": "Rewrote the top 5 bullets as simple deliverables",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 deliverable bullets in plain language."
+                },
+                {
+                    "id": "d21_do2_i3",
+                    "label": "Rewrote the DM script to match the new copy",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the updated DM script aligned to the new copy."
+                },
+                {
+                    "id": "d21_do2_i4",
+                    "label": "Added one mismatch-prevention sentence",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence that prevents mismatch."
+                }
+            ],
+            "example": "Headline: Workflow setup in 48 hours. Bullet: One intake form, one workflow, one checklist, one walkthrough, one revision. Mismatch sentence: If you need ongoing support, this will not be a fit."
+        },
+        {
+            "id": "d21_do3",
+            "title": "Implement your top 3 cuts",
+            "estimatedMinutes": 14,
+            "steps": [
+                "Apply your top three simplifications to your page, script, or process.",
+                "Update your launch kit with the new copy and links.",
+                "Create a version tag and note what changed."
+            ],
+            "items": [
+                {
+                    "id": "d21_do3_i1",
+                    "label": "Implemented the top 3 cuts in your assets",
+                    "evidenceType": "text",
+                    "evidencePrompt": "List the 3 changes with before/after lines."
+                },
+                {
+                    "id": "d21_do3_i2",
+                    "label": "Updated your launch kit document",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the updated launch kit key sections or outline."
+                },
+                {
+                    "id": "d21_do3_i3",
+                    "label": "Updated your tracker fields or workflow steps if needed",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste updated tracker headings or workflow steps showing the simplification."
+                },
+                {
+                    "id": "d21_do3_i4",
+                    "label": "Created a new version tag with change notes",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write the version tag and 3 change notes."
+                }
+            ],
+            "example": "Version: v2: single package only, clearer bullets, simpler CTA. Change note: Removed add-on option from page and messages."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Buyer path map with friction points and a cut list",
+            "Updated offer copy: headline, promise, bullets, mismatch sentence",
+            "Updated DM script aligned with the page",
+            "Implemented cuts with a new version tag and updated launch kit"
+        ],
+        "tomorrowPreview": "Tomorrow you will capture and frame your first dollar or your strongest commitment so you can learn from it and build momentum the right way."
+    }
+}

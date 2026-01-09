@@ -2386,189 +2386,897 @@
     },
     {
         "day": 17,
-        "title": "Publish Your Offer!",
+        "title": "Day 17 - Publish Your Offer!",
         "week": 4,
-        "goal": "Make your offer available for purchase somewhere public",
-        "timeEstimate": "35-45 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "This is the day. Whatever you've built\u2014simple or complex\u2014it's time to make it available to the world. The gap between 'working on it' and 'it's live' is one click.\n\nPublishing doesn't mean perfect. It means available. Someone, somewhere, can now see your offer and decide whether to buy.\n\nThis might be a simple landing page, a product listing on a marketplace, or even a direct message to your first prospect. The format matters less than the action.\n\nHit publish. You can improve it later."
-        },
-        "mission": [
+        "mainPromise": "You will publish a simple offer page or listing that a stranger can understand and buy, then announce it to a small, relevant audience.",
+        "timeEstimate": "38 min",
+        "teachings": [
             {
-                "task": "Finalize your sales page/listing with offer details and price",
-                "time": "15 min"
+                "id": "t1",
+                "title": "Publish a minimum buying path",
+                "content": "Publishing is not the same as building a full website. Publishing means: a buyer can read what you do, understand the scope, know the price, pay, and complete intake without confusion.\n\nYour publish surface can be one page, one post, or one listing. The format matters less than clarity. You are aiming for a clean buying path, not perfect branding.\n\nA simple online service benefits from a tight structure: who it is for, the outcome, what they get, what you need, price, timeline, and how to start. Anything else is optional.",
+                "soWhat": "If your offer is not published as a complete buying path, you cannot measure real demand."
             },
             {
-                "task": "Test the complete flow: view offer, click buy, complete payment",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Announce to the smallest right crowd",
+                "content": "A launch does not require a big audience. It requires the right people. Your first goal is not going viral. Your first goal is getting conversations with people who recognize the problem.\n\nStart with warm and adjacent networks: coworkers, friends in similar roles, small communities, alumni groups, creators you already follow, professional groups, and niche forums where your customer spends time.\n\nYour announcement should be short and direct. It should describe the outcome, the price, and the next step. If it reads like a generic ad, it will be ignored.",
+                "soWhat": "If you do not announce intentionally, your offer will sit unpublished and untested."
             },
             {
-                "task": "Publish it\u2014make it accessible via a live URL or marketplace",
-                "time": "5 min"
-            },
-            {
-                "task": "Share the link somewhere (one post, one message, one email)",
-                "time": "10 min"
+                "id": "t3",
+                "title": "Publish means track and follow through",
+                "content": "The moment you publish, you become a tester. Your job is to observe what happens and respond quickly. That means tracking: where you posted, who you messaged, who clicked, who replied, who asked for intake, who paid.\n\nTracking is not busywork. It is the only way to know whether you should change your opener, your scope, your price, or your channel. Most early launches fail because people do not follow up, not because the offer is bad.\n\nToday you will set up a simple launch log and publish your first version.",
+                "soWhat": "If you do not track and follow up, you will confuse silence with failure and change random things."
             }
         ],
-        "commonMistakes": "Don't delay for perfection. A live imperfect offer beats a perfect offer that no one can see. You can iterate after you publish.",
-        "doneMeans": "Your offer has a live, public URL and you've shared it with at least one person or channel."
+        "doBlocks": [
+            {
+                "id": "d17_do1",
+                "title": "Create your publish page",
+                "estimatedMinutes": 14,
+                "steps": [
+                    "Draft the page in a single document using the structure below.",
+                    "Insert your payment method and intake link locations.",
+                    "Add one scope warning line and your key policies."
+                ],
+                "items": [
+                    {
+                        "id": "d17_do1_i1",
+                        "label": "Wrote a publish page draft with 7 required sections",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste your full draft with section headings (who it's for, outcome, what you get, what you need, price, timeline, how to start)."
+                    },
+                    {
+                        "id": "d17_do1_i2",
+                        "label": "Added price, timeline, and a clear start step",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the exact lines that show price, timeline, and how to start."
+                    },
+                    {
+                        "id": "d17_do1_i3",
+                        "label": "Added what-you-get and what-you-provide lists",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide two lists with 5 bullets each: what you get and what you provide."
+                    },
+                    {
+                        "id": "d17_do1_i4",
+                        "label": "Added scope warning plus revision and refund lines",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste your scope warning and policy block (4 to 8 lines)."
+                    }
+                ],
+                "example": "Headline: A simple workflow setup delivered in 48 hours. Price line: $89 fixed scope, delivered after intake. Start step: Pay here, then complete the intake form in 5 minutes. Scope warning: This is a one-time setup, not ongoing daily management."
+            },
+            {
+                "id": "d17_do2",
+                "title": "Build a launch list and post plan",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Create a list of 15 to 25 places or people to announce to.",
+                    "Choose 3 channels for today: one post, one message, one community.",
+                    "Draft one announcement for each channel."
+                ],
+                "items": [
+                    {
+                        "id": "d17_do2_i1",
+                        "label": "Created a launch list with 15 to 25 targets",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 15 to 25 targets with a one-line reason each."
+                    },
+                    {
+                        "id": "d17_do2_i2",
+                        "label": "Chose 3 channels for today's announcement",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Name three channels and what you will do in each (post, DM, community, etc.)."
+                    },
+                    {
+                        "id": "d17_do2_i3",
+                        "label": "Drafted 3 announcement texts tailored to each channel",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste three short announcements, one per channel."
+                    },
+                    {
+                        "id": "d17_do2_i4",
+                        "label": "Defined one call to action for each announcement",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Write three CTAs, one per announcement."
+                    }
+                ],
+                "example": "DM draft: I'm testing a small service that sets up a simple workflow in 48 hours to cut weekly admin time. Fixed scope, $89. If you want the link, reply 'workflow'. Community post CTA: Comment 'link' and I will send details."
+            },
+            {
+                "id": "d17_do3",
+                "title": "Publish and log version 1",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Publish your page or listing (or paste it into your chosen platform).",
+                    "Send or post your three announcements.",
+                    "Create a launch log entry for today with version notes."
+                ],
+                "items": [
+                    {
+                        "id": "d17_do3_i1",
+                        "label": "Published the offer page or listing",
+                        "evidenceType": "link",
+                        "evidencePrompt": "Provide the published link or describe exactly where it is posted (platform + location)."
+                    },
+                    {
+                        "id": "d17_do3_i2",
+                        "label": "Posted or sent the 3 announcements",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the final texts exactly as posted/sent."
+                    },
+                    {
+                        "id": "d17_do3_i3",
+                        "label": "Created a launch log entry with date, channels, and version tag",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste the log entry including a version tag like v1 and the channels used."
+                    },
+                    {
+                        "id": "d17_do3_i4",
+                        "label": "Wrote 3 follow-up tasks for tomorrow",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List three follow-up tasks with who/where and a time."
+                    }
+                ],
+                "example": "Version tag: v1: $89, 48 hours, fixed scope, one revision. Follow-up task: Tomorrow: reply to anyone who comments 'link' within 2 hours."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Published offer page or listing link/location",
+                "Launch list plus 3 tailored announcement drafts and final texts",
+                "Launch log entry with version tag",
+                "Follow-up task list for tomorrow"
+            ],
+            "tomorrowPreview": "Tomorrow you will sell directly and respectfully using simple scripts and clear asks, then follow up without awkwardness."
+        }
     },
     {
         "day": 18,
-        "title": "Sell Like a Girl Scout",
+        "title": "Day 18 - Sell Like a Girl Scout",
         "week": 4,
-        "goal": "Directly ask potential customers to buy",
-        "timeEstimate": "30-40 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Girl Scouts don't wait for customers to find their cookie table. They knock on doors, set up in high-traffic areas, and ask directly. Today, you do the same.\n\nDirect outreach isn't spam\u2014it's service. If your offer genuinely helps people, telling them about it is a favor, not an imposition.\n\nThe key is targeting. Don't blast everyone; reach out to people who actually fit your ideal customer profile. Personalize. Explain why you thought of them. Make it easy to say yes or no."
-        },
-        "mission": [
+        "mainPromise": "You will sell directly with a clear ask, using short scripts and simple follow-up rules that respect people's time.",
+        "timeEstimate": "36 min",
+        "teachings": [
             {
-                "task": "Identify 10 specific people who match your ideal customer profile",
-                "time": "10 min"
+                "id": "t1",
+                "title": "Selling is a clear invitation",
+                "content": "Early selling works best when it is plain. You describe a specific outcome, you give a price, and you ask if they want the link. That is it.\n\nMany people avoid selling because they fear being pushy. The fix is structure. If you keep your message short, specific, and optional, it stops feeling like pressure.\n\nYour job is not to convince everyone. Your job is to find the small set of people who already want the result and just need a clear path to buy.",
+                "soWhat": "If you cannot make a direct ask, you will collect vague compliments instead of orders."
             },
             {
-                "task": "Write a personalized outreach message (not a template)",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Good selling asks for a small commitment",
+                "content": "A strong selling message does not ask for a huge decision upfront. It asks for a small next step: Want the link? or Should I send the details? That lowers friction.\n\nWhen someone shows interest, you move them forward with a simple two-step path: payment, then intake. You do not add extra calls unless they are necessary for delivery.\n\nKeep the buyer's decision simple. Busy people buy speed and clarity more than long explanations.",
+                "soWhat": "If you ask for too much too early, people will delay even if they want it."
             },
             {
-                "task": "Send your offer to all 10 people via appropriate channels",
-                "time": "15 min"
-            },
-            {
-                "task": "Track responses: who replied, what did they say?",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Follow-up is part of service",
+                "content": "Follow-up is not pestering if it is polite, time-limited, and useful. People are busy. They forget. They open a message and get pulled away.\n\nA clean follow-up system is simple: one reminder, one final check-in, then stop. You can also add value in follow-up by restating the outcome and the timeline in one sentence.\n\nToday you will execute a small outreach batch and record results. Small batches keep you calm and help you learn quickly.",
+                "soWhat": "If you do not send and track real outreach, you will not know whether your offer is working."
             }
         ],
-        "commonMistakes": "Don't apologize for selling. 'Sorry to bother you' signals that you don't believe in your offer. Be direct and confident.",
-        "doneMeans": "You've personally reached out to 10 potential customers with your offer."
+        "doBlocks": [
+            {
+                "id": "d18_do1",
+                "title": "Write three selling scripts",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write a one-sentence opener that names the problem.",
+                    "Write a 5 to 7 line DM script with price and next step.",
+                    "Write a short comment reply that shares the link."
+                ],
+                "items": [
+                    {
+                        "id": "d18_do1_i1",
+                        "label": "Wrote 3 opener lines for different contexts",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List three opener lines labeled DM, community, reply."
+                    },
+                    {
+                        "id": "d18_do1_i2",
+                        "label": "Wrote a 5 to 7 line DM script that includes price and start step",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the DM script (5 to 7 lines) including price and how to start."
+                    },
+                    {
+                        "id": "d18_do1_i3",
+                        "label": "Wrote a short comment reply script that offers the link",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the comment reply script."
+                    },
+                    {
+                        "id": "d18_do1_i4",
+                        "label": "Wrote a one-line scope warning that fits inside a DM",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one sentence scope warning suitable for a DM."
+                    }
+                ],
+                "example": "Opener: Do you also lose time each week rebuilding the same admin tasks? DM: I'm running a small service that sets up a simple workflow in 48 hours. Fixed scope, $89. You pay, then fill a short intake form. Want the link? Scope warning: It's a one-time setup, not ongoing daily management."
+            },
+            {
+                "id": "d18_do2",
+                "title": "Build your interest-to-intake flow",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write the three-step flow: interest reply, payment, intake.",
+                    "Write two quick answers for common questions (time and scope).",
+                    "Define your rule for when you stop replying."
+                ],
+                "items": [
+                    {
+                        "id": "d18_do2_i1",
+                        "label": "Wrote the three-step flow in message form",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste three messages labeled Step 1, Step 2, Step 3."
+                    },
+                    {
+                        "id": "d18_do2_i2",
+                        "label": "Wrote two short answers for time and scope questions",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide two Q and A pairs: timeline and scope."
+                    },
+                    {
+                        "id": "d18_do2_i3",
+                        "label": "Wrote a one-line link pack message",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the message that includes what links to send and in what order."
+                    },
+                    {
+                        "id": "d18_do2_i4",
+                        "label": "Defined a stop rule for unresponsive leads",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write your stop rule including number of follow-ups and timing."
+                    }
+                ],
+                "example": "Q: How long does it take? A: 48 hours after intake is complete. Stop rule: If no reply after 2 follow-ups over 5 days, close the loop and move on."
+            },
+            {
+                "id": "d18_do3",
+                "title": "Send a small outreach batch",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Pick 8 to 12 people from your launch list who fit your customer.",
+                    "Send your DM script or a tailored version.",
+                    "Log each message and schedule follow-ups."
+                ],
+                "items": [
+                    {
+                        "id": "d18_do3_i1",
+                        "label": "Selected 8 to 12 targets with one-line fit reason each",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 8 to 12 targets with one-line reasons."
+                    },
+                    {
+                        "id": "d18_do3_i2",
+                        "label": "Sent the message to at least 8 targets",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste the final message text and record the count and platform used."
+                    },
+                    {
+                        "id": "d18_do3_i3",
+                        "label": "Logged each outreach in your tracker",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste tracker rows or a table showing each outreach entry."
+                    },
+                    {
+                        "id": "d18_do3_i4",
+                        "label": "Scheduled two follow-ups for each non-reply",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Write follow-up schedule lines with dates for non-replies."
+                    }
+                ],
+                "example": "Target reason: Freelancer who posts about admin overload. Follow-up: Day 2: quick reminder, Day 5: final check-in."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Three opener lines and a DM selling script",
+                "Interest-to-intake message flow with Q and A responses",
+                "Outreach batch target list and sent-message record",
+                "Updated tracker entries and follow-up schedule"
+            ],
+            "tomorrowPreview": "Tomorrow you will ask ten people for help in a way that makes it easy for them to introduce you to the right buyers."
+        }
     },
     {
         "day": 19,
-        "title": "Ask Ten People for Help",
+        "title": "Day 19 - Ask Ten People for Help",
         "week": 4,
-        "goal": "Leverage your network for introductions and feedback",
-        "timeEstimate": "25-35 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Beyond direct sales, your network can amplify your reach. Today you ask for help\u2014not sales, but introductions, shares, and feedback.\n\nPeople want to help, but they need to be asked specifically. 'Can you share this?' is better than hoping they notice. 'Do you know anyone who\u2026?' is better than waiting for referrals.\n\nThe ask should be easy to fulfill. Don't ask people to write a novel\u2014ask them to forward an email, share a link, or make an introduction."
-        },
-        "mission": [
+        "mainPromise": "You will ask ten specific people for introductions or referrals using a forwardable message that makes helping you easy.",
+        "timeEstimate": "38 min",
+        "teachings": [
             {
-                "task": "Identify 10 people in your network who might help (not buy)",
-                "time": "10 min"
+                "id": "t1",
+                "title": "Help requests work when they are specific",
+                "content": "A vague request like can you share this? creates work for the helper. They have to decide who to send it to and how to describe it. Most people will postpone and forget.\n\nA good help request is narrow. It names the customer type, the problem, the offer, and the exact action you want: an introduction, a forward, or permission to mention their name.\n\nYou are not asking for a favor in the abstract. You are inviting the helper to match you with someone they already know who has the problem.",
+                "soWhat": "If you do not make the ask specific, you will get polite encouragement instead of introductions."
             },
             {
-                "task": "Write a simple ask: share, introduce, or give feedback",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Make a forwardable packet",
+                "content": "Your helper should not have to write anything. You will give them a ready-made packet: a two-sentence description, one link, and one optional credibility line.\n\nForwardable text works best when it sounds like a personal note, not marketing. It should focus on the outcome and the buyer fit, not on your life story.\n\nYou will also create a short if not you, who? question to make introductions easier.",
+                "soWhat": "If you do not provide a packet, your helper will delay because helping feels like writing."
             },
             {
-                "task": "Send your ask to all 10 people",
-                "time": "10 min"
-            },
-            {
-                "task": "Note: who said yes? What did they offer?",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Ask, track, and thank",
+                "content": "A help request is a small project. You send it, you track it, you follow up once, and you say thank you. That is how you turn a favor into a repeatable channel.\n\nYou are not measuring kindness. You are measuring outcomes: intros made, forwards sent, replies received, and leads created.\n\nToday you will send your requests and record them in your tracker with follow-up dates.",
+                "soWhat": "If you do not send and track the requests, your helper plan stays theoretical."
             }
         ],
-        "commonMistakes": "Don't be vague. 'Let me know if you can help' gets ignored. 'Would you share this with your newsletter?' gets action.",
-        "doneMeans": "You've asked 10 people for specific help and documented their responses."
+        "doBlocks": [
+            {
+                "id": "d19_do1",
+                "title": "Choose your ten helpers",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "List 20 possible helpers, then pick the best ten.",
+                    "For each helper, write why they are a good connector.",
+                    "Decide the type of help you will ask for."
+                ],
+                "items": [
+                    {
+                        "id": "d19_do1_i1",
+                        "label": "Listed 20 possible helpers",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 20 people or identifiers who could help you connect to buyers."
+                    },
+                    {
+                        "id": "d19_do1_i2",
+                        "label": "Selected ten helpers and wrote a one-line reason for each",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 10 helpers with one-line reasons."
+                    },
+                    {
+                        "id": "d19_do1_i3",
+                        "label": "Chose the help type per person (intro, forward, or signal boost)",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Add a help type label next to each of the 10 helpers."
+                    },
+                    {
+                        "id": "d19_do1_i4",
+                        "label": "Set a send order for the ten",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Rank the 10 helpers from 1 to 10 in send order."
+                    }
+                ],
+                "example": "Helper: Former coworker who manages a small team reason: Sees workflow problems weekly ask: intro. Helper: Friend in a freelancer group reason: Can forward to active buyers ask: forward."
+            },
+            {
+                "id": "d19_do2",
+                "title": "Write your helper packet",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write a 70 to 110 word forwardable blurb.",
+                    "Write a one-sentence credibility line and a scope warning line.",
+                    "Write two subject lines or openers a helper can use."
+                ],
+                "items": [
+                    {
+                        "id": "d19_do2_i1",
+                        "label": "Wrote a 70 to 110 word forwardable blurb",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the blurb (70 to 110 words)."
+                    },
+                    {
+                        "id": "d19_do2_i2",
+                        "label": "Wrote one credibility line and one scope warning line",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the credibility line and the scope warning line."
+                    },
+                    {
+                        "id": "d19_do2_i3",
+                        "label": "Wrote two helper-friendly subject lines or openers",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Write two subject lines or opening lines a helper can copy."
+                    },
+                    {
+                        "id": "d19_do2_i4",
+                        "label": "Wrote one who-else-should-see-this question",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one question that invites referrals."
+                    }
+                ],
+                "example": "Blurb: I'm testing a small service that sets up a simple workflow in 48 hours to cut weekly admin time. Fixed scope, $89. It's best for busy people who want a clear result without learning new tools. If you want the link, reply and I'll send it. Referral question: If this isn't you, who do you know who would want this handled this week?"
+            },
+            {
+                "id": "d19_do3",
+                "title": "Send ten help requests",
+                "estimatedMinutes": 14,
+                "steps": [
+                    "Personalize the first line for each helper.",
+                    "Send the request with the forwardable packet.",
+                    "Log the request and schedule one follow-up."
+                ],
+                "items": [
+                    {
+                        "id": "d19_do3_i1",
+                        "label": "Sent help requests to ten helpers",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste the message you sent and list the ten recipients (names or identifiers)."
+                    },
+                    {
+                        "id": "d19_do3_i2",
+                        "label": "Logged each request in your tracker",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste 10 tracker entries or a table showing the requests."
+                    },
+                    {
+                        "id": "d19_do3_i3",
+                        "label": "Scheduled one follow-up date for each helper",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List follow-up dates for the 10 helpers."
+                    },
+                    {
+                        "id": "d19_do3_i4",
+                        "label": "Wrote a thank-you message template for when they help",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the thank-you template message."
+                    }
+                ],
+                "example": "Personal line: You mentioned last month that your team keeps rebuilding the same process. Thank-you: Thank you for connecting us. I'll keep it simple and respect their time."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Ten-helper list with reasons, help types, and send order",
+                "Forwardable helper packet (blurb, credibility, scope, openers)",
+                "Ten sent help requests recorded in your tracker",
+                "Follow-up schedule and thank-you template"
+            ],
+            "tomorrowPreview": "Tomorrow you will run controlled tests on your message and page so you can improve results without guessing."
+        }
     },
     {
         "day": 20,
-        "title": "Test, Test, and Test Again",
+        "title": "Day 20 - Test, Test, and Test Again",
         "week": 4,
-        "goal": "Gather feedback and iterate on your offer",
-        "timeEstimate": "30-40 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "By now you've put your offer in front of people. Some may have bought; many probably haven't. Today is about understanding why.\n\nFeedback is data. Why did people say no? What questions did they ask? What confused them? Each response is a clue for improving your offer.\n\nDon't get defensive about feedback. Your first version was a hypothesis. Real market response tells you whether that hypothesis was right."
-        },
-        "mission": [
+        "mainPromise": "You will design and run small tests on your message and offer so improvements are based on evidence, not guesswork.",
+        "timeEstimate": "38 min",
+        "teachings": [
             {
-                "task": "Review all responses from Days 17-19: what patterns emerge?",
-                "time": "15 min"
+                "id": "t1",
+                "title": "Tests need a single variable",
+                "content": "When results are unclear, people change everything at once: headline, price, page, platform, and script. That makes it impossible to learn what actually caused the change.\n\nA good test changes one thing at a time. For example: opener line, call to action, price framing, or a single bullet list. Keep everything else constant for the test window.\n\nYou are not doing scientific perfection. You are doing practical learning. Small tests produce fast feedback and protect your motivation.",
+                "soWhat": "If you cannot isolate one variable, your next decision will be based on stories instead of data."
             },
             {
-                "task": "Identify the most common objections or questions",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Prepare test variants that stay honest",
+                "content": "Testing is not tricking people. It is presenting the same truthful offer in different phrasing. Your variants should not promise different outcomes. They should emphasize different angles: speed, clarity, reduced frustration, or a specific pain.\n\nFor a small online service, the most testable elements are: the first sentence, the headline, the CTA, and the top bullet list. Small edits can make a big difference.\n\nToday you will write two variants for each of your three tests.",
+                "soWhat": "If you do not prepare clean variants, your tests will be inconsistent and hard to compare."
             },
             {
-                "task": "Make at least one improvement to your offer or messaging",
-                "time": "10 min"
-            },
-            {
-                "task": "Follow up with anyone who said 'maybe' or asked questions",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Run the smallest test now",
+                "content": "A test that stays in your notebook is not a test. You need to run at least one small test today, even if it is only a handful of messages.\n\nEarly tests often use outreach because it is fast: send a few messages with Variant A, a few with Variant B, then compare replies. You can also test page changes by swapping headline and seeing which gets more link clicks.\n\nYou will run one micro-test and record outcomes in your launch log.",
+                "soWhat": "If you do not run a test, you cannot improve, and your launch stays stuck."
             }
         ],
-        "commonMistakes": "Don't take rejection personally. Every 'no' is information about how to get to 'yes.' Stay curious, not wounded.",
-        "doneMeans": "You've documented feedback patterns and made at least one concrete improvement."
+        "doBlocks": [
+            {
+                "id": "d20_do1",
+                "title": "Define three micro-tests",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Choose three test variables (message, page, or offer).",
+                    "Write a hypothesis and success metric for each.",
+                    "Define a small sample size and a time window."
+                ],
+                "items": [
+                    {
+                        "id": "d20_do1_i1",
+                        "label": "Chose three test variables, one per test",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List three variables you will test (one per test)."
+                    },
+                    {
+                        "id": "d20_do1_i2",
+                        "label": "Wrote a hypothesis for each test",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Write three hypotheses in the form: If we change X, then Y."
+                    },
+                    {
+                        "id": "d20_do1_i3",
+                        "label": "Defined a success metric for each",
+                        "evidenceType": "number",
+                        "evidencePrompt": "For each test, write a metric and a numeric threshold (for example, 3 replies out of 10)."
+                    },
+                    {
+                        "id": "d20_do1_i4",
+                        "label": "Defined sample size and time window for each test",
+                        "evidenceType": "text",
+                        "evidencePrompt": "For each test, write sample size and time window."
+                    }
+                ],
+                "example": "Test 1 variable: Opener line. Hypothesis: If opener names the weekly pain, replies increase. Metric: 3 replies out of 10 messages. Window: 24 hours."
+            },
+            {
+                "id": "d20_do2",
+                "title": "Create your test variants",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write Variant A and Variant B for each test.",
+                    "Keep both variants short and comparable.",
+                    "Add a version tag so you can log results cleanly."
+                ],
+                "items": [
+                    {
+                        "id": "d20_do2_i1",
+                        "label": "Wrote A and B variants for Test 1",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the two labeled variants for Test 1 (A and B)."
+                    },
+                    {
+                        "id": "d20_do2_i2",
+                        "label": "Wrote A and B variants for Test 2",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the two labeled variants for Test 2 (A and B)."
+                    },
+                    {
+                        "id": "d20_do2_i3",
+                        "label": "Wrote A and B variants for Test 3",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the two labeled variants for Test 3 (A and B)."
+                    },
+                    {
+                        "id": "d20_do2_i4",
+                        "label": "Added version tags for all six variants",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List six version tags (for example, T1A, T1B, T2A, T2B, T3A, T3B) and map them to text."
+                    }
+                ],
+                "example": "T1A opener: Are you losing time each week to the same admin tasks? T1B opener: Do you want a workflow set up so you stop rebuilding your process every Monday?"
+            },
+            {
+                "id": "d20_do3",
+                "title": "Run one test and log results",
+                "estimatedMinutes": 14,
+                "steps": [
+                    "Choose one test to run today.",
+                    "Send a small batch using both variants (for example, 4 and 4).",
+                    "Log outcomes and decide what to keep tomorrow."
+                ],
+                "items": [
+                    {
+                        "id": "d20_do3_i1",
+                        "label": "Selected the test you will run today",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write the test ID you ran today and one line on why it matters."
+                    },
+                    {
+                        "id": "d20_do3_i2",
+                        "label": "Sent Variant A to at least 4 targets and Variant B to at least 4 targets",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste both variant texts and record counts and platform used."
+                    },
+                    {
+                        "id": "d20_do3_i3",
+                        "label": "Logged replies, link clicks, or next-step requests",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste a small results table showing variant, count sent, and outcomes."
+                    },
+                    {
+                        "id": "d20_do3_i4",
+                        "label": "Wrote a keep/change decision for tomorrow",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write one decision line: keep/change and why, based on outcomes."
+                    }
+                ],
+                "example": "Result: T1A got 2 replies, T1B got 0 replies. Decision: Keep T1A and rewrite T1B opener angle to be more specific."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Three micro-test plans with hypotheses and metrics",
+                "Six labeled variants with version tags",
+                "One completed test run with logged outcomes",
+                "A keep/change decision for tomorrow"
+            ],
+            "tomorrowPreview": "Tomorrow you will simplify aggressively by removing optional parts that slow selling or confuse buyers, so your offer becomes easier to say yes to."
+        }
     },
     {
         "day": 21,
-        "title": "Burn Down the Furniture Store",
+        "title": "Day 21 - Burn Down the Furniture Store",
         "week": 4,
-        "goal": "Create urgency with a legitimate limited-time offer",
-        "timeEstimate": "25-35 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Sometimes people need a reason to act now instead of 'later' (which usually means 'never'). Today you create legitimate urgency around your offer.\n\nThis isn't about fake scarcity or manipulation. It's about giving people a real reason to decide: a limited-time discount, a bonus that expires, a cohort that's filling up.\n\nUrgency works because it forces a decision. Without a deadline, 'maybe' stretches indefinitely. With a deadline, people must choose."
-        },
-        "mission": [
+        "mainPromise": "You will simplify your offer and selling process by removing nonessential parts that add friction, confusion, or delivery risk.",
+        "timeEstimate": "38 min",
+        "teachings": [
             {
-                "task": "Design a time-limited offer (discount, bonus, or limited availability)",
-                "time": "10 min"
+                "id": "t1",
+                "title": "Complexity is a hidden tax",
+                "content": "Complexity shows up as extra decisions, extra messages, extra tools, and extra options. It is a tax on you and on the buyer. Buyers delay when they feel they must think too much.\n\nIn early launch, the best version of your offer is often the smallest version that still delivers the promised outcome. Fixed scope beats custom scope. One package beats three packages. One clear CTA beats multiple paths.\n\nYour goal today is not to make it cheaper. Your goal is to make it easier to buy and easier to deliver.",
+                "soWhat": "If you do not reduce complexity, your launch will slow down and your delivery will feel heavier than it needs to be."
             },
             {
-                "task": "Set a specific deadline (real, not fake)",
-                "time": "5 min"
+                "id": "t2",
+                "title": "Simplify the words first",
+                "content": "Often the biggest friction is language. If your headline is broad, buyers ask questions. If your scope is unclear, buyers ask for custom changes before paying.\n\nSimplification usually means fewer claims and more specifics. Replace optimize your life with set up a workflow in 48 hours. Replace custom solution with fixed scope, one revision.\n\nToday you will rewrite your top-of-page content and your DM script so a buyer can understand it in 15 seconds.",
+                "soWhat": "If your words are not simple, you will spend time explaining instead of selling."
             },
             {
-                "task": "Communicate the offer to your audience (new post, email, update)",
-                "time": "15 min"
-            },
-            {
-                "task": "Prepare to follow up before the deadline expires",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Simplify the system, not only the message",
+                "content": "If you simplify words but keep a complex backend, delivery will still feel heavy. Remove tools you do not need. Remove steps that exist only for perfection. Keep quality checks, but make them quick.\n\nA simple system usually has: one tracker, one payment path, one intake form, one delivery template, one follow-up rule. That is enough to sell and deliver repeatedly.\n\nToday you will implement your top cuts in the workflow and update your launch kit.",
+                "soWhat": "If you do not implement the cuts, simplification stays theoretical and your week remains overloaded."
             }
         ],
-        "commonMistakes": "Don't create fake urgency that you'll extend later. People remember and trust erodes. If the deadline passes, honor it.",
-        "doneMeans": "You have a published time-limited offer with a real deadline."
+        "doBlocks": [
+            {
+                "id": "d21_do1",
+                "title": "Identify friction and cut list",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "List every step a buyer takes from first message to intake completion.",
+                    "Mark where people hesitate, ask questions, or drop off.",
+                    "Create a cut list of at least 7 items to remove or simplify."
+                ],
+                "items": [
+                    {
+                        "id": "d21_do1_i1",
+                        "label": "Wrote the buyer path as 8 to 12 steps",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide your buyer path steps from first contact to intake completion."
+                    },
+                    {
+                        "id": "d21_do1_i2",
+                        "label": "Marked the top 5 friction points",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List five friction points with one-line explanations."
+                    },
+                    {
+                        "id": "d21_do1_i3",
+                        "label": "Created a cut list with at least 7 simplifications",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List at least 7 simplifications you will make."
+                    },
+                    {
+                        "id": "d21_do1_i4",
+                        "label": "Selected the top 3 cuts to implement today",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Name your top 3 cuts and one-line reasons for each."
+                    }
+                ],
+                "example": "Friction point: People ask what tools are required cut: Add one line: No new tools required. Cut: Remove secondary package option and keep one core package."
+            },
+            {
+                "id": "d21_do2",
+                "title": "Rewrite your offer copy for clarity",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Rewrite headline, promise sentence, and first five bullets.",
+                    "Rewrite the DM script to match the same words.",
+                    "Add one sentence that prevents mismatch."
+                ],
+                "items": [
+                    {
+                        "id": "d21_do2_i1",
+                        "label": "Rewrote the headline and promise sentence",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the updated headline and one-sentence promise."
+                    },
+                    {
+                        "id": "d21_do2_i2",
+                        "label": "Rewrote the top 5 bullets as simple deliverables",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 deliverable bullets in plain language."
+                    },
+                    {
+                        "id": "d21_do2_i3",
+                        "label": "Rewrote the DM script to match the new copy",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste the updated DM script aligned to the new copy."
+                    },
+                    {
+                        "id": "d21_do2_i4",
+                        "label": "Added one mismatch-prevention sentence",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write one sentence that prevents mismatch."
+                    }
+                ],
+                "example": "Headline: Workflow setup in 48 hours. Bullet: One intake form, one workflow, one checklist, one walkthrough, one revision. Mismatch sentence: If you need ongoing support, this will not be a fit."
+            },
+            {
+                "id": "d21_do3",
+                "title": "Implement your top 3 cuts",
+                "estimatedMinutes": 14,
+                "steps": [
+                    "Apply your top three simplifications to your page, script, or process.",
+                    "Update your launch kit with the new copy and links.",
+                    "Create a version tag and note what changed."
+                ],
+                "items": [
+                    {
+                        "id": "d21_do3_i1",
+                        "label": "Implemented the top 3 cuts in your assets",
+                        "evidenceType": "text",
+                        "evidencePrompt": "List the 3 changes with before/after lines."
+                    },
+                    {
+                        "id": "d21_do3_i2",
+                        "label": "Updated your launch kit document",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the updated launch kit key sections or outline."
+                    },
+                    {
+                        "id": "d21_do3_i3",
+                        "label": "Updated your tracker fields or workflow steps if needed",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste updated tracker headings or workflow steps showing the simplification."
+                    },
+                    {
+                        "id": "d21_do3_i4",
+                        "label": "Created a new version tag with change notes",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write the version tag and 3 change notes."
+                    }
+                ],
+                "example": "Version: v2: single package only, clearer bullets, simpler CTA. Change note: Removed add-on option from page and messages."
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "Buyer path map with friction points and a cut list",
+                "Updated offer copy: headline, promise, bullets, mismatch sentence",
+                "Updated DM script aligned with the page",
+                "Implemented cuts with a new version tag and updated launch kit"
+            ],
+            "tomorrowPreview": "Tomorrow you will capture and frame your first dollar or your strongest commitment so you can learn from it and build momentum the right way."
+        }
     },
     {
         "day": 22,
-        "title": "Frame Your First Dollar",
+        "title": "Day 22 - Frame Your First Dollar",
         "week": 4,
-        "goal": "Celebrate and document your first sale",
-        "timeEstimate": "20-30 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Whether you've made a sale already or you're still working toward it, today is about the milestone of the first dollar.\n\nIf you've made a sale: celebrate it. Document exactly what happened\u2014the channel, the person, the moment. This is the proof that your side hustle works.\n\nIf you haven't yet: analyze why and plan your next actions. The first sale often takes longer than expected. That's normal. Keep going.\n\nThe first dollar matters more than the amount. It's proof of concept."
-        },
-        "mission": [
+        "mainPromise": "You will capture proof of your first dollar or strongest commitment, document what caused it, and set a short plan to repeat it.",
+        "timeEstimate": "34 min",
+        "teachings": [
             {
-                "task": "Document any sales so far: amount, channel, customer details",
-                "time": "10 min"
+                "id": "t1",
+                "title": "The first dollar is proof, not a prize",
+                "content": "The first paid order is a signal that someone will exchange money for your outcome. If you have a payment, treat it as proof that your offer can work. If you do not have a payment yet, use the strongest commitment you received, like an intake request, a serious reply, or a scheduled call.\n\nFraming matters. If you frame early results as too small, you miss the learning. If you frame them as everything, you overreact. The useful frame is: what happened, why it happened, and how to repeat it.\n\nYou will capture evidence and write a short win report you can use to improve your next outreach.",
+                "soWhat": "If you do not document the first signal, you will forget what worked and drift back into random changes."
             },
             {
-                "task": "If no sale yet: list the three most likely paths to first sale",
-                "time": "10 min"
+                "id": "t2",
+                "title": "Turn the first result into a repeatable pattern",
+                "content": "A single win becomes useful when you extract a pattern. Look for what was true: which channel, which phrasing, which customer type, which pain, and which timing.\n\nAlso capture what almost broke. Did the buyer ask clarifying questions? Did they hesitate at the price? Did the intake cause confusion? These details become your next improvements.\n\nYou will produce a short pattern memo and three changes to improve the next sale.",
+                "soWhat": "If you do not extract the pattern, you will treat the first result as luck and fail to repeat it."
             },
             {
-                "task": "Identify what made the sale happen (or what's blocking it)",
-                "time": "5 min"
-            },
-            {
-                "task": "Write a 'first dollar story' you could share",
-                "time": "5 min"
+                "id": "t3",
+                "title": "Close the loop with delivery and feedback",
+                "content": "If you have a paying customer, your best marketing is delivery. Clean delivery creates referrals, repeat work, and the confidence to sell again. If you do not have a paying customer yet, treat the next strongest commitment as a mini-delivery: respond quickly, provide the link pack, and remove friction.\n\nFeedback should be structured. Do not ask what do you think? Ask for specific signals: what was confusing, what made it feel safe, and what outcome they expect. That feedback improves your offer faster than more brainstorming.\n\nToday you will set a short 7-day plan focused on repeating what worked.",
+                "soWhat": "If you do not close the loop, you will lose momentum right after the first signal."
             }
         ],
-        "commonMistakes": "Don't discount the first sale because it was 'just a friend' or 'only $20.' Revenue is revenue. Start celebrating small wins.",
-        "doneMeans": "You've documented your first sale (or a concrete plan to get it) and reflected on what worked."
+        "doBlocks": [
+            {
+                "id": "d22_do1",
+                "title": "Capture your first-dollar evidence",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Identify your first payment or strongest commitment.",
+                    "Capture the proof (receipt, message, screenshot description, or link).",
+                    "Record the exact path that led to it."
+                ],
+                "items": [
+                    {
+                        "id": "d22_do1_i1",
+                        "label": "Selected the first payment or strongest commitment event",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Write one sentence describing the event (payment, intake request, strong reply, scheduled call)."
+                    },
+                    {
+                        "id": "d22_do1_i2",
+                        "label": "Captured proof of the event",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste the receipt details, copied message text, or a precise proof description."
+                    },
+                    {
+                        "id": "d22_do1_i3",
+                        "label": "Wrote the path that led to it as 6 to 10 steps",
+                        "evidenceType": "list",
+                        "evidencePrompt": "Provide 6 to 10 numbered steps showing the path to the event."
+                    },
+                    {
+                        "id": "d22_do1_i4",
+                        "label": "Recorded the offer version tag used",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Write the version tag and where it was used (page, DM, post)."
+                    }
+                ],
+                "example": "Event: One person paid $89 via the payment link. Proof: Receipt ID recorded in notes. Path: DM opener T1A -> replied 'link' -> sent link pack -> paid -> intake completed."
+            },
+            {
+                "id": "d22_do2",
+                "title": "Write the repeatability memo",
+                "estimatedMinutes": 12,
+                "steps": [
+                    "Write what triggered the yes: pain, timing, and wording.",
+                    "Write what reduced risk: scope, timeline, proof, or trust.",
+                    "Choose three improvements to apply immediately."
+                ],
+                "items": [
+                    {
+                        "id": "d22_do2_i1",
+                        "label": "Wrote a why-they-said-yes paragraph",
+                        "evidenceType": "text",
+                        "evidencePrompt": "Paste 120 to 180 words explaining why the person said yes (or almost said yes)."
+                    },
+                    {
+                        "id": "d22_do2_i2",
+                        "label": "Listed 5 factors that reduced buyer risk",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 5 risk-reduction factors (scope, timeline, clarity, proof, trust)."
+                    },
+                    {
+                        "id": "d22_do2_i3",
+                        "label": "Listed 3 friction points that still exist",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List 3 friction points you observed."
+                    },
+                    {
+                        "id": "d22_do2_i4",
+                        "label": "Chose 3 improvements with owner and deadline",
+                        "evidenceType": "decision",
+                        "evidencePrompt": "Write three improvement lines with owner (you) and a deadline date."
+                    }
+                ],
+                "example": "Risk reducer: Fixed scope and 48-hour delivery. Friction: They asked what tools are required. Improvement: Add 'no new tools required' line to page and DM by tomorrow."
+            },
+            {
+                "id": "d22_do3",
+                "title": "Create your 7-day repeat plan",
+                "estimatedMinutes": 10,
+                "steps": [
+                    "Write your next 7 days as a simple schedule: outreach, follow-up, delivery, test.",
+                    "Set weekly targets for the metrics that matter.",
+                    "Draft a short feedback request message."
+                ],
+                "items": [
+                    {
+                        "id": "d22_do3_i1",
+                        "label": "Wrote a 7-day schedule with daily actions",
+                        "evidenceType": "list",
+                        "evidencePrompt": "List Day 1 to Day 7 actions in one line each."
+                    },
+                    {
+                        "id": "d22_do3_i2",
+                        "label": "Set 5 weekly metric targets",
+                        "evidenceType": "number",
+                        "evidencePrompt": "Write 5 metrics and numeric weekly targets (for example, outreach sent: 30)."
+                    },
+                    {
+                        "id": "d22_do3_i3",
+                        "label": "Drafted a feedback request message for the buyer or lead",
+                        "evidenceType": "message",
+                        "evidencePrompt": "Paste a short feedback request message."
+                    },
+                    {
+                        "id": "d22_do3_i4",
+                        "label": "Updated your launch log with a next version note",
+                        "evidenceType": "note",
+                        "evidencePrompt": "Paste the launch log line that states what you will change next and why."
+                    }
+                ],
+                "example": "Schedule: Mon: 10 DMs, Tue: follow-ups + 1 test, Wed: deliver, Thu: 10 DMs, Fri: follow-ups. Feedback ask: What part felt unclear, and what made it feel safe to proceed?"
+            }
+        ],
+        "wrap": {
+            "outputs": [
+                "First-dollar or strongest-commitment proof and a recorded path to it",
+                "Repeatability memo with risk reducers, friction points, and improvements",
+                "7-day plan with metric targets",
+                "Feedback request message and updated launch log"
+            ],
+            "tomorrowPreview": "Next week you will scale what works, improve what causes hesitation, and keep delivery clean so sales do not create stress."
+        }
     },
     {
         "day": 23,

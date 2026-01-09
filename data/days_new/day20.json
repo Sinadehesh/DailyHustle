@@ -1,0 +1,149 @@
+{
+    "day": 20,
+    "title": "Day 20 - Test, Test, and Test Again",
+    "week": 4,
+    "mainPromise": "You will design and run small tests on your message and offer so improvements are based on evidence, not guesswork.",
+    "timeEstimate": "38 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Tests need a single variable",
+            "content": "When results are unclear, people change everything at once: headline, price, page, platform, and script. That makes it impossible to learn what actually caused the change.\n\nA good test changes one thing at a time. For example: opener line, call to action, price framing, or a single bullet list. Keep everything else constant for the test window.\n\nYou are not doing scientific perfection. You are doing practical learning. Small tests produce fast feedback and protect your motivation.",
+            "soWhat": "If you cannot isolate one variable, your next decision will be based on stories instead of data."
+        },
+        {
+            "id": "t2",
+            "title": "Prepare test variants that stay honest",
+            "content": "Testing is not tricking people. It is presenting the same truthful offer in different phrasing. Your variants should not promise different outcomes. They should emphasize different angles: speed, clarity, reduced frustration, or a specific pain.\n\nFor a small online service, the most testable elements are: the first sentence, the headline, the CTA, and the top bullet list. Small edits can make a big difference.\n\nToday you will write two variants for each of your three tests.",
+            "soWhat": "If you do not prepare clean variants, your tests will be inconsistent and hard to compare."
+        },
+        {
+            "id": "t3",
+            "title": "Run the smallest test now",
+            "content": "A test that stays in your notebook is not a test. You need to run at least one small test today, even if it is only a handful of messages.\n\nEarly tests often use outreach because it is fast: send a few messages with Variant A, a few with Variant B, then compare replies. You can also test page changes by swapping headline and seeing which gets more link clicks.\n\nYou will run one micro-test and record outcomes in your launch log.",
+            "soWhat": "If you do not run a test, you cannot improve, and your launch stays stuck."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d20_do1",
+            "title": "Define three micro-tests",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Choose three test variables (message, page, or offer).",
+                "Write a hypothesis and success metric for each.",
+                "Define a small sample size and a time window."
+            ],
+            "items": [
+                {
+                    "id": "d20_do1_i1",
+                    "label": "Chose three test variables, one per test",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three variables you will test (one per test)."
+                },
+                {
+                    "id": "d20_do1_i2",
+                    "label": "Wrote a hypothesis for each test",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write three hypotheses in the form: If we change X, then Y."
+                },
+                {
+                    "id": "d20_do1_i3",
+                    "label": "Defined a success metric for each",
+                    "evidenceType": "number",
+                    "evidencePrompt": "For each test, write a metric and a numeric threshold (for example, 3 replies out of 10)."
+                },
+                {
+                    "id": "d20_do1_i4",
+                    "label": "Defined sample size and time window for each test",
+                    "evidenceType": "text",
+                    "evidencePrompt": "For each test, write sample size and time window."
+                }
+            ],
+            "example": "Test 1 variable: Opener line. Hypothesis: If opener names the weekly pain, replies increase. Metric: 3 replies out of 10 messages. Window: 24 hours."
+        },
+        {
+            "id": "d20_do2",
+            "title": "Create your test variants",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write Variant A and Variant B for each test.",
+                "Keep both variants short and comparable.",
+                "Add a version tag so you can log results cleanly."
+            ],
+            "items": [
+                {
+                    "id": "d20_do2_i1",
+                    "label": "Wrote A and B variants for Test 1",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the two labeled variants for Test 1 (A and B)."
+                },
+                {
+                    "id": "d20_do2_i2",
+                    "label": "Wrote A and B variants for Test 2",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the two labeled variants for Test 2 (A and B)."
+                },
+                {
+                    "id": "d20_do2_i3",
+                    "label": "Wrote A and B variants for Test 3",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the two labeled variants for Test 3 (A and B)."
+                },
+                {
+                    "id": "d20_do2_i4",
+                    "label": "Added version tags for all six variants",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List six version tags (for example, T1A, T1B, T2A, T2B, T3A, T3B) and map them to text."
+                }
+            ],
+            "example": "T1A opener: Are you losing time each week to the same admin tasks? T1B opener: Do you want a workflow set up so you stop rebuilding your process every Monday?"
+        },
+        {
+            "id": "d20_do3",
+            "title": "Run one test and log results",
+            "estimatedMinutes": 14,
+            "steps": [
+                "Choose one test to run today.",
+                "Send a small batch using both variants (for example, 4 and 4).",
+                "Log outcomes and decide what to keep tomorrow."
+            ],
+            "items": [
+                {
+                    "id": "d20_do3_i1",
+                    "label": "Selected the test you will run today",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write the test ID you ran today and one line on why it matters."
+                },
+                {
+                    "id": "d20_do3_i2",
+                    "label": "Sent Variant A to at least 4 targets and Variant B to at least 4 targets",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste both variant texts and record counts and platform used."
+                },
+                {
+                    "id": "d20_do3_i3",
+                    "label": "Logged replies, link clicks, or next-step requests",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste a small results table showing variant, count sent, and outcomes."
+                },
+                {
+                    "id": "d20_do3_i4",
+                    "label": "Wrote a keep/change decision for tomorrow",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one decision line: keep/change and why, based on outcomes."
+                }
+            ],
+            "example": "Result: T1A got 2 replies, T1B got 0 replies. Decision: Keep T1A and rewrite T1B opener angle to be more specific."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Three micro-test plans with hypotheses and metrics",
+            "Six labeled variants with version tags",
+            "One completed test run with logged outcomes",
+            "A keep/change decision for tomorrow"
+        ],
+        "tomorrowPreview": "Tomorrow you will simplify aggressively by removing optional parts that slow selling or confuse buyers, so your offer becomes easier to say yes to."
+    }
+}

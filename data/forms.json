@@ -1410,227 +1410,528 @@
     "17": {
         "fields": [
             {
-                "id": "offer_finalized",
-                "type": "CHECKBOX",
-                "label": "Sales page/listing finalized with offer + price",
-                "required": true
+                "id": "d17_do1_i1",
+                "label": "Wrote a publish page draft with 7 required sections",
+                "required": true,
+                "helperText": "Paste your full draft with section headings (who it's for, outcome, what you get, what you need, price, timeline, how to start).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "flow_tested",
-                "type": "CHECKBOX",
-                "label": "Complete flow tested (view \u2192 buy \u2192 payment)",
-                "required": true
+                "id": "d17_do1_i2",
+                "label": "Added price, timeline, and a clear start step",
+                "required": true,
+                "helperText": "Paste the exact lines that show price, timeline, and how to start.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "published",
-                "type": "CHECKBOX",
-                "label": "Offer published and publicly accessible",
-                "required": true
+                "id": "d17_do1_i3",
+                "label": "Added what-you-get and what-you-provide lists",
+                "required": true,
+                "helperText": "Provide two lists with 5 bullets each: what you get and what you provide.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "offer_url",
-                "type": "URL",
-                "label": "Live URL of your offer",
-                "required": true
+                "id": "d17_do1_i4",
+                "label": "Added scope warning plus revision and refund lines",
+                "required": true,
+                "helperText": "Paste your scope warning and policy block (4 to 8 lines).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "first_share",
-                "type": "TEXTAREA",
-                "label": "Where did you share it? (link or description)",
-                "required": true
+                "id": "d17_do2_i1",
+                "label": "Created a launch list with 15 to 25 targets",
+                "required": true,
+                "helperText": "List 15 to 25 targets with a one-line reason each.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "feelings",
-                "type": "TEXTAREA",
-                "label": "How does it feel to be live?",
-                "required": false
+                "id": "d17_do2_i2",
+                "label": "Chose 3 channels for today's announcement",
+                "required": true,
+                "helperText": "Name three channels and what you will do in each (post, DM, community, etc.).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d17_do2_i3",
+                "label": "Drafted 3 announcement texts tailored to each channel",
+                "required": true,
+                "helperText": "Paste three short announcements, one per channel.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d17_do2_i4",
+                "label": "Defined one call to action for each announcement",
+                "required": true,
+                "helperText": "Write three CTAs, one per announcement.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d17_do3_i1",
+                "label": "Published the offer page or listing",
+                "required": true,
+                "helperText": "Provide the published link or describe exactly where it is posted (platform + location).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d17_do3_i2",
+                "label": "Posted or sent the 3 announcements",
+                "required": true,
+                "helperText": "Paste the final texts exactly as posted/sent.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d17_do3_i3",
+                "label": "Created a launch log entry with date, channels, and version tag",
+                "required": true,
+                "helperText": "Paste the log entry including a version tag like v1 and the channels used.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d17_do3_i4",
+                "label": "Wrote 3 follow-up tasks for tomorrow",
+                "required": true,
+                "helperText": "List three follow-up tasks with who/where and a time.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "18": {
         "fields": [
             {
-                "id": "outreach_list",
-                "type": "TEXTAREA",
-                "label": "10 people who match your ideal customer profile",
-                "required": true
+                "id": "d18_do1_i1",
+                "label": "Wrote 3 opener lines for different contexts",
+                "required": true,
+                "helperText": "List three opener lines labeled DM, community, reply.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "outreach_message",
-                "type": "TEXTAREA",
-                "label": "Your personalized outreach message",
-                "required": true
+                "id": "d18_do1_i2",
+                "label": "Wrote a 5 to 7 line DM script that includes price and start step",
+                "required": true,
+                "helperText": "Paste the DM script (5 to 7 lines) including price and how to start.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "outreach_sent",
-                "type": "CHECKBOX",
-                "label": "Messages sent to all 10 people",
-                "required": true
+                "id": "d18_do1_i3",
+                "label": "Wrote a short comment reply script that offers the link",
+                "required": true,
+                "helperText": "Paste the comment reply script.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "responses_received",
-                "type": "NUMBER",
-                "label": "Number of responses received",
-                "required": true
+                "id": "d18_do1_i4",
+                "label": "Wrote a one-line scope warning that fits inside a DM",
+                "required": true,
+                "helperText": "Write one sentence scope warning suitable for a DM.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "response_summary",
-                "type": "TEXTAREA",
-                "label": "Summary of responses (what did they say?)",
-                "required": true
+                "id": "d18_do2_i1",
+                "label": "Wrote the three-step flow in message form",
+                "required": true,
+                "helperText": "Paste three messages labeled Step 1, Step 2, Step 3.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do2_i2",
+                "label": "Wrote two short answers for time and scope questions",
+                "required": true,
+                "helperText": "Provide two Q and A pairs: timeline and scope.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do2_i3",
+                "label": "Wrote a one-line link pack message",
+                "required": true,
+                "helperText": "Paste the message that includes what links to send and in what order.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do2_i4",
+                "label": "Defined a stop rule for unresponsive leads",
+                "required": true,
+                "helperText": "Write your stop rule including number of follow-ups and timing.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do3_i1",
+                "label": "Selected 8 to 12 targets with one-line fit reason each",
+                "required": true,
+                "helperText": "List 8 to 12 targets with one-line reasons.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do3_i2",
+                "label": "Sent the message to at least 8 targets",
+                "required": true,
+                "helperText": "Paste the final message text and record the count and platform used.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do3_i3",
+                "label": "Logged each outreach in your tracker",
+                "required": true,
+                "helperText": "Paste tracker rows or a table showing each outreach entry.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d18_do3_i4",
+                "label": "Scheduled two follow-ups for each non-reply",
+                "required": true,
+                "helperText": "Write follow-up schedule lines with dates for non-replies.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "19": {
         "fields": [
             {
-                "id": "network_list",
-                "type": "TEXTAREA",
-                "label": "10 people in your network who might help",
-                "required": true
-            },
-            {
-                "id": "ask_type",
-                "type": "CHECKBOX_GROUP",
-                "label": "Type of asks made",
+                "id": "d19_do1_i1",
+                "label": "Listed 20 possible helpers",
                 "required": true,
-                "options": [
-                    "Share my offer",
-                    "Make an introduction",
-                    "Give feedback",
-                    "Other"
-                ]
+                "helperText": "List 20 people or identifiers who could help you connect to buyers.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "asks_sent",
-                "type": "CHECKBOX",
-                "label": "Asks sent to all 10 people",
-                "required": true
+                "id": "d19_do1_i2",
+                "label": "Selected ten helpers and wrote a one-line reason for each",
+                "required": true,
+                "helperText": "List 10 helpers with one-line reasons.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "who_said_yes",
-                "type": "TEXTAREA",
-                "label": "Who said yes? What did they offer?",
-                "required": true
+                "id": "d19_do1_i3",
+                "label": "Chose the help type per person (intro, forward, or signal boost)",
+                "required": true,
+                "helperText": "Add a help type label next to each of the 10 helpers.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do1_i4",
+                "label": "Set a send order for the ten",
+                "required": true,
+                "helperText": "Rank the 10 helpers from 1 to 10 in send order.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do2_i1",
+                "label": "Wrote a 70 to 110 word forwardable blurb",
+                "required": true,
+                "helperText": "Paste the blurb (70 to 110 words).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do2_i2",
+                "label": "Wrote one credibility line and one scope warning line",
+                "required": true,
+                "helperText": "Paste the credibility line and the scope warning line.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do2_i3",
+                "label": "Wrote two helper-friendly subject lines or openers",
+                "required": true,
+                "helperText": "Write two subject lines or opening lines a helper can copy.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do2_i4",
+                "label": "Wrote one who-else-should-see-this question",
+                "required": true,
+                "helperText": "Write one question that invites referrals.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do3_i1",
+                "label": "Sent help requests to ten helpers",
+                "required": true,
+                "helperText": "Paste the message you sent and list the ten recipients (names or identifiers).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do3_i2",
+                "label": "Logged each request in your tracker",
+                "required": true,
+                "helperText": "Paste 10 tracker entries or a table showing the requests.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do3_i3",
+                "label": "Scheduled one follow-up date for each helper",
+                "required": true,
+                "helperText": "List follow-up dates for the 10 helpers.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d19_do3_i4",
+                "label": "Wrote a thank-you message template for when they help",
+                "required": true,
+                "helperText": "Paste the thank-you template message.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "20": {
         "fields": [
             {
-                "id": "feedback_patterns",
-                "type": "TEXTAREA",
-                "label": "Patterns from Days 17-19 responses",
-                "required": true
+                "id": "d20_do1_i1",
+                "label": "Chose three test variables, one per test",
+                "required": true,
+                "helperText": "List three variables you will test (one per test).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "common_objections",
-                "type": "TEXTAREA",
-                "label": "Most common objections or questions",
-                "required": true
+                "id": "d20_do1_i2",
+                "label": "Wrote a hypothesis for each test",
+                "required": true,
+                "helperText": "Write three hypotheses in the form: If we change X, then Y.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "improvement_made",
-                "type": "TEXTAREA",
-                "label": "Improvement made to offer or messaging",
-                "required": true
+                "id": "d20_do1_i3",
+                "label": "Defined a success metric for each",
+                "required": true,
+                "helperText": "For each test, write a metric and a numeric threshold (for example, 3 replies out of 10).",
+                "type": "NUMBER"
             },
             {
-                "id": "followed_up",
-                "type": "CHECKBOX",
-                "label": "Followed up with 'maybe' responses",
-                "required": true
+                "id": "d20_do1_i4",
+                "label": "Defined sample size and time window for each test",
+                "required": true,
+                "helperText": "For each test, write sample size and time window.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do2_i1",
+                "label": "Wrote A and B variants for Test 1",
+                "required": true,
+                "helperText": "Paste the two labeled variants for Test 1 (A and B).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do2_i2",
+                "label": "Wrote A and B variants for Test 2",
+                "required": true,
+                "helperText": "Paste the two labeled variants for Test 2 (A and B).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do2_i3",
+                "label": "Wrote A and B variants for Test 3",
+                "required": true,
+                "helperText": "Paste the two labeled variants for Test 3 (A and B).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do2_i4",
+                "label": "Added version tags for all six variants",
+                "required": true,
+                "helperText": "List six version tags (for example, T1A, T1B, T2A, T2B, T3A, T3B) and map them to text.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do3_i1",
+                "label": "Selected the test you will run today",
+                "required": true,
+                "helperText": "Write the test ID you ran today and one line on why it matters.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do3_i2",
+                "label": "Sent Variant A to at least 4 targets and Variant B to at least 4 targets",
+                "required": true,
+                "helperText": "Paste both variant texts and record counts and platform used.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do3_i3",
+                "label": "Logged replies, link clicks, or next-step requests",
+                "required": true,
+                "helperText": "Paste a small results table showing variant, count sent, and outcomes.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d20_do3_i4",
+                "label": "Wrote a keep/change decision for tomorrow",
+                "required": true,
+                "helperText": "Write one decision line: keep/change and why, based on outcomes.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "21": {
         "fields": [
             {
-                "id": "urgency_type",
-                "type": "RADIO",
-                "label": "Type of urgency created",
+                "id": "d21_do1_i1",
+                "label": "Wrote the buyer path as 8 to 12 steps",
                 "required": true,
-                "options": [
-                    "Limited-time discount",
-                    "Expiring bonus",
-                    "Limited availability/spots",
-                    "Cohort deadline",
-                    "Other"
-                ]
+                "helperText": "Provide your buyer path steps from first contact to intake completion.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "urgency_details",
-                "type": "TEXTAREA",
-                "label": "Describe your time-limited offer",
-                "required": true
+                "id": "d21_do1_i2",
+                "label": "Marked the top 5 friction points",
+                "required": true,
+                "helperText": "List five friction points with one-line explanations.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "deadline",
-                "type": "DATE",
-                "label": "Deadline date",
-                "required": true
+                "id": "d21_do1_i3",
+                "label": "Created a cut list with at least 7 simplifications",
+                "required": true,
+                "helperText": "List at least 7 simplifications you will make.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "communicated",
-                "type": "CHECKBOX",
-                "label": "Offer communicated to audience",
-                "required": true
+                "id": "d21_do1_i4",
+                "label": "Selected the top 3 cuts to implement today",
+                "required": true,
+                "helperText": "Name your top 3 cuts and one-line reasons for each.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "communication_channel",
-                "type": "TEXT",
-                "label": "Where did you share it?",
-                "required": true
+                "id": "d21_do2_i1",
+                "label": "Rewrote the headline and promise sentence",
+                "required": true,
+                "helperText": "Paste the updated headline and one-sentence promise.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do2_i2",
+                "label": "Rewrote the top 5 bullets as simple deliverables",
+                "required": true,
+                "helperText": "List 5 deliverable bullets in plain language.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do2_i3",
+                "label": "Rewrote the DM script to match the new copy",
+                "required": true,
+                "helperText": "Paste the updated DM script aligned to the new copy.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do2_i4",
+                "label": "Added one mismatch-prevention sentence",
+                "required": true,
+                "helperText": "Write one sentence that prevents mismatch.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do3_i1",
+                "label": "Implemented the top 3 cuts in your assets",
+                "required": true,
+                "helperText": "List the 3 changes with before/after lines.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do3_i2",
+                "label": "Updated your launch kit document",
+                "required": true,
+                "helperText": "Paste the updated launch kit key sections or outline.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do3_i3",
+                "label": "Updated your tracker fields or workflow steps if needed",
+                "required": true,
+                "helperText": "Paste updated tracker headings or workflow steps showing the simplification.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d21_do3_i4",
+                "label": "Created a new version tag with change notes",
+                "required": true,
+                "helperText": "Write the version tag and 3 change notes.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "22": {
         "fields": [
             {
-                "id": "made_sale",
-                "type": "RADIO",
-                "label": "Have you made a sale?",
+                "id": "d22_do1_i1",
+                "label": "Selected the first payment or strongest commitment event",
                 "required": true,
-                "options": [
-                    "Yes",
-                    "Not yet"
-                ]
+                "helperText": "Write one sentence describing the event (payment, intake request, strong reply, scheduled call).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "sale_amount",
-                "type": "CURRENCY",
-                "label": "Amount of first sale(s)",
-                "required": false
+                "id": "d22_do1_i2",
+                "label": "Captured proof of the event",
+                "required": true,
+                "helperText": "Paste the receipt details, copied message text, or a precise proof description.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "sale_channel",
-                "type": "TEXT",
-                "label": "Channel/source of sale",
-                "required": false
+                "id": "d22_do1_i3",
+                "label": "Wrote the path that led to it as 6 to 10 steps",
+                "required": true,
+                "helperText": "Provide 6 to 10 numbered steps showing the path to the event.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "sale_customer",
-                "type": "TEXT",
-                "label": "Customer details (anonymous is fine)",
-                "required": false
+                "id": "d22_do1_i4",
+                "label": "Recorded the offer version tag used",
+                "required": true,
+                "helperText": "Write the version tag and where it was used (page, DM, post).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "what_worked",
-                "type": "TEXTAREA",
-                "label": "What made the sale happen (or what's blocking it)?",
-                "required": true
+                "id": "d22_do2_i1",
+                "label": "Wrote a why-they-said-yes paragraph",
+                "required": true,
+                "helperText": "Paste 120 to 180 words explaining why the person said yes (or almost said yes).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "paths_to_sale",
-                "type": "TEXTAREA",
-                "label": "If no sale: 3 most likely paths to first sale",
-                "required": false
+                "id": "d22_do2_i2",
+                "label": "Listed 5 factors that reduced buyer risk",
+                "required": true,
+                "helperText": "List 5 risk-reduction factors (scope, timeline, clarity, proof, trust).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "first_dollar_story",
-                "type": "TEXTAREA",
-                "label": "Your 'first dollar' story (shareable version)",
-                "required": true
+                "id": "d22_do2_i3",
+                "label": "Listed 3 friction points that still exist",
+                "required": true,
+                "helperText": "List 3 friction points you observed.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d22_do2_i4",
+                "label": "Chose 3 improvements with owner and deadline",
+                "required": true,
+                "helperText": "Write three improvement lines with owner (you) and a deadline date.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d22_do3_i1",
+                "label": "Wrote a 7-day schedule with daily actions",
+                "required": true,
+                "helperText": "List Day 1 to Day 7 actions in one line each.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d22_do3_i2",
+                "label": "Set 5 weekly metric targets",
+                "required": true,
+                "helperText": "Write 5 metrics and numeric weekly targets (for example, outreach sent: 30).",
+                "type": "NUMBER"
+            },
+            {
+                "id": "d22_do3_i3",
+                "label": "Drafted a feedback request message for the buyer or lead",
+                "required": true,
+                "helperText": "Paste a short feedback request message.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d22_do3_i4",
+                "label": "Updated your launch log with a next version note",
+                "required": true,
+                "helperText": "Paste the launch log line that states what you will change next and why.",
+                "type": "TEXTAREA"
             }
         ]
     },

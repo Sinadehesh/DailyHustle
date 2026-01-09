@@ -1,0 +1,149 @@
+{
+    "day": 18,
+    "title": "Day 18 - Sell Like a Girl Scout",
+    "week": 4,
+    "mainPromise": "You will sell directly with a clear ask, using short scripts and simple follow-up rules that respect people's time.",
+    "timeEstimate": "36 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Selling is a clear invitation",
+            "content": "Early selling works best when it is plain. You describe a specific outcome, you give a price, and you ask if they want the link. That is it.\n\nMany people avoid selling because they fear being pushy. The fix is structure. If you keep your message short, specific, and optional, it stops feeling like pressure.\n\nYour job is not to convince everyone. Your job is to find the small set of people who already want the result and just need a clear path to buy.",
+            "soWhat": "If you cannot make a direct ask, you will collect vague compliments instead of orders."
+        },
+        {
+            "id": "t2",
+            "title": "Good selling asks for a small commitment",
+            "content": "A strong selling message does not ask for a huge decision upfront. It asks for a small next step: Want the link? or Should I send the details? That lowers friction.\n\nWhen someone shows interest, you move them forward with a simple two-step path: payment, then intake. You do not add extra calls unless they are necessary for delivery.\n\nKeep the buyer's decision simple. Busy people buy speed and clarity more than long explanations.",
+            "soWhat": "If you ask for too much too early, people will delay even if they want it."
+        },
+        {
+            "id": "t3",
+            "title": "Follow-up is part of service",
+            "content": "Follow-up is not pestering if it is polite, time-limited, and useful. People are busy. They forget. They open a message and get pulled away.\n\nA clean follow-up system is simple: one reminder, one final check-in, then stop. You can also add value in follow-up by restating the outcome and the timeline in one sentence.\n\nToday you will execute a small outreach batch and record results. Small batches keep you calm and help you learn quickly.",
+            "soWhat": "If you do not send and track real outreach, you will not know whether your offer is working."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d18_do1",
+            "title": "Write three selling scripts",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write a one-sentence opener that names the problem.",
+                "Write a 5 to 7 line DM script with price and next step.",
+                "Write a short comment reply that shares the link."
+            ],
+            "items": [
+                {
+                    "id": "d18_do1_i1",
+                    "label": "Wrote 3 opener lines for different contexts",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three opener lines labeled DM, community, reply."
+                },
+                {
+                    "id": "d18_do1_i2",
+                    "label": "Wrote a 5 to 7 line DM script that includes price and start step",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the DM script (5 to 7 lines) including price and how to start."
+                },
+                {
+                    "id": "d18_do1_i3",
+                    "label": "Wrote a short comment reply script that offers the link",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the comment reply script."
+                },
+                {
+                    "id": "d18_do1_i4",
+                    "label": "Wrote a one-line scope warning that fits inside a DM",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence scope warning suitable for a DM."
+                }
+            ],
+            "example": "Opener: Do you also lose time each week rebuilding the same admin tasks? DM: I'm running a small service that sets up a simple workflow in 48 hours. Fixed scope, $89. You pay, then fill a short intake form. Want the link? Scope warning: It's a one-time setup, not ongoing daily management."
+        },
+        {
+            "id": "d18_do2",
+            "title": "Build your interest-to-intake flow",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write the three-step flow: interest reply, payment, intake.",
+                "Write two quick answers for common questions (time and scope).",
+                "Define your rule for when you stop replying."
+            ],
+            "items": [
+                {
+                    "id": "d18_do2_i1",
+                    "label": "Wrote the three-step flow in message form",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste three messages labeled Step 1, Step 2, Step 3."
+                },
+                {
+                    "id": "d18_do2_i2",
+                    "label": "Wrote two short answers for time and scope questions",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide two Q and A pairs: timeline and scope."
+                },
+                {
+                    "id": "d18_do2_i3",
+                    "label": "Wrote a one-line link pack message",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the message that includes what links to send and in what order."
+                },
+                {
+                    "id": "d18_do2_i4",
+                    "label": "Defined a stop rule for unresponsive leads",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write your stop rule including number of follow-ups and timing."
+                }
+            ],
+            "example": "Q: How long does it take? A: 48 hours after intake is complete. Stop rule: If no reply after 2 follow-ups over 5 days, close the loop and move on."
+        },
+        {
+            "id": "d18_do3",
+            "title": "Send a small outreach batch",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Pick 8 to 12 people from your launch list who fit your customer.",
+                "Send your DM script or a tailored version.",
+                "Log each message and schedule follow-ups."
+            ],
+            "items": [
+                {
+                    "id": "d18_do3_i1",
+                    "label": "Selected 8 to 12 targets with one-line fit reason each",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 8 to 12 targets with one-line reasons."
+                },
+                {
+                    "id": "d18_do3_i2",
+                    "label": "Sent the message to at least 8 targets",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste the final message text and record the count and platform used."
+                },
+                {
+                    "id": "d18_do3_i3",
+                    "label": "Logged each outreach in your tracker",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste tracker rows or a table showing each outreach entry."
+                },
+                {
+                    "id": "d18_do3_i4",
+                    "label": "Scheduled two follow-ups for each non-reply",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write follow-up schedule lines with dates for non-replies."
+                }
+            ],
+            "example": "Target reason: Freelancer who posts about admin overload. Follow-up: Day 2: quick reminder, Day 5: final check-in."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Three opener lines and a DM selling script",
+            "Interest-to-intake message flow with Q and A responses",
+            "Outreach batch target list and sent-message record",
+            "Updated tracker entries and follow-up schedule"
+        ],
+        "tomorrowPreview": "Tomorrow you will ask ten people for help in a way that makes it easy for them to introduce you to the right buyers."
+    }
+}
