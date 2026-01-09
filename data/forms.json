@@ -868,127 +868,499 @@
     "6": {
         "fields": [
             {
-                "id": "selector_matrix",
-                "type": "TEXTAREA",
-                "label": "Scoring Matrix (paste your scores for all 5 ideas × 5 dimensions)",
-                "required": true,
-                "helperText": "Feasibility, Profitability, Persuasion, Efficiency, Motivation (1-5 each)"
-            },
-            {
-                "id": "idea1_total",
-                "type": "NUMBER",
-                "label": "Idea 1: Total Score (out of 25)",
-                "required": true
-            },
-            {
-                "id": "idea2_total",
-                "type": "NUMBER",
-                "label": "Idea 2: Total Score",
-                "required": true
-            },
-            {
-                "id": "idea3_total",
-                "type": "NUMBER",
-                "label": "Idea 3: Total Score",
-                "required": true
-            },
-            {
-                "id": "idea4_total",
-                "type": "NUMBER",
-                "label": "Idea 4: Total Score",
-                "required": false
-            },
-            {
-                "id": "idea5_total",
-                "type": "NUMBER",
-                "label": "Idea 5: Total Score",
-                "required": false
-            },
-            {
-                "id": "top_idea",
+                "id": "idea_a_name",
                 "type": "TEXT",
-                "label": "Your #1 ranked idea",
+                "label": "Idea A: Name",
+                "helperText": "Example: Resume Review Service",
                 "required": true
             },
             {
-                "id": "gut_check",
-                "type": "RADIO",
-                "label": "Does the top-scoring idea feel right?",
+                "id": "idea_a_summary",
+                "type": "TEXTAREA",
+                "label": "Idea A: One sentence summary",
+                "helperText": "What is it and who is it for",
+                "required": true
+            },
+            {
+                "id": "idea_a_feasibility",
+                "type": "SELECT",
+                "label": "Idea A: Feasibility",
+                "helperText": "Can you do this with current skills and time",
                 "required": true,
                 "options": [
-                    "Yes, it feels right",
-                    "Mostly, with some hesitation",
-                    "No, something feels off"
+                    "High",
+                    "Medium",
+                    "Low"
                 ]
             },
             {
-                "id": "gut_reflection",
+                "id": "idea_a_profitability",
+                "type": "SELECT",
+                "label": "Idea A: Profitability",
+                "helperText": "Does the math look attractive",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_a_persuasion",
+                "type": "SELECT",
+                "label": "Idea A: Persuasion (why now)",
+                "helperText": "Is there urgency or clear demand",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_a_efficiency",
+                "type": "SELECT",
+                "label": "Idea A: Efficiency (speed to execute)",
+                "helperText": "How fast can you launch and test",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_a_motivation",
+                "type": "SELECT",
+                "label": "Idea A: Motivation (excitement)",
+                "helperText": "How excited are you about this",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_a_notes",
                 "type": "TEXTAREA",
-                "label": "If hesitation, explain why",
+                "label": "Idea A: Notes",
                 "required": false
+            },
+            {
+                "id": "idea_b_name",
+                "type": "TEXT",
+                "label": "Idea B: Name",
+                "required": true
+            },
+            {
+                "id": "idea_b_summary",
+                "type": "TEXTAREA",
+                "label": "Idea B: One sentence summary",
+                "required": true
+            },
+            {
+                "id": "idea_b_feasibility",
+                "type": "SELECT",
+                "label": "Idea B: Feasibility",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_b_profitability",
+                "type": "SELECT",
+                "label": "Idea B: Profitability",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_b_persuasion",
+                "type": "SELECT",
+                "label": "Idea B: Persuasion",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_b_efficiency",
+                "type": "SELECT",
+                "label": "Idea B: Efficiency",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_b_motivation",
+                "type": "SELECT",
+                "label": "Idea B: Motivation",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_c_name",
+                "type": "TEXT",
+                "label": "Idea C: Name",
+                "required": true
+            },
+            {
+                "id": "idea_c_summary",
+                "type": "TEXTAREA",
+                "label": "Idea C: One sentence summary",
+                "required": true
+            },
+            {
+                "id": "idea_c_feasibility",
+                "type": "SELECT",
+                "label": "Idea C: Feasibility",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_c_profitability",
+                "type": "SELECT",
+                "label": "Idea C: Profitability",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_c_persuasion",
+                "type": "SELECT",
+                "label": "Idea C: Persuasion",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_c_efficiency",
+                "type": "SELECT",
+                "label": "Idea C: Efficiency",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_c_motivation",
+                "type": "SELECT",
+                "label": "Idea C: Motivation",
+                "required": true,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_d_name",
+                "type": "TEXT",
+                "label": "Idea D: Name",
+                "required": false
+            },
+            {
+                "id": "idea_d_feasibility",
+                "type": "SELECT",
+                "label": "Idea D: Feasibility",
+                "required": false,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_d_profitability",
+                "type": "SELECT",
+                "label": "Idea D: Profitability",
+                "required": false,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "idea_d_motivation",
+                "type": "SELECT",
+                "label": "Idea D: Motivation",
+                "required": false,
+                "options": [
+                    "High",
+                    "Medium",
+                    "Low"
+                ]
+            },
+            {
+                "id": "final_pick",
+                "type": "RADIO",
+                "label": "Final pick to commit",
+                "helperText": "Your primary idea for the next 7 days",
+                "required": true,
+                "options": [
+                    "Idea A",
+                    "Idea B",
+                    "Idea C",
+                    "Idea D"
+                ]
+            },
+            {
+                "id": "backup_pick",
+                "type": "SELECT",
+                "label": "Backup pick",
+                "helperText": "Fallback if primary fails fast",
+                "required": true,
+                "options": [
+                    "Idea A",
+                    "Idea B",
+                    "Idea C",
+                    "Idea D"
+                ]
+            },
+            {
+                "id": "shelving",
+                "type": "TEXTAREA",
+                "label": "What you are shelving for now",
+                "helperText": "Ideas you are setting aside. You can return to them later.",
+                "required": true
+            },
+            {
+                "id": "commitment",
+                "type": "TEXT",
+                "label": "Your commitment",
+                "helperText": "Complete: For the next 7 days, I will focus on _____",
+                "required": true
             }
         ]
     },
     "7": {
         "fields": [
             {
-                "id": "competitor1_name",
+                "id": "chosen_idea",
                 "type": "TEXT",
-                "label": "Competitor 1: Name/URL",
+                "label": "Your chosen idea name",
+                "helperText": "From Day 6",
                 "required": true
             },
             {
-                "id": "competitor1_pricing",
+                "id": "platforms_searched",
+                "type": "CHECKBOX_GROUP",
+                "label": "Where you searched",
+                "required": true,
+                "options": [
+                    "Google",
+                    "YouTube",
+                    "TikTok",
+                    "Instagram",
+                    "Reddit",
+                    "Marketplace (Etsy/Fiverr/Upwork)",
+                    "App store",
+                    "Local businesses",
+                    "Other"
+                ]
+            },
+            {
+                "id": "comp1_name",
                 "type": "TEXT",
-                "label": "Competitor 1: Pricing",
+                "label": "Competitor 1: Name",
+                "helperText": "Example: ResumeWorded",
                 "required": true
             },
             {
-                "id": "competitor1_feedback",
+                "id": "comp1_link",
+                "type": "URL",
+                "label": "Competitor 1: Link",
+                "required": true
+            },
+            {
+                "id": "comp1_offer",
+                "type": "TEXT",
+                "label": "Competitor 1: What they sell in one line",
+                "required": true
+            },
+            {
+                "id": "comp1_price",
+                "type": "TEXT",
+                "label": "Competitor 1: Price range",
+                "helperText": "Example: $49 to $149",
+                "required": true
+            },
+            {
+                "id": "comp1_promise",
+                "type": "TEXT",
+                "label": "Competitor 1: Main promise",
+                "required": true
+            },
+            {
+                "id": "comp1_missing",
                 "type": "TEXTAREA",
-                "label": "Competitor 1: Customer feedback highlights",
+                "label": "Competitor 1: What is missing or annoying",
                 "required": true
             },
             {
-                "id": "competitor2_name",
+                "id": "comp2_name",
                 "type": "TEXT",
-                "label": "Competitor 2: Name/URL",
+                "label": "Competitor 2: Name",
                 "required": true
             },
             {
-                "id": "competitor2_pricing",
+                "id": "comp2_link",
+                "type": "URL",
+                "label": "Competitor 2: Link",
+                "required": true
+            },
+            {
+                "id": "comp2_offer",
                 "type": "TEXT",
-                "label": "Competitor 2: Pricing",
+                "label": "Competitor 2: What they sell",
                 "required": true
             },
             {
-                "id": "competitor3_name",
+                "id": "comp2_price",
                 "type": "TEXT",
-                "label": "Competitor 3: Name/URL",
+                "label": "Competitor 2: Price range",
                 "required": true
             },
             {
-                "id": "competitor3_pricing",
-                "type": "TEXT",
-                "label": "Competitor 3: Pricing",
-                "required": true
-            },
-            {
-                "id": "competitor4_5_summary",
+                "id": "comp2_missing",
                 "type": "TEXTAREA",
-                "label": "Competitors 4-5: Quick summary",
+                "label": "Competitor 2: What is missing",
+                "required": true
+            },
+            {
+                "id": "comp3_name",
+                "type": "TEXT",
+                "label": "Competitor 3: Name",
+                "required": true
+            },
+            {
+                "id": "comp3_link",
+                "type": "URL",
+                "label": "Competitor 3: Link",
+                "required": true
+            },
+            {
+                "id": "comp3_price",
+                "type": "TEXT",
+                "label": "Competitor 3: Price range",
+                "required": true
+            },
+            {
+                "id": "comp3_missing",
+                "type": "TEXTAREA",
+                "label": "Competitor 3: What is missing",
+                "required": true
+            },
+            {
+                "id": "comp4_name",
+                "type": "TEXT",
+                "label": "Competitor 4: Name",
                 "required": false
             },
             {
-                "id": "gaps_identified",
+                "id": "comp4_price",
+                "type": "TEXT",
+                "label": "Competitor 4: Price range",
+                "required": false
+            },
+            {
+                "id": "comp5_name",
+                "type": "TEXT",
+                "label": "Competitor 5: Name",
+                "required": false
+            },
+            {
+                "id": "comp5_price",
+                "type": "TEXT",
+                "label": "Competitor 5: Price range",
+                "required": false
+            },
+            {
+                "id": "customer_phrases",
                 "type": "TEXTAREA",
-                "label": "Gaps: What are competitors missing or doing poorly?",
+                "label": "5 phrases customers use",
+                "helperText": "Copy short phrases from reviews or comments. Example: I needed this faster, The price was too high for what I got",
                 "required": true
             },
             {
-                "id": "insights",
+                "id": "gap1",
                 "type": "TEXTAREA",
-                "label": "Key insights that change how you think about your idea",
+                "label": "Gap hypothesis 1",
+                "helperText": "Something you could do differently. Example: Offer same-day turnaround",
+                "required": true
+            },
+            {
+                "id": "gap2",
+                "type": "TEXTAREA",
+                "label": "Gap hypothesis 2",
+                "required": true
+            },
+            {
+                "id": "gap3",
+                "type": "TEXTAREA",
+                "label": "Gap hypothesis 3",
+                "required": true
+            },
+            {
+                "id": "differentiation_statement",
+                "type": "TEXT",
+                "label": "Your differentiation statement",
+                "helperText": "Complete: I am different because _____",
+                "required": true
+            },
+            {
+                "id": "differentiation_angle",
+                "type": "SELECT",
+                "label": "Your specific angle",
+                "required": true,
+                "options": [
+                    "Faster",
+                    "Cheaper",
+                    "More premium",
+                    "More personal",
+                    "More niche",
+                    "Done-for-you",
+                    "Done-with-you",
+                    "Templates/tools",
+                    "Local convenience",
+                    "Trust/safety",
+                    "Other"
+                ]
+            },
+            {
+                "id": "angle_proof",
+                "type": "TEXTAREA",
+                "label": "Proof you can deliver this angle",
+                "helperText": "What experience or capability backs this up",
                 "required": true
             }
         ]
@@ -996,51 +1368,201 @@
     "8": {
         "fields": [
             {
-                "id": "customer_age",
+                "id": "avatar_name",
                 "type": "TEXT",
-                "label": "Demographics: Age range",
+                "label": "Avatar name",
+                "helperText": "Give them a real name. Example: Sarah",
                 "required": true
             },
             {
-                "id": "customer_job",
+                "id": "just_like_me",
                 "type": "TEXT",
-                "label": "Demographics: Job/role",
+                "label": "In what way is this person similar to you?",
+                "helperText": "Example: They are a working parent who feels overwhelmed",
                 "required": true
             },
             {
-                "id": "customer_location",
+                "id": "age_range",
+                "type": "SELECT",
+                "label": "Age range",
+                "required": true,
+                "options": [
+                    "Under 18",
+                    "18-24",
+                    "25-34",
+                    "35-44",
+                    "45-54",
+                    "55+"
+                ]
+            },
+            {
+                "id": "role",
                 "type": "TEXT",
-                "label": "Demographics: Location type",
+                "label": "Role (job, student, parent, etc.)",
+                "helperText": "Example: Marketing manager at a small company",
                 "required": true
             },
             {
-                "id": "customer_income",
+                "id": "location_type",
+                "type": "SELECT",
+                "label": "Location type",
+                "required": true,
+                "options": [
+                    "Big city",
+                    "Small city",
+                    "Town",
+                    "Rural",
+                    "Online-only"
+                ]
+            },
+            {
+                "id": "biggest_frustration",
+                "type": "TEXTAREA",
+                "label": "Biggest frustration related to your offer",
+                "helperText": "What bothers them most. Example: I spend hours on my resume and still get no callbacks",
+                "required": true
+            },
+            {
+                "id": "fear_if_nothing_changes",
+                "type": "TEXTAREA",
+                "label": "What they fear will happen if nothing changes",
+                "helperText": "Example: I will stay stuck in this job I hate",
+                "required": true
+            },
+            {
+                "id": "secret_want",
+                "type": "TEXTAREA",
+                "label": "What they secretly want",
+                "helperText": "The outcome they dream about but might not say. Example: Confidence that my resume actually works",
+                "required": true
+            },
+            {
+                "id": "tried_before",
+                "type": "TEXTAREA",
+                "label": "What they tried before",
+                "helperText": "Example: Used free templates, asked a friend, hired a cheap service",
+                "required": true
+            },
+            {
+                "id": "hate_about_options",
+                "type": "TEXTAREA",
+                "label": "What they hate about current options",
+                "helperText": "Example: Too generic, too slow, too expensive for what I got",
+                "required": true
+            },
+            {
+                "id": "values_most",
+                "type": "SELECT",
+                "label": "What they value most",
+                "required": true,
+                "options": [
+                    "Time",
+                    "Money",
+                    "Certainty",
+                    "Status",
+                    "Freedom",
+                    "Simplicity",
+                    "Support",
+                    "Other"
+                ]
+            },
+            {
+                "id": "where_search",
+                "type": "CHECKBOX_GROUP",
+                "label": "Where they search for help",
+                "required": true,
+                "options": [
+                    "Google",
+                    "YouTube",
+                    "TikTok",
+                    "Instagram",
+                    "Reddit",
+                    "Friends",
+                    "Local groups",
+                    "Marketplaces",
+                    "Other"
+                ]
+            },
+            {
+                "id": "what_builds_trust",
+                "type": "TEXTAREA",
+                "label": "What would make them trust you",
+                "helperText": "Example: Seeing before/after examples, a quick response, a real person behind it",
+                "required": true
+            },
+            {
+                "id": "budget_comfort",
+                "type": "SELECT",
+                "label": "Budget comfort",
+                "required": true,
+                "options": [
+                    "Under $20",
+                    "$20-$50",
+                    "$50-$100",
+                    "$100-$250",
+                    "$250+"
+                ]
+            },
+            {
+                "id": "qa_1",
+                "type": "TEXTAREA",
+                "label": "Q&A 1: What question would you ask them?",
+                "required": true
+            },
+            {
+                "id": "qa_1_answer",
+                "type": "TEXTAREA",
+                "label": "Q&A 1: What would they answer?",
+                "required": true
+            },
+            {
+                "id": "qa_2",
+                "type": "TEXTAREA",
+                "label": "Q&A 2: Question",
+                "required": true
+            },
+            {
+                "id": "qa_2_answer",
+                "type": "TEXTAREA",
+                "label": "Q&A 2: Answer",
+                "required": true
+            },
+            {
+                "id": "qa_3",
+                "type": "TEXTAREA",
+                "label": "Q&A 3: Question",
+                "required": true
+            },
+            {
+                "id": "qa_3_answer",
+                "type": "TEXTAREA",
+                "label": "Q&A 3: Answer",
+                "required": true
+            },
+            {
+                "id": "qa_4",
+                "type": "TEXTAREA",
+                "label": "Q&A 4: Question",
+                "required": true
+            },
+            {
+                "id": "qa_4_answer",
+                "type": "TEXTAREA",
+                "label": "Q&A 4: Answer",
+                "required": true
+            },
+            {
+                "id": "outcome_summary",
                 "type": "TEXT",
-                "label": "Demographics: Income level",
-                "required": false
-            },
-            {
-                "id": "biggest_problem",
-                "type": "TEXTAREA",
-                "label": "Their biggest problem (related to your offering)",
+                "label": "If I help them, the outcome is _____",
+                "helperText": "Example: They get callbacks within a week",
                 "required": true
             },
             {
-                "id": "failed_solutions",
+                "id": "letter_to_avatar",
                 "type": "TEXTAREA",
-                "label": "Solutions they've tried that failed",
-                "required": true
-            },
-            {
-                "id": "why_failed",
-                "type": "TEXTAREA",
-                "label": "Why those solutions didn't work",
-                "required": true
-            },
-            {
-                "id": "day_in_life",
-                "type": "TEXTAREA",
-                "label": "Day in the life: One paragraph describing their typical day",
+                "label": "Short letter to your avatar (150-250 words)",
+                "helperText": "Write like a human to a human. Show you understand them. No marketing speak.",
                 "required": true
             }
         ]
@@ -1048,64 +1570,259 @@
     "9": {
         "fields": [
             {
-                "id": "deliverables",
-                "type": "TEXTAREA",
-                "label": "What exactly does the customer receive?",
-                "required": true,
-                "helperText": "Be specific, not vague"
-            },
-            {
-                "id": "problem_solved",
-                "type": "TEXTAREA",
-                "label": "What problem does this solve (in their words)?",
+                "id": "offer_name",
+                "type": "TEXT",
+                "label": "Offer name",
+                "helperText": "Example: The 24-Hour Resume Fix",
                 "required": true
             },
             {
-                "id": "outcome",
+                "id": "who_for",
+                "type": "TEXT",
+                "label": "Who it is for",
+                "helperText": "From your Day 8 avatar. Example: Job seekers with 3 to 10 years of experience",
+                "required": true
+            },
+            {
+                "id": "promise",
                 "type": "TEXTAREA",
-                "label": "What transformation/outcome can they expect?",
+                "label": "The promise (plain language)",
+                "helperText": "In plain language, what change happens? Example: You get a resume that gets callbacks",
+                "required": true
+            },
+            {
+                "id": "deliverables",
+                "type": "TEXTAREA",
+                "label": "What exactly do they receive",
+                "helperText": "Be specific. Example: A rewritten resume plus a 10-minute video review",
+                "required": true
+            },
+            {
+                "id": "delivery_format",
+                "type": "SELECT",
+                "label": "Delivery format",
+                "required": true,
+                "options": [
+                    "1:1 call",
+                    "Chat support",
+                    "Templates",
+                    "Video course",
+                    "Email service",
+                    "In-person",
+                    "Done-for-you",
+                    "Hybrid"
+                ]
+            },
+            {
+                "id": "time_to_deliver",
+                "type": "SELECT",
+                "label": "Time to deliver",
+                "required": true,
+                "options": [
+                    "Same day",
+                    "1-3 days",
+                    "1 week",
+                    "2 weeks",
+                    "1 month"
+                ]
+            },
+            {
+                "id": "boundaries",
+                "type": "TEXTAREA",
+                "label": "What is not included",
+                "helperText": "Set expectations. Example: Does not include cover letters or LinkedIn rewrites",
                 "required": true
             },
             {
                 "id": "one_sentence_pitch",
-                "type": "TEXTAREA",
-                "label": "One-sentence pitch: 'I help [who] do [what] so that [result]'",
+                "type": "TEXT",
+                "label": "One-sentence pitch",
+                "helperText": "I help [who] do [what] so that [result]",
                 "required": true
             },
             {
-                "id": "why_now",
+                "id": "five_sentence_pitch",
                 "type": "TEXTAREA",
-                "label": "Why should they act now (urgency/relevance)?",
-                "required": false
+                "label": "Five-sentence pitch",
+                "helperText": "Expand: problem, solution, how it works, outcome, call to action",
+                "required": true
+            },
+            {
+                "id": "price_model",
+                "type": "SELECT",
+                "label": "Price model",
+                "required": true,
+                "options": [
+                    "One-time",
+                    "Hourly",
+                    "Package",
+                    "Subscription"
+                ]
+            },
+            {
+                "id": "price_point",
+                "type": "NUMBER",
+                "label": "Price point (dollars)",
+                "helperText": "Example: 99",
+                "required": true
+            },
+            {
+                "id": "why_price_fair",
+                "type": "TEXTAREA",
+                "label": "Why this price is fair",
+                "helperText": "Connect price to outcome value",
+                "required": true
+            },
+            {
+                "id": "version_basic",
+                "type": "TEXT",
+                "label": "Version A (Basic) name",
+                "helperText": "Example: Resume Review",
+                "required": true
+            },
+            {
+                "id": "version_premium",
+                "type": "TEXT",
+                "label": "Version B (Premium) name",
+                "helperText": "Example: Full Resume Rewrite",
+                "required": true
+            },
+            {
+                "id": "version_differences",
+                "type": "TEXTAREA",
+                "label": "Differences between versions",
+                "helperText": "What does premium add",
+                "required": true
+            },
+            {
+                "id": "risk_reversal",
+                "type": "SELECT",
+                "label": "Risk reversal",
+                "helperText": "What if they are not happy",
+                "required": true,
+                "options": [
+                    "No refund",
+                    "Partial refund",
+                    "Satisfaction guarantee",
+                    "Redo/extra session",
+                    "Other"
+                ]
+            },
+            {
+                "id": "where_find_customers",
+                "type": "CHECKBOX_GROUP",
+                "label": "Where you will find first 3 customers",
+                "required": true,
+                "options": [
+                    "Friends",
+                    "Online community",
+                    "Local group",
+                    "Marketplace",
+                    "Social media",
+                    "Email list",
+                    "Other"
+                ]
+            },
+            {
+                "id": "what_ask_them",
+                "type": "TEXTAREA",
+                "label": "What you will ask them to do",
+                "helperText": "Example: Fill out a form and pay via link",
+                "required": true
             }
         ]
     },
     "10": {
         "fields": [
             {
-                "id": "first_encounter",
+                "id": "moment_noticed",
                 "type": "TEXTAREA",
-                "label": "How did you first encounter this problem?",
+                "label": "The moment you noticed the problem",
+                "helperText": "Where were you, what happened. Example: I was applying for jobs and getting no responses despite years of experience",
                 "required": true
             },
             {
                 "id": "why_care",
                 "type": "TEXTAREA",
-                "label": "What made you care enough to act?",
+                "label": "Why you care",
+                "helperText": "What made this personal. Example: I wasted months before I figured it out",
                 "required": true
             },
             {
-                "id": "qualifications",
+                "id": "credibility",
                 "type": "TEXTAREA",
-                "label": "What qualifies you to solve this?",
+                "label": "Why you are credible",
+                "helperText": "What proof or experience do you have. Example: I have helped 50 friends land interviews",
+                "required": true
+            },
+            {
+                "id": "who_help",
+                "type": "TEXT",
+                "label": "Who you want to help",
+                "helperText": "Example: Job seekers who feel invisible",
+                "required": true
+            },
+            {
+                "id": "mission",
+                "type": "TEXT",
+                "label": "Your mission in one sentence",
+                "helperText": "Example: To help job seekers get seen",
+                "required": true
+            },
+            {
+                "id": "turning_point",
+                "type": "TEXTAREA",
+                "label": "The turning point that made you act",
+                "helperText": "What shifted. Example: A friend used my advice and got 3 interviews in a week",
+                "required": true
+            },
+            {
+                "id": "offer_tie_in",
+                "type": "TEXTAREA",
+                "label": "How your offer solves it",
+                "helperText": "Connect story to offer. Example: That is why I created the 24-Hour Resume Fix",
+                "required": true
+            },
+            {
+                "id": "story_50",
+                "type": "TEXTAREA",
+                "label": "50-word story",
+                "helperText": "Example: I spent 6 months applying with no results. When I rewrote my resume using a new approach, I got 5 interviews in 2 weeks. Now I help others do the same.",
+                "required": true
+            },
+            {
+                "id": "story_150",
+                "type": "TEXTAREA",
+                "label": "150-word story",
+                "required": true
+            },
+            {
+                "id": "story_300",
+                "type": "TEXTAREA",
+                "label": "300-word story",
+                "required": true
+            },
+            {
+                "id": "give_back",
+                "type": "TEXTAREA",
+                "label": "If your hustle has a give-back element, describe it",
+                "helperText": "Optional. Example: I offer free reviews for recent graduates",
+                "required": false
+            },
+            {
+                "id": "where_place_story",
+                "type": "CHECKBOX_GROUP",
+                "label": "Where you will place this story",
                 "required": true,
-                "helperText": "Experience, skills, perspective—be honest"
-            },
-            {
-                "id": "origin_story",
-                "type": "TEXTAREA",
-                "label": "Your 3-4 sentence origin story (shareable version)",
-                "required": true
+                "options": [
+                    "Landing page",
+                    "About section",
+                    "First email",
+                    "Pinned post",
+                    "Sales DM",
+                    "Video intro",
+                    "Other"
+                ]
             }
         ]
     },

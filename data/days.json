@@ -260,156 +260,306 @@
         "day": 6,
         "title": "Use the Side Hustle Selector to Compare Ideas",
         "week": 2,
-        "goal": "Score and rank your ideas using a systematic framework",
-        "timeEstimate": "30-40 min",
+        "goal": "Pick one primary idea and one backup using a five-factor scoring system",
+        "timeEstimate": "40-50 min",
+        "hook": "Debate ends today. You will score, rank, and commit to one idea for the next phase.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "You've brainstormed, evaluated obstacles, and run basic numbers. Now it's time to make a decision. Today you'll use a scoring system to compare your ideas objectively.\n\nThe Side Hustle Selector evaluates ideas across five dimensions: Feasibility (can you actually do this?), Profitability (is the math attractive?), Persuasion (can you explain why people would pay?), Efficiency (does this match your available time?), and Motivation (does this excite you?).\n\nScore each idea 1-5 on each dimension. Total the scores. The highest-scoring idea is your front-runner—but it's not final. Trust the process, but also trust your gut."
+            "content": "You have been exploring. Now it is time to decide. Indecision is expensive. Every day you spend debating is a day you are not building, testing, or earning. Today you stop the loop.\n\nThe goal is not to find a perfect idea. Perfect ideas do not exist. The goal is to find a good enough idea that matches your situation and commit to testing it properly. Commitment unlocks energy. Hesitation drains it.\n\nYou will use a five-factor system to rank your ideas:\n\nFeasibility. Can you actually do this with your current skills, time, and resources? An idea you cannot execute is not an idea. It is a fantasy.\n\nProfitability. Does the math work? Can you sell this at a price that leaves meaningful profit after costs and your time?\n\nPersuasion. Is there a clear reason to buy now? Does this solve a problem that feels urgent or painful? Can you explain it in one sentence?\n\nEfficiency. How fast can you launch and test? Ideas that require months of prep before you can get feedback are dangerous for part-time hustlers.\n\nMotivation. How excited are you? You will need to push through hard moments. If you feel nothing, that matters.\n\nScore each idea on these five factors. Add the scores. Rank them. Then pick your primary and backup.\n\nYour primary idea is the one you commit to for the next seven days. Your backup is the fallback if something fundamental breaks. Everything else gets shelved. You can return to those ideas later if needed.\n\nDo not overthink the scoring. Use your gut combined with what you learned on Days 1 through 5. The point is to end debate, not to find mathematical certainty."
+        },
+        "practice": {
+            "title": "The Decision Reset (3-5 minutes)",
+            "content": "Before you score, reset your mental state.\n\nClose your eyes. Take three slow breaths. Notice any tightness in your body. That tension often comes from wanting to make the right choice. Acknowledge it.\n\nNow remind yourself: there is no perfect choice. There is only a choice you make and then work to validate. The goal today is forward motion, not perfection.\n\nSet a timer for 2 minutes. On paper or in your head, answer these questions without filtering:\n\n1. Which idea excites me most right now?\n2. Which idea feels most doable this week?\n3. Which idea do I keep coming back to?\n\nWrite down your answers. These are signals. Now open your eyes and begin the scoring process."
         },
         "mission": [
             {
-                "task": "Set up a simple scoring matrix (5 ideas × 5 dimensions)",
+                "task": "Complete the Decision Reset practice",
                 "time": "5 min"
             },
             {
-                "task": "Score each idea 1-5 on Feasibility, Profitability, Persuasion, Efficiency, Motivation",
-                "time": "20 min"
+                "task": "List your top 4 ideas from Days 3 through 5",
+                "time": "3 min"
             },
             {
-                "task": "Total the scores and rank your ideas",
+                "task": "Score each idea on Feasibility (1 to 5)",
                 "time": "5 min"
             },
             {
-                "task": "Reflect: does the top idea feel right? If not, why?",
+                "task": "Score each idea on Profitability (1 to 5)",
                 "time": "5 min"
+            },
+            {
+                "task": "Score each idea on Persuasion (1 to 5)",
+                "time": "5 min"
+            },
+            {
+                "task": "Score each idea on Efficiency (1 to 5)",
+                "time": "5 min"
+            },
+            {
+                "task": "Score each idea on Motivation (1 to 5)",
+                "time": "5 min"
+            },
+            {
+                "task": "Total scores and rank ideas from highest to lowest",
+                "time": "3 min"
+            },
+            {
+                "task": "Choose your primary idea and backup idea",
+                "time": "5 min"
+            },
+            {
+                "task": "Write your commitment: For the next 7 days, I will focus on _____",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't let analysis paralysis set in. The scoring system is a guide, not a dictator. If the numbers say one thing but your gut says another, that's worth exploring.",
-        "doneMeans": "Your 5 ideas are scored and ranked, and you've identified your top 1-2 ideas to pursue."
+        "commonMistakes": "Scoring all ideas the same to avoid deciding. The point of scoring is to create separation. Be honest about differences.\n\nIgnoring motivation because it seems soft. Low motivation kills execution. If you dread the work, factor that in.\n\nPicking the hardest idea because it feels more impressive. Harder is not better. Faster feedback is better.\n\nNot committing to one primary idea. Keeping two ideas equally active splits your energy and guarantees slower progress.\n\nOverthinking the scoring. This is not a math test. Use your judgment and move on.\n\nForgetting to pick a backup. If your primary idea fails fast, you want a clear fallback so you do not stall.",
+        "doneMeans": "You have scored and ranked your ideas, chosen one primary and one backup, and written a commitment sentence.",
+        "reviewCTA": "Want feedback on your scoring logic? Submit your Day 6 workbook for review and get suggestions on your idea selection."
     },
     {
         "day": 7,
         "title": "Become a Detective",
         "week": 2,
-        "goal": "Research your chosen idea and its market thoroughly",
-        "timeEstimate": "35-45 min",
+        "goal": "Research your market and find a clear angle to differentiate",
+        "timeEstimate": "45-55 min",
+        "hook": "Competition is proof of demand. Today you study it, find the gaps, and claim your angle.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "You've chosen your idea. Now you need to understand the landscape you're entering. Today you become a detective, researching everything relevant to your side hustle.\n\nWho else is doing something similar? How do they price it? Where do they find customers? What do reviews say? What are people complaining about?\n\nThis isn't about copying competitors—it's about understanding the market. Gaps in competitor offerings become your opportunities. Common complaints become problems you can solve.\n\nDon't just research—document. You'll reference this research throughout the program."
+            "content": "You picked an idea. Now you need to know what you are walking into. The worst mistake is to build in a vacuum. If you do not know what exists, you cannot position yourself differently.\n\nToday you become a detective. You will research competitors, study their offers, read their reviews, and look for patterns. This is not about copying. It is about understanding.\n\nHere is the good news: competition means demand. If people are already paying for something similar, there is a market. The absence of competition usually means the absence of buyers, not untapped opportunity.\n\nHere is what you are looking for:\n\nWhat do competitors offer? Study the specifics. What is included, what is not, how is it priced, how is it delivered?\n\nWhat do customers complain about? Read reviews, comments, and forum threads. Complaints are opportunities. Each frustration is a chance to do something better or different.\n\nWhat is missing? Sometimes no one offers exactly what a segment wants. That gap is your angle.\n\nYour goal is not to be the best in the world. That is unrealistic and unnecessary. Your goal is to be different enough that you have a reason to exist. You need a clear answer to: why would someone choose you instead of the others?\n\nThe answer might be: you are faster, cheaper, more personal, more specialized, local, or more trustworthy. Any angle works if it is true and you can deliver on it.\n\nBy the end of today, you will have a short statement: I am different because _____. That statement guides everything you build."
+        },
+        "practice": {
+            "title": "The Detective Scan (5-7 minutes)",
+            "content": "Set a timer for 6 minutes. You are going to do a quick reconnaissance sweep.\n\nOpen Google, YouTube, and one marketplace (Etsy, Fiverr, Upwork, or similar depending on your idea).\n\nSearch for your offer or problem in simple terms. Example: resume help, meal planning service, logo design.\n\nFor the first 3 minutes, skim results. Do not click. Just notice: how many results? What prices do you see? What promises?\n\nFor the next 3 minutes, click into 2 or 3 competitors. Skim their offer page and read 2 reviews or comments.\n\nWhen the timer ends, write down three things:\n\n1. One thing competitors do well.\n2. One thing customers complain about.\n3. One gap no one seems to fill.\n\nThese notes are your starting point for deeper research."
         },
         "mission": [
             {
-                "task": "Find 5 competitors or similar offerings (Google, marketplaces, social media)",
-                "time": "15 min"
+                "task": "Complete the Detective Scan practice",
+                "time": "7 min"
             },
             {
-                "task": "Document their pricing, positioning, and customer feedback",
-                "time": "15 min"
-            },
-            {
-                "task": "Identify gaps: what are they missing or doing poorly?",
+                "task": "Search 3 to 5 platforms for competitors (Google, YouTube, Etsy, Fiverr, Reddit, etc.)",
                 "time": "10 min"
             },
             {
-                "task": "Note any insights that change how you think about your idea",
+                "task": "Document details for 5 competitors: name, link, offer, price, main promise",
+                "time": "15 min"
+            },
+            {
+                "task": "For each competitor, note what seems weak or missing",
+                "time": "10 min"
+            },
+            {
+                "task": "Collect 5 phrases customers use in reviews or comments",
                 "time": "5 min"
+            },
+            {
+                "task": "Write 3 gap hypotheses: things you could do differently",
+                "time": "5 min"
+            },
+            {
+                "task": "Choose your differentiation angle",
+                "time": "3 min"
+            },
+            {
+                "task": "Write your statement: I am different because _____",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't panic if you find competition. Competition means there's demand. The absence of competition often means there's no market.",
-        "doneMeans": "You have documented research on 5+ competitors with notes on gaps and opportunities."
+        "commonMistakes": "Panicking at competition. Competition confirms demand. It is a good sign.\n\nOnly looking at the first page of Google. Check marketplaces, social media, and forums too.\n\nStopping after 2 competitors. Look at 5. Patterns appear after you see more examples.\n\nIgnoring negative reviews. Complaints are signals. They tell you what to fix.\n\nCopying competitors instead of differentiating. The goal is to find your unique angle, not to clone someone else.\n\nChoosing an angle you cannot deliver. Your differentiation must be true. Do not claim premium if you cannot deliver premium.",
+        "doneMeans": "You have documented 5 competitors, found 3 gaps, and written a differentiation statement.",
+        "reviewCTA": "Want feedback on your differentiation angle? Submit your Day 7 workbook for review."
     },
     {
         "day": 8,
         "title": "Have Imaginary Coffee with Your Ideal Customer",
         "week": 2,
-        "goal": "Create a detailed profile of who you're serving",
-        "timeEstimate": "25-35 min",
+        "goal": "Create a vivid avatar and understand what drives them to pay",
+        "timeEstimate": "45-55 min",
+        "hook": "Stop selling to everyone. Today you meet the one person your offer is built for.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "You can't sell to 'everyone.' Today you'll get specific about exactly who your side hustle serves—so specific that you could spot them at a coffee shop.\n\nThe ideal customer exercise isn't about demographics alone. Yes, know their age, location, and job. But more importantly, know their problems, desires, and daily frustrations.\n\nWhat keeps them up at night? What solutions have they tried? Why didn't those work? The more vividly you can picture this person, the more effectively you can create something they actually want."
+            "content": "Everyone is not your customer. If you try to serve everyone, you will resonate with no one. The most effective side hustles are built for a specific person with a specific problem.\n\nToday you create your avatar. Not a demographic profile. A real human you can picture.\n\nThink about someone who would genuinely benefit from your offer. Maybe it is someone you know. Maybe it is a version of yourself from a few years ago. Maybe it is someone you have observed online or in real life.\n\nGive them a name. Picture their day. Understand their frustration.\n\nGo beyond surface details. Yes, know their age and job. But more importantly, know what keeps them up at night. Know what they have tried and why it failed. Know what they secretly want and what they fear will happen if nothing changes.\n\nKnow their objections. What makes them hesitate to spend money? What would make them trust you? What outcome would make them feel like they got their money's worth?\n\nWhen you understand this person deeply, your marketing becomes easier. You stop guessing what to say. You just say what they need to hear.\n\nBy the end of today, you will have a one-page avatar summary. You will also write a short letter to this person. The letter is not something you send. It is an exercise to prove you understand them. If you can write it without sounding fake, you are ready to sell."
+        },
+        "practice": {
+            "title": "The Coffee Chat Visualization (5-7 minutes)",
+            "content": "Close your eyes. Imagine you are sitting across from your ideal customer at a quiet coffee shop.\n\nThey look tired. They have a problem they want to solve. They are skeptical but open.\n\nFor 2 minutes, imagine them talking. What do they say? What words do they use? What frustration shows in their voice?\n\nNow imagine yourself responding. You are not pitching. You are just listening and occasionally asking questions. What do you ask?\n\nOpen your eyes. Set a timer for 3 minutes. Write down:\n\n1. Their biggest complaint in their own words.\n2. What they tried before and why it disappointed them.\n3. What they secretly want but feel embarrassed to admit.\n\nThese notes become the foundation of your avatar."
         },
         "mission": [
             {
-                "task": "Describe your ideal customer's demographics (age, job, location, income)",
-                "time": "10 min"
+                "task": "Complete the Coffee Chat Visualization practice",
+                "time": "7 min"
             },
             {
-                "task": "Describe their biggest problem related to your offering",
-                "time": "10 min"
+                "task": "Give your avatar a name and a one-line identity",
+                "time": "3 min"
             },
             {
-                "task": "List solutions they've tried and why those failed",
-                "time": "10 min"
-            },
-            {
-                "task": "Write a one-paragraph 'day in the life' of this person",
+                "task": "Fill in basic profile: age range, role, location type",
                 "time": "5 min"
+            },
+            {
+                "task": "Describe their biggest frustration related to your offer",
+                "time": "5 min"
+            },
+            {
+                "task": "Describe what they fear will happen if nothing changes",
+                "time": "5 min"
+            },
+            {
+                "task": "Describe what they secretly want",
+                "time": "5 min"
+            },
+            {
+                "task": "List what they have tried before and why it failed",
+                "time": "5 min"
+            },
+            {
+                "task": "Describe what would make them trust you",
+                "time": "5 min"
+            },
+            {
+                "task": "Write 8 quick Q and A notes from your imaginary conversation",
+                "time": "10 min"
+            },
+            {
+                "task": "Write a short letter to your avatar (150 to 250 words)",
+                "time": "10 min"
             }
         ],
-        "commonMistakes": "Don't create a fictional perfect customer. Base this on real observations—people you've met, reviews you've read, forums you've browsed.",
-        "doneMeans": "You have a vivid, specific profile of your ideal customer including their problems and failed solutions."
+        "commonMistakes": "Making the avatar too broad. Everyone aged 25 to 45 is not specific enough.\n\nFocusing only on demographics. Age and income matter less than problems and motivations.\n\nInventing a fictional person with no grounding in reality. Base your avatar on real observations.\n\nSkipping the letter exercise. Writing to them forces you to prove you understand them.\n\nUsing marketing language in the letter. Write like a human, not a brochure.\n\nIgnoring objections and distrust. Knowing what makes them hesitate is as important as knowing what they want.",
+        "doneMeans": "You have a one-page avatar summary with profile, frustrations, desires, and a short letter written to them.",
+        "reviewCTA": "Want feedback on your avatar? Submit your Day 8 workbook for review and get suggestions on deepening your understanding."
     },
     {
         "day": 9,
         "title": "Transform Your Idea into an Offer",
         "week": 2,
-        "goal": "Define exactly what you're selling and why it matters",
-        "timeEstimate": "30-40 min",
+        "goal": "Package your idea into a clear, sellable offer with promise, pitch, and price",
+        "timeEstimate": "50-60 min",
+        "hook": "An idea is a thought. An offer is something someone can buy. Today you build the package.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "An idea is not an offer. An offer is specific: this is what you get, this is what it costs, this is why you should care. Today you transform your idea into something someone can actually say yes or no to.\n\nA strong offer answers: What exactly does the customer receive? What problem does it solve? What outcome does it create? Why is it worth the price?\n\nThe clearer your offer, the easier it is to sell. Vague offers create confusion. Confusion kills sales.\n\nDon't worry about perfection—your offer will evolve. But you need a starting point to test."
+            "content": "You have an idea and an avatar. But ideas do not sell. Offers do. An offer is specific, bounded, and priced. It answers the question: what exactly do I get if I pay you?\n\nVague offers create confusion. Confusion kills sales. If a potential customer cannot understand your offer in 30 seconds, they will not buy.\n\nToday you define your offer with precision:\n\nWhat do they receive? List the deliverables. A course? A call? A template? A product? Be concrete.\n\nWhat problem does it solve? State the problem in their words, not industry jargon. If your avatar would not use a word, do not use it.\n\nWhat outcome can they expect? Outcomes are what people pay for. Not the thing itself, but what the thing does for them.\n\nHow is it delivered? In person, online, via email, on a call? Be clear.\n\nHow long does it take? Same day, a week, a month?\n\nWhat is not included? Boundaries prevent scope creep and set expectations.\n\nWhat does it cost? Price it simply. One-time, hourly, package, or subscription.\n\nYou will also write two pitches. The first is one sentence. This is your cocktail party answer to what do you do. The second is five sentences. This is for a landing page or longer conversation.\n\nFinally, you will consider a basic version and a premium version. Not because you need both, but because thinking in tiers helps clarify value.\n\nBy the end of today, you have a sellable offer. Not perfect. Not final. But clear enough that you could describe it to a stranger and they would understand."
+        },
+        "practice": {
+            "title": "The Promise and Boundaries Exercise (4-6 minutes)",
+            "content": "Set a timer for 5 minutes.\n\nAnswer these questions without stopping to edit:\n\n1. After someone pays me, what do they walk away with? (The deliverable)\n2. What changes for them? (The outcome)\n3. What am I definitely not doing for them? (The boundary)\n\nNow reread your answers. Circle any vague words. Replace them with specifics.\n\nExample: Help them with their resume becomes Rewrite their resume and record a 10-minute video explaining the changes.\n\nExample: Support during the process becomes Two 30-minute calls plus unlimited email for 14 days.\n\nSpecificity is your friend. Vague promises sound weak."
         },
         "mission": [
             {
-                "task": "Write exactly what the customer receives (be specific, not vague)",
+                "task": "Complete the Promise and Boundaries exercise",
+                "time": "6 min"
+            },
+            {
+                "task": "Write your offer name",
+                "time": "3 min"
+            },
+            {
+                "task": "Write who it is for (from your Day 8 avatar)",
+                "time": "3 min"
+            },
+            {
+                "task": "Write the promise in plain language",
+                "time": "5 min"
+            },
+            {
+                "task": "List the deliverables: what exactly do they receive",
+                "time": "5 min"
+            },
+            {
+                "task": "Choose delivery format and time to deliver",
+                "time": "5 min"
+            },
+            {
+                "task": "Write what is not included",
+                "time": "5 min"
+            },
+            {
+                "task": "Write your one-sentence pitch",
+                "time": "5 min"
+            },
+            {
+                "task": "Write your five-sentence pitch",
                 "time": "10 min"
             },
             {
-                "task": "Write the primary problem it solves (in their words, not industry jargon)",
-                "time": "10 min"
+                "task": "Set your price model and price point",
+                "time": "5 min"
             },
             {
-                "task": "Write the transformation/outcome they can expect",
-                "time": "10 min"
-            },
-            {
-                "task": "Draft a one-sentence pitch: 'I help [who] do [what] so that [result]'",
+                "task": "Describe basic version and premium version differences",
                 "time": "5 min"
             }
         ],
-        "commonMistakes": "Don't list features—describe outcomes. Customers don't buy what something is; they buy what it does for them.",
-        "doneMeans": "You have a clear, specific offer with deliverables, problem solved, outcome promised, and a one-sentence pitch."
+        "commonMistakes": "Being vague about deliverables. They get a course is not enough. How many modules? How long? What format?\n\nUsing jargon the avatar would not understand. Write in their language.\n\nSkipping boundaries. Without clear limits, you risk scope creep and resentment.\n\nPricing before understanding value. Think about what outcome is worth to them, not just what it costs you.\n\nWriting the pitch in marketing speak. Write like you talk. Authenticity beats polish.\n\nTrying to be everything to everyone. A focused offer beats a broad one.\n\nForgetting risk reversal. What happens if they are not happy? Have an answer.\n\nNot thinking about where to find the first 3 customers. Your offer is useless if no one sees it.",
+        "doneMeans": "You have a clear offer with name, promise, deliverables, boundaries, pitches, and price.",
+        "reviewCTA": "Want feedback on your offer? Submit your Day 9 workbook for review and get suggestions on clarity and pricing."
     },
     {
         "day": 10,
         "title": "Create Your Origins Story",
         "week": 2,
-        "goal": "Craft a compelling narrative about why you created this",
-        "timeEstimate": "25-35 min",
+        "goal": "Craft a true, simple story that builds trust and connection",
+        "timeEstimate": "40-50 min",
+        "hook": "People buy from people they trust. Your story is how they decide to trust you.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "People buy from people they trust. Your origin story builds that trust by showing why you care about this problem and why you're the right person to solve it.\n\nThis isn't about bragging or credentials. It's about connection. What's your relationship to this problem? Did you struggle with it yourself? Did you see others struggle?\n\nA good origin story follows a simple arc: I noticed a problem, I cared about solving it, I figured something out, and now I'm sharing it.\n\nKeep it authentic. People can smell manufactured stories. If your origin is simple, keep it simple."
+            "content": "You have an offer. Now you need a reason for people to listen. That reason is your story.\n\nPeople do not buy from faceless businesses. They buy from humans with motives, experiences, and credibility. Your origin story answers the questions: Why are you doing this? Why should I believe you can help me?\n\nThis is not about bragging. It is not about inventing drama. It is about honest connection.\n\nA good origin story follows a simple arc:\n\nYou noticed a problem. Something bothered you or someone you cared about. You saw a gap, a frustration, a need.\n\nYou cared enough to act. Most people notice problems and do nothing. You decided to do something. Why?\n\nYou figured something out. Through experience, trial, or study, you learned how to solve it or make progress on it.\n\nNow you are sharing that solution. You are offering your knowledge, skill, or service to others who face the same problem.\n\nThat is the arc. Keep it simple and true.\n\nYour credibility does not need to be a degree or a decade of experience. It can be lived experience. It can be intensive research. It can be relatability. I struggled with this too is powerful. I spent 200 hours learning this so you do not have to is powerful.\n\nDo not fake drama. Do not exaggerate. Authenticity beats polish. If your story is simple, keep it simple. Real resonates.\n\nToday you will write three versions of your story: short (50 words), medium (150 words), and full (300 words). Each has its use. The short version is for introductions and bios. The medium is for about pages. The full is for landing pages and sales conversations."
+        },
+        "practice": {
+            "title": "The Turning Point Reflection (4-6 minutes)",
+            "content": "Set a timer for 5 minutes.\n\nClose your eyes briefly. Think back to the moment when you first noticed the problem your offer solves. Where were you? What triggered it? Who was involved?\n\nNow think about the moment you decided to act. What shifted? Was it frustration reaching a peak? Was it seeing someone else succeed? Was it a specific insight?\n\nOpen your eyes and write:\n\n1. The moment I noticed the problem was when _____.\n2. What pushed me to act was _____.\n3. What I figured out was _____.\n\nThese three answers form the skeleton of your story."
         },
         "mission": [
             {
-                "task": "Write how you first encountered this problem or opportunity",
-                "time": "10 min"
+                "task": "Complete the Turning Point Reflection practice",
+                "time": "6 min"
             },
             {
-                "task": "Describe what made you care enough to act",
-                "time": "10 min"
-            },
-            {
-                "task": "Explain what qualifies you to solve this (experience, skills, perspective)",
-                "time": "10 min"
-            },
-            {
-                "task": "Craft a 3-4 sentence origin story you could share publicly",
+                "task": "Write: when you first noticed the problem",
                 "time": "5 min"
+            },
+            {
+                "task": "Write: why you cared enough to act",
+                "time": "5 min"
+            },
+            {
+                "task": "Write: what experience or proof makes you credible",
+                "time": "5 min"
+            },
+            {
+                "task": "Write: who you want to help",
+                "time": "3 min"
+            },
+            {
+                "task": "Write: your mission in one sentence",
+                "time": "3 min"
+            },
+            {
+                "task": "Write: the turning point that made you act",
+                "time": "5 min"
+            },
+            {
+                "task": "Write your 50-word story",
+                "time": "5 min"
+            },
+            {
+                "task": "Write your 150-word story",
+                "time": "7 min"
+            },
+            {
+                "task": "Write your 300-word story",
+                "time": "10 min"
+            },
+            {
+                "task": "Choose where you will place this story",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't invent credentials you don't have. Authenticity beats polish. Also, don't make the story about you—make it about why you can help them.",
-        "doneMeans": "You have a genuine, shareable origin story that explains why you're doing this."
+        "commonMistakes": "Inventing credentials you do not have. Fake stories backfire. Authenticity matters.\n\nMaking it all about you. The story should explain why you can help them, not just why you are great.\n\nBeing too vague. I always loved helping people is weak. Be specific about what, when, and how.\n\nAdding unnecessary drama. If your story is simple, keep it simple. Forced drama feels fake.\n\nUsing marketing language. Write like a human talking to another human.\n\nForgetting the mission. Your story should end with what you are offering and why it matters.\n\nNot tying the story to the offer. The story should naturally lead to why your offer exists.\n\nWriting only one version. Different contexts need different lengths. Write all three.",
+        "doneMeans": "You have a true origin story in three lengths (50, 150, 300 words) and know where you will use it.",
+        "reviewCTA": "Want feedback on your story? Submit your Day 10 workbook for review and get suggestions on clarity and connection."
     },
     {
         "day": 11,
