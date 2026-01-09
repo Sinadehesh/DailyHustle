@@ -1,185 +1,143 @@
 // ============================================
-// DAILY HUSTLE - LocalStorage Management
+// SIDE HUSTLE: 27-DAY LAUNCH - Storage Module
 // ============================================
 
 const Storage = {
-    prefix: 'dh_',
+    prefix: 'sh27_',
 
-    // Basic operations
     get(key) {
         try {
             const value = localStorage.getItem(this.prefix + key);
             return value ? JSON.parse(value) : null;
-        } catch {
-            return null;
-        }
+        } catch { return null; }
     },
 
     set(key, value) {
         try {
             localStorage.setItem(this.prefix + key, JSON.stringify(value));
             return true;
-        } catch {
-            return false;
-        }
+        } catch { return false; }
     },
 
     remove(key) {
         localStorage.removeItem(this.prefix + key);
     },
 
-    // Theme management
-    getTheme() {
-        return this.get('theme') || 'light';
-    },
-
+    // Theme
+    getTheme() { return this.get('theme') || 'light'; },
     setTheme(theme) {
         this.set('theme', theme);
         document.documentElement.setAttribute('data-theme', theme);
     },
-
     toggleTheme() {
-        const current = this.getTheme();
-        const newTheme = current === 'light' ? 'dark' : 'light';
+        const newTheme = this.getTheme() === 'light' ? 'dark' : 'light';
         this.setTheme(newTheme);
         return newTheme;
     },
 
-    // Course enrollment
-    getEnrolledCourses() {
-        return this.get('enrolled') || [];
-    },
+    // User profile
+    getUser() { return this.get('user'); },
+    setUser(user) { this.set('user', user); },
+    isLoggedIn() { return !!this.getUser(); },
 
-    enrollCourse(courseSlug) {
-        const enrolled = this.getEnrolledCourses();
-        if (!enrolled.includes(courseSlug)) {
-            enrolled.push(courseSlug);
-            this.set('enrolled', enrolled);
-        }
-        // Initialize progress
-        if (!this.getCourseProgress(courseSlug)) {
-            this.set(`progress_${courseSlug}`, {
-                completedLessons: [],
-                lastLesson: null,
-                startedAt: new Date().toISOString()
-            });
-        }
-    },
+    // Start date
+    getStartDate() { return this.get('startDate'); },
+    setStartDate(date) { this.set('startDate', date); },
 
-    isEnrolled(courseSlug) {
-        return this.getEnrolledCourses().includes(courseSlug);
-    },
+    // Workbook submissions
+    getDraft(day) { return this.get(`draft_${day}`) || {}; },
+    setDraft(day, data) { this.set(`draft_${day}`, data); },
 
-    // Lesson progress
-    getCourseProgress(courseSlug) {
-        return this.get(`progress_${courseSlug}`);
-    },
-
-    markLessonComplete(courseSlug, lessonId) {
-        const progress = this.getCourseProgress(courseSlug) || {
-            completedLessons: [],
-            lastLesson: null,
-            startedAt: new Date().toISOString()
-        };
-
-        if (!progress.completedLessons.includes(lessonId)) {
-            progress.completedLessons.push(lessonId);
-        }
-        progress.lastLesson = lessonId;
-        progress.lastAccessedAt = new Date().toISOString();
-
-        this.set(`progress_${courseSlug}`, progress);
-    },
-
-    isLessonComplete(courseSlug, lessonId) {
-        const progress = this.getCourseProgress(courseSlug);
-        return progress?.completedLessons?.includes(lessonId) || false;
-    },
-
-    getCompletedLessonsCount(courseSlug) {
-        const progress = this.getCourseProgress(courseSlug);
-        return progress?.completedLessons?.length || 0;
-    },
-
-    async getCourseProgressPercent(courseSlug) {
-        const progress = this.getCourseProgress(courseSlug);
-        if (!progress) return 0;
-
-        const course = await Data.getCourse(courseSlug);
-        if (!course) return 0;
-
-        const totalLessons = course.modules.reduce((sum, m) => sum + m.lessons.length, 0);
-        if (totalLessons === 0) return 0;
-
-        return Math.round((progress.completedLessons.length / totalLessons) * 100);
-    },
-
-    resetCourseProgress(courseSlug) {
-        this.set(`progress_${courseSlug}`, {
-            completedLessons: [],
-            lastLesson: null,
-            startedAt: new Date().toISOString()
+    getSubmission(day) { return this.get(`submission_${day}`); },
+    setSubmission(day, data) {
+        this.set(`submission_${day}`, {
+            ...data,
+            submittedAt: new Date().toISOString(),
+            version: 1
         });
     },
 
-    // Reflection notes
-    getReflection(courseSlug, lessonId) {
-        return this.get(`reflection_${courseSlug}_${lessonId}`) || '';
+    isSubmitted(day) { return !!this.getSubmission(day); },
+
+    getDayStatus(day) {
+        if (this.isSubmitted(day)) return 'submitted';
+        const draft = this.getDraft(day);
+        if (Object.keys(draft).length > 0) return 'in-progress';
+        return 'not-started';
     },
 
-    setReflection(courseSlug, lessonId, text) {
-        this.set(`reflection_${courseSlug}_${lessonId}`, text);
-    },
-
-    // Checklist state
-    getChecklistState(courseSlug, lessonId) {
-        return this.get(`checklist_${courseSlug}_${lessonId}`) || [];
-    },
-
-    toggleChecklistItem(courseSlug, lessonId, itemIndex) {
-        const state = this.getChecklistState(courseSlug, lessonId);
-        const idx = state.indexOf(itemIndex);
-        if (idx >= 0) {
-            state.splice(idx, 1);
-        } else {
-            state.push(itemIndex);
+    // Get all submissions
+    getAllSubmissions() {
+        const submissions = {};
+        for (let i = 1; i <= 27; i++) {
+            const sub = this.getSubmission(i);
+            if (sub) submissions[i] = sub;
         }
-        this.set(`checklist_${courseSlug}_${lessonId}`, state);
+        return submissions;
+    },
+
+    // Progress stats
+    getProgress() {
+        let completed = 0;
+        let inProgress = 0;
+        for (let i = 1; i <= 27; i++) {
+            const status = this.getDayStatus(i);
+            if (status === 'submitted') completed++;
+            else if (status === 'in-progress') inProgress++;
+        }
+        return { completed, inProgress, total: 27, percent: Math.round((completed / 27) * 100) };
+    },
+
+    // Checklist (mission) state per day
+    getMissionState(day) { return this.get(`mission_${day}`) || []; },
+    toggleMissionItem(day, index) {
+        const state = this.getMissionState(day);
+        const idx = state.indexOf(index);
+        if (idx >= 0) state.splice(idx, 1);
+        else state.push(index);
+        this.set(`mission_${day}`, state);
         return state;
     },
 
-    // Quiz answers
-    getQuizAnswer(courseSlug, lessonId, quizIndex) {
-        return this.get(`quiz_${courseSlug}_${lessonId}_${quizIndex}`);
+    // Current active day (for resume)
+    getLastActiveDay() { return this.get('lastActiveDay') || 1; },
+    setLastActiveDay(day) { this.set('lastActiveDay', day); },
+
+    // Webhook settings
+    getWebhookSettings() { return this.get('webhook') || { url: '', apiKey: '', enabled: false }; },
+    setWebhookSettings(settings) { this.set('webhook', settings); },
+
+    // Export all data
+    exportAllJSON() {
+        const data = {
+            user: this.getUser(),
+            startDate: this.getStartDate(),
+            submissions: this.getAllSubmissions(),
+            exportedAt: new Date().toISOString()
+        };
+        return JSON.stringify(data, null, 2);
     },
 
-    setQuizAnswer(courseSlug, lessonId, quizIndex, answer) {
-        this.set(`quiz_${courseSlug}_${lessonId}_${quizIndex}`, answer);
-    },
+    exportAllCSV() {
+        const submissions = this.getAllSubmissions();
+        const rows = [['Day', 'Title', 'Field', 'Value', 'Submitted At']];
 
-    // User mock
-    getUser() {
-        return this.get('user');
-    },
+        for (const [day, sub] of Object.entries(submissions)) {
+            const dayNum = parseInt(day);
+            for (const [field, value] of Object.entries(sub)) {
+                if (field !== 'submittedAt' && field !== 'version') {
+                    rows.push([dayNum, `Day ${dayNum}`, field, String(value).replace(/"/g, '""'), sub.submittedAt || '']);
+                }
+            }
+        }
 
-    setUser(user) {
-        this.set('user', user);
-    },
-
-    logout() {
-        this.remove('user');
-    },
-
-    isLoggedIn() {
-        return !!this.getUser();
+        return rows.map(row => row.map(cell => `"${cell}"`).join(',')).join('\n');
     }
 };
 
-// Export for use in other modules
-window.Storage = Storage;
-
 // Initialize theme on load
 document.addEventListener('DOMContentLoaded', () => {
-    const theme = Storage.getTheme();
-    document.documentElement.setAttribute('data-theme', theme);
+    Storage.setTheme(Storage.getTheme());
 });
+
+window.Storage = Storage;

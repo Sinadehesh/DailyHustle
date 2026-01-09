@@ -1,1121 +1,844 @@
 // ============================================
-// DAILY HUSTLE - Main Application
+// SIDE HUSTLE: 27-DAY LAUNCH - Main Application
 // ============================================
 
 const App = {
-    async init() {
-        // Initialize i18n first
-        await I18n.init();
+  async init() {
+    this.setupRoutes();
+    Router.init('app');
+    this.setupEventListeners();
+    this.initHeader();
+    this.initBackToTop();
+  },
 
-        // Initialize theme
-        const theme = Storage.getTheme();
-        document.documentElement.setAttribute('data-theme', theme);
+  setupRoutes() {
+    Router.register('/', () => this.renderHome());
+    Router.register('/program', () => this.renderProgram());
+    Router.register('/day/:day', (p) => this.renderDay(parseInt(p.day)));
+    Router.register('/workbook', () => this.renderWorkbook());
+    Router.register('/pricing', () => this.renderPricing());
+    Router.register('/about', () => this.renderAbout());
+    Router.register('/contact', () => this.renderContact());
+    Router.register('/dashboard', () => this.renderDashboard());
+    Router.register('/admin', () => this.renderAdmin());
+  },
 
-        // Setup router
-        this.setupRoutes();
-        Router.init('app');
+  setupEventListeners() {
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('#theme-toggle')) {
+        Storage.toggleTheme();
+        this.updateThemeIcon();
+      }
+      if (e.target.closest('.mobile-menu-toggle')) {
+        document.querySelector('.header-nav')?.classList.toggle('open');
+      }
+      if (e.target.closest('.header-nav-link')) {
+        document.querySelector('.header-nav')?.classList.remove('open');
+      }
+    });
+  },
 
-        // Setup global event listeners
-        this.setupEventListeners();
+  initHeader() {
+    const header = document.querySelector('.header');
+    if (!header) return;
+    const updateHeader = () => {
+      header.classList.toggle('solid', window.scrollY > 100);
+      header.classList.toggle('transparent', window.scrollY <= 100);
+    };
+    window.addEventListener('scroll', updateHeader);
+    updateHeader();
+  },
 
-        // Initialize header behavior
-        this.initHeader();
+  initBackToTop() {
+    const btn = document.querySelector('.back-to-top');
+    if (!btn) return;
+    window.addEventListener('scroll', () => btn.classList.toggle('visible', window.scrollY > 500));
+    btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  },
 
-        // Initialize back to top button
-        this.initBackToTop();
-    },
+  updateThemeIcon() {
+    const btn = document.getElementById('theme-toggle');
+    if (btn) btn.innerHTML = Storage.getTheme() === 'dark' ? Components.icons.sun : Components.icons.moon;
+  },
 
-    setupRoutes() {
-        Router.register('/', () => this.renderHome());
-        Router.register('/courses', () => this.renderCourses());
-        Router.register('/course/:slug', (params) => this.renderCourse(params.slug));
-        Router.register('/lesson/:courseSlug/:lessonId', (params) => this.renderLesson(params.courseSlug, params.lessonId));
-        Router.register('/dashboard', () => this.renderDashboard());
-        Router.register('/about', () => this.renderAbout());
-        Router.register('/blog', () => this.renderBlog());
-        Router.register('/contact', () => this.renderContact());
-        Router.register('/admin', () => this.renderAdmin());
-    },
+  initComponents() {
+    // Re-attach any needed event listeners after route change
+    this.initFormAutosave();
+  },
 
-    setupEventListeners() {
-        // Theme toggle
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('#theme-toggle')) {
-                Storage.toggleTheme();
-                this.updateThemeIcon();
-            }
-        });
+  initFormAutosave() {
+    const form = document.getElementById('workbook-form');
+    if (!form) return;
 
-        // Language toggle
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('#lang-toggle')) {
-                I18n.toggle();
-                Router.handleRoute(); // Re-render current page
-            }
-        });
+    const day = parseInt(form.dataset.day);
+    let saveTimeout;
 
-        // Mobile menu toggle
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.mobile-menu-toggle')) {
-                const nav = document.querySelector('.header-nav');
-                nav?.classList.toggle('open');
-            }
-        });
+    form.addEventListener('input', () => {
+      clearTimeout(saveTimeout);
+      saveTimeout = setTimeout(() => this.saveDraft(day), 500);
+      this.updateSaveStatus('saving');
+    });
+  },
 
-        // Language change event
-        window.addEventListener('languagechange', () => {
-            Router.handleRoute();
-        });
+  saveDraft(day) {
+    const form = document.getElementById('workbook-form');
+    if (!form) return;
 
-        // Close mobile menu on nav click
-        document.addEventListener('click', (e) => {
-            if (e.target.closest('.header-nav-link')) {
-                document.querySelector('.header-nav')?.classList.remove('open');
-            }
-        });
-    },
+    const data = {};
+    const formData = new FormData(form);
 
-    initHeader() {
-        const header = document.querySelector('.header');
-        if (!header) return;
+    // Handle checkbox groups
+    form.querySelectorAll('.form-checkbox-group').forEach(group => {
+      const name = group.querySelector('input')?.name;
+      if (name) {
+        const checked = Array.from(group.querySelectorAll('input:checked')).map(i => i.value);
+        data[name] = checked;
+      }
+    });
 
-        const updateHeader = () => {
-            if (window.scrollY > 100) {
-                header.classList.remove('transparent');
-                header.classList.add('solid');
-            } else {
-                header.classList.add('transparent');
-                header.classList.remove('solid');
-            }
-        };
+    formData.forEach((value, key) => {
+      if (!data[key]) data[key] = value;
+    });
 
-        window.addEventListener('scroll', updateHeader);
-        updateHeader();
-    },
+    Storage.setDraft(day, data);
+    this.updateSaveStatus('saved');
+  },
 
-    initBackToTop() {
-        const btn = document.querySelector('.back-to-top');
-        if (!btn) return;
+  updateSaveStatus(status) {
+    const el = document.getElementById('save-status');
+    if (!el) return;
+    el.className = `workbook-status ${status}`;
+    el.innerHTML = status === 'saving' ? '⏳ Saving...' : status === 'saved' ? '✓ Draft saved' : status === 'submitted' ? '✓ Submitted' : '';
+  },
 
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 500) {
-                btn.classList.add('visible');
-            } else {
-                btn.classList.remove('visible');
-            }
-        });
+  async submitDay(day) {
+    const form = document.getElementById('workbook-form');
+    if (!form) return;
 
-        btn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    },
+    // Validate required fields
+    const requiredFields = form.querySelectorAll('[required]');
+    let valid = true;
+    requiredFields.forEach(f => {
+      if (!f.value || (f.type === 'checkbox' && !f.checked)) {
+        f.classList.add('error');
+        valid = false;
+      } else {
+        f.classList.remove('error');
+      }
+    });
 
-    updateThemeIcon() {
-        const theme = Storage.getTheme();
-        const btn = document.getElementById('theme-toggle');
-        if (btn) {
-            btn.innerHTML = theme === 'dark' ? Components.icons.sun : Components.icons.moon;
-        }
-    },
+    if (!valid) {
+      alert('Please complete all required fields before submitting.');
+      return;
+    }
 
-    initAccordions() {
-        document.querySelectorAll('.accordion-trigger').forEach(trigger => {
-            trigger.addEventListener('click', function () {
-                const item = this.closest('.accordion-item');
-                const isOpen = item.getAttribute('data-state') === 'open';
+    // Gather data
+    this.saveDraft(day);
+    const draft = Storage.getDraft(day);
+    Storage.setSubmission(day, draft);
+    Storage.setLastActiveDay(day + 1);
 
-                item.setAttribute('data-state', isOpen ? 'closed' : 'open');
-                this.setAttribute('aria-expanded', !isOpen);
-            });
-        });
-    },
+    // Webhook sync if configured
+    const webhook = Storage.getWebhookSettings();
+    if (webhook.enabled && webhook.url) {
+      this.syncToWebhook(day, draft, webhook);
+    }
 
-    initDropdowns() {
-        document.querySelectorAll('.dropdown-trigger').forEach(trigger => {
-            trigger.addEventListener('click', function (e) {
-                e.stopPropagation();
-                const dropdown = this.closest('.dropdown');
-                dropdown.classList.toggle('open');
-            });
-        });
+    // Navigate to next day or show completion
+    if (day < 27) {
+      Router.navigate(`/day/${day + 1}`);
+    } else {
+      Router.navigate('/workbook');
+    }
+  },
 
-        document.addEventListener('click', () => {
-            document.querySelectorAll('.dropdown.open').forEach(d => d.classList.remove('open'));
-        });
-    },
+  async syncToWebhook(day, data, webhook) {
+    try {
+      const dayInfo = await Data.getDay(day);
+      const user = Storage.getUser();
 
-    initAnimations() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                }
-            });
-        }, { threshold: 0.1 });
+      await fetch(webhook.url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${webhook.apiKey}`
+        },
+        body: JSON.stringify({
+          user_id: user?.email || 'anonymous',
+          course_id: 'side-hustle-27',
+          day_index: day,
+          day_title: dayInfo?.title || `Day ${day}`,
+          submitted_at: new Date().toISOString(),
+          answers: data,
+          metadata: {
+            user_agent: navigator.userAgent,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            locale: navigator.language
+          }
+        })
+      });
+    } catch (error) {
+      console.error('Webhook sync failed:', error);
+    }
+  },
 
-        document.querySelectorAll('[data-animate-stagger]').forEach(el => observer.observe(el));
-    },
+  toggleMission(day, index, el) {
+    const state = Storage.toggleMissionItem(day, index);
+    el.classList.toggle('checked', state.includes(index));
+    el.innerHTML = state.includes(index) ? Components.icons.check : '';
+    el.setAttribute('aria-checked', state.includes(index));
+  },
 
-    initInteractiveElements() {
-        // Checklists
-        document.querySelectorAll('.checklist-checkbox').forEach(checkbox => {
-            checkbox.addEventListener('click', function () {
-                const list = this.closest('.checklist');
-                const courseSlug = list.dataset.course;
-                const lessonId = list.dataset.lesson;
-                const index = parseInt(this.dataset.index);
+  exportJSON() {
+    const data = Storage.exportAllJSON();
+    this.downloadFile(data, 'workbook-export.json', 'application/json');
+  },
 
-                Storage.toggleChecklistItem(courseSlug, lessonId, index);
+  exportCSV() {
+    const data = Storage.exportAllCSV();
+    this.downloadFile(data, 'workbook-export.csv', 'text/csv');
+  },
 
-                this.classList.toggle('checked');
-                this.closest('.checklist-item').classList.toggle('checked');
-                this.setAttribute('aria-checked', this.classList.contains('checked'));
-            });
+  downloadFile(content, filename, type) {
+    const blob = new Blob([content], { type });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  },
 
-            checkbox.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.click();
-                }
-            });
-        });
+  printWorkbook() {
+    window.print();
+  },
 
-        // Quizzes
-        document.querySelectorAll('.quiz-option').forEach(option => {
-            option.addEventListener('click', function () {
-                const quiz = this.closest('.quiz');
-                if (quiz.querySelector('.quiz-feedback')) return; // Already answered
+  setStartDate() {
+    const input = document.getElementById('start-date-input');
+    if (input && input.value) {
+      Storage.setStartDate(input.value);
+      Router.handleRoute();
+    }
+  },
 
-                quiz.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
-                this.classList.add('selected');
-            });
+  // ============================================
+  // PAGE RENDERERS
+  // ============================================
 
-            option.addEventListener('keydown', function (e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    this.click();
-                }
-            });
-        });
+  async renderHome() {
+    const course = await Data.getCourse();
+    const progress = Storage.getProgress();
 
-        document.querySelectorAll('.quiz-check').forEach(btn => {
-            btn.addEventListener('click', async function () {
-                const quiz = this.closest('.quiz');
-                const courseSlug = quiz.dataset.course;
-                const lessonId = quiz.dataset.lesson;
-                const quizIndex = parseInt(quiz.dataset.quiz);
-
-                const selected = quiz.querySelector('.quiz-option.selected');
-                if (!selected) return;
-
-                const answerIndex = parseInt(selected.dataset.index);
-                Storage.setQuizAnswer(courseSlug, lessonId, quizIndex, answerIndex);
-
-                // Re-render quiz
-                const course = await Data.getCourse(courseSlug);
-                const lesson = await Data.getLesson(courseSlug, lessonId);
-                let quizCount = 0;
-                for (const block of lesson.contentBlocks) {
-                    if (block.type === 'quiz') {
-                        if (quizCount === quizIndex) {
-                            quiz.outerHTML = Components.quiz(block, courseSlug, lessonId, quizIndex);
-                            break;
-                        }
-                        quizCount++;
-                    }
-                }
-            });
-        });
-
-        // Reflection textareas
-        document.querySelectorAll('.lesson-reflection-textarea').forEach(textarea => {
-            textarea.addEventListener('input', function () {
-                const courseSlug = this.dataset.course;
-                const lessonId = this.dataset.lesson;
-                Storage.setReflection(courseSlug, lessonId, this.value);
-            });
-        });
-    },
-
-    // ============================================
-    // PAGE RENDERERS
-    // ============================================
-
-    async renderHome() {
-        const [courses, testimonials, blogPosts, stats] = await Promise.all([
-            Data.getFeaturedCourses(),
-            Data.getTestimonials(),
-            Data.getBlogPosts(),
-            Data.getStats()
-        ]);
-
-        return `
-      <!-- Hero Section -->
+    return `
       <section class="hero">
-        <div class="hero-bg">
-          <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?w=1920&h=1080&fit=crop" alt="">
-        </div>
+        <div class="hero-bg"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop" alt=""></div>
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-          <h1 class="hero-tagline">${t('hero.tagline')}</h1>
-          <p class="hero-subline">${t('hero.subline')}</p>
+        <div class="hero-content container">
+          <h1 class="hero-tagline">Build a side hustle in 27 days—by doing one real step per day.</h1>
+          <p class="hero-subline">A structured, guided program with a built-in workbook. Daily actions that take 20–45 minutes. Real accountability. Real progress.</p>
           <div class="hero-ctas">
-            <a href="#/courses" class="btn btn-primary btn-lg">${t('hero.cta_primary')}</a>
-            <a href="#/course/daily-hustle" class="btn btn-outline-light btn-lg">${t('hero.cta_secondary')}</a>
+            <a href="#/program" class="btn btn-primary btn-lg">Start the 27-Day Plan</a>
+            <a href="#/pricing" class="btn btn-outline-light btn-lg">See How It Works</a>
           </div>
-          <div class="hero-trust">
-            <div class="hero-trust-item">
-              <div class="hero-trust-value">${stats.courses}</div>
-              <div class="hero-trust-label">${t('trust.courses')}</div>
+        </div>
+      </section>
+      
+      <section class="section home-what">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title">What This Is</h2>
+          </div>
+          <div class="home-what-grid">
+            <div class="home-what-item">
+              <div class="home-what-icon">📋</div>
+              <h3 class="home-what-title">27 Days of Action</h3>
+              <p class="home-what-text">One focused step per day. Each day builds on the last. No skipping, no shortcuts—just steady progress.</p>
             </div>
-            <div class="hero-trust-item">
-              <div class="hero-trust-value">${stats.learners.toLocaleString()}+</div>
-              <div class="hero-trust-label">${t('trust.learners')}</div>
+            <div class="home-what-item">
+              <div class="home-what-icon">📝</div>
+              <h3 class="home-what-title">Built-In Workbook</h3>
+              <p class="home-what-text">Every day has a submission form. Capture decisions, numbers, and customer evidence. Export anytime.</p>
             </div>
-            <div class="hero-trust-item">
-              <div class="hero-trust-value">${stats.hours}+</div>
-              <div class="hero-trust-label">${t('trust.hours')}</div>
+            <div class="home-what-item">
+              <div class="home-what-icon">🎯</div>
+              <h3 class="home-what-title">From Idea to Offer</h3>
+              <p class="home-what-text">By Day 27: a validated idea, a defined offer, a pricing strategy, and real feedback from the market.</p>
             </div>
           </div>
         </div>
       </section>
       
-      <!-- Featured Courses -->
-      <section class="section">
+      <section class="section section-muted home-how">
         <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">${t('sections.featured')}</h2>
-            <p class="section-subtitle">${t('sections.featured_subtitle')}</p>
+          <div class="section-header text-center">
+            <h2 class="section-title">How It Works</h2>
           </div>
-          <div class="featured-slider">
-            <div class="featured-track" data-animate-stagger>
-              ${courses.map(c => Components.courseCard(c)).join('')}
-            </div>
-          </div>
-          <div class="text-center mt-8">
-            <a href="#/courses" class="btn btn-secondary">${t('buttons.view_all')}</a>
+          <div class="home-how-timeline">
+            <div class="home-how-step"><div class="home-how-number">1</div><p class="home-how-label">Pick Ideas</p><p class="home-how-desc">Week 1: Generate and evaluate</p></div>
+            <div class="home-how-step"><div class="home-how-number">2</div><p class="home-how-label">Validate</p><p class="home-how-desc">Week 2: Research and define</p></div>
+            <div class="home-how-step"><div class="home-how-number">3</div><p class="home-how-label">Prepare</p><p class="home-how-desc">Week 3: Build and price</p></div>
+            <div class="home-how-step"><div class="home-how-number">4</div><p class="home-how-label">Launch</p><p class="home-how-desc">Week 4: Sell and iterate</p></div>
           </div>
         </div>
       </section>
       
-      <!-- How It Works -->
-      <section class="section section-muted how-it-works">
+      <section class="section home-workbook">
         <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">${t('sections.how_it_works')}</h2>
-            <p class="section-subtitle">${t('sections.how_it_works_subtitle')}</p>
-          </div>
-          <div class="steps-grid" data-animate-stagger>
-            <div class="step-item">
-              <div class="step-number">1</div>
-              <h3 class="step-title">${t('steps.step1_title')}</h3>
-              <p class="step-text">${t('steps.step1_text')}</p>
+          <div class="grid grid-2" style="align-items:center;gap:var(--space-12)">
+            <div>
+              <h2 class="section-title">The Workbook</h2>
+              <p class="section-subtitle mb-6">Every day, you complete a structured form. Your decisions, calculations, and progress are captured automatically.</p>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-3)">
+                <li>✓ Autosave as you type</li>
+                <li>✓ Submit each day when complete</li>
+                <li>✓ Export to PDF, CSV, or JSON</li>
+                <li>✓ Track your progress visually</li>
+              </ul>
             </div>
-            <div class="step-item">
-              <div class="step-number">2</div>
-              <h3 class="step-title">${t('steps.step2_title')}</h3>
-              <p class="step-text">${t('steps.step2_text')}</p>
-            </div>
-            <div class="step-item">
-              <div class="step-number">3</div>
-              <h3 class="step-title">${t('steps.step3_title')}</h3>
-              <p class="step-text">${t('steps.step3_text')}</p>
+            <div class="home-workbook-preview">
+              <div class="home-workbook-preview-header">
+                <div class="home-workbook-preview-dot" style="background:var(--color-error)"></div>
+                <div class="home-workbook-preview-dot" style="background:var(--color-warning)"></div>
+                <div class="home-workbook-preview-dot" style="background:var(--color-success)"></div>
+              </div>
+              <div class="home-workbook-preview-fields">
+                <div class="home-workbook-preview-field"><span style="font-weight:500">Trend 1:</span><div class="skeleton" style="flex:1"></div></div>
+                <div class="home-workbook-preview-field"><span style="font-weight:500">Prediction:</span><div class="skeleton" style="flex:1"></div></div>
+                <div class="home-workbook-preview-field"><span style="font-weight:500">Opportunity:</span><div class="skeleton" style="flex:1"></div></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       
-      <!-- Testimonials -->
-      <section class="section">
+      <section class="section section-muted home-outcomes">
         <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">${t('sections.testimonials')}</h2>
-            <p class="section-subtitle">${t('sections.testimonials_subtitle')}</p>
+          <div class="section-header text-center">
+            <h2 class="section-title">By Day 27, You'll Have</h2>
           </div>
-          <div class="grid grid-3" data-animate-stagger>
-            ${testimonials.slice(0, 3).map(t => Components.testimonialCard(t)).join('')}
+          <div class="home-outcomes-grid">
+            <div class="home-outcome-item"><div><span class="home-outcome-day">Day 9</span><p class="home-outcome-text">A defined offer: who pays, what they get, why now</p></div></div>
+            <div class="home-outcome-item"><div><span class="home-outcome-day">Day 12</span><p class="home-outcome-text">A pricing strategy with clear reasoning</p></div></div>
+            <div class="home-outcome-item"><div><span class="home-outcome-day">Day 17</span><p class="home-outcome-text">A published offer with a live payment link</p></div></div>
+            <div class="home-outcome-item"><div><span class="home-outcome-day">Day 27</span><p class="home-outcome-text">A retrospective and 90-day growth plan</p></div></div>
           </div>
         </div>
       </section>
       
-      <!-- Blog Teasers -->
-      <section class="section section-muted">
+      <section class="section home-testimonials">
         <div class="container">
-          <div class="section-header">
-            <h2 class="section-title">${t('sections.blog')}</h2>
-            <p class="section-subtitle">${t('sections.blog_subtitle')}</p>
+          <div class="section-header text-center">
+            <h2 class="section-title">What People Say</h2>
           </div>
-          <div class="grid grid-blog" data-animate-stagger>
-            ${blogPosts.slice(0, 3).map(p => Components.blogCard(p)).join('')}
-          </div>
-          <div class="text-center mt-8">
-            <a href="#/blog" class="btn btn-secondary">${t('buttons.view_all')}</a>
+          <div class="grid grid-3">
+            ${course.testimonials.map(t => Components.testimonialCard(t)).join('')}
           </div>
         </div>
       </section>
       
-      <!-- Newsletter -->
-      <section class="section newsletter-section">
+      <section class="section section-muted home-pricing-preview">
         <div class="container">
-          <div class="newsletter-content">
-            <h2 class="newsletter-title">${t('sections.newsletter')}</h2>
-            <p class="newsletter-text">${t('sections.newsletter_subtitle')}</p>
-            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Newsletter signup would be processed here!');">
-              <input type="email" class="form-input newsletter-input" placeholder="${t('footer.newsletter_placeholder')}" required>
-              <button type="submit" class="btn btn-primary">${t('footer.newsletter_button')}</button>
-            </form>
-            <p class="newsletter-privacy">We respect your privacy. Unsubscribe anytime.</p>
+          <div class="section-header text-center">
+            <h2 class="section-title">Simple Pricing</h2>
+            <p class="section-subtitle">One-time payment. Lifetime access. 14-day guarantee.</p>
+          </div>
+          <div class="pricing-grid">
+            ${course.pricing.tiers.map(t => Components.pricingCard(t)).join('')}
+          </div>
+        </div>
+      </section>
+      
+      <section class="section home-faq">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title">Questions</h2>
+          </div>
+          <div style="max-width:700px;margin:0 auto">
+            ${Components.faqAccordion(course.faqs)}
           </div>
         </div>
       </section>
     `;
-    },
+  },
 
-    async renderCourses() {
-        const courses = await Data.filterCourses({});
+  async renderProgram() {
+    const [course, days] = await Promise.all([Data.getCourse(), Data.getDays()]);
+    const progress = Storage.getProgress();
+    const todayDay = Data.getTodayDay();
+    const startDate = Storage.getStartDate();
 
-        setTimeout(() => {
-            this.initCourseFilters();
-        }, 0);
+    let weeksHtml = '';
+    for (const week of course.weeks) {
+      const weekDays = days.filter(d => week.days.includes(d.day));
+      const isCurrentWeek = weekDays.some(d => d.day === todayDay);
+      weeksHtml += Components.weekSection(week, weekDays, todayDay, isCurrentWeek);
+    }
 
-        return `
-      ${Components.filterBar()}
-      <section class="section courses-page">
-        <div class="container">
-          <div class="layout-sidebar">
-            <div class="courses-main">
-              <p class="courses-results"><span id="course-count">${courses.length}</span> courses available</p>
-              <div class="grid grid-courses" id="courses-grid">
-                ${courses.map(c => Components.courseCard(c)).join('')}
-              </div>
-            </div>
-            <aside class="sidebar courses-sidebar">
-              <div class="sidebar-section">
-                <h3 class="sidebar-title">Popular Courses</h3>
-                <ul class="sidebar-list">
-                  ${courses.filter(c => c.popular).slice(0, 3).map(c => `
-                    <li><a href="#/course/${c.slug}">${c.title}</a></li>
-                  `).join('')}
-                </ul>
-              </div>
-              <div class="sidebar-section">
-                <h3 class="sidebar-title">Categories</h3>
-                <div class="category-cloud">
-                  <a href="#" class="category-tag" data-category="self">${t('categories.self')}</a>
-                  <a href="#" class="category-tag" data-category="creative">${t('categories.creative')}</a>
-                  <a href="#" class="category-tag" data-category="business">${t('categories.business')}</a>
-                </div>
-              </div>
-              <div class="sidebar-section">
-                <h3 class="sidebar-title">Start Here</h3>
-                <p class="text-sm text-muted">New to Daily Hustle? Start with Focus Foundations—it's free.</p>
-                <a href="#/course/focus-foundations" class="btn btn-secondary mt-4" style="width:100%">Start Free</a>
-              </div>
-            </aside>
-          </div>
-        </div>
-      </section>
-    `;
-    },
-
-    initCourseFilters() {
-        const searchInput = document.getElementById('search-input');
-        const categorySelect = document.getElementById('filter-category');
-        const levelSelect = document.getElementById('filter-level');
-        const priceSelect = document.getElementById('filter-price');
-        const sortSelect = document.getElementById('filter-sort');
-        const grid = document.getElementById('courses-grid');
-        const countEl = document.getElementById('course-count');
-
-        const updateCourses = async () => {
-            const filters = {
-                search: searchInput?.value || '',
-                category: categorySelect?.value || 'all',
-                level: levelSelect?.value || 'all',
-                price: priceSelect?.value || 'all',
-                sort: sortSelect?.value || 'popular'
-            };
-
-            const courses = await Data.filterCourses(filters);
-
-            if (grid) {
-                if (courses.length === 0) {
-                    grid.innerHTML = Components.emptyState('📚', 'No courses found', 'Try adjusting your filters.');
-                } else {
-                    grid.innerHTML = courses.map(c => Components.courseCard(c)).join('');
-                }
-            }
-
-            if (countEl) {
-                countEl.textContent = courses.length;
-            }
-        };
-
-        // Debounce search
-        let searchTimeout;
-        searchInput?.addEventListener('input', () => {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(updateCourses, 300);
-        });
-
-        categorySelect?.addEventListener('change', updateCourses);
-        levelSelect?.addEventListener('change', updateCourses);
-        priceSelect?.addEventListener('change', updateCourses);
-        sortSelect?.addEventListener('change', updateCourses);
-
-        // Category tags in sidebar
-        document.querySelectorAll('.category-tag').forEach(tag => {
-            tag.addEventListener('click', (e) => {
-                e.preventDefault();
-                const cat = tag.dataset.category;
-                if (categorySelect) {
-                    categorySelect.value = cat;
-                    updateCourses();
-                }
-            });
-        });
-    },
-
-    async renderCourse(slug) {
-        const course = await Data.getCourse(slug);
-        if (!course) {
-            return `<div class="section text-center"><h1>Course not found</h1><a href="#/courses" class="btn btn-primary mt-6">View Courses</a></div>`;
-        }
-
-        const related = await Data.getRelatedCourses(slug);
-        const isEnrolled = Storage.isEnrolled(slug);
-        const progress = isEnrolled ? await Storage.getCourseProgressPercent(slug) : 0;
-
-        // Get first lesson for preview
-        const firstLesson = course.modules[0]?.lessons[0];
-
-        return `
-      <!-- Course Hero -->
-      <section class="course-hero">
-        <div class="container">
-          <div class="course-hero-inner">
-            <div class="course-hero-content">
-              <nav class="course-hero-breadcrumb">
-                <a href="#/courses">${t('nav.courses')}</a>
-                <span>/</span>
-                <span>${course.title}</span>
-              </nav>
-              <h1 class="course-hero-title">${course.title}</h1>
-              <p class="course-hero-subtitle">${course.subtitle}</p>
-              ${Components.rating(course.rating, course.reviewCount)}
-              <div class="course-facts">
-                <div class="course-fact">
-                  <span class="course-fact-label">${t('course.duration')}</span>
-                  <span class="course-fact-value">${course.durationDays} ${t('course.days')}</span>
-                </div>
-                <div class="course-fact">
-                  <span class="course-fact-label">${t('course.daily_time')}</span>
-                  <span class="course-fact-value">${course.minutesPerDay} min</span>
-                </div>
-                <div class="course-fact">
-                  <span class="course-fact-label">${t('course.level')}</span>
-                  <span class="course-fact-value">${t('course.' + course.level)}</span>
-                </div>
-                <div class="course-fact">
-                  <span class="course-fact-label">${t('course.format')}</span>
-                  <span class="course-fact-value">${t('formats.' + course.format)}</span>
-                </div>
-              </div>
-            </div>
-            <div class="course-hero-media">
-              <div class="course-hero-image">
-                <img src="${course.heroMedia.url}" alt="${course.title}">
-              </div>
-              <div class="course-cta-card">
-                <div class="course-cta-price">${course.price === 0 ? t('course.free') : '$' + course.price}</div>
-                ${isEnrolled ? `
-                  <div class="mb-4">
-                    <p class="text-sm text-muted mb-2">Your progress: ${progress}%</p>
-                    ${Components.progressBar(progress, false)}
-                  </div>
-                ` : ''}
-                <div class="course-cta-btns">
-                  ${isEnrolled ? `
-                    <a href="#/lesson/${course.slug}/${firstLesson?.id}" class="btn btn-primary btn-lg">${t('course.continue')}</a>
-                  ` : `
-                    <button class="btn btn-primary btn-lg" onclick="Storage.enrollCourse('${course.slug}'); Router.handleRoute();">${t('course.enroll')}</button>
-                  `}
-                  ${firstLesson ? `<a href="#/lesson/${course.slug}/${firstLesson.id}" class="btn btn-secondary">${t('course.preview')}</a>` : ''}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Introduction -->
-      <section class="course-section">
-        <div class="container">
-          <div class="course-intro">
-            <h2 class="course-intro-title">Dear Learner,</h2>
-            <div class="course-intro-text">
-              <p>${course.description}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Outcomes -->
-      <section class="course-section course-outcomes">
-        <div class="container">
-          <h2 class="section-title mb-8">${t('course.outcomes')}</h2>
-          <div class="outcomes-grid">
-            ${course.outcomes.map(o => `
-              <div class="outcome-item">
-                <div class="outcome-icon">${o.icon}</div>
-                <p class="outcome-text">${o.text}</p>
-              </div>
-            `).join('')}
-          </div>
-        </div>
-      </section>
-      
-      <!-- Curriculum -->
-      <section class="course-section">
-        <div class="container">
-          <div class="course-curriculum">
-            <h2 class="section-title mb-8">${t('course.curriculum')}</h2>
-            ${Components.curriculumAccordion(course.modules, course.slug)}
-          </div>
-        </div>
-      </section>
-      
-      <!-- Instructor -->
-      <section class="course-section course-instructor">
-        <div class="container">
-          <h2 class="section-title mb-8">${t('course.instructor')}</h2>
-          <div class="instructor-card">
-            <div class="instructor-avatar">
-              <img src="${course.instructor.avatar}" alt="${course.instructor.name}">
-            </div>
-            <div class="instructor-info">
-              <h3 class="instructor-name">${course.instructor.name}</h3>
-              <p class="instructor-role">${course.instructor.role}</p>
-              <p class="instructor-bio">${course.instructor.bio}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!-- Pricing -->
-      <section class="course-section course-pricing">
-        <div class="container">
-          <h2 class="section-title mb-8 text-center">${t('course.pricing')}</h2>
-          ${Components.pricingCards(course.pricingTiers)}
-        </div>
-      </section>
-      
-      <!-- FAQs -->
-      <section class="course-section">
-        <div class="container">
-          <div class="course-faqs">
-            <h2 class="section-title mb-8">${t('course.faqs')}</h2>
-            ${Components.accordion(course.faqs.map(f => ({
-            title: f.question,
-            content: f.answer
-        })))}
-          </div>
-        </div>
-      </section>
-      
-      <!-- Related Courses -->
-      ${related.length > 0 ? `
-        <section class="course-section section-muted">
+    return `
+      <div class="program-page">
+        <div class="program-header">
           <div class="container">
-            <h2 class="section-title mb-8">${t('course.related')}</h2>
-            <div class="grid grid-3">
-              ${related.map(c => Components.courseCard(c)).join('')}
+            <div class="program-header-inner">
+              <div class="program-header-content">
+                <h1 class="program-header-title">27-Day Program</h1>
+                <p class="program-header-subtitle">Your daily action plan from idea to launch</p>
+                <div class="program-stats">
+                  <div class="program-stat"><div class="program-stat-value">${progress.completed}</div><div class="program-stat-label">Completed</div></div>
+                  <div class="program-stat"><div class="program-stat-value">${progress.total - progress.completed}</div><div class="program-stat-label">Remaining</div></div>
+                  <div class="program-stat"><div class="program-stat-value">${progress.percent}%</div><div class="program-stat-label">Progress</div></div>
+                </div>
+              </div>
+              <div class="program-header-actions">
+                <div class="form-group">
+                  <label class="form-label">Your Start Date</label>
+                  <input type="date" class="form-input" id="start-date-input" value="${startDate || ''}" onchange="App.setStartDate()">
+                </div>
+                ${progress.completed > 0 || progress.inProgress > 0 ? `<a href="#/day/${Storage.getLastActiveDay()}" class="btn btn-primary">Resume Day ${Storage.getLastActiveDay()}</a>` : `<a href="#/day/1" class="btn btn-primary">Start Day 1</a>`}
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <section class="section">
+          <div class="container">
+            ${weeksHtml}
+          </div>
+        </section>
+      </div>
+    `;
+  },
+
+  async renderDay(dayNumber) {
+    if (dayNumber < 1 || dayNumber > 27) {
+      return `<div class="section text-center"><div class="container"><h1>Day not found</h1><a href="#/program" class="btn btn-primary mt-6">Back to Program</a></div></div>`;
+    }
+
+    const [day, form, adjacent, week] = await Promise.all([
+      Data.getDay(dayNumber),
+      Data.getForm(dayNumber),
+      Data.getAdjacentDays(dayNumber),
+      Data.getWeekForDay(dayNumber)
+    ]);
+
+    if (!day) {
+      return `<div class="section text-center"><div class="container"><h1>Day not found</h1><a href="#/program" class="btn btn-primary mt-6">Back to Program</a></div></div>`;
+    }
+
+    Storage.setLastActiveDay(dayNumber);
+    const status = Storage.getDayStatus(dayNumber);
+    const savedData = status === 'submitted' ? Storage.getSubmission(dayNumber) : Storage.getDraft(dayNumber);
+    const progress = Storage.getProgress();
+
+    return `
+      <div class="day-page">
+        <div class="day-header">
+          <div class="container container-narrow">
+            <nav class="day-breadcrumb">
+              <a href="#/program">Program</a>
+              <span>/</span>
+              <span>Week ${week?.number || Math.ceil(dayNumber / 7)}</span>
+              <span>/</span>
+              <span>Day ${dayNumber}</span>
+            </nav>
+            <div class="day-header-top">
+              <div class="day-header-content">
+                <div class="day-week-label">Week ${week?.number || Math.ceil(dayNumber / 7)}: ${week?.title || ''}</div>
+                <h1 class="day-title"><span class="day-number">Day ${dayNumber}</span> – ${day.title}</h1>
+              </div>
+              <div class="day-header-status">
+                ${Components.statusBadge(status)}
+                <div class="day-progress-container">
+                  <span class="day-progress-text">${progress.percent}%</span>
+                  <div class="day-progress-bar"><div class="day-progress-bar-fill" style="width:${progress.percent}%"></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="day-nav">
+              ${Components.progressDots(dayNumber)}
+            </div>
+          </div>
+        </div>
+        
+        <div class="day-content">
+          <div class="container container-narrow">
+            <div class="day-content-grid">
+              
+              <div class="day-section">
+                <h2 class="day-section-title">
+                  <span class="day-section-icon">📖</span>
+                  Why Today Matters
+                </h2>
+                <div class="lesson-content">
+                  ${day.lesson.content.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+                </div>
+              </div>
+              
+              <div class="day-section">
+                <h2 class="day-section-title">
+                  <span class="day-section-icon">✓</span>
+                  Today's Mission
+                </h2>
+                <p class="text-muted mb-4">Estimated time: ${day.timeEstimate}</p>
+                ${Components.missionList(day.mission, dayNumber)}
+              </div>
+              
+              <div class="day-section">
+                <h2 class="day-section-title">
+                  <span class="day-section-icon">📝</span>
+                  Workbook Submission
+                </h2>
+                <div id="save-status" class="workbook-status ${status === 'submitted' ? 'submitted' : 'saved'}">${status === 'submitted' ? '✓ Submitted' : ''}</div>
+                ${Components.renderForm(form, savedData || {}, dayNumber)}
+                
+                <div class="day-actions">
+                  <div class="day-actions-left">
+                    <button class="btn btn-ghost" onclick="App.saveDraft(${dayNumber})">Save Draft</button>
+                  </div>
+                  <div class="day-actions-right">
+                    ${status !== 'submitted' ? `<button class="btn btn-primary" onclick="App.submitDay(${dayNumber})">Submit Day ${dayNumber}</button>` : `<button class="btn btn-success" disabled>Submitted ✓</button>`}
+                  </div>
+                </div>
+              </div>
+              
+              ${day.commonMistakes ? `
+                ${Components.callout('warning', 'Common Mistakes', day.commonMistakes)}
+              ` : ''}
+              
+              ${day.doneMeans ? `
+                ${Components.callout('success', 'Done Means...', day.doneMeans)}
+              ` : ''}
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="day-footer">
+          <div class="container">
+            <div class="day-footer-inner">
+              ${adjacent.prev ? `<a href="#/day/${adjacent.prev}" class="day-footer-nav">${Components.icons.chevronLeft} Day ${adjacent.prev}</a>` : '<div></div>'}
+              ${adjacent.next ? `<a href="#/day/${adjacent.next}" class="day-footer-nav">Day ${adjacent.next} ${Components.icons.chevronRight}</a>` : `<a href="#/workbook" class="day-footer-nav">View Workbook ${Components.icons.chevronRight}</a>`}
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  async renderWorkbook() {
+    const submissions = Storage.getAllSubmissions();
+    const days = await Data.getDays();
+    const progress = Storage.getProgress();
+
+    const rows = days.map(day => {
+      const sub = submissions[day.day];
+      const status = Storage.getDayStatus(day.day);
+      const preview = sub ? Object.values(sub).find(v => typeof v === 'string' && v.length > 10)?.slice(0, 50) + '...' : '—';
+
+      return `
+        <tr>
+          <td><a href="#/day/${day.day}" class="workbook-day-link">Day ${day.day}</a></td>
+          <td>${day.title}</td>
+          <td>${Components.statusBadge(status)}</td>
+          <td class="workbook-preview">${status === 'submitted' ? preview : '—'}</td>
+          <td>${sub?.submittedAt ? new Date(sub.submittedAt).toLocaleDateString() : '—'}</td>
+        </tr>
+      `;
+    }).join('');
+
+    return `
+      <div class="workbook-page">
+        <div class="workbook-header">
+          <div class="container">
+            <h1 class="workbook-title">Your Workbook</h1>
+            <p class="text-muted mb-6">${progress.completed} of 27 days submitted</p>
+            <div class="workbook-actions">
+              <button class="btn btn-secondary" onclick="App.exportJSON()">${Components.icons.download} Export JSON</button>
+              <button class="btn btn-secondary" onclick="App.exportCSV()">${Components.icons.download} Export CSV</button>
+              <button class="btn btn-secondary" onclick="App.printWorkbook()">Print Workbook</button>
+            </div>
+          </div>
+        </div>
+        
+        <section class="section">
+          <div class="container">
+            <table class="workbook-table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Title</th>
+                  <th>Status</th>
+                  <th>Preview</th>
+                  <th>Submitted</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${rows}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    `;
+  },
+
+  async renderPricing() {
+    const course = await Data.getCourse();
+
+    return `
+      <div class="pricing-page">
+        <div class="pricing-header">
+          <div class="container">
+            <h1 class="pricing-title">Start Your Side Hustle Journey</h1>
+            <p class="pricing-subtitle">One-time payment. Lifetime access. Start today.</p>
+          </div>
+        </div>
+        
+        <section class="section">
+          <div class="container">
+            <div class="pricing-grid">
+              ${course.pricing.tiers.map(t => Components.pricingCard(t)).join('')}
+            </div>
+            
+            <div class="pricing-guarantee">
+              <h3 class="pricing-guarantee-title">${course.pricing.guarantee.title}</h3>
+              <p class="pricing-guarantee-text">${course.pricing.guarantee.text}</p>
             </div>
           </div>
         </section>
-      ` : ''}
-    `;
-    },
-
-    async renderLesson(courseSlug, lessonId) {
-        const lesson = await Data.getLesson(courseSlug, lessonId);
-        if (!lesson) {
-            return `<div class="section text-center"><h1>Lesson not found</h1><a href="#/courses" class="btn btn-primary mt-6">View Courses</a></div>`;
-        }
-
-        const course = await Data.getCourse(courseSlug);
-        const { prev, next } = await Data.getAdjacentLessons(courseSlug, lessonId);
-        const isComplete = Storage.isLessonComplete(courseSlug, lessonId);
-        const progress = await Storage.getCourseProgressPercent(courseSlug);
-
-        // Auto-enroll if not enrolled
-        if (!Storage.isEnrolled(courseSlug)) {
-            Storage.enrollCourse(courseSlug);
-        }
-
-        // Render content blocks
-        let quizIndex = 0;
-        const contentHtml = lesson.contentBlocks.map(block => {
-            switch (block.type) {
-                case 'text':
-                    return block.content;
-                case 'callout':
-                    return Components.callout(block.style, block.title, block.content);
-                case 'checklist':
-                    return Components.checklist(block.items, courseSlug, lessonId);
-                case 'quiz':
-                    const html = Components.quiz(block, courseSlug, lessonId, quizIndex);
-                    quizIndex++;
-                    return html;
-                case 'reflection':
-                    return Components.reflection(block.prompt, courseSlug, lessonId);
-                default:
-                    return '';
-            }
-        }).join('');
-
-        setTimeout(() => {
-            this.initInteractiveElements();
-            this.initLessonEvents(courseSlug, lessonId);
-        }, 0);
-
-        return `
-      <div class="lesson-page">
-        <!-- Sidebar -->
-        <aside class="lesson-sidebar" id="lesson-sidebar">
-          <div class="lesson-sidebar-header">
-            <a href="#/course/${courseSlug}" class="btn btn-ghost btn-sm mb-4">${Components.icons.chevronLeft} ${t('buttons.back')}</a>
-            <h2 class="lesson-sidebar-title">${course.title}</h2>
-            <p class="lesson-sidebar-progress">${progress}% complete</p>
-            <div class="progress mt-2"><div class="progress-bar" style="width:${progress}%"></div></div>
-          </div>
-          <nav class="lesson-nav">
-            ${course.modules.map(module => `
-              <div class="lesson-nav-module">
-                <div class="lesson-nav-module-title">${module.title}</div>
-                <div class="lesson-nav-lessons">
-                  ${module.lessons.map(l => {
-            const complete = Storage.isLessonComplete(courseSlug, l.id);
-            const active = l.id === lessonId;
-            return `
-                      <a href="#/lesson/${courseSlug}/${l.id}" class="lesson-nav-item ${complete ? 'completed' : ''} ${active ? 'active' : ''}">
-                        <span class="check">${complete ? '✓' : ''}</span>
-                        <span>${l.title}</span>
-                      </a>
-                    `;
-        }).join('')}
-                </div>
-              </div>
-            `).join('')}
-          </nav>
-        </aside>
         
-        <!-- Main Content -->
-        <main class="lesson-main">
-          <div class="lesson-topbar">
-            <div class="lesson-topbar-left">
-              <button class="btn btn-ghost btn-icon mobile-menu-toggle" style="display:none" onclick="document.getElementById('lesson-sidebar').classList.toggle('open')">
-                ${Components.icons.menu}
-              </button>
-              <span class="lesson-topbar-title">${lesson.module.title}</span>
+        <section class="section section-muted">
+          <div class="container">
+            <div class="section-header text-center">
+              <h2 class="section-title">Frequently Asked Questions</h2>
             </div>
-            <div class="lesson-topbar-right">
-              <span class="lesson-progress-text">${progress}%</span>
-              <button class="btn ${isComplete ? 'btn-ghost' : 'btn-primary'}" id="mark-complete-btn" ${isComplete ? 'disabled' : ''}>
-                ${isComplete ? t('lesson.completed') + ' ✓' : t('lesson.mark_complete')}
-              </button>
+            <div style="max-width:700px;margin:0 auto">
+              ${Components.faqAccordion(course.faqs)}
             </div>
           </div>
-          
-          <div class="lesson-content-wrapper">
-            <article class="lesson-content">
-              <h1>${lesson.title}</h1>
-              ${contentHtml}
-            </article>
-          </div>
-          
-          <div class="lesson-bottombar">
-            ${prev ? `
-              <a href="#/lesson/${courseSlug}/${prev.id}" class="btn btn-secondary lesson-nav-btn">
-                ${Components.icons.chevronLeft} ${t('lesson.previous')}
-              </a>
-            ` : '<div></div>'}
-            ${next ? `
-              <a href="#/lesson/${courseSlug}/${next.id}" class="btn btn-primary lesson-nav-btn">
-                ${t('lesson.next')} ${Components.icons.chevronRight}
-              </a>
-            ` : `
-              <a href="#/course/${courseSlug}" class="btn btn-primary lesson-nav-btn">
-                Finish Course ${Components.icons.check}
-              </a>
-            `}
-          </div>
-        </main>
+        </section>
       </div>
     `;
-    },
+  },
 
-    initLessonEvents(courseSlug, lessonId) {
-        const btn = document.getElementById('mark-complete-btn');
-        if (btn && !Storage.isLessonComplete(courseSlug, lessonId)) {
-            btn.addEventListener('click', async () => {
-                Storage.markLessonComplete(courseSlug, lessonId);
-                btn.textContent = t('lesson.completed') + ' ✓';
-                btn.classList.remove('btn-primary');
-                btn.classList.add('btn-ghost');
-                btn.disabled = true;
+  async renderAbout() {
+    const course = await Data.getCourse();
 
-                // Update sidebar
-                const navItem = document.querySelector(`a[href="#/lesson/${courseSlug}/${lessonId}"]`);
-                if (navItem) {
-                    navItem.classList.add('completed');
-                    navItem.querySelector('.check').textContent = '✓';
-                }
-
-                // Update progress
-                const progress = await Storage.getCourseProgressPercent(courseSlug);
-                document.querySelectorAll('.lesson-progress-text').forEach(el => el.textContent = progress + '%');
-                document.querySelectorAll('.lesson-sidebar-progress').forEach(el => el.textContent = progress + '% complete');
-                document.querySelectorAll('.progress-bar').forEach(el => el.style.width = progress + '%');
-            });
-        }
-    },
-
-    async renderDashboard() {
-        const enrolled = Storage.getEnrolledCourses();
-        const user = Storage.getUser() || { name: 'Guest' };
-
-        // Get course details for enrolled courses
-        const enrolledCourses = await Promise.all(
-            enrolled.map(async (slug) => {
-                const course = await Data.getCourse(slug);
-                const progress = await Storage.getCourseProgressPercent(slug);
-                return { ...course, progress };
-            })
-        );
-
-        // Get recommendations
-        const allCourses = await Data.getCourses();
-        const recommendations = allCourses
-            .filter(c => !enrolled.includes(c.slug))
-            .slice(0, 3);
-
-        return `
-      <section class="dashboard-page">
-        <div class="dashboard-header">
+    return `
+      <div class="about-page">
+        <div class="about-hero">
           <div class="container">
-            <h1 class="dashboard-welcome">${t('dashboard.welcome')}, ${user.name}</h1>
-            <p class="dashboard-subtitle">Continue building your daily practice.</p>
+            <h1 class="section-title">${course.about.title}</h1>
           </div>
         </div>
-        
-        <div class="container">
-          <div class="dashboard-grid">
-            <div class="dashboard-main">
-              ${enrolledCourses.length > 0 && enrolledCourses[0].progress < 100 ? `
-                <div class="dashboard-section">
-                  <h2 class="dashboard-section-title">${t('dashboard.continue')}</h2>
-                  <div class="enrolled-course-card">
-                    <div class="enrolled-course-thumb">
-                      <img src="${enrolledCourses[0].thumbnail}" alt="">
-                    </div>
-                    <div class="enrolled-course-info">
-                      <h3 class="enrolled-course-title">${enrolledCourses[0].title}</h3>
-                      <div class="enrolled-course-progress">
-                        <div class="enrolled-course-progress-bar progress" style="flex:1">
-                          <div class="progress-bar" style="width:${enrolledCourses[0].progress}%"></div>
-                        </div>
-                        <span class="enrolled-course-progress-text">${enrolledCourses[0].progress}%</span>
-                      </div>
-                      <a href="#/course/${enrolledCourses[0].slug}" class="btn btn-primary mt-4">${t('course.continue')}</a>
-                    </div>
-                  </div>
-                </div>
-              ` : ''}
-              
-              <div class="dashboard-section">
-                <h2 class="dashboard-section-title">${t('dashboard.enrolled')}</h2>
-                ${enrolledCourses.length === 0 ? `
-                  <p class="text-muted">You haven't enrolled in any courses yet.</p>
-                  <a href="#/courses" class="btn btn-primary mt-4">Browse Courses</a>
-                ` : enrolledCourses.map(c => `
-                  <div class="enrolled-course-card">
-                    <div class="enrolled-course-thumb">
-                      <img src="${c.thumbnail}" alt="">
-                    </div>
-                    <div class="enrolled-course-info">
-                      <h3 class="enrolled-course-title">${c.title}</h3>
-                      <div class="enrolled-course-progress">
-                        <div class="enrolled-course-progress-bar progress" style="flex:1">
-                          <div class="progress-bar" style="width:${c.progress}%"></div>
-                        </div>
-                        <span class="enrolled-course-progress-text">${c.progress}%</span>
-                      </div>
-                    </div>
-                  </div>
-                `).join('')}
-              </div>
-              
-              ${recommendations.length > 0 ? `
-                <div class="dashboard-section">
-                  <h2 class="dashboard-section-title">${t('dashboard.recommendations')}</h2>
-                  <div class="grid grid-3">
-                    ${recommendations.map(c => Components.courseCard(c)).join('')}
-                  </div>
-                </div>
-              ` : ''}
-            </div>
-            
-            <div class="dashboard-side">
-              <div class="stats-card mb-6">
-                <div class="stats-card-value">${enrolled.length}</div>
-                <div class="stats-card-label">Courses Enrolled</div>
-              </div>
-              <div class="stats-card mb-6">
-                <div class="stats-card-value">${enrolledCourses.reduce((sum, c) => sum + Storage.getCompletedLessonsCount(c.slug), 0)}</div>
-                <div class="stats-card-label">Lessons Completed</div>
-              </div>
-              <div class="stats-card">
-                <div class="stats-card-value">${enrolledCourses.filter(c => c.progress === 100).length}</div>
-                <div class="stats-card-label">Courses Finished</div>
-              </div>
+        <section class="section">
+          <div class="container">
+            <div class="about-content">
+              ${course.about.content.map(p => `<p>${p}</p>`).join('')}
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     `;
-    },
+  },
 
-    async renderAbout() {
-        return `
-      <section class="about-hero">
-        <div class="container">
-          <div class="about-content">
-            <h1 class="section-title">About Daily Hustle</h1>
-            <p class="section-subtitle mb-8">A different approach to learning and productivity.</p>
+  async renderContact() {
+    return `
+      <div class="about-page">
+        <div class="about-hero">
+          <div class="container">
+            <h1 class="section-title">Contact</h1>
+            <p class="section-subtitle">Questions? Get in touch.</p>
           </div>
         </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="about-content" style="max-width:760px">
-            <h2>The Problem</h2>
-            <p>Most online courses are designed to be consumed, not completed. They're optimized for enrollment, not transformation. The result: a graveyard of half-watched videos and abandoned learning paths.</p>
-            
-            <h2>Our Approach</h2>
-            <p>Daily Hustle is built on a simple insight: small daily actions compound into significant change. Every course we create follows the same principle—one focused lesson per day, designed to be completed in under 15 minutes.</p>
-            <p>No binge-watching. No overwhelming modules. Just consistent, sustainable practice.</p>
-            
-            <h2>Who We Are</h2>
-            <p>Daily Hustle was created by Marco Bellini, a former creative director based in Milan. After years of struggling with focus and productivity in the attention economy, he developed the practices that became Daily Hustle.</p>
-            <p>Today, thousands of learners use our courses to build better attention habits, one day at a time.</p>
-          </div>
-        </div>
-      </section>
-    `;
-    },
-
-    async renderBlog() {
-        const posts = await Data.getBlogPosts();
-
-        return `
-      <section class="blog-hero">
-        <div class="container">
-          <h1 class="section-title">${t('nav.blog')}</h1>
-          <p class="section-subtitle">${t('sections.blog_subtitle')}</p>
-        </div>
-      </section>
-      <section class="section blog-page">
-        <div class="container">
-          <div class="grid grid-blog">
-            ${posts.map(p => Components.blogCard(p)).join('')}
-          </div>
-        </div>
-      </section>
-    `;
-    },
-
-    async renderContact() {
-        return `
-      <section class="about-hero">
-        <div class="container">
-          <h1 class="section-title">${t('nav.contact')}</h1>
-          <p class="section-subtitle">Get in touch with us.</p>
-        </div>
-      </section>
-      <section class="section contact-page">
-        <div class="container">
-          <div class="two-col">
-            <div class="contact-form">
-              <form onsubmit="event.preventDefault(); alert('Message sent!');">
+        <section class="section">
+          <div class="container">
+            <div class="contact-grid" style="max-width:900px">
+              <form class="contact-form" onsubmit="event.preventDefault();alert('Message sent!')">
                 <div class="form-group mb-4">
-                  <label class="form-label">${t('forms.name')}</label>
+                  <label class="form-label">Name</label>
                   <input type="text" class="form-input" required>
                 </div>
                 <div class="form-group mb-4">
-                  <label class="form-label">${t('forms.email')}</label>
+                  <label class="form-label">Email</label>
                   <input type="email" class="form-input" required>
                 </div>
                 <div class="form-group mb-4">
-                  <label class="form-label">${t('forms.message')}</label>
+                  <label class="form-label">Message</label>
                   <textarea class="form-input form-textarea" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary btn-lg">${t('buttons.submit')}</button>
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
               </form>
+              <div class="contact-info">
+                <div class="contact-item"><div class="contact-icon">📧</div><div><h3 class="font-semibold">Email</h3><p class="text-muted">hello@sidehustle27.com</p></div></div>
+                <div class="contact-item"><div class="contact-icon">⏰</div><div><h3 class="font-semibold">Response Time</h3><p class="text-muted">Within 24 hours</p></div></div>
+              </div>
             </div>
-            <div class="contact-info">
-              <div class="contact-item">
-                <div class="contact-icon">📧</div>
-                <div>
-                  <h3 class="font-semibold">Email</h3>
-                  <p class="text-muted">hello@dailyhustle.com</p>
+          </div>
+        </section>
+      </div>
+    `;
+  },
+
+  async renderDashboard() {
+    const progress = Storage.getProgress();
+    const user = Storage.getUser();
+    const lastDay = Storage.getLastActiveDay();
+    const day = await Data.getDay(lastDay);
+
+    if (!user) {
+      return `
+        <div class="dashboard-page">
+          <div class="dashboard-header">
+            <div class="container">
+              <h1 class="dashboard-welcome">Welcome to Your Dashboard</h1>
+              <p class="dashboard-subtitle">Sign in to track your progress</p>
+            </div>
+          </div>
+          <section class="section">
+            <div class="container" style="max-width:400px">
+              <div class="dashboard-card">
+                <h2 class="dashboard-card-title">Get Started</h2>
+                <form onsubmit="event.preventDefault();Storage.setUser({email:this.email.value,name:this.name.value});Router.handleRoute();">
+                  <div class="form-group mb-4">
+                    <label class="form-label">Name</label>
+                    <input type="text" name="name" class="form-input" required>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label class="form-label">Email</label>
+                    <input type="email" name="email" class="form-input" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg" style="width:100%">Start Tracking</button>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      `;
+    }
+
+    return `
+      <div class="dashboard-page">
+        <div class="dashboard-header">
+          <div class="container">
+            <h1 class="dashboard-welcome">Welcome back, ${user.name}</h1>
+            <p class="dashboard-subtitle">Keep the momentum going.</p>
+          </div>
+        </div>
+        <section class="section">
+          <div class="container">
+            <div class="dashboard-grid">
+              <div class="dashboard-main">
+                <div class="dashboard-card mb-6">
+                  <h2 class="dashboard-card-title">Resume Your Progress</h2>
+                  <div class="dashboard-resume">
+                    <div class="dashboard-resume-day">${lastDay}</div>
+                    <div class="dashboard-resume-info">
+                      <div class="dashboard-resume-title">${day?.title || `Day ${lastDay}`}</div>
+                      <div class="dashboard-resume-week">Week ${Math.ceil(lastDay / 7)}</div>
+                    </div>
+                    <a href="#/day/${lastDay}" class="btn btn-primary">Continue</a>
+                  </div>
+                </div>
+                
+                <div class="dashboard-card">
+                  <h2 class="dashboard-card-title">Quick Links</h2>
+                  <div class="flex gap-3" style="flex-wrap:wrap">
+                    <a href="#/program" class="btn btn-secondary">View Program</a>
+                    <a href="#/workbook" class="btn btn-secondary">View Workbook</a>
+                    <button class="btn btn-ghost" onclick="App.exportJSON()">Export JSON</button>
+                    <button class="btn btn-ghost" onclick="App.exportCSV()">Export CSV</button>
+                  </div>
                 </div>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon">📍</div>
-                <div>
-                  <h3 class="font-semibold">Location</h3>
-                  <p class="text-muted">Milan, Italy</p>
+              
+              <div class="dashboard-side">
+                <div class="dashboard-stats">
+                  <div class="dashboard-stat"><div class="dashboard-stat-value">${progress.completed}</div><div class="dashboard-stat-label">Completed</div></div>
+                  <div class="dashboard-stat"><div class="dashboard-stat-value">${progress.inProgress}</div><div class="dashboard-stat-label">In Progress</div></div>
+                  <div class="dashboard-stat"><div class="dashboard-stat-value">${progress.percent}%</div><div class="dashboard-stat-label">Overall</div></div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     `;
-    },
+  },
 
-    async renderAdmin() {
-        return `
-      <section class="admin-page">
+  async renderAdmin() {
+    const [course, days, forms] = await Promise.all([
+      Data.getCourse(),
+      Data.getDays(),
+      Data.getForms()
+    ]);
+
+    return `
+      <div class="admin-page">
         <div class="admin-header">
           <h1>Admin Console</h1>
         </div>
         <div class="admin-container">
           <div class="admin-grid">
             <div class="admin-panel">
-              <div class="admin-panel-header">Course Editor</div>
+              <div class="admin-panel-header">
+                Course Data
+                <button class="btn btn-sm btn-secondary" onclick="navigator.clipboard.writeText(JSON.stringify(${JSON.stringify(course)}, null, 2));alert('Copied!')">Copy JSON</button>
+              </div>
               <div class="admin-panel-body">
-                <form class="admin-form" id="admin-form">
-                  <div class="admin-form-row">
-                    <div class="form-group">
-                      <label class="form-label">Title *</label>
-                      <input type="text" class="form-input" id="admin-title" required>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Slug *</label>
-                      <input type="text" class="form-input" id="admin-slug" required>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label">Subtitle</label>
-                    <input type="text" class="form-input" id="admin-subtitle">
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label">Description</label>
-                    <textarea class="form-input form-textarea" id="admin-description" rows="3"></textarea>
-                  </div>
-                  <div class="admin-form-row">
-                    <div class="form-group">
-                      <label class="form-label">Category</label>
-                      <select class="form-select" id="admin-category">
-                        <option value="self">Self Development</option>
-                        <option value="creative">Creative</option>
-                        <option value="business">Business</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Level</label>
-                      <select class="form-select" id="admin-level">
-                        <option value="beginner">Beginner</option>
-                        <option value="intermediate">Intermediate</option>
-                        <option value="advanced">Advanced</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="admin-form-row">
-                    <div class="form-group">
-                      <label class="form-label">Duration (days)</label>
-                      <input type="number" class="form-input" id="admin-duration" value="7">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Minutes per day</label>
-                      <input type="number" class="form-input" id="admin-minutes" value="10">
-                    </div>
-                  </div>
-                  <div class="admin-form-row">
-                    <div class="form-group">
-                      <label class="form-label">Price ($)</label>
-                      <input type="number" class="form-input" id="admin-price" value="0">
-                    </div>
-                    <div class="form-group">
-                      <label class="form-label">Thumbnail URL</label>
-                      <input type="text" class="form-input" id="admin-thumbnail">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label class="form-label">Tags (comma-separated)</label>
-                    <input type="text" class="form-input" id="admin-tags">
-                  </div>
-                  <div class="admin-actions">
-                    <button type="button" class="btn btn-primary" onclick="App.generateAdminJSON()">Generate JSON</button>
-                    <button type="button" class="btn btn-secondary" onclick="App.copyAdminJSON()">Copy to Clipboard</button>
-                  </div>
-                </form>
+                <pre class="admin-json">${JSON.stringify(course, null, 2).slice(0, 2000)}...</pre>
               </div>
             </div>
             <div class="admin-panel">
-              <div class="admin-panel-header">JSON Preview</div>
+              <div class="admin-panel-header">
+                Days Data (${days.length} days)
+                <button class="btn btn-sm btn-secondary" onclick="App.downloadFile(JSON.stringify(${JSON.stringify(days)}, null, 2), 'days.json', 'application/json')">Download</button>
+              </div>
               <div class="admin-panel-body">
-                <pre class="admin-json-preview" id="admin-json-preview">// Click "Generate JSON" to see output</pre>
+                <pre class="admin-json">${JSON.stringify(days.slice(0, 3), null, 2)}...</pre>
+              </div>
+            </div>
+          </div>
+          
+          <div class="admin-grid mt-6">
+            <div class="admin-panel">
+              <div class="admin-panel-header">
+                Forms Data
+                <button class="btn btn-sm btn-secondary" onclick="App.downloadFile(JSON.stringify(${JSON.stringify(forms)}, null, 2), 'forms.json', 'application/json')">Download</button>
+              </div>
+              <div class="admin-panel-body">
+                <pre class="admin-json">${JSON.stringify(forms['1'], null, 2)}</pre>
+              </div>
+            </div>
+            <div class="admin-panel">
+              <div class="admin-panel-header">
+                Webhook Settings
+              </div>
+              <div class="admin-panel-body">
+                <form class="admin-form" onsubmit="event.preventDefault();Storage.setWebhookSettings({url:this.url.value,apiKey:this.apiKey.value,enabled:this.enabled.checked});alert('Saved!')">
+                  <div class="form-group">
+                    <label class="form-label">Webhook URL</label>
+                    <input type="url" name="url" class="form-input" value="${Storage.getWebhookSettings().url}" placeholder="https://...">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label">API Key</label>
+                    <input type="text" name="apiKey" class="form-input" value="${Storage.getWebhookSettings().apiKey}">
+                  </div>
+                  <label class="form-checkbox">
+                    <input type="checkbox" name="enabled" ${Storage.getWebhookSettings().enabled ? 'checked' : ''}>
+                    <span>Enable webhook sync</span>
+                  </label>
+                  <button type="submit" class="btn btn-primary mt-4">Save Settings</button>
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     `;
-    },
-
-    generateAdminJSON() {
-        const course = {
-            id: document.getElementById('admin-slug')?.value || '',
-            slug: document.getElementById('admin-slug')?.value || '',
-            title: document.getElementById('admin-title')?.value || '',
-            subtitle: document.getElementById('admin-subtitle')?.value || '',
-            description: document.getElementById('admin-description')?.value || '',
-            category: document.getElementById('admin-category')?.value || 'self',
-            level: document.getElementById('admin-level')?.value || 'beginner',
-            format: 'mixed',
-            durationDays: parseInt(document.getElementById('admin-duration')?.value) || 7,
-            minutesPerDay: parseInt(document.getElementById('admin-minutes')?.value) || 10,
-            rating: 0,
-            reviewCount: 0,
-            price: parseInt(document.getElementById('admin-price')?.value) || 0,
-            featured: false,
-            popular: false,
-            thumbnail: document.getElementById('admin-thumbnail')?.value || '',
-            tags: (document.getElementById('admin-tags')?.value || '').split(',').map(t => t.trim()).filter(Boolean),
-            modules: []
-        };
-
-        const preview = document.getElementById('admin-json-preview');
-        if (preview) {
-            preview.textContent = JSON.stringify(course, null, 2);
-        }
-
-        this._adminJSON = course;
-    },
-
-    copyAdminJSON() {
-        if (this._adminJSON) {
-            navigator.clipboard.writeText(JSON.stringify(this._adminJSON, null, 2));
-            alert('JSON copied to clipboard!');
-        }
-    }
+  }
 };
 
-// Initialize app when DOM is ready
 document.addEventListener('DOMContentLoaded', () => App.init());
-
-// Export for global access
 window.App = App;

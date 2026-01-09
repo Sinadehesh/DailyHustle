@@ -1,0 +1,1221 @@
+{
+    "1": {
+        "fields": [
+            {
+                "id": "trend1",
+                "type": "TEXT",
+                "label": "Trend 1: What change have you noticed?",
+                "required": true,
+                "helperText": "Technology, behavior, or cultural shift"
+            },
+            {
+                "id": "trend1_prediction",
+                "type": "TEXTAREA",
+                "label": "Prediction: Where does this trend lead in 2-3 years?",
+                "required": true
+            },
+            {
+                "id": "trend2",
+                "type": "TEXT",
+                "label": "Trend 2: What change have you noticed?",
+                "required": true
+            },
+            {
+                "id": "trend2_prediction",
+                "type": "TEXTAREA",
+                "label": "Prediction: Where does this trend lead?",
+                "required": true
+            },
+            {
+                "id": "trend3",
+                "type": "TEXT",
+                "label": "Trend 3: What change have you noticed?",
+                "required": true
+            },
+            {
+                "id": "trend3_prediction",
+                "type": "TEXTAREA",
+                "label": "Prediction: Where does this trend lead?",
+                "required": true
+            },
+            {
+                "id": "trend4",
+                "type": "TEXT",
+                "label": "Trend 4: What change have you noticed?",
+                "required": false
+            },
+            {
+                "id": "trend5",
+                "type": "TEXT",
+                "label": "Trend 5: What change have you noticed?",
+                "required": false
+            },
+            {
+                "id": "opportunity1",
+                "type": "TEXTAREA",
+                "label": "Opportunity Gap 1: What need might emerge?",
+                "required": true
+            },
+            {
+                "id": "opportunity2",
+                "type": "TEXTAREA",
+                "label": "Opportunity Gap 2: What need might emerge?",
+                "required": true
+            },
+            {
+                "id": "opportunity3",
+                "type": "TEXTAREA",
+                "label": "Opportunity Gap 3: What need might emerge?",
+                "required": true
+            },
+            {
+                "id": "personal_connection",
+                "type": "TEXTAREA",
+                "label": "Personal Connection: Which gaps connect to your skills/interests?",
+                "required": false
+            }
+        ]
+    },
+    "2": {
+        "fields": [
+            {
+                "id": "product_example1",
+                "type": "TEXT",
+                "label": "Product-based example 1",
+                "required": true,
+                "helperText": "Name a side hustle that sells products"
+            },
+            {
+                "id": "product_example2",
+                "type": "TEXT",
+                "label": "Product-based example 2",
+                "required": true
+            },
+            {
+                "id": "product_example3",
+                "type": "TEXT",
+                "label": "Product-based example 3",
+                "required": true
+            },
+            {
+                "id": "service_example1",
+                "type": "TEXT",
+                "label": "Service-based example 1",
+                "required": true,
+                "helperText": "Name a side hustle that sells services"
+            },
+            {
+                "id": "service_example2",
+                "type": "TEXT",
+                "label": "Service-based example 2",
+                "required": true
+            },
+            {
+                "id": "service_example3",
+                "type": "TEXT",
+                "label": "Service-based example 3",
+                "required": true
+            },
+            {
+                "id": "opportunity_model_mapping",
+                "type": "TEXTAREA",
+                "label": "For each Day 1 opportunity gap, which model fits best?",
+                "required": true
+            },
+            {
+                "id": "personal_preference",
+                "type": "RADIO",
+                "label": "Your preference:",
+                "required": true,
+                "options": [
+                    "Products (create once, sell many)",
+                    "Services (trade time for money)",
+                    "Hybrid (combination)",
+                    "Unsure yet"
+                ]
+            }
+        ]
+    },
+    "3": {
+        "fields": [
+            {
+                "id": "brainstorm_ideas",
+                "type": "TEXTAREA",
+                "label": "Brainstorm: 10 ideas based on your skills and interests",
+                "required": true,
+                "helperText": "List each idea on a new line"
+            },
+            {
+                "id": "borrowed_ideas",
+                "type": "TEXTAREA",
+                "label": "Borrowed: 5 ideas adapted from others' success",
+                "required": true,
+                "helperText": "What's working elsewhere that you could adapt?"
+            },
+            {
+                "id": "combination_ideas",
+                "type": "TEXTAREA",
+                "label": "Combinations: 3 weird mashups",
+                "required": true,
+                "helperText": "Combine random ideas—what emerges?"
+            },
+            {
+                "id": "starred_idea1",
+                "type": "TEXT",
+                "label": "Starred Idea 1 (gut favorite)",
+                "required": true
+            },
+            {
+                "id": "starred_idea2",
+                "type": "TEXT",
+                "label": "Starred Idea 2",
+                "required": true
+            },
+            {
+                "id": "starred_idea3",
+                "type": "TEXT",
+                "label": "Starred Idea 3",
+                "required": true
+            },
+            {
+                "id": "starred_idea4",
+                "type": "TEXT",
+                "label": "Starred Idea 4",
+                "required": true
+            },
+            {
+                "id": "starred_idea5",
+                "type": "TEXT",
+                "label": "Starred Idea 5",
+                "required": true
+            }
+        ]
+    },
+    "4": {
+        "fields": [
+            {
+                "id": "idea1_resources",
+                "type": "TEXTAREA",
+                "label": "Idea 1: Required resources (time, money, skills)",
+                "required": true
+            },
+            {
+                "id": "idea1_obstacles",
+                "type": "TEXTAREA",
+                "label": "Idea 1: Potential obstacles and risks",
+                "required": true
+            },
+            {
+                "id": "idea1_upside",
+                "type": "TEXTAREA",
+                "label": "Idea 1: Potential upside (income, learning, connections)",
+                "required": true
+            },
+            {
+                "id": "idea2_resources",
+                "type": "TEXTAREA",
+                "label": "Idea 2: Required resources",
+                "required": true
+            },
+            {
+                "id": "idea2_obstacles",
+                "type": "TEXTAREA",
+                "label": "Idea 2: Potential obstacles",
+                "required": true
+            },
+            {
+                "id": "idea2_upside",
+                "type": "TEXTAREA",
+                "label": "Idea 2: Potential upside",
+                "required": true
+            },
+            {
+                "id": "idea3_resources",
+                "type": "TEXTAREA",
+                "label": "Idea 3: Required resources",
+                "required": true
+            },
+            {
+                "id": "idea3_obstacles",
+                "type": "TEXTAREA",
+                "label": "Idea 3: Potential obstacles",
+                "required": true
+            },
+            {
+                "id": "idea3_upside",
+                "type": "TEXTAREA",
+                "label": "Idea 3: Potential upside",
+                "required": true
+            },
+            {
+                "id": "idea4_summary",
+                "type": "TEXTAREA",
+                "label": "Idea 4: Resources / Obstacles / Upside summary",
+                "required": false
+            },
+            {
+                "id": "idea5_summary",
+                "type": "TEXTAREA",
+                "label": "Idea 5: Resources / Obstacles / Upside summary",
+                "required": false
+            }
+        ]
+    },
+    "5": {
+        "fields": [
+            {
+                "id": "idea1_price",
+                "type": "CURRENCY",
+                "label": "Idea 1: Estimated price per sale",
+                "required": true
+            },
+            {
+                "id": "idea1_sales_month1",
+                "type": "NUMBER",
+                "label": "Idea 1: Sales in Month 1",
+                "required": true
+            },
+            {
+                "id": "idea1_sales_month6",
+                "type": "NUMBER",
+                "label": "Idea 1: Sales by Month 6",
+                "required": true
+            },
+            {
+                "id": "idea1_costs",
+                "type": "CURRENCY",
+                "label": "Idea 1: Monthly costs",
+                "required": true
+            },
+            {
+                "id": "idea1_profit",
+                "type": "CURRENCY",
+                "label": "Idea 1: Estimated monthly profit (Month 6)",
+                "required": true
+            },
+            {
+                "id": "idea2_price",
+                "type": "CURRENCY",
+                "label": "Idea 2: Estimated price",
+                "required": true
+            },
+            {
+                "id": "idea2_profit",
+                "type": "CURRENCY",
+                "label": "Idea 2: Estimated monthly profit",
+                "required": true
+            },
+            {
+                "id": "idea3_price",
+                "type": "CURRENCY",
+                "label": "Idea 3: Estimated price",
+                "required": true
+            },
+            {
+                "id": "idea3_profit",
+                "type": "CURRENCY",
+                "label": "Idea 3: Estimated monthly profit",
+                "required": true
+            },
+            {
+                "id": "idea4_profit",
+                "type": "CURRENCY",
+                "label": "Idea 4: Estimated monthly profit",
+                "required": false
+            },
+            {
+                "id": "idea5_profit",
+                "type": "CURRENCY",
+                "label": "Idea 5: Estimated monthly profit",
+                "required": false
+            },
+            {
+                "id": "profit_reflection",
+                "type": "TEXTAREA",
+                "label": "Reflection: Which idea has the best profit potential?",
+                "required": true
+            }
+        ]
+    },
+    "6": {
+        "fields": [
+            {
+                "id": "selector_matrix",
+                "type": "TEXTAREA",
+                "label": "Scoring Matrix (paste your scores for all 5 ideas × 5 dimensions)",
+                "required": true,
+                "helperText": "Feasibility, Profitability, Persuasion, Efficiency, Motivation (1-5 each)"
+            },
+            {
+                "id": "idea1_total",
+                "type": "NUMBER",
+                "label": "Idea 1: Total Score (out of 25)",
+                "required": true
+            },
+            {
+                "id": "idea2_total",
+                "type": "NUMBER",
+                "label": "Idea 2: Total Score",
+                "required": true
+            },
+            {
+                "id": "idea3_total",
+                "type": "NUMBER",
+                "label": "Idea 3: Total Score",
+                "required": true
+            },
+            {
+                "id": "idea4_total",
+                "type": "NUMBER",
+                "label": "Idea 4: Total Score",
+                "required": false
+            },
+            {
+                "id": "idea5_total",
+                "type": "NUMBER",
+                "label": "Idea 5: Total Score",
+                "required": false
+            },
+            {
+                "id": "top_idea",
+                "type": "TEXT",
+                "label": "Your #1 ranked idea",
+                "required": true
+            },
+            {
+                "id": "gut_check",
+                "type": "RADIO",
+                "label": "Does the top-scoring idea feel right?",
+                "required": true,
+                "options": [
+                    "Yes, it feels right",
+                    "Mostly, with some hesitation",
+                    "No, something feels off"
+                ]
+            },
+            {
+                "id": "gut_reflection",
+                "type": "TEXTAREA",
+                "label": "If hesitation, explain why",
+                "required": false
+            }
+        ]
+    },
+    "7": {
+        "fields": [
+            {
+                "id": "competitor1_name",
+                "type": "TEXT",
+                "label": "Competitor 1: Name/URL",
+                "required": true
+            },
+            {
+                "id": "competitor1_pricing",
+                "type": "TEXT",
+                "label": "Competitor 1: Pricing",
+                "required": true
+            },
+            {
+                "id": "competitor1_feedback",
+                "type": "TEXTAREA",
+                "label": "Competitor 1: Customer feedback highlights",
+                "required": true
+            },
+            {
+                "id": "competitor2_name",
+                "type": "TEXT",
+                "label": "Competitor 2: Name/URL",
+                "required": true
+            },
+            {
+                "id": "competitor2_pricing",
+                "type": "TEXT",
+                "label": "Competitor 2: Pricing",
+                "required": true
+            },
+            {
+                "id": "competitor3_name",
+                "type": "TEXT",
+                "label": "Competitor 3: Name/URL",
+                "required": true
+            },
+            {
+                "id": "competitor3_pricing",
+                "type": "TEXT",
+                "label": "Competitor 3: Pricing",
+                "required": true
+            },
+            {
+                "id": "competitor4_5_summary",
+                "type": "TEXTAREA",
+                "label": "Competitors 4-5: Quick summary",
+                "required": false
+            },
+            {
+                "id": "gaps_identified",
+                "type": "TEXTAREA",
+                "label": "Gaps: What are competitors missing or doing poorly?",
+                "required": true
+            },
+            {
+                "id": "insights",
+                "type": "TEXTAREA",
+                "label": "Key insights that change how you think about your idea",
+                "required": true
+            }
+        ]
+    },
+    "8": {
+        "fields": [
+            {
+                "id": "customer_age",
+                "type": "TEXT",
+                "label": "Demographics: Age range",
+                "required": true
+            },
+            {
+                "id": "customer_job",
+                "type": "TEXT",
+                "label": "Demographics: Job/role",
+                "required": true
+            },
+            {
+                "id": "customer_location",
+                "type": "TEXT",
+                "label": "Demographics: Location type",
+                "required": true
+            },
+            {
+                "id": "customer_income",
+                "type": "TEXT",
+                "label": "Demographics: Income level",
+                "required": false
+            },
+            {
+                "id": "biggest_problem",
+                "type": "TEXTAREA",
+                "label": "Their biggest problem (related to your offering)",
+                "required": true
+            },
+            {
+                "id": "failed_solutions",
+                "type": "TEXTAREA",
+                "label": "Solutions they've tried that failed",
+                "required": true
+            },
+            {
+                "id": "why_failed",
+                "type": "TEXTAREA",
+                "label": "Why those solutions didn't work",
+                "required": true
+            },
+            {
+                "id": "day_in_life",
+                "type": "TEXTAREA",
+                "label": "Day in the life: One paragraph describing their typical day",
+                "required": true
+            }
+        ]
+    },
+    "9": {
+        "fields": [
+            {
+                "id": "deliverables",
+                "type": "TEXTAREA",
+                "label": "What exactly does the customer receive?",
+                "required": true,
+                "helperText": "Be specific, not vague"
+            },
+            {
+                "id": "problem_solved",
+                "type": "TEXTAREA",
+                "label": "What problem does this solve (in their words)?",
+                "required": true
+            },
+            {
+                "id": "outcome",
+                "type": "TEXTAREA",
+                "label": "What transformation/outcome can they expect?",
+                "required": true
+            },
+            {
+                "id": "one_sentence_pitch",
+                "type": "TEXTAREA",
+                "label": "One-sentence pitch: 'I help [who] do [what] so that [result]'",
+                "required": true
+            },
+            {
+                "id": "why_now",
+                "type": "TEXTAREA",
+                "label": "Why should they act now (urgency/relevance)?",
+                "required": false
+            }
+        ]
+    },
+    "10": {
+        "fields": [
+            {
+                "id": "first_encounter",
+                "type": "TEXTAREA",
+                "label": "How did you first encounter this problem?",
+                "required": true
+            },
+            {
+                "id": "why_care",
+                "type": "TEXTAREA",
+                "label": "What made you care enough to act?",
+                "required": true
+            },
+            {
+                "id": "qualifications",
+                "type": "TEXTAREA",
+                "label": "What qualifies you to solve this?",
+                "required": true,
+                "helperText": "Experience, skills, perspective—be honest"
+            },
+            {
+                "id": "origin_story",
+                "type": "TEXTAREA",
+                "label": "Your 3-4 sentence origin story (shareable version)",
+                "required": true
+            }
+        ]
+    },
+    "11": {
+        "fields": [
+            {
+                "id": "tools_needed",
+                "type": "TEXTAREA",
+                "label": "Tools and platforms needed (be specific)",
+                "required": true
+            },
+            {
+                "id": "content_needed",
+                "type": "TEXTAREA",
+                "label": "Content to create (sales page, product, etc.)",
+                "required": true
+            },
+            {
+                "id": "accounts_needed",
+                "type": "TEXTAREA",
+                "label": "Accounts to set up",
+                "required": true
+            },
+            {
+                "id": "priority_must_have",
+                "type": "TEXTAREA",
+                "label": "Must-have before accepting payment",
+                "required": true
+            },
+            {
+                "id": "priority_nice_to_have",
+                "type": "TEXTAREA",
+                "label": "Nice-to-have (can defer)",
+                "required": false
+            }
+        ]
+    },
+    "12": {
+        "fields": [
+            {
+                "id": "cost_to_deliver",
+                "type": "CURRENCY",
+                "label": "Your cost to deliver (time + materials + tools)",
+                "required": true
+            },
+            {
+                "id": "competitor_pricing",
+                "type": "TEXTAREA",
+                "label": "Competitor pricing (from Day 7 research)",
+                "required": true
+            },
+            {
+                "id": "value_to_customer",
+                "type": "TEXTAREA",
+                "label": "Value to customer: What's this worth to them?",
+                "required": true
+            },
+            {
+                "id": "initial_price",
+                "type": "CURRENCY",
+                "label": "Your initial price",
+                "required": true
+            },
+            {
+                "id": "pricing_reasoning",
+                "type": "TEXTAREA",
+                "label": "Reasoning: Why this price?",
+                "required": true
+            }
+        ]
+    },
+    "13": {
+        "fields": [
+            {
+                "id": "accounts_setup",
+                "type": "CHECKBOX_GROUP",
+                "label": "Accounts set up today",
+                "required": true,
+                "options": [
+                    "Payment processor",
+                    "Email service",
+                    "Website/landing page",
+                    "Social media",
+                    "Domain name",
+                    "Other"
+                ]
+            },
+            {
+                "id": "purchases_made",
+                "type": "TEXTAREA",
+                "label": "Purchases made (list with costs)",
+                "required": true
+            },
+            {
+                "id": "total_spent",
+                "type": "CURRENCY",
+                "label": "Total startup cost so far",
+                "required": true
+            },
+            {
+                "id": "credentials_documented",
+                "type": "CHECKBOX",
+                "label": "I have documented all login credentials securely",
+                "required": true
+            }
+        ]
+    },
+    "14": {
+        "fields": [
+            {
+                "id": "payment_platform",
+                "type": "SELECT",
+                "label": "Payment platform chosen",
+                "required": true,
+                "options": [
+                    "Stripe",
+                    "PayPal",
+                    "Gumroad",
+                    "Square",
+                    "Shopify",
+                    "Other"
+                ]
+            },
+            {
+                "id": "account_setup",
+                "type": "CHECKBOX",
+                "label": "Account created and payout connected",
+                "required": true
+            },
+            {
+                "id": "product_created",
+                "type": "CHECKBOX",
+                "label": "First product/price created in system",
+                "required": true
+            },
+            {
+                "id": "test_completed",
+                "type": "CHECKBOX",
+                "label": "Test checkout flow completed",
+                "required": true
+            },
+            {
+                "id": "payment_link",
+                "type": "URL",
+                "label": "Your payment/checkout link",
+                "required": true
+            }
+        ]
+    },
+    "15": {
+        "fields": [
+            {
+                "id": "workflow_steps",
+                "type": "TEXTAREA",
+                "label": "Post-purchase workflow: Step-by-step",
+                "required": true,
+                "helperText": "What happens after someone buys?"
+            },
+            {
+                "id": "automated_steps",
+                "type": "TEXTAREA",
+                "label": "Which steps can be automated?",
+                "required": true
+            },
+            {
+                "id": "manual_steps",
+                "type": "TEXTAREA",
+                "label": "Which steps require your time?",
+                "required": true
+            },
+            {
+                "id": "templates_created",
+                "type": "CHECKBOX_GROUP",
+                "label": "Templates drafted",
+                "required": false,
+                "options": [
+                    "Confirmation email",
+                    "Delivery instructions",
+                    "Follow-up message",
+                    "Receipt/invoice"
+                ]
+            },
+            {
+                "id": "estimated_delivery_time",
+                "type": "TEXT",
+                "label": "Estimated time from purchase to delivery",
+                "required": true
+            }
+        ]
+    },
+    "16": {
+        "fields": [
+            {
+                "id": "all_remaining_tasks",
+                "type": "TEXTAREA",
+                "label": "All tasks remaining before launch",
+                "required": true
+            },
+            {
+                "id": "revenue_tasks",
+                "type": "TEXTAREA",
+                "label": "Tasks that directly lead to revenue",
+                "required": true
+            },
+            {
+                "id": "deferred_tasks",
+                "type": "TEXTAREA",
+                "label": "Tasks deferred or deleted (not essential)",
+                "required": true
+            },
+            {
+                "id": "time_blocked",
+                "type": "CHECKBOX",
+                "label": "Time blocked for highest-leverage tasks",
+                "required": true
+            }
+        ]
+    },
+    "17": {
+        "fields": [
+            {
+                "id": "offer_finalized",
+                "type": "CHECKBOX",
+                "label": "Sales page/listing finalized with offer + price",
+                "required": true
+            },
+            {
+                "id": "flow_tested",
+                "type": "CHECKBOX",
+                "label": "Complete flow tested (view → buy → payment)",
+                "required": true
+            },
+            {
+                "id": "published",
+                "type": "CHECKBOX",
+                "label": "Offer published and publicly accessible",
+                "required": true
+            },
+            {
+                "id": "offer_url",
+                "type": "URL",
+                "label": "Live URL of your offer",
+                "required": true
+            },
+            {
+                "id": "first_share",
+                "type": "TEXTAREA",
+                "label": "Where did you share it? (link or description)",
+                "required": true
+            },
+            {
+                "id": "feelings",
+                "type": "TEXTAREA",
+                "label": "How does it feel to be live?",
+                "required": false
+            }
+        ]
+    },
+    "18": {
+        "fields": [
+            {
+                "id": "outreach_list",
+                "type": "TEXTAREA",
+                "label": "10 people who match your ideal customer profile",
+                "required": true
+            },
+            {
+                "id": "outreach_message",
+                "type": "TEXTAREA",
+                "label": "Your personalized outreach message",
+                "required": true
+            },
+            {
+                "id": "outreach_sent",
+                "type": "CHECKBOX",
+                "label": "Messages sent to all 10 people",
+                "required": true
+            },
+            {
+                "id": "responses_received",
+                "type": "NUMBER",
+                "label": "Number of responses received",
+                "required": true
+            },
+            {
+                "id": "response_summary",
+                "type": "TEXTAREA",
+                "label": "Summary of responses (what did they say?)",
+                "required": true
+            }
+        ]
+    },
+    "19": {
+        "fields": [
+            {
+                "id": "network_list",
+                "type": "TEXTAREA",
+                "label": "10 people in your network who might help",
+                "required": true
+            },
+            {
+                "id": "ask_type",
+                "type": "CHECKBOX_GROUP",
+                "label": "Type of asks made",
+                "required": true,
+                "options": [
+                    "Share my offer",
+                    "Make an introduction",
+                    "Give feedback",
+                    "Other"
+                ]
+            },
+            {
+                "id": "asks_sent",
+                "type": "CHECKBOX",
+                "label": "Asks sent to all 10 people",
+                "required": true
+            },
+            {
+                "id": "who_said_yes",
+                "type": "TEXTAREA",
+                "label": "Who said yes? What did they offer?",
+                "required": true
+            }
+        ]
+    },
+    "20": {
+        "fields": [
+            {
+                "id": "feedback_patterns",
+                "type": "TEXTAREA",
+                "label": "Patterns from Days 17-19 responses",
+                "required": true
+            },
+            {
+                "id": "common_objections",
+                "type": "TEXTAREA",
+                "label": "Most common objections or questions",
+                "required": true
+            },
+            {
+                "id": "improvement_made",
+                "type": "TEXTAREA",
+                "label": "Improvement made to offer or messaging",
+                "required": true
+            },
+            {
+                "id": "followed_up",
+                "type": "CHECKBOX",
+                "label": "Followed up with 'maybe' responses",
+                "required": true
+            }
+        ]
+    },
+    "21": {
+        "fields": [
+            {
+                "id": "urgency_type",
+                "type": "RADIO",
+                "label": "Type of urgency created",
+                "required": true,
+                "options": [
+                    "Limited-time discount",
+                    "Expiring bonus",
+                    "Limited availability/spots",
+                    "Cohort deadline",
+                    "Other"
+                ]
+            },
+            {
+                "id": "urgency_details",
+                "type": "TEXTAREA",
+                "label": "Describe your time-limited offer",
+                "required": true
+            },
+            {
+                "id": "deadline",
+                "type": "DATE",
+                "label": "Deadline date",
+                "required": true
+            },
+            {
+                "id": "communicated",
+                "type": "CHECKBOX",
+                "label": "Offer communicated to audience",
+                "required": true
+            },
+            {
+                "id": "communication_channel",
+                "type": "TEXT",
+                "label": "Where did you share it?",
+                "required": true
+            }
+        ]
+    },
+    "22": {
+        "fields": [
+            {
+                "id": "made_sale",
+                "type": "RADIO",
+                "label": "Have you made a sale?",
+                "required": true,
+                "options": [
+                    "Yes",
+                    "Not yet"
+                ]
+            },
+            {
+                "id": "sale_amount",
+                "type": "CURRENCY",
+                "label": "Amount of first sale(s)",
+                "required": false
+            },
+            {
+                "id": "sale_channel",
+                "type": "TEXT",
+                "label": "Channel/source of sale",
+                "required": false
+            },
+            {
+                "id": "sale_customer",
+                "type": "TEXT",
+                "label": "Customer details (anonymous is fine)",
+                "required": false
+            },
+            {
+                "id": "what_worked",
+                "type": "TEXTAREA",
+                "label": "What made the sale happen (or what's blocking it)?",
+                "required": true
+            },
+            {
+                "id": "paths_to_sale",
+                "type": "TEXTAREA",
+                "label": "If no sale: 3 most likely paths to first sale",
+                "required": false
+            },
+            {
+                "id": "first_dollar_story",
+                "type": "TEXTAREA",
+                "label": "Your 'first dollar' story (shareable version)",
+                "required": true
+            }
+        ]
+    },
+    "23": {
+        "fields": [
+            {
+                "id": "page_views",
+                "type": "NUMBER",
+                "label": "Total page/offer views",
+                "required": true
+            },
+            {
+                "id": "click_rate",
+                "type": "TEXT",
+                "label": "Click-through rate (if applicable)",
+                "required": false
+            },
+            {
+                "id": "responses_total",
+                "type": "NUMBER",
+                "label": "Total responses received",
+                "required": true
+            },
+            {
+                "id": "sales_total",
+                "type": "NUMBER",
+                "label": "Total sales",
+                "required": true
+            },
+            {
+                "id": "revenue_total",
+                "type": "CURRENCY",
+                "label": "Total revenue",
+                "required": true
+            },
+            {
+                "id": "conversion_rate",
+                "type": "TEXT",
+                "label": "Conversion rate (sales/views)",
+                "required": true
+            },
+            {
+                "id": "biggest_bottleneck",
+                "type": "TEXTAREA",
+                "label": "Biggest bottleneck (where are people dropping off?)",
+                "required": true
+            },
+            {
+                "id": "improvement_actions",
+                "type": "TEXTAREA",
+                "label": "3 actions to improve the bottleneck",
+                "required": true
+            }
+        ]
+    },
+    "24": {
+        "fields": [
+            {
+                "id": "top_channel",
+                "type": "TEXT",
+                "label": "Top-performing channel",
+                "required": true
+            },
+            {
+                "id": "top_message",
+                "type": "TEXT",
+                "label": "Top-performing message/approach",
+                "required": true
+            },
+            {
+                "id": "what_to_stop",
+                "type": "TEXTAREA",
+                "label": "What to stop (not working)",
+                "required": true
+            },
+            {
+                "id": "how_to_double_down",
+                "type": "TEXTAREA",
+                "label": "How to 2x effort on what's working",
+                "required": true
+            },
+            {
+                "id": "strategy_updated",
+                "type": "CHECKBOX",
+                "label": "Strategy document updated",
+                "required": true
+            }
+        ]
+    },
+    "25": {
+        "fields": [
+            {
+                "id": "warm_leads",
+                "type": "TEXTAREA",
+                "label": "People who showed interest but didn't buy",
+                "required": true
+            },
+            {
+                "id": "upsell_opportunities",
+                "type": "TEXTAREA",
+                "label": "Potential upsells or add-ons",
+                "required": true
+            },
+            {
+                "id": "referral_opportunities",
+                "type": "TEXTAREA",
+                "label": "Referral opportunities from happy customers",
+                "required": false
+            },
+            {
+                "id": "rock_to_pursue",
+                "type": "TEXTAREA",
+                "label": "One 'rock' you'll pursue this week",
+                "required": true
+            }
+        ]
+    },
+    "26": {
+        "fields": [
+            {
+                "id": "acquisition_workflow",
+                "type": "TEXTAREA",
+                "label": "Customer acquisition workflow: How do people find you?",
+                "required": true
+            },
+            {
+                "id": "sales_process",
+                "type": "TEXTAREA",
+                "label": "Sales process: How do people buy?",
+                "required": true
+            },
+            {
+                "id": "delivery_process",
+                "type": "TEXTAREA",
+                "label": "Delivery process: How do you fulfill?",
+                "required": true
+            },
+            {
+                "id": "operations_summary",
+                "type": "TEXTAREA",
+                "label": "One-page operations summary",
+                "required": true
+            }
+        ]
+    },
+    "27": {
+        "fields": [
+            {
+                "id": "what_worked",
+                "type": "TEXTAREA",
+                "label": "Retrospective: What worked?",
+                "required": true
+            },
+            {
+                "id": "what_didnt_work",
+                "type": "TEXTAREA",
+                "label": "What didn't work?",
+                "required": true
+            },
+            {
+                "id": "what_surprised",
+                "type": "TEXTAREA",
+                "label": "What surprised you?",
+                "required": true
+            },
+            {
+                "id": "goal_90_revenue",
+                "type": "CURRENCY",
+                "label": "90-day goal: Target revenue",
+                "required": true
+            },
+            {
+                "id": "goal_90_customers",
+                "type": "NUMBER",
+                "label": "90-day goal: Target customers",
+                "required": true
+            },
+            {
+                "id": "goal_90_product",
+                "type": "TEXTAREA",
+                "label": "90-day goal: Product/offer improvements",
+                "required": true
+            },
+            {
+                "id": "biggest_lever",
+                "type": "TEXTAREA",
+                "label": "The single biggest lever to pull next month",
+                "required": true
+            },
+            {
+                "id": "recurring_time",
+                "type": "TEXT",
+                "label": "Recurring time scheduled for side hustle",
+                "required": true,
+                "helperText": "e.g., Tues/Thurs 7-8pm"
+            }
+        ]
+    }
+}

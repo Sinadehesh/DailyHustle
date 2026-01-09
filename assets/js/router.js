@@ -1,10 +1,9 @@
 // ============================================
-// DAILY HUSTLE - Lightweight Client-Side Router
+// SIDE HUSTLE: 27-DAY LAUNCH - Router Module
 // ============================================
 
 const Router = {
     routes: {},
-    currentRoute: null,
     container: null,
 
     init(containerId = 'app') {
@@ -33,7 +32,6 @@ const Router = {
             });
         }
 
-        // Extract path params (e.g., /course/:slug)
         const pathParts = path.split('/').filter(Boolean);
         params._path = pathParts;
 
@@ -43,7 +41,6 @@ const Router = {
     async handleRoute() {
         const { path, params, pathParts } = this.getParams();
 
-        // Find matching route
         let handler = null;
         let routeParams = { ...params };
 
@@ -71,46 +68,25 @@ const Router = {
             }
         }
 
-        // Default to home if no match
         if (!handler && this.routes['/']) {
             handler = this.routes['/'];
         }
 
         if (handler) {
-            this.currentRoute = path;
-
-            // Scroll to top
             window.scrollTo(0, 0);
-
-            // Update active nav links
             this.updateActiveNav(path);
 
-            // Execute handler
             try {
                 const content = await handler(routeParams);
                 if (content && this.container) {
                     this.container.innerHTML = content;
-
-                    // Initialize any components in the new content
-                    this.initializeComponents();
-
-                    // Dispatch route change event
-                    window.dispatchEvent(new CustomEvent('routechange', {
-                        detail: { path, params: routeParams }
-                    }));
+                    App.initComponents();
+                    window.dispatchEvent(new CustomEvent('routechange', { detail: { path, params: routeParams } }));
                 }
             } catch (error) {
                 console.error('Route error:', error);
                 if (this.container) {
-                    this.container.innerHTML = `
-            <div class="section text-center">
-              <div class="container">
-                <h1>Something went wrong</h1>
-                <p class="text-muted">Please try again later.</p>
-                <a href="#/" class="btn btn-primary mt-6">Go Home</a>
-              </div>
-            </div>
-          `;
+                    this.container.innerHTML = `<div class="section text-center"><div class="container"><h1>Something went wrong</h1><p class="text-muted">Please try again.</p><a href="#/" class="btn btn-primary mt-6">Go Home</a></div></div>`;
                 }
             }
         }
@@ -121,30 +97,11 @@ const Router = {
             const href = link.getAttribute('href') || '';
             const linkPath = href.replace('#', '');
 
-            if (path === '/' && linkPath === '/') {
-                link.classList.add('active');
-            } else if (linkPath !== '/' && path.startsWith(linkPath)) {
-                link.classList.add('active');
-            } else {
-                link.classList.remove('active');
-            }
+            if (path === '/' && linkPath === '/') link.classList.add('active');
+            else if (linkPath !== '/' && path.startsWith(linkPath)) link.classList.add('active');
+            else link.classList.remove('active');
         });
-    },
-
-    initializeComponents() {
-        // Initialize accordions
-        App.initAccordions();
-
-        // Initialize dropdowns
-        App.initDropdowns();
-
-        // Re-apply animations
-        App.initAnimations();
-
-        // Re-attach event listeners for interactive elements
-        App.initInteractiveElements();
     }
 };
 
-// Export for use in other modules
 window.Router = Router;

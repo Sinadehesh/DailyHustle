@@ -1,14 +1,10 @@
 /* ============================================
-   DAILY HUSTLE - Main Stylesheet
-   Imports all CSS modules
+   SIDE HUSTLE: 27-DAY LAUNCH - Main Stylesheet
    ============================================ */
 
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
 
-/* Core */
-@import url('./tokens.css');
-@import url('./layout.css');
-@import url('./components.css');
-@import url('./components-extra.css');
-@import url('./pages.css');
+/* Import all stylesheets */
+@import 'tokens.css';
+@import 'pages.css';
