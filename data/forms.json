@@ -2,16 +2,38 @@
     "1": {
         "fields": [
             {
+                "id": "five_year_snapshot",
+                "type": "TEXTAREA",
+                "label": "Five Year Snapshot",
+                "helperText": "What did you imagine in the practice? What are people worried about, using, or doing differently in 5 years?",
+                "required": true
+            },
+            {
+                "id": "goals",
+                "type": "CHECKBOX_GROUP",
+                "label": "Why are you building a side hustle?",
+                "required": true,
+                "options": [
+                    "Extra income",
+                    "Pay off debt",
+                    "Build savings",
+                    "Fund travel or experiences",
+                    "Eventually replace my job",
+                    "Other"
+                ]
+            },
+            {
                 "id": "trend1",
                 "type": "TEXT",
                 "label": "Trend 1: What change have you noticed?",
-                "required": true,
-                "helperText": "Technology, behavior, or cultural shift"
+                "helperText": "Example: More people working remotely and needing home office setups",
+                "required": true
             },
             {
                 "id": "trend1_prediction",
                 "type": "TEXTAREA",
-                "label": "Prediction: Where does this trend lead in 2-3 years?",
+                "label": "Trend 1: Where does this lead in 2-5 years?",
+                "helperText": "Example: More demand for productivity tools, ergonomic furniture, and remote collaboration",
                 "required": true
             },
             {
@@ -23,7 +45,7 @@
             {
                 "id": "trend2_prediction",
                 "type": "TEXTAREA",
-                "label": "Prediction: Where does this trend lead?",
+                "label": "Trend 2: Where does this lead?",
                 "required": true
             },
             {
@@ -35,7 +57,7 @@
             {
                 "id": "trend3_prediction",
                 "type": "TEXTAREA",
-                "label": "Prediction: Where does this trend lead?",
+                "label": "Trend 3: Where does this lead?",
                 "required": true
             },
             {
@@ -51,142 +73,365 @@
                 "required": false
             },
             {
+                "id": "who_struggles",
+                "type": "TEXTAREA",
+                "label": "Who will struggle most because of these changes?",
+                "helperText": "Example: Small business owners who lack tech skills, parents juggling remote work and childcare",
+                "required": true
+            },
+            {
+                "id": "what_problem_worse",
+                "type": "TEXTAREA",
+                "label": "What specific problem will get worse for them?",
+                "helperText": "Example: Spending too much time on admin tasks, feeling isolated and unproductive",
+                "required": true
+            },
+            {
+                "id": "what_help_paid",
+                "type": "TEXTAREA",
+                "label": "What kind of help would they pay for?",
+                "helperText": "Example: Systems setup, coaching, templates, done-for-you services",
+                "required": true
+            },
+            {
                 "id": "opportunity1",
                 "type": "TEXTAREA",
-                "label": "Opportunity Gap 1: What need might emerge?",
+                "label": "Opportunity Direction 1",
+                "helperText": "One area where you see potential. Example: Helping freelancers set up client management systems",
                 "required": true
             },
             {
                 "id": "opportunity2",
                 "type": "TEXTAREA",
-                "label": "Opportunity Gap 2: What need might emerge?",
+                "label": "Opportunity Direction 2",
                 "required": true
             },
             {
                 "id": "opportunity3",
                 "type": "TEXTAREA",
-                "label": "Opportunity Gap 3: What need might emerge?",
+                "label": "Opportunity Direction 3",
                 "required": true
+            },
+            {
+                "id": "opportunity4",
+                "type": "TEXTAREA",
+                "label": "Opportunity Direction 4",
+                "required": false
+            },
+            {
+                "id": "opportunity5",
+                "type": "TEXTAREA",
+                "label": "Opportunity Direction 5",
+                "required": false
             },
             {
                 "id": "personal_connection",
                 "type": "TEXTAREA",
-                "label": "Personal Connection: Which gaps connect to your skills/interests?",
-                "required": false
+                "label": "Which directions connect to your skills or interests?",
+                "helperText": "Note any connections between your life and these opportunities",
+                "required": true
             }
         ]
     },
     "2": {
         "fields": [
             {
-                "id": "product_example1",
-                "type": "TEXT",
-                "label": "Product-based example 1",
-                "required": true,
-                "helperText": "Name a side hustle that sells products"
-            },
-            {
-                "id": "product_example2",
-                "type": "TEXT",
-                "label": "Product-based example 2",
-                "required": true
-            },
-            {
-                "id": "product_example3",
-                "type": "TEXT",
-                "label": "Product-based example 3",
-                "required": true
-            },
-            {
-                "id": "service_example1",
-                "type": "TEXT",
-                "label": "Service-based example 1",
-                "required": true,
-                "helperText": "Name a side hustle that sells services"
-            },
-            {
-                "id": "service_example2",
-                "type": "TEXT",
-                "label": "Service-based example 2",
-                "required": true
-            },
-            {
-                "id": "service_example3",
-                "type": "TEXT",
-                "label": "Service-based example 3",
-                "required": true
-            },
-            {
-                "id": "opportunity_model_mapping",
+                "id": "skills",
                 "type": "TEXTAREA",
-                "label": "For each Day 1 opportunity gap, which model fits best?",
+                "label": "Skills: What do you know how to do?",
+                "helperText": "Include work skills, hobbies, and random knowledge. Example: Excel, cooking, photography, fixing bikes",
                 "required": true
             },
             {
-                "id": "personal_preference",
-                "type": "RADIO",
-                "label": "Your preference:",
-                "required": true,
-                "options": [
-                    "Products (create once, sell many)",
-                    "Services (trade time for money)",
-                    "Hybrid (combination)",
-                    "Unsure yet"
-                ]
+                "id": "access",
+                "type": "TEXTAREA",
+                "label": "Access: What communities, groups, or networks do you belong to?",
+                "helperText": "Example: Parent groups, professional networks, online forums, student communities, languages you speak",
+                "required": true
+            },
+            {
+                "id": "tools",
+                "type": "TEXTAREA",
+                "label": "Tools: What equipment, software, or resources do you already have?",
+                "helperText": "Example: Camera, design software, car, large garage, spare room, professional licenses",
+                "required": true
+            },
+            {
+                "id": "wins",
+                "type": "TEXTAREA",
+                "label": "Wins: What have people thanked you for or asked your help with?",
+                "helperText": "Example: Friends always ask me to edit their photos, coworkers ask me to explain spreadsheets",
+                "required": true
+            },
+            {
+                "id": "top_assets",
+                "type": "TEXTAREA",
+                "label": "Your 5 to 8 strongest assets (circle the best from above)",
+                "helperText": "The ones that could create value for others",
+                "required": true
+            },
+            {
+                "id": "money_tree_1",
+                "type": "TEXT",
+                "label": "Money Tree 1: Name this asset source",
+                "helperText": "Example: Photography skills",
+                "required": true
+            },
+            {
+                "id": "money_tree_1_value",
+                "type": "TEXTAREA",
+                "label": "Why is this valuable to someone?",
+                "helperText": "Example: People need photos but lack time or skill to take good ones themselves",
+                "required": true
+            },
+            {
+                "id": "seed_1a",
+                "type": "TEXT",
+                "label": "Idea Seed 1A from this tree",
+                "helperText": "Example: Event photography for small businesses",
+                "required": true
+            },
+            {
+                "id": "seed_1b",
+                "type": "TEXT",
+                "label": "Idea Seed 1B from this tree",
+                "helperText": "Example: Product photography for Etsy sellers",
+                "required": true
+            },
+            {
+                "id": "money_tree_2",
+                "type": "TEXT",
+                "label": "Money Tree 2: Name this asset source",
+                "required": true
+            },
+            {
+                "id": "money_tree_2_value",
+                "type": "TEXTAREA",
+                "label": "Why is this valuable to someone?",
+                "required": true
+            },
+            {
+                "id": "seed_2a",
+                "type": "TEXT",
+                "label": "Idea Seed 2A from this tree",
+                "required": true
+            },
+            {
+                "id": "seed_2b",
+                "type": "TEXT",
+                "label": "Idea Seed 2B from this tree",
+                "required": true
+            },
+            {
+                "id": "money_tree_3",
+                "type": "TEXT",
+                "label": "Money Tree 3: Name this asset source",
+                "required": true
+            },
+            {
+                "id": "seed_3a",
+                "type": "TEXT",
+                "label": "Idea Seed 3A from this tree",
+                "required": true
+            },
+            {
+                "id": "seed_3b",
+                "type": "TEXT",
+                "label": "Idea Seed 3B from this tree",
+                "required": false
+            },
+            {
+                "id": "money_tree_4",
+                "type": "TEXT",
+                "label": "Money Tree 4: Name this asset source",
+                "required": false
+            },
+            {
+                "id": "seed_4a",
+                "type": "TEXT",
+                "label": "Idea Seed 4A from this tree",
+                "required": false
+            },
+            {
+                "id": "money_tree_5",
+                "type": "TEXT",
+                "label": "Money Tree 5: Name this asset source",
+                "required": false
+            },
+            {
+                "id": "seed_5a",
+                "type": "TEXT",
+                "label": "Idea Seed 5A from this tree",
+                "required": false
+            },
+            {
+                "id": "trend_overlap",
+                "type": "TEXTAREA",
+                "label": "Which idea seeds connect to your Day 1 opportunity directions?",
+                "helperText": "Star any seeds that match both an asset and a trend",
+                "required": true
+            },
+            {
+                "id": "total_seeds",
+                "type": "NUMBER",
+                "label": "Total idea seeds generated today",
+                "helperText": "Aim for 10 to 20",
+                "required": true
             }
         ]
     },
     "3": {
         "fields": [
             {
+                "id": "methods_used",
+                "type": "CHECKBOX_GROUP",
+                "label": "Which methods did you use today?",
+                "required": true,
+                "options": [
+                    "Brainstorm",
+                    "Borrow",
+                    "Steal"
+                ]
+            },
+            {
                 "id": "brainstorm_ideas",
                 "type": "TEXTAREA",
-                "label": "Brainstorm: 10 ideas based on your skills and interests",
-                "required": true,
-                "helperText": "List each idea on a new line"
+                "label": "Brainstorm ideas: List 8 to 12 problems or frustrations you could solve",
+                "helperText": "Each problem is an idea. Example: People hate meal planning, parents need babysitter backup, freelancers lose receipts",
+                "required": true
             },
             {
-                "id": "borrowed_ideas",
+                "id": "borrow_1_source",
+                "type": "TEXT",
+                "label": "Borrow 1: What successful side hustle did you find?",
+                "helperText": "Example: Local dog walking service",
+                "required": true
+            },
+            {
+                "id": "borrow_1_adapt",
+                "type": "TEXT",
+                "label": "How would you adapt it for a different audience?",
+                "helperText": "Example: Cat sitting for apartment dwellers in my area",
+                "required": true
+            },
+            {
+                "id": "borrow_2_source",
+                "type": "TEXT",
+                "label": "Borrow 2: What successful side hustle did you find?",
+                "required": true
+            },
+            {
+                "id": "borrow_2_adapt",
+                "type": "TEXT",
+                "label": "How would you adapt it?",
+                "required": true
+            },
+            {
+                "id": "borrow_3_source",
+                "type": "TEXT",
+                "label": "Borrow 3: What successful side hustle did you find?",
+                "required": true
+            },
+            {
+                "id": "borrow_3_adapt",
+                "type": "TEXT",
+                "label": "How would you adapt it?",
+                "required": true
+            },
+            {
+                "id": "steal_1_format",
+                "type": "TEXT",
+                "label": "Steal 1: What proven offer format did you identify?",
+                "helperText": "Example: Online course, membership, done-for-you service, templates",
+                "required": true
+            },
+            {
+                "id": "steal_1_apply",
+                "type": "TEXT",
+                "label": "How would you apply this format?",
+                "helperText": "Example: A course teaching home organization using my decluttering method",
+                "required": true
+            },
+            {
+                "id": "steal_1_differentiate",
+                "type": "TEXT",
+                "label": "How would you differentiate?",
+                "helperText": "Example: Focus on parents with small apartments, include video walkthroughs",
+                "required": true
+            },
+            {
+                "id": "steal_2_format",
+                "type": "TEXT",
+                "label": "Steal 2: What proven offer format?",
+                "required": true
+            },
+            {
+                "id": "steal_2_apply",
+                "type": "TEXT",
+                "label": "How would you apply it?",
+                "required": true
+            },
+            {
+                "id": "steal_3_format",
+                "type": "TEXT",
+                "label": "Steal 3: What proven offer format?",
+                "required": false
+            },
+            {
+                "id": "steal_3_apply",
+                "type": "TEXT",
+                "label": "How would you apply it?",
+                "required": false
+            },
+            {
+                "id": "mashups",
                 "type": "TEXTAREA",
-                "label": "Borrowed: 5 ideas adapted from others' success",
-                "required": true,
-                "helperText": "What's working elsewhere that you could adapt?"
+                "label": "Mashups: What 2 to 3 weird combinations emerged?",
+                "helperText": "Example: Photography plus meal planning equals food styling tutorials for home cooks",
+                "required": true
             },
             {
-                "id": "combination_ideas",
+                "id": "total_ideas",
+                "type": "NUMBER",
+                "label": "Total ideas generated today",
+                "helperText": "Count all ideas from all methods. Aim for at least 15",
+                "required": true
+            },
+            {
+                "id": "shortlist_1",
+                "type": "TEXT",
+                "label": "Shortlist Idea 1 (gut favorite)",
+                "required": true
+            },
+            {
+                "id": "shortlist_1_why",
                 "type": "TEXTAREA",
-                "label": "Combinations: 3 weird mashups",
-                "required": true,
-                "helperText": "Combine random ideas—what emerges?"
-            },
-            {
-                "id": "starred_idea1",
-                "type": "TEXT",
-                "label": "Starred Idea 1 (gut favorite)",
+                "label": "Why might this work?",
+                "helperText": "2 sentences on why this has potential",
                 "required": true
             },
             {
-                "id": "starred_idea2",
+                "id": "shortlist_2",
                 "type": "TEXT",
-                "label": "Starred Idea 2",
+                "label": "Shortlist Idea 2",
                 "required": true
             },
             {
-                "id": "starred_idea3",
-                "type": "TEXT",
-                "label": "Starred Idea 3",
+                "id": "shortlist_2_why",
+                "type": "TEXTAREA",
+                "label": "Why might this work?",
                 "required": true
             },
             {
-                "id": "starred_idea4",
+                "id": "shortlist_3",
                 "type": "TEXT",
-                "label": "Starred Idea 4",
+                "label": "Shortlist Idea 3",
                 "required": true
             },
             {
-                "id": "starred_idea5",
-                "type": "TEXT",
-                "label": "Starred Idea 5",
+                "id": "shortlist_3_why",
+                "type": "TEXTAREA",
+                "label": "Why might this work?",
                 "required": true
             }
         ]
@@ -194,70 +439,238 @@
     "4": {
         "fields": [
             {
-                "id": "idea1_resources",
-                "type": "TEXTAREA",
-                "label": "Idea 1: Required resources (time, money, skills)",
+                "id": "clarity_first_pick",
+                "type": "TEXT",
+                "label": "Clarity Check: If you had to start one idea tomorrow, which would you pick?",
+                "helperText": "Your gut reaction before analysis",
                 "required": true
             },
             {
-                "id": "idea1_obstacles",
-                "type": "TEXTAREA",
-                "label": "Idea 1: Potential obstacles and risks",
+                "id": "clarity_drop",
+                "type": "TEXT",
+                "label": "If you had to drop one idea right now, which would go?",
                 "required": true
             },
             {
-                "id": "idea1_upside",
+                "id": "clarity_fears",
                 "type": "TEXTAREA",
-                "label": "Idea 1: Potential upside (income, learning, connections)",
+                "label": "What are you afraid of with each idea?",
+                "helperText": "One fear per idea. Example: Idea 1 fear is no one will pay, Idea 2 fear is it will take too long",
                 "required": true
             },
             {
-                "id": "idea2_resources",
-                "type": "TEXTAREA",
-                "label": "Idea 2: Required resources",
+                "id": "idea1_name",
+                "type": "TEXT",
+                "label": "Idea 1: Name",
                 "required": true
             },
             {
-                "id": "idea2_obstacles",
+                "id": "idea1_description",
                 "type": "TEXTAREA",
-                "label": "Idea 2: Potential obstacles",
+                "label": "Idea 1: One sentence description",
+                "helperText": "Example: Weekly meal planning service for busy parents who hate cooking decisions",
                 "required": true
             },
             {
-                "id": "idea2_upside",
-                "type": "TEXTAREA",
-                "label": "Idea 2: Potential upside",
+                "id": "idea1_startup_days",
+                "type": "NUMBER",
+                "label": "Idea 1: Estimated days to launch first version",
+                "helperText": "Example: 7",
                 "required": true
             },
             {
-                "id": "idea3_resources",
-                "type": "TEXTAREA",
-                "label": "Idea 3: Required resources",
+                "id": "idea1_startup_cost",
+                "type": "NUMBER",
+                "label": "Idea 1: Estimated startup cost in dollars",
+                "helperText": "Example: 50",
                 "required": true
             },
             {
-                "id": "idea3_obstacles",
-                "type": "TEXTAREA",
-                "label": "Idea 3: Potential obstacles",
+                "id": "idea1_skill_gap",
+                "type": "SELECT",
+                "label": "Idea 1: Skill gap",
+                "required": true,
+                "options": [
+                    "None",
+                    "Small",
+                    "Medium",
+                    "Large"
+                ]
+            },
+            {
+                "id": "idea1_complexity",
+                "type": "SELECT",
+                "label": "Idea 1: Complexity",
+                "required": true,
+                "options": [
+                    "Low",
+                    "Medium",
+                    "High"
+                ]
+            },
+            {
+                "id": "idea1_speed_to_sale",
+                "type": "SELECT",
+                "label": "Idea 1: Speed to first sale",
+                "required": true,
+                "options": [
+                    "1-3 days",
+                    "1 week",
+                    "2-4 weeks",
+                    "More than 1 month"
+                ]
+            },
+            {
+                "id": "idea1_repeat",
+                "type": "SELECT",
+                "label": "Idea 1: Repeat potential",
+                "required": true,
+                "options": [
+                    "One-time",
+                    "Occasional repeat",
+                    "Subscription/recurring"
+                ]
+            },
+            {
+                "id": "idea1_opportunity_score",
+                "type": "NUMBER",
+                "label": "Idea 1: Opportunity score (1-10)",
+                "helperText": "How good is the upside? 10 is best",
                 "required": true
             },
             {
-                "id": "idea3_upside",
-                "type": "TEXTAREA",
-                "label": "Idea 3: Potential upside",
+                "id": "idea1_obstacle_score",
+                "type": "NUMBER",
+                "label": "Idea 1: Obstacle score (1-10)",
+                "helperText": "How hard are the obstacles? 10 is hardest",
                 "required": true
             },
             {
-                "id": "idea4_summary",
-                "type": "TEXTAREA",
-                "label": "Idea 4: Resources / Obstacles / Upside summary",
-                "required": false
+                "id": "idea2_name",
+                "type": "TEXT",
+                "label": "Idea 2: Name",
+                "required": true
             },
             {
-                "id": "idea5_summary",
+                "id": "idea2_description",
                 "type": "TEXTAREA",
-                "label": "Idea 5: Resources / Obstacles / Upside summary",
-                "required": false
+                "label": "Idea 2: One sentence description",
+                "required": true
+            },
+            {
+                "id": "idea2_startup_days",
+                "type": "NUMBER",
+                "label": "Idea 2: Estimated days to launch",
+                "required": true
+            },
+            {
+                "id": "idea2_startup_cost",
+                "type": "NUMBER",
+                "label": "Idea 2: Estimated startup cost",
+                "required": true
+            },
+            {
+                "id": "idea2_skill_gap",
+                "type": "SELECT",
+                "label": "Idea 2: Skill gap",
+                "required": true,
+                "options": [
+                    "None",
+                    "Small",
+                    "Medium",
+                    "Large"
+                ]
+            },
+            {
+                "id": "idea2_speed_to_sale",
+                "type": "SELECT",
+                "label": "Idea 2: Speed to first sale",
+                "required": true,
+                "options": [
+                    "1-3 days",
+                    "1 week",
+                    "2-4 weeks",
+                    "More than 1 month"
+                ]
+            },
+            {
+                "id": "idea2_opportunity_score",
+                "type": "NUMBER",
+                "label": "Idea 2: Opportunity score (1-10)",
+                "required": true
+            },
+            {
+                "id": "idea2_obstacle_score",
+                "type": "NUMBER",
+                "label": "Idea 2: Obstacle score (1-10)",
+                "required": true
+            },
+            {
+                "id": "idea3_name",
+                "type": "TEXT",
+                "label": "Idea 3: Name",
+                "required": true
+            },
+            {
+                "id": "idea3_description",
+                "type": "TEXTAREA",
+                "label": "Idea 3: One sentence description",
+                "required": true
+            },
+            {
+                "id": "idea3_startup_days",
+                "type": "NUMBER",
+                "label": "Idea 3: Estimated days to launch",
+                "required": true
+            },
+            {
+                "id": "idea3_startup_cost",
+                "type": "NUMBER",
+                "label": "Idea 3: Estimated startup cost",
+                "required": true
+            },
+            {
+                "id": "idea3_opportunity_score",
+                "type": "NUMBER",
+                "label": "Idea 3: Opportunity score (1-10)",
+                "required": true
+            },
+            {
+                "id": "idea3_obstacle_score",
+                "type": "NUMBER",
+                "label": "Idea 3: Obstacle score (1-10)",
+                "required": true
+            },
+            {
+                "id": "winner",
+                "type": "RADIO",
+                "label": "Which idea wins today?",
+                "required": true,
+                "options": [
+                    "Idea 1",
+                    "Idea 2",
+                    "Idea 3"
+                ]
+            },
+            {
+                "id": "why_wins",
+                "type": "TEXTAREA",
+                "label": "Why does this idea win?",
+                "helperText": "What made the difference in your evaluation",
+                "required": true
+            },
+            {
+                "id": "top_concern",
+                "type": "TEXTAREA",
+                "label": "What concerns you most about your winner?",
+                "required": true
+            },
+            {
+                "id": "still_need_learn",
+                "type": "TEXTAREA",
+                "label": "What do you still need to learn before committing?",
+                "helperText": "Questions to answer before running numbers tomorrow",
+                "required": true
             }
         ]
     },

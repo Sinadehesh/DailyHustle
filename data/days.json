@@ -3,125 +3,201 @@
         "day": 1,
         "title": "Predict the Future",
         "week": 1,
-        "goal": "Identify emerging trends and opportunities you could capitalize on",
-        "timeEstimate": "25-35 min",
+        "goal": "Identify 3 to 5 opportunity directions by looking at where the world is heading",
+        "timeEstimate": "35-45 min",
+        "hook": "The best side hustles solve tomorrow's problems. Today you learn to see what others miss.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Before you generate specific business ideas, you need to understand where the world is heading. The most successful side hustles aren't built on what's popular today—they're built on what's becoming popular tomorrow.\n\nToday you'll practice futures thinking: looking at current trends in technology, behavior, and culture, then extrapolating where they lead. This isn't about predicting the exact future—it's about noticing patterns that others miss.\n\nThe goal isn't to be right about everything. It's to develop a list of potential opportunity spaces where your skills and interests might intersect with growing demand.\n\nPay attention to what's changing in your industry, your community, and your daily life. The seeds of your side hustle might already be visible if you know where to look."
+            "content": "Most people start with themselves. What am I good at? What do I like? Those questions matter, but they come later. Today you start with the world.\n\nThe side hustles that grow fastest are the ones that ride a wave. They meet a need that is getting bigger, not smaller. They help people with problems that are becoming more common, not less. If you pick the right wave, everything else gets easier. Marketing is easier because people are already looking for help. Sales are easier because the pain is fresh. Growth is easier because the trend is on your side.\n\nSo before you brainstorm business ideas, you are going to brainstorm changes. What is shifting in the world around you? What do you notice that most people ignore? What problems are getting worse? What new behaviors are spreading?\n\nYou do not need to be a futurist. You just need to pay attention. Think about the past two or three years. What surprised you? What frustrated you? What did you start doing that you did not do before? What did your friends or coworkers start doing? These observations are raw material.\n\nToday is not about choosing one idea. It is about opening your eyes. You will end the day with 3 to 5 opportunity directions, not a final decision. That comes later. Right now, the goal is to see more clearly where the world is going, so you can position yourself to help."
+        },
+        "practice": {
+            "title": "The Five Year Snapshot (3-5 minutes)",
+            "content": "Close your eyes for 30 seconds. Take a few slow breaths.\n\nNow imagine yourself five years from now. You are reading the news, scrolling your phone, or talking to a friend. What are people worried about? What new technologies are they using? What jobs have changed? What new problems have appeared?\n\nOpen your eyes. Grab a piece of paper or open a notes app. Set a timer for 3 minutes. Write down everything you imagined, even if it feels obvious or strange. Do not edit yourself. Just write.\n\nWhen the timer ends, circle the two or three observations that feel most real to you. These are your starting points for today."
         },
         "mission": [
             {
-                "task": "List 5 trends you've noticed in the past year (technology, behavior, culture)",
+                "task": "Complete the Five Year Snapshot practice",
+                "time": "5 min"
+            },
+            {
+                "task": "List 5 changes or trends you have noticed in the past 1 to 3 years",
                 "time": "10 min"
             },
             {
-                "task": "For each trend, write one prediction about where it leads in 2-3 years",
+                "task": "For each trend, write where you think it leads in the next 2 to 5 years",
                 "time": "10 min"
             },
             {
-                "task": "Identify 3 potential opportunity gaps these trends might create",
-                "time": "10 min"
+                "task": "Identify who will struggle most because of these changes",
+                "time": "5 min"
             },
             {
-                "task": "Note any personal skills or interests that connect to these gaps",
+                "task": "List what kind of help those people might pay for",
+                "time": "5 min"
+            },
+            {
+                "task": "Write down 3 to 5 opportunity directions that interest you",
+                "time": "5 min"
+            },
+            {
+                "task": "Note any personal skills or interests that connect to these directions",
                 "time": "5 min"
             }
         ],
-        "commonMistakes": "Don't overthink your predictions. You're not trying to write a perfect forecast—you're warming up your opportunity-spotting muscles. Quantity matters more than precision right now.",
-        "doneMeans": "You have at least 5 trends documented, 5 predictions written, and 3 potential opportunity areas identified."
+        "commonMistakes": "Trying to predict the exact future. You are not writing a research report. You are noticing patterns. Rough is fine.\n\nOnly thinking about technology. Trends also happen in behavior, culture, work, health, relationships, and money. Look wider.\n\nCensoring yourself. If an observation feels too obvious or too weird, write it down anyway. Obvious often means overlooked.\n\nLooking for the one perfect trend. You are generating options. Aim for 5 trends, not 1.\n\nForgetting your own life. The best observations often come from problems you have personally noticed or experienced.",
+        "doneMeans": "You have at least 5 trends documented with predictions, and 3 to 5 opportunity directions written down with notes on who needs help.",
+        "reviewCTA": "Want feedback on your opportunity directions? Submit your Day 1 workbook for review and get suggestions within 48 hours."
     },
     {
         "day": 2,
         "title": "Learn How Money Grows on Trees",
         "week": 1,
-        "goal": "Understand the different ways side hustles generate income",
-        "timeEstimate": "20-30 min",
+        "goal": "Discover your hidden assets and generate 10 to 20 idea seeds from them",
+        "timeEstimate": "35-45 min",
+        "hook": "You already have more than you think. Today you inventory your unfair advantages and turn them into hustle ideas.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Not all side hustles work the same way financially. Today you'll learn the fundamental business models that generate side income, so you can evaluate ideas more effectively.\n\nThere are essentially three ways to make money: sell a product (physical or digital), sell a service (your time and expertise), or earn through other means (affiliate, advertising, licensing). Each has trade-offs in terms of startup cost, time investment, and scalability.\n\nProducts can be sold while you sleep but require upfront creation. Services start fast but trade time for money. Hybrid models exist but add complexity.\n\nUnderstanding these models now will help you evaluate your ideas more rigorously in the coming days. Don't commit to a model yet—just build awareness of your options."
+            "content": "Almost everyone underestimates what they already have. When asked what assets they bring to a side hustle, most people shrug and say nothing special. But that is almost never true.\n\nYou have skills, even if they feel ordinary to you. You have access to communities, tools, or information that others lack. You have experiences that taught you things. You have connections. You have routines and habits that could be valuable. These are your money trees. They are sources of value that already exist in your life.\n\nToday you will inventory those trees. Then you will shake them to see what falls out.\n\nThink about what people already ask you for help with. Think about what you know how to do that others find confusing. Think about where you spend your time and what insider knowledge that gives you. Think about what tools or equipment you already own. Think about what communities you belong to and what access that creates.\n\nNone of these assets are business ideas on their own. But combined with the opportunity directions from yesterday, they become seeds. Each seed is a possible side hustle waiting to be tested.\n\nBy the end of today, you will have a list of 10 to 20 idea seeds. Not polished ideas. Not business plans. Just seeds. Some will grow. Some will not. But you need volume before you can choose."
+        },
+        "practice": {
+            "title": "The Asset Inventory (4-6 minutes)",
+            "content": "Set a timer for 5 minutes. You are going to write as fast as you can without stopping.\n\nDivide your paper or screen into four sections:\n\n1. Skills: Things you know how to do. Include obvious ones. Include weird ones. Include things you do at work and things you do at home.\n\n2. Access: Communities, groups, workplaces, forums, or networks you belong to. Languages you speak. Locations you know well.\n\n3. Tools: Equipment, software, spaces, or resources you already own or have access to.\n\n4. Wins: Times people thanked you, asked for your help, or paid you for something. Compliments you have received.\n\nWrite until the timer ends. Do not stop to judge or rank. Just list everything you can think of."
         },
         "mission": [
             {
-                "task": "Write down 3 examples of product-based side hustles you've seen",
+                "task": "Complete the Asset Inventory practice",
+                "time": "6 min"
+            },
+            {
+                "task": "Review your list and circle the 5 to 8 strongest assets",
                 "time": "5 min"
             },
             {
-                "task": "Write down 3 examples of service-based side hustles",
-                "time": "5 min"
-            },
-            {
-                "task": "For each of your Day 1 opportunity gaps, identify which model fits best",
+                "task": "For each circled asset, write why it could be valuable to someone",
                 "time": "10 min"
             },
             {
-                "task": "Note your personal preference: do you lean toward products or services?",
+                "task": "Pick your top 3 to 5 money trees and name them",
                 "time": "5 min"
+            },
+            {
+                "task": "For each money tree, generate 2 to 4 hustle idea seeds",
+                "time": "10 min"
+            },
+            {
+                "task": "Cross-reference with your Day 1 opportunity directions",
+                "time": "5 min"
+            },
+            {
+                "task": "Star any idea seeds that connect to a trend and an asset",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't fall into the trap of thinking one model is 'better' than another. The best model is the one that matches your skills, available time, and goals.",
-        "doneMeans": "You can clearly distinguish between product and service models, and you've mapped your opportunity areas to potential business models."
+        "commonMistakes": "Saying you have nothing special. Everyone has assets. You just need to look.\n\nOnly listing professional skills. Hobbies, life experiences, and random knowledge count too.\n\nSkipping the wins section. What people already asked you for is the strongest signal of value.\n\nNot generating enough seeds. Aim for 10 to 20. Quantity now, quality later.\n\nJudging ideas while generating them. Save judgment for Day 4. Right now just list.",
+        "doneMeans": "You have an inventory of your assets, 3 to 5 named money trees, and 10 to 20 idea seeds generated from them.",
+        "reviewCTA": "Want help identifying your strongest money trees? Submit your Day 2 workbook for personalized feedback."
     },
     {
         "day": 3,
         "title": "Brainstorm, Borrow, or Steal Ideas",
         "week": 1,
-        "goal": "Generate a large quantity of potential side hustle ideas",
-        "timeEstimate": "35-45 min",
+        "goal": "Generate at least 15 candidate ideas and narrow to a shortlist of 3",
+        "timeEstimate": "40-50 min",
+        "hook": "Forget originality. The best ideas are borrowed, mixed, and adapted. Today you fill the pipeline.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Today is about quantity, not quality. You're going to generate as many side hustle ideas as possible using three different approaches.\n\nFirst, pure brainstorming: what could you create or offer based on your skills, interests, and the opportunities you identified? Let your mind wander without judging the ideas.\n\nSecond, borrowing: what's working for others that you could adapt? Look at successful side hustles in adjacent industries or different markets. Adaptation is legitimate innovation.\n\nThird, combination: what happens when you mix two unrelated concepts? Some of the best ideas come from connecting things that don't obviously belong together.\n\nDon't filter yourself. Bad ideas often lead to good ones. The goal is volume—you'll evaluate and filter in the coming days."
+            "content": "Most people get stuck looking for the perfect idea. They want something completely original. They want it to feel right immediately. They want to be sure before they start.\n\nThat is backwards. The way to find good ideas is to generate many ideas first, then filter. You cannot evaluate options you have not created. So today is about volume.\n\nYou will use three methods:\n\nBrainstorm. Start with problems, frustrations, and requests you have noticed. What annoys people? What takes too long? What is confusing? What do people complain about? What do they wish existed? Turn each problem into a possible solution you could offer.\n\nBorrow. Look at what is already working. Find successful side hustles in other industries, other cities, or other audiences. Ask yourself: could I adapt this model for a different group? Could I do this locally? Could I do this for a niche I understand?\n\nSteal. This is ethical imitation. Find a proven offer structure and replicate it with your own spin. You are not copying the work. You are copying the format. Then you differentiate with your unique voice, audience, or angle.\n\nDo not filter while you generate. That kills momentum. Write down every idea, even the bad ones. You will evaluate later."
+        },
+        "practice": {
+            "title": "The Idea Sprint (5-7 minutes)",
+            "content": "Set a timer for 6 minutes. You are going to generate ideas without stopping.\n\nStart with brainstorm mode (2 minutes). Write every problem, frustration, or request you can think of. Turn each one into a possible side hustle. Write fast.\n\nSwitch to borrow mode (2 minutes). Think of side hustles you have seen succeed. Write down how you could adapt each one for a different audience or market.\n\nSwitch to steal mode (2 minutes). Think of offer formats that work. Courses. Consulting. Templates. Rental. Subscription. Write down how you could apply each format to something you know.\n\nWhen the timer ends, count your ideas. If you have fewer than 12, set another 3 minute timer and keep going."
         },
         "mission": [
             {
-                "task": "Brainstorm: Write 10 ideas based purely on your own skills and interests",
-                "time": "10 min"
+                "task": "Complete the Idea Sprint practice",
+                "time": "7 min"
             },
             {
-                "task": "Borrow: Find 5 successful side hustles online and adapt them to your context",
-                "time": "15 min"
-            },
-            {
-                "task": "Combine: Pick 3 random combinations from your list—what weird ideas emerge?",
-                "time": "10 min"
-            },
-            {
-                "task": "Review your full list and star your top 5 favorites (gut feeling only)",
+                "task": "Review and expand your brainstorm list to at least 8 ideas",
                 "time": "5 min"
-            }
-        ],
-        "commonMistakes": "The biggest mistake is self-censoring. 'That's stupid' or 'Someone's already doing that' kills creativity. Write everything down. Filter later.",
-        "doneMeans": "You have at least 15 ideas documented and 5 starred as potential favorites."
-    },
-    {
-        "day": 4,
-        "title": "Weigh the Obstacles and Opportunities of Each Idea",
-        "week": 1,
-        "goal": "Evaluate your ideas for feasibility and potential",
-        "timeEstimate": "30-40 min",
-        "lesson": {
-            "title": "Why Today Matters",
-            "content": "Ideas are cheap. Execution is expensive. Today you'll start filtering your idea list by honestly assessing what each idea requires and what it might return.\n\nFor each of your top ideas, consider: What's the startup cost (money and time)? What skills do you already have? What would you need to learn? Who would pay for this? How big is that market?\n\nAlso consider obstacles: What could go wrong? What's the competition like? What would make this hard for you specifically?\n\nThe goal isn't to find the 'perfect' idea—that doesn't exist. You're looking for ideas where the opportunity outweighs the obstacles given your specific situation."
-        },
-        "mission": [
+            },
             {
-                "task": "Take your 5 starred ideas from Day 3",
+                "task": "Find 3 successful side hustles online and write how you could borrow them",
+                "time": "10 min"
+            },
+            {
+                "task": "Identify 3 proven offer formats and write how you could steal ethically",
+                "time": "8 min"
+            },
+            {
+                "task": "Combine random ideas from your list to create 2 to 3 mashups",
+                "time": "5 min"
+            },
+            {
+                "task": "Count your total ideas, aim for at least 15",
                 "time": "2 min"
             },
             {
-                "task": "For each idea, list the required startup resources (time, money, skills)",
-                "time": "15 min"
+                "task": "Use gut feeling to shortlist your top 3 ideas",
+                "time": "5 min"
             },
             {
-                "task": "For each idea, list the potential obstacles and risks",
-                "time": "10 min"
-            },
-            {
-                "task": "For each idea, estimate the potential upside (income, learning, connections)",
-                "time": "10 min"
+                "task": "Write 2 sentences on why each shortlisted idea might work",
+                "time": "5 min"
             }
         ],
-        "commonMistakes": "Don't underestimate obstacles or overestimate opportunities. Be realistic. Also don't over-analyze—you're making educated guesses, not certainties.",
-        "doneMeans": "Each of your 5 ideas has documented resources required, obstacles, and potential upside."
+        "commonMistakes": "Judging while generating. Save evaluation for tomorrow. Today is about quantity.\n\nWaiting for inspiration. Inspiration comes from motion. Start writing and ideas will follow.\n\nThinking borrowed ideas are cheating. Every business is built on existing models. Adaptation is innovation.\n\nStopping at 5 or 10 ideas. Push past the obvious. The best ideas often come after the first wave.\n\nChoosing a final idea today. You are shortlisting, not deciding. The real evaluation happens on Day 4.",
+        "doneMeans": "You have at least 15 documented ideas using all three methods, and a shortlist of 3 favorites with brief notes on why each could work.",
+        "reviewCTA": "Want a second opinion on your shortlist? Submit your Day 3 workbook for feedback on which ideas have the most potential."
+    },
+    {
+        "day": 4,
+        "title": "Weigh the Obstacles and Opportunities",
+        "week": 1,
+        "goal": "Evaluate your shortlist and choose 1 or 2 ideas to test with numbers tomorrow",
+        "timeEstimate": "40-50 min",
+        "hook": "Every idea has trade-offs. Today you see them clearly so you can choose wisely.",
+        "lesson": {
+            "title": "Why Today Matters",
+            "content": "You have a shortlist of 3 ideas. They all seem interesting. But they are not equal. Some will be easier to start. Some will be faster to validate. Some will have more upside. Some will have hidden obstacles that trip you up later.\n\nToday you evaluate. You look at each idea honestly and ask two questions: What could go wrong? What could go right?\n\nObstacles include: time required to start, upfront money needed, skills you lack, dependence on other people, legal or platform risks, and complexity. The more obstacles, the harder the path.\n\nOpportunities include: speed to first sale, clarity of the customer pain, potential for repeat buyers, pricing power, low delivery time, and room to grow. The more opportunities, the better the potential.\n\nYou will score each idea on both sides. Then you will compare. The goal is not to find a perfect idea. There is no such thing. The goal is to find the idea with the best balance given your situation.\n\nBy the end of today, you will have a clear winner or a clear top two. Tomorrow you will run the numbers on that winner to see if the math makes sense."
+        },
+        "practice": {
+            "title": "The Decision Clarity Check (2-4 minutes)",
+            "content": "Before you start scoring, take a moment to clear your head.\n\nSit quietly for 30 seconds. Notice any attachment you have to a particular idea. Notice any resistance to ideas that feel harder. These biases are normal, but you want to see them so they do not control you.\n\nNow ask yourself:\n\n1. If I had to start one of these ideas tomorrow with no more research, which would I pick? Write it down.\n\n2. If I had to drop one idea right now, which would go? Write it down.\n\n3. What am I afraid of with each idea? Write one fear per idea.\n\nThese answers are data. They reveal your intuition. Now you will check that intuition against a structured evaluation."
+        },
+        "mission": [
+            {
+                "task": "Complete the Decision Clarity Check",
+                "time": "4 min"
+            },
+            {
+                "task": "Write a one sentence description for each of your 3 shortlisted ideas",
+                "time": "5 min"
+            },
+            {
+                "task": "For each idea, estimate startup time, startup cost, and skill gap",
+                "time": "10 min"
+            },
+            {
+                "task": "For each idea, rate complexity, speed to first sale, and repeat potential",
+                "time": "10 min"
+            },
+            {
+                "task": "Score each idea: opportunity rating 1 to 10, obstacle rating 1 to 10",
+                "time": "5 min"
+            },
+            {
+                "task": "Compare scores and choose your top 1 or 2 ideas",
+                "time": "5 min"
+            },
+            {
+                "task": "Write why your winner wins and what concerns you most about it",
+                "time": "5 min"
+            }
+        ],
+        "commonMistakes": "Letting excitement override analysis. The fun idea is not always the smart idea.\n\nIgnoring obstacles because you want the idea to work. Obstacles do not disappear when you ignore them.\n\nOverweighting obstacles because of fear. Many obstacles are smaller than they feel.\n\nNot being honest about skill gaps. If you lack a critical skill, factor in the time to learn it.\n\nChoosing based on complexity alone. Simple ideas are good, but upside matters too.\n\nTrying to pick a final idea today. You are narrowing to 1 or 2 for tomorrow's numbers test. The final decision comes after you run the math.",
+        "doneMeans": "Your 3 ideas are scored on obstacles and opportunities, and you have chosen 1 or 2 winners with written reasoning.",
+        "reviewCTA": "Not sure if you are weighing obstacles fairly? Submit your Day 4 workbook for objective feedback on your evaluation."
     },
     {
         "day": 5,
