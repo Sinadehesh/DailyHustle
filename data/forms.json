@@ -264,75 +264,190 @@
     "5": {
         "fields": [
             {
-                "id": "idea1_price",
-                "type": "CURRENCY",
-                "label": "Idea 1: Estimated price per sale",
+                "id": "idea_name",
+                "type": "TEXT",
+                "label": "Chosen idea name",
+                "helperText": "The idea you selected from Day 4. Example: Resume Review Service",
                 "required": true
             },
             {
-                "id": "idea1_sales_month1",
-                "type": "NUMBER",
-                "label": "Idea 1: Sales in Month 1",
+                "id": "offer_name",
+                "type": "TEXT",
+                "label": "Offer name",
+                "helperText": "What you will call this when you sell it. Example: The 24-Hour Resume Fix",
                 "required": true
             },
             {
-                "id": "idea1_sales_month6",
-                "type": "NUMBER",
-                "label": "Idea 1: Sales by Month 6",
+                "id": "who_pays",
+                "type": "TEXT",
+                "label": "Who pays",
+                "helperText": "Describe the person who would pay for this. Example: Job seekers with 3 to 10 years of experience",
                 "required": true
             },
             {
-                "id": "idea1_costs",
-                "type": "CURRENCY",
-                "label": "Idea 1: Monthly costs",
-                "required": true
-            },
-            {
-                "id": "idea1_profit",
-                "type": "CURRENCY",
-                "label": "Idea 1: Estimated monthly profit (Month 6)",
-                "required": true
-            },
-            {
-                "id": "idea2_price",
-                "type": "CURRENCY",
-                "label": "Idea 2: Estimated price",
-                "required": true
-            },
-            {
-                "id": "idea2_profit",
-                "type": "CURRENCY",
-                "label": "Idea 2: Estimated monthly profit",
-                "required": true
-            },
-            {
-                "id": "idea3_price",
-                "type": "CURRENCY",
-                "label": "Idea 3: Estimated price",
-                "required": true
-            },
-            {
-                "id": "idea3_profit",
-                "type": "CURRENCY",
-                "label": "Idea 3: Estimated monthly profit",
-                "required": true
-            },
-            {
-                "id": "idea4_profit",
-                "type": "CURRENCY",
-                "label": "Idea 4: Estimated monthly profit",
-                "required": false
-            },
-            {
-                "id": "idea5_profit",
-                "type": "CURRENCY",
-                "label": "Idea 5: Estimated monthly profit",
-                "required": false
-            },
-            {
-                "id": "profit_reflection",
+                "id": "what_they_get",
                 "type": "TEXTAREA",
-                "label": "Reflection: Which idea has the best profit potential?",
+                "label": "What they get",
+                "helperText": "Describe what the customer receives. Be specific. Example: A rewritten resume plus a 15 minute video review",
+                "required": true
+            },
+            {
+                "id": "price_low",
+                "type": "NUMBER",
+                "label": "Price Option A (low)",
+                "helperText": "Your lowest reasonable price in dollars. Example: 50",
+                "required": true
+            },
+            {
+                "id": "price_mid",
+                "type": "NUMBER",
+                "label": "Price Option B (middle)",
+                "helperText": "Your middle price in dollars. Example: 100",
+                "required": true
+            },
+            {
+                "id": "price_high",
+                "type": "NUMBER",
+                "label": "Price Option C (high)",
+                "helperText": "Your highest reasonable price in dollars. Example: 200",
+                "required": true
+            },
+            {
+                "id": "price_chosen",
+                "type": "TEXT",
+                "label": "Price you will test first",
+                "helperText": "Which price option will you start with and why. Example: Option B at $100 because it matches competitors",
+                "required": true
+            },
+            {
+                "id": "sales_optimistic",
+                "type": "NUMBER",
+                "label": "Expected sales per month (optimistic)",
+                "helperText": "How many sales per month in your best reasonable case. Example: 10",
+                "required": true
+            },
+            {
+                "id": "sales_conservative",
+                "type": "NUMBER",
+                "label": "Expected sales per month (conservative)",
+                "helperText": "How many sales per month if things go slower than hoped. Example: 4",
+                "required": true
+            },
+            {
+                "id": "cost_per_sale",
+                "type": "NUMBER",
+                "label": "Direct cost per sale",
+                "helperText": "Variable cost for each sale in dollars. Include materials, transaction fees, etc. Example: 5",
+                "required": true
+            },
+            {
+                "id": "fixed_costs",
+                "type": "NUMBER",
+                "label": "Monthly fixed costs",
+                "helperText": "Total fixed monthly costs in dollars. Include software, hosting, subscriptions. Example: 30",
+                "required": true
+            },
+            {
+                "id": "minutes_per_sale",
+                "type": "NUMBER",
+                "label": "Minutes to fulfill one sale",
+                "helperText": "How many minutes of your time to deliver one sale. Example: 90",
+                "required": true
+            },
+            {
+                "id": "target_profit",
+                "type": "NUMBER",
+                "label": "Your target monthly profit",
+                "helperText": "How much profit per month would make this worthwhile for you. Example: 500",
+                "required": true
+            },
+            {
+                "id": "revenue_optimistic",
+                "type": "NUMBER",
+                "label": "Optimistic monthly revenue",
+                "helperText": "Price times optimistic sales. Example: 100 times 10 equals 1000",
+                "required": true
+            },
+            {
+                "id": "revenue_conservative",
+                "type": "NUMBER",
+                "label": "Conservative monthly revenue",
+                "helperText": "Price times conservative sales. Example: 100 times 4 equals 400",
+                "required": true
+            },
+            {
+                "id": "profit_optimistic",
+                "type": "NUMBER",
+                "label": "Optimistic monthly profit",
+                "helperText": "Optimistic revenue minus all costs. Example: 1000 minus 50 minus 30 equals 920",
+                "required": true
+            },
+            {
+                "id": "profit_conservative",
+                "type": "NUMBER",
+                "label": "Conservative monthly profit",
+                "helperText": "Conservative revenue minus all costs. Example: 400 minus 20 minus 30 equals 350",
+                "required": true
+            },
+            {
+                "id": "breakeven_sales",
+                "type": "NUMBER",
+                "label": "Break-even sales count",
+                "helperText": "How many sales needed to cover fixed costs. Fixed costs divided by profit per sale. Example: 30 divided by 95 equals 1",
+                "required": true
+            },
+            {
+                "id": "hours_optimistic",
+                "type": "NUMBER",
+                "label": "Hours per month (optimistic scenario)",
+                "helperText": "Minutes per sale times optimistic sales divided by 60. Example: 90 times 10 divided by 60 equals 15 hours",
+                "required": false
+            },
+            {
+                "id": "hourly_rate_optimistic",
+                "type": "NUMBER",
+                "label": "Effective hourly rate (optimistic)",
+                "helperText": "Optimistic profit divided by optimistic hours. Example: 920 divided by 15 equals 61 dollars per hour",
+                "required": false
+            },
+            {
+                "id": "summary_conservative",
+                "type": "TEXTAREA",
+                "label": "Conservative scenario summary",
+                "helperText": "Describe the conservative case in plain language. Example: At 4 sales per month at $100, I profit $350 and work about 6 hours. That is $58 per hour.",
+                "required": true
+            },
+            {
+                "id": "summary_optimistic",
+                "type": "TEXTAREA",
+                "label": "Optimistic scenario summary",
+                "helperText": "Describe the optimistic case in plain language. Example: At 10 sales per month at $100, I profit $920 and work about 15 hours. That is $61 per hour.",
+                "required": true
+            },
+            {
+                "id": "improve_numbers",
+                "type": "TEXTAREA",
+                "label": "What would improve the numbers fastest",
+                "helperText": "Name 1 to 3 things that would make the math better. Example: Raising the price to $150, reducing time per sale by using templates",
+                "required": true
+            },
+            {
+                "id": "meets_target",
+                "type": "RADIO",
+                "label": "Does conservative profit meet your target",
+                "helperText": "Compare conservative profit to your target",
+                "required": true,
+                "options": [
+                    "Yes it meets or exceeds my target",
+                    "No but it is close",
+                    "No it falls significantly short"
+                ]
+            },
+            {
+                "id": "final_decision",
+                "type": "TEXTAREA",
+                "label": "Decision: Is this idea worth pursuing",
+                "helperText": "Based on your forecast, should you continue with this idea into Week 2. Explain your reasoning.",
                 "required": true
             }
         ]

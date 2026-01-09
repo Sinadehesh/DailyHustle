@@ -127,32 +127,58 @@
         "day": 5,
         "title": "Forecast Your Profit on the Back of a Napkin",
         "week": 1,
-        "goal": "Create simple financial projections for your top ideas",
-        "timeEstimate": "25-35 min",
+        "goal": "Do a fast profit forecast to test if your top idea is worth pursuing",
+        "timeEstimate": "45-60 min",
+        "hook": "Your idea means nothing until the math works. Today, you test viability in 30 minutes with a napkin and basic arithmetic.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "A side hustle that doesn't generate profit isn't a side hustle—it's an expensive hobby. Today you'll do simple math to understand the financial viability of your ideas.\n\nThe back-of-napkin calculation is: (Price per sale) × (Number of sales per month) - (Monthly costs) = Monthly profit. This doesn't need to be precise—you're estimating to compare ideas.\n\nFor each idea, ask: What could I realistically charge? How many sales per month could I achieve? What would it cost to deliver?\n\nDon't inflate your numbers to make an idea look better. Conservative estimates now prevent disappointment later."
+            "content": "Most people skip this step. They dive into building, branding, and perfecting before they know if the numbers make sense. Then, six months later, they wonder why they are exhausted and broke. You will not be that person.\n\nToday is about protection. You are protecting your future time and energy by doing simple math now. If the numbers look bad, you find out today, not after you have invested hundreds of hours. If the numbers look good, you move forward with confidence instead of hope.\n\nHere is the truth about profit forecasting: it does not need to be precise. You are not submitting a report to investors. You are testing whether an idea is worth your attention. Round numbers are fine. Estimates are expected. The goal is direction, not decimals.\n\nYou will work with three core numbers: what you charge, how many you sell, and what it costs to deliver. Multiply the first two, subtract the third, and you have profit. That is the entire formula. Everything else is detail.\n\nThe hard part is not the math. The hard part is being honest about your assumptions. People consistently overestimate how many sales they will get and underestimate how much time each sale takes. Today, you will build two scenarios: one conservative and one optimistic. The conservative scenario assumes things go slower than you hope. The optimistic scenario assumes your best reasonable case. Reality usually lands somewhere between.\n\nOne more thing: your time has a cost. If you spend 10 hours a week on a side hustle that generates $100 per month, you are earning $2.50 per hour. That might be fine if you love the work and see growth potential. But you should know that number, not discover it accidentally.\n\nBy the end of today, you will have a simple forecast that tells you whether this idea deserves your next three weeks. No guessing. No hoping. Just numbers on paper that either say keep going or try another idea."
+        },
+        "practice": {
+            "title": "The Assumption Check (2-7 minutes)",
+            "content": "Before you touch any numbers, take a few minutes to calm the math anxiety and surface your hidden assumptions.\n\nSit quietly for 30 seconds. Notice any tension you feel about money or math. Acknowledge it. This exercise is not a test. There are no wrong answers, only honest ones.\n\nOn a blank piece of paper or in a notes app, complete these sentences without overthinking:\n\n1. I think I could charge $____ for this.\n2. I think I could realistically sell ____ per month.\n3. I think each sale would take me about ____ minutes to deliver.\n4. I think my monthly costs would be around $____.\n\nDo not research. Do not calculate. Just write your gut answers.\n\nNow look at those numbers. Ask yourself: where did these come from? Are they based on research, comparison, or pure imagination? Put a star next to any number that feels more like a guess than an estimate.\n\nThis practice surfaces the assumptions you are about to test. Now you know which numbers need extra scrutiny."
         },
         "mission": [
             {
-                "task": "For each of your 5 ideas, estimate a realistic price point",
+                "task": "Complete the Assumption Check practice above",
+                "time": "3 min"
+            },
+            {
+                "task": "Write down your chosen idea name and what the offer is",
+                "time": "5 min"
+            },
+            {
+                "task": "Research 2 to 3 comparable offers and note their prices",
                 "time": "10 min"
             },
             {
-                "task": "Estimate how many sales per month are realistic in month 1, 3, and 6",
+                "task": "Set three price options: low, middle, high",
+                "time": "5 min"
+            },
+            {
+                "task": "Estimate conservative and optimistic monthly sales for each price",
                 "time": "10 min"
             },
             {
-                "task": "Estimate monthly costs (tools, materials, marketing)",
+                "task": "List your direct costs per sale and monthly fixed costs",
                 "time": "10 min"
             },
             {
-                "task": "Calculate simple profit projections for each idea",
+                "task": "Estimate minutes to fulfill one sale",
+                "time": "5 min"
+            },
+            {
+                "task": "Calculate monthly revenue, costs, and profit for both scenarios",
+                "time": "10 min"
+            },
+            {
+                "task": "Answer: Is this idea worth pursuing? Write your decision.",
                 "time": "5 min"
             }
         ],
-        "commonMistakes": "Don't assume viral growth. Assume slow, steady progress. Also don't forget hidden costs like your time, tools, and transaction fees.",
-        "doneMeans": "Each of your 5 ideas has a simple profit projection with price, volume, costs, and estimated monthly profit."
+        "commonMistakes": "Underpricing because of fear. New sellers often set prices too low because they worry no one will pay. Check comparable offers. Your price should be based on value and market, not insecurity.\n\nIgnoring time cost. If you spend 5 hours per sale and charge $50, you are earning $10 per hour before expenses. Factor your time in when judging viability.\n\nUsing optimistic numbers only. Everyone wants to believe the best case. Build a conservative scenario first. If the conservative numbers work, the optimistic ones are a bonus.\n\nForgetting recurring costs. Software subscriptions, transaction fees, and supplies add up. List every monthly cost, even small ones.\n\nSkipping comparable research. You cannot estimate your price in a vacuum. Spend 10 minutes finding similar offers and their price ranges.\n\nTreating the forecast as permanent. This is a snapshot based on current assumptions. It will change as you learn more. The goal is not perfection, just a checkpoint.",
+        "doneMeans": "You have calculated profit for both conservative and optimistic scenarios, compared them to your target, and made a clear decision about whether to continue with this idea.",
+        "reviewCTA": "Want a second opinion on your numbers? Submit your Day 5 workbook for review and get feedback on your pricing logic and profit assumptions within 48 hours."
     },
     {
         "day": 6,
