@@ -1,0 +1,149 @@
+{
+    "day": 16,
+    "title": "Day 16 - Spend 10 Percent More Time on the Most Important Tasks",
+    "week": 3,
+    "mainPromise": "You will identify the true critical tasks for getting your first customer and spend slightly more focused time on them while cutting low-impact work.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Important tasks are not the loudest",
+            "content": "The loudest tasks are often the easiest: tweaking copy, changing fonts, organizing folders again. These tasks feel safe because they do not risk rejection.\n\nImportant tasks are usually uncomfortable: reaching out, naming a price, asking for payment, and delivering on a real timeline. These tasks create evidence.\n\nThe 10 percent more time idea is small on purpose. You are not trying to become a different person overnight. You are making a slight shift toward the tasks that create momentum.",
+            "soWhat": "If you cannot name your critical tasks, you will spend time on the wrong work and call it progress."
+        },
+        {
+            "id": "t2",
+            "title": "Remove friction before adding features",
+            "content": "The best way to protect critical tasks is to remove friction around them. Friction includes unclear scripts, missing links, messy tracking, and distractions.\n\nYou do not need to become perfectly disciplined. You need a setup that makes the next action easy: the message template is ready, the payment link is ready, the intake link is ready, and the tracker is ready.\n\nToday you will reduce friction in a concrete way by pre-packaging your next action materials.",
+            "soWhat": "If critical tasks require extra setup each time, you will avoid them."
+        },
+        {
+            "id": "t3",
+            "title": "Measure what moves the business",
+            "content": "When you shift time toward important tasks, measure outcomes that matter: number of outreach messages sent, replies received, intake links requested, payments completed, and deliveries finished.\n\nThis is not about pressure. It is about feedback. Without feedback, you will not know whether to adjust price, offer shape, or channel.\n\nToday you will create a small scorecard that aligns with the workflow you built yesterday.",
+            "soWhat": "If you do not measure, you will confuse effort with progress and drift."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d16_do1",
+            "title": "Identify your critical path",
+            "estimatedMinutes": 12,
+            "steps": [
+                "List the tasks required to get one paid customer.",
+                "Mark which tasks are critical and which are optional.",
+                "Allocate time for tomorrow based on critical tasks."
+            ],
+            "items": [
+                {
+                    "id": "d16_do1_i1",
+                    "label": "Listed 10 to 15 tasks from interest to paid delivery",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 10 to 15 tasks from first interest to completed delivery."
+                },
+                {
+                    "id": "d16_do1_i2",
+                    "label": "Marked 5 critical tasks and wrote why each is critical",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Mark 5 tasks as critical and add one-line reasons for each."
+                },
+                {
+                    "id": "d16_do1_i3",
+                    "label": "Marked 5 optional tasks you will pause this week",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 optional tasks you will pause."
+                },
+                {
+                    "id": "d16_do1_i4",
+                    "label": "Wrote tomorrow's 45-minute plan with time blocks",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write time blocks with minutes that add up to about 45 minutes."
+                }
+            ],
+            "example": "Critical: Send 10 outreach messages because no messages means no customers. Optional paused: Build a full website because payment link + message is enough. Plan: 25 min outreach, 10 min follow-ups, 10 min tracker updates."
+        },
+        {
+            "id": "d16_do2",
+            "title": "Create a low-friction launch kit",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Create a single launch kit document with your key links and scripts.",
+                "Add your outreach scripts, payment link, intake link, and tracker link.",
+                "Add a simple rule for handling replies."
+            ],
+            "items": [
+                {
+                    "id": "d16_do2_i1",
+                    "label": "Created a launch kit doc with sections for links and scripts",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your launch kit outline with section headings."
+                },
+                {
+                    "id": "d16_do2_i2",
+                    "label": "Added your outreach message, payment link location, and intake link location",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the outreach message and note where payment and intake links live."
+                },
+                {
+                    "id": "d16_do2_i3",
+                    "label": "Added your buyer flow and scope warning line",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your buyer flow steps and your scope warning sentence."
+                },
+                {
+                    "id": "d16_do2_i4",
+                    "label": "Wrote a reply-handling rule for Yes, Maybe, No",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write three short rules: how you respond to Yes, Maybe, and No."
+                }
+            ],
+            "example": "Yes rule: Send payment link + intake link, confirm timeline. Maybe rule: Ask one clarifying question, then restate scope and timeline. No rule: Thank them and ask permission to follow up in 30 days."
+        },
+        {
+            "id": "d16_do3",
+            "title": "Build your weekly scorecard",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Choose 5 metrics that reflect your workflow.",
+                "Set a weekly target for each metric.",
+                "Define one review moment and one adjustment rule."
+            ],
+            "items": [
+                {
+                    "id": "d16_do3_i1",
+                    "label": "Defined 5 workflow metrics",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 metrics that match your workflow."
+                },
+                {
+                    "id": "d16_do3_i2",
+                    "label": "Set weekly targets for each metric",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter 5 target numbers, one per metric, and note the timeframe is weekly."
+                },
+                {
+                    "id": "d16_do3_i3",
+                    "label": "Wrote one weekly review routine for the scorecard",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 4 lines describing when and how you will review the scorecard."
+                },
+                {
+                    "id": "d16_do3_i4",
+                    "label": "Wrote one adjustment rule tied to metrics",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one rule: if a metric is below target, what you will change."
+                }
+            ],
+            "example": "Metrics: Outreach sent, replies, intake requests, paid orders, deliveries completed. Target: 10, 3, 2, 1, 1. Adjustment: If replies < 2, change the opener and test a new channel."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Critical path list with paused tasks and tomorrow's time plan",
+            "Launch kit document with scripts and link locations",
+            "Reply-handling rules for Yes/Maybe/No",
+            "Weekly scorecard with targets and one adjustment rule"
+        ],
+        "tomorrowPreview": "Next, you will use your launch kit, workflow, and payment setup to start real outreach and collect the first signals that your offer can sell."
+    }
+}

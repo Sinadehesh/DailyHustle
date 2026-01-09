@@ -1,0 +1,149 @@
+{
+    "day": 15,
+    "title": "Day 15 - Design Your First Workflow",
+    "week": 3,
+    "mainPromise": "You will design a simple workflow that moves a customer from interest to paid to delivered, with tracking and clear exception handling.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Workflows turn effort into repeatability",
+            "content": "A workflow is a sequence that removes decision fatigue. Instead of asking what now every time, you follow the same steps and customize only the details.\n\nYour workflow should be visible. It can be a checklist, a board, or a spreadsheet. The format matters less than the ability to track: who is in the pipeline, what step they are in, and what is next.\n\nA workflow also creates confidence. When you know the next step, outreach becomes easier because you are not afraid of the delivery.",
+            "soWhat": "If you do not map the workflow, you will rely on memory, and things will slip."
+        },
+        {
+            "id": "t2",
+            "title": "SOPs make delivery consistent",
+            "content": "A Standard Operating Procedure (SOP) is a short, written recipe for what you do during delivery. It prevents you from skipping steps, and it makes your service easier to improve.\n\nYour SOP should include: the order of work, the quality checks, and how you handle revisions. Keep it short enough to use. If it is long, you will ignore it.\n\nToday you will create one SOP for your core package delivery.",
+            "soWhat": "If you do not write an SOP, your delivery quality will depend on your mood and energy."
+        },
+        {
+            "id": "t3",
+            "title": "Tracking prevents silent failure",
+            "content": "Silent failure looks like: you forget to follow up, you miss a deadline, or you lose a customer's intake details. Tracking is your protection.\n\nA simple tracker should capture: customer name, status, next action, due date, payment status, and links to assets. It should also record exceptions: late intake, scope mismatch, refund request.\n\nToday you will build a tracker and an exception playbook.",
+            "soWhat": "If you do not track and handle exceptions, small problems become refunds and stress."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d15_do1",
+            "title": "Map the customer journey",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write the 8 to 10 stages from first contact to completion.",
+                "Define entry and exit conditions for each stage.",
+                "Identify where you collect evidence (payment, intake, delivery)."
+            ],
+            "items": [
+                {
+                    "id": "d15_do1_i1",
+                    "label": "Wrote 8 to 10 workflow stages",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Provide your 8 to 10 numbered workflow stages."
+                },
+                {
+                    "id": "d15_do1_i2",
+                    "label": "Defined entry and exit conditions for each stage",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste entry and exit conditions for every stage."
+                },
+                {
+                    "id": "d15_do1_i3",
+                    "label": "Marked three evidence checkpoints in the workflow",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three evidence checkpoints and where they occur."
+                },
+                {
+                    "id": "d15_do1_i4",
+                    "label": "Defined a standard timeline promise for each stage",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Add timeline notes for each stage (for example, within 1 hour, within 48 hours)."
+                }
+            ],
+            "example": "Stage: Paid entry: payment confirmed exit: intake link sent. Evidence checkpoint: payment receipt saved. Timeline note: Intake sent within 1 hour of payment."
+        },
+        {
+            "id": "d15_do2",
+            "title": "Write the delivery SOP",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write the delivery SOP in 10 to 14 steps.",
+                "Add three quality checks that prevent common mistakes.",
+                "Add a revision handling step that matches your policy."
+            ],
+            "items": [
+                {
+                    "id": "d15_do2_i1",
+                    "label": "Wrote a 10 to 14 step delivery SOP",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Paste your 10 to 14 SOP steps."
+                },
+                {
+                    "id": "d15_do2_i2",
+                    "label": "Added 3 quality checks",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 quality checks you will perform during delivery."
+                },
+                {
+                    "id": "d15_do2_i3",
+                    "label": "Added a revision request template",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the revision request format you will use."
+                },
+                {
+                    "id": "d15_do2_i4",
+                    "label": "Defined your done criteria for delivery",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 3 bullets that define done for a delivery."
+                }
+            ],
+            "example": "Quality check: All links work and permissions are correct. Revision template: Requested change, reason, scope fit yes/no, deadline. Done criteria: Handoff doc complete, walkthrough recorded, delivery message sent."
+        },
+        {
+            "id": "d15_do3",
+            "title": "Build your tracker and playbook",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Create a tracker table with 8 columns.",
+                "Write a short exception playbook for 5 common issues.",
+                "Define a weekly review routine for the tracker."
+            ],
+            "items": [
+                {
+                    "id": "d15_do3_i1",
+                    "label": "Created a tracker table with 8 columns",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 8 column headings for your tracker."
+                },
+                {
+                    "id": "d15_do3_i2",
+                    "label": "Added a sample row filled with realistic data",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste one filled sample row using your headings."
+                },
+                {
+                    "id": "d15_do3_i3",
+                    "label": "Wrote an exception playbook for 5 issues",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write 5 issue-response pairs for common exceptions."
+                },
+                {
+                    "id": "d15_do3_i4",
+                    "label": "Wrote a weekly review routine",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 4 to 6 lines describing your weekly review routine."
+                }
+            ],
+            "example": "Columns: Lead source, Name, Status, Next action, Due date, Paid Y/N, Intake link, Delivery link. Issue: Late intake response: Send one reminder, then pause timeline until intake complete."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Customer journey map with stages and conditions",
+            "Delivery SOP with quality checks and revision handling",
+            "Tracking table with sample row",
+            "Exception playbook and weekly review routine"
+        ],
+        "tomorrowPreview": "Tomorrow you will focus your time on the tasks that actually move the business forward and reduce the preparation that does not pay back."
+    }
+}

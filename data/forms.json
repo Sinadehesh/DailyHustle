@@ -882,372 +882,528 @@
     "11": {
         "fields": [
             {
-                "id": "spine_checklist",
-                "type": "CHECKBOX_GROUP",
-                "label": "Which nuts and bolts did you set up today?",
-                "helperText": "Check all the spine pieces you already have or set up today",
+                "id": "d11_do1_i1",
+                "label": "Created a folder structure for delivery and admin",
                 "required": true,
-                "options": [
-                    "Landing page",
-                    "Offer description doc",
-                    "Email capture",
-                    "Support email",
-                    "Basic agreement",
-                    "Delivery method",
-                    "Scheduling tool"
-                ]
+                "helperText": "List your folders with names (one per line).",
+                "type": "TEXTAREA"
             },
             {
-                "id": "biggest_missing_piece",
-                "type": "TEXT",
-                "label": "What is the biggest missing piece right now?",
-                "helperText": "The one thing blocking you from launching. Example: No landing page to explain my offer",
-                "required": true
+                "id": "d11_do1_i2",
+                "label": "Listed 10 to 14 core files you will create or reuse",
+                "required": true,
+                "helperText": "List 10 to 14 file names with a short purpose for each.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "resourceful_shortcut",
-                "type": "TEXT",
-                "label": "What is your most resourceful shortcut to get it done fast?",
-                "helperText": "Example: Use a free Carrd template, borrow a friend's Notion layout, copy a competitor's structure",
-                "required": true
+                "id": "d11_do1_i3",
+                "label": "Created a single source of truth doc outline",
+                "required": true,
+                "helperText": "Paste the outline headings and link placeholders.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "help_source",
-                "type": "TEXT",
-                "label": "Who or what will you ask for help today?",
-                "helperText": "A person, community, template, tool, or tutorial. Example: Ask my designer friend for a quick logo, use Canva templates",
-                "required": true
+                "id": "d11_do1_i4",
+                "label": "Defined where customer assets will be stored per client",
+                "required": true,
+                "helperText": "Write one sentence describing the location and naming convention.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "agreement_drafted",
-                "type": "CHECKBOX",
-                "label": "I drafted a basic agreement (what, how much, when)",
-                "required": true
+                "id": "d11_do2_i1",
+                "label": "Drafted an intake form with 8 to 12 questions",
+                "required": true,
+                "helperText": "Paste your 8 to 12 intake questions.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "basic_agreement",
-                "type": "TEXTAREA",
-                "label": "Paste your basic agreement in 3 lines (what, how much, when)",
-                "helperText": "Example: I will deliver a 30-minute coaching call within 7 days. Cost is $75. Payment due before the call via PayPal.",
-                "required": true
+                "id": "d11_do2_i2",
+                "label": "Wrote a scope confirmation checklist with 6 bullets",
+                "required": true,
+                "helperText": "List 6 scope confirmation bullets.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "next_action",
-                "type": "TEXT",
-                "label": "Your next action in the next 24 hours (one sentence)",
-                "helperText": "Example: Set up a Carrd landing page and share the link with 3 friends for feedback",
-                "required": true
+                "id": "d11_do2_i3",
+                "label": "Wrote an intake review checklist with 6 bullets",
+                "required": true,
+                "helperText": "List 6 intake review checklist bullets.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d11_do2_i4",
+                "label": "Wrote one sentence that defines when intake is complete",
+                "required": true,
+                "helperText": "Write one sentence defining intake completion.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d11_do3_i1",
+                "label": "Created a handoff doc template with 6 sections",
+                "required": true,
+                "helperText": "List 6 section headings for your handoff document.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d11_do3_i2",
+                "label": "Created a walkthrough script outline with 7 beats",
+                "required": true,
+                "helperText": "List 7 numbered beats for your walkthrough.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d11_do3_i3",
+                "label": "Drafted a payment-confirmation message",
+                "required": true,
+                "helperText": "Paste the message text you will send after payment.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d11_do3_i4",
+                "label": "Drafted a delivery-complete message with next steps",
+                "required": true,
+                "helperText": "Paste the message text you will send at delivery completion.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "12": {
         "fields": [
             {
-                "id": "offer_sentence",
-                "type": "TEXT",
-                "label": "What are you selling today? (one sentence offer)",
-                "helperText": "Example: A 60-minute resume rewrite plus a 15-minute feedback call",
-                "required": true
-            },
-            {
-                "id": "direct_cash_cost",
-                "type": "NUMBER",
-                "label": "Direct cash cost per sale (fees, materials, shipping, tools)",
-                "helperText": "Add up platform fees, materials, shipping, and any tool costs per sale. Example: 5",
-                "required": true
-            },
-            {
-                "id": "time_cost_hours",
-                "type": "NUMBER",
-                "label": "Time cost per sale (hours, realistic estimate)",
-                "helperText": "Include prep, delivery, and follow-up. Be honest. Example: 2.5",
-                "required": true
-            },
-            {
-                "id": "minimum_hourly_value",
-                "type": "NUMBER",
-                "label": "Minimum hourly value you want (or equivalent)",
-                "helperText": "The minimum you are willing to earn per hour. Example: 25",
-                "required": true
-            },
-            {
-                "id": "minimum_price",
-                "type": "NUMBER",
-                "label": "Your minimum workable price (cost-plus result)",
-                "helperText": "Formula: (hours x hourly value) + cash costs. Example: (2.5 x 25) + 5 = 67.50",
-                "required": true
-            },
-            {
-                "id": "starting_price",
-                "type": "NUMBER",
-                "label": "Your starting launch price",
-                "helperText": "A realistic price between your minimum and what the market can bear. Example: 75",
-                "required": true
-            },
-            {
-                "id": "pricing_model",
-                "type": "SELECT",
-                "label": "Pricing model you will use (for now)",
+                "id": "d12_do1_i1",
+                "label": "Estimated delivery time including buffer",
                 "required": true,
-                "options": [
-                    "Flat fee",
-                    "Hourly",
-                    "Tiered packages",
-                    "Subscription",
-                    "Other"
-                ]
+                "helperText": "Enter minutes for delivery and minutes for buffer, and describe the buffer.",
+                "type": "NUMBER"
             },
             {
-                "id": "pricing_reasoning",
-                "type": "TEXTAREA",
-                "label": "Why this price makes sense (and how it feels to publish it)",
-                "helperText": "Example: $75 covers my costs and gives me $25 per hour. It feels slightly scary but fair for the value.",
-                "required": true
+                "id": "d12_do1_i2",
+                "label": "Chose a minimum acceptable profit per hour",
+                "required": true,
+                "helperText": "Enter your minimum profit per hour (number) and note currency in your log.",
+                "type": "NUMBER"
+            },
+            {
+                "id": "d12_do1_i3",
+                "label": "Listed variable costs per delivery",
+                "required": true,
+                "helperText": "List variable costs per delivery with amounts.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do1_i4",
+                "label": "Calculated a floor price with the formula you used",
+                "required": true,
+                "helperText": "Paste your calculation lines showing the formula and result.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do2_i1",
+                "label": "Chose target, backup, and stretch prices",
+                "required": true,
+                "helperText": "List three prices labeled backup, target, stretch with currency.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do2_i2",
+                "label": "Defined scope and deliverables for each price",
+                "required": true,
+                "helperText": "Paste three short package definitions tied to the three prices.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do2_i3",
+                "label": "Wrote a who-it's-for line per package",
+                "required": true,
+                "helperText": "Write three one-line audience statements, one per package.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do2_i4",
+                "label": "Wrote one why-this-price justification for your target price",
+                "required": true,
+                "helperText": "Write 2 to 3 lines explaining why your target price fits scope and evidence.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do3_i1",
+                "label": "Defined a test audience and outreach count",
+                "required": true,
+                "helperText": "Write who you will test with and how many people you will contact.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do3_i2",
+                "label": "Wrote two price-included message scripts",
+                "required": true,
+                "helperText": "Paste two outreach messages that include the price.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do3_i3",
+                "label": "Defined 3 success signals",
+                "required": true,
+                "helperText": "List three measurable success signals for the price test.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d12_do3_i4",
+                "label": "Defined 2 adjustment rules based on results",
+                "required": true,
+                "helperText": "Write two rules: if result, then change (scope, price, or channel).",
+                "type": "TEXTAREA"
             }
         ]
     },
     "13": {
         "fields": [
             {
-                "id": "three_step_recipe",
-                "type": "TEXTAREA",
-                "label": "Write your 3-step recipe (Step 1 create, Step 2 publish, Step 3 revenue)",
-                "helperText": "Example: Step 1: Record video tutorials. Step 2: Upload to Gumroad with sales page. Step 3: Share link and accept payment.",
-                "required": true
-            },
-            {
-                "id": "ingredients_list",
-                "type": "TEXTAREA",
-                "label": "List the ingredients you must source or create (tools, assets, access, help)",
-                "helperText": "Example: Screen recording software, microphone, Gumroad account, thumbnail designs, email template",
-                "required": true
-            },
-            {
-                "id": "customer_deliverables",
-                "type": "TEXTAREA",
-                "label": "List the deliverables the customer receives (exact items)",
-                "helperText": "Example: 5 video lessons (10 min each), 1 PDF checklist, 1 template spreadsheet, access to private Discord",
-                "required": true
-            },
-            {
-                "id": "most_urgent_ingredient",
-                "type": "TEXT",
-                "label": "What is the single most urgent missing ingredient?",
-                "helperText": "The one thing blocking progress. Example: Screen recording software",
-                "required": true
-            },
-            {
-                "id": "ingredient_source",
-                "type": "TEXT",
-                "label": "Where will you get it within 48 hours? (link, shop, person, platform)",
-                "helperText": "Example: Download Loom free trial from loom.com",
-                "required": true
-            },
-            {
-                "id": "sourcing_method",
-                "type": "SELECT",
-                "label": "How will you source it?",
+                "id": "d13_do1_i1",
+                "label": "Listed 8 to 12 tasks in your service lifecycle",
                 "required": true,
-                "options": [
-                    "Borrow",
-                    "Free trial",
-                    "Buy used",
-                    "Rent",
-                    "Trade skills",
-                    "Buy new"
-                ]
+                "helperText": "List 8 to 12 tasks from lead to delivery.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "ingredient_cost",
-                "type": "NUMBER",
-                "label": "Estimated cost to acquire the urgent ingredient",
-                "helperText": "Enter 0 if free. Example: 0",
-                "required": true
+                "id": "d13_do1_i2",
+                "label": "Wrote the minimum tool requirement per task",
+                "required": true,
+                "helperText": "Provide task-to-requirement mapping (one line per task).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do1_i3",
+                "label": "Marked each requirement as Have, Use Free, or Need Paid",
+                "required": true,
+                "helperText": "Add labels to each task requirement: Have, Use Free, Need Paid.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do1_i4",
+                "label": "Wrote one rule for no new tools unless",
+                "required": true,
+                "helperText": "Write one sentence that limits new tools.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do2_i1",
+                "label": "Listed 6 to 12 tools or resources you will use",
+                "required": true,
+                "helperText": "List 6 to 12 tools/resources you plan to use.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do2_i2",
+                "label": "Recorded cost and billing frequency for each",
+                "required": true,
+                "helperText": "Provide cost and billing frequency per tool.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do2_i3",
+                "label": "Listed a free alternative or downgrade for each",
+                "required": true,
+                "helperText": "Provide an alternative or downgrade option for each tool.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do2_i4",
+                "label": "Added a cancellation note and review date for each paid tool",
+                "required": true,
+                "helperText": "For paid tools, write cancellation notes and a review date.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do3_i1",
+                "label": "Wrote a 5 to 7 step setup sequence",
+                "required": true,
+                "helperText": "Write 5 to 7 numbered setup steps.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do3_i2",
+                "label": "Assigned a time cap to each step",
+                "required": true,
+                "helperText": "Add minutes to each setup step.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do3_i3",
+                "label": "Defined the ready-to-sell condition in one sentence",
+                "required": true,
+                "helperText": "Write one sentence that defines ready-to-sell.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d13_do3_i4",
+                "label": "Chose one tool you will postpone and why",
+                "required": true,
+                "helperText": "Write one line naming the postponed tool and your reason.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "14": {
         "fields": [
             {
-                "id": "payment_methods",
-                "type": "CHECKBOX_GROUP",
-                "label": "Which payment method(s) will you accept at launch?",
-                "helperText": "Check all that apply for your first launch",
+                "id": "d14_do1_i1",
+                "label": "Chose a primary and backup payment method",
                 "required": true,
-                "options": [
-                    "Stripe",
-                    "PayPal",
-                    "Gumroad",
-                    "Bank transfer",
-                    "Invoice link",
-                    "Other"
-                ]
+                "helperText": "Write two payment methods labeled Primary and Backup.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "payment_link",
-                "type": "URL",
-                "label": "Paste your payment link or checkout URL",
-                "helperText": "Example: https://pay.stripe.com/link123 or your Gumroad product page",
-                "required": true
+                "id": "d14_do1_i2",
+                "label": "Wrote the checkout description draft",
+                "required": true,
+                "helperText": "Paste 80 to 120 words describing the offer at checkout.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "payment_tested",
-                "type": "CHECKBOX",
-                "label": "I tested the payment flow end to end (pay, confirmation, delivery)",
-                "required": true
+                "id": "d14_do1_i3",
+                "label": "Listed the buyer information fields you must capture",
+                "required": true,
+                "helperText": "List required fields you must capture at payment or intake.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "refund_policy",
-                "type": "TEXT",
-                "label": "Write your one-sentence refund policy",
-                "helperText": "Example: Full refund if you are not satisfied within 7 days, no questions asked.",
-                "required": true
+                "id": "d14_do1_i4",
+                "label": "Wrote one sentence on how payment connects to intake",
+                "required": true,
+                "helperText": "Write one sentence describing the payment-to-intake connection.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "delivery_promise",
-                "type": "TEXT",
-                "label": "Write your one-sentence delivery promise (what happens after they pay)",
-                "helperText": "Example: You will receive a confirmation email with download link within 5 minutes of purchase.",
-                "required": true
+                "id": "d14_do2_i1",
+                "label": "Wrote checkout headline and one-sentence promise",
+                "required": true,
+                "helperText": "Paste the headline and one-sentence promise.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "basic_agreement",
-                "type": "TEXTAREA",
-                "label": "Paste your basic agreement (what you do, how much, when paid)",
-                "helperText": "Your 3-line agreement from Day 11, updated with any changes",
-                "required": true
+                "id": "d14_do2_i2",
+                "label": "Wrote a 5-bullet what-you-get list",
+                "required": true,
+                "helperText": "List 5 bullets describing what the buyer gets.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "support_email",
-                "type": "EMAIL",
-                "label": "Support email customers should use",
-                "helperText": "Example: help@yoursite.com or your personal email",
-                "required": true
+                "id": "d14_do2_i3",
+                "label": "Wrote a 5-bullet what-you-provide list",
+                "required": true,
+                "helperText": "List 5 bullets describing what the buyer must provide.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d14_do2_i4",
+                "label": "Added revision and refund lines",
+                "required": true,
+                "helperText": "Paste 4 to 8 lines of revision and refund policy text.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d14_do3_i1",
+                "label": "Completed a simulated buyer walkthrough and wrote friction notes",
+                "required": true,
+                "helperText": "List 5 friction notes found during your buyer walkthrough.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d14_do3_i2",
+                "label": "Confirmed confirmation message content and saved it",
+                "required": true,
+                "helperText": "Paste the confirmation content or describe it precisely.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d14_do3_i3",
+                "label": "Confirmed intake link delivery and saved the link location",
+                "required": true,
+                "helperText": "Provide the intake link or note exactly where the link appears after payment.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d14_do3_i4",
+                "label": "Created a fix list with priorities",
+                "required": true,
+                "helperText": "List fixes labeled High, Medium, or Low priority.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "15": {
         "fields": [
             {
-                "id": "workflow_steps",
-                "type": "TEXTAREA",
-                "label": "Write your workflow from discovery to delivery (numbered steps)",
-                "helperText": "At least 12 steps. Example: 1. Customer finds landing page. 2. Reads offer. 3. Clicks buy...",
-                "required": true
-            },
-            {
-                "id": "onboarding_messages",
-                "type": "TEXTAREA",
-                "label": "Write 4 onboarding messages (welcome, how to start, tips, check-in)",
-                "helperText": "1. Welcome message with next steps. 2. How to get started. 3. One helpful tip. 4. Check-in after a few days.",
-                "required": true
-            },
-            {
-                "id": "workflow_risks",
-                "type": "CHECKBOX_GROUP",
-                "label": "What could go wrong? Select your top risks",
-                "helperText": "Check the most likely failure points for your workflow",
+                "id": "d15_do1_i1",
+                "label": "Wrote 8 to 10 workflow stages",
                 "required": true,
-                "options": [
-                    "Customer did not get email",
-                    "Wrong details submitted",
-                    "Time zone scheduling issue",
-                    "Delivery failed",
-                    "Refund request",
-                    "No-show",
-                    "Other"
-                ]
+                "helperText": "Provide your 8 to 10 numbered workflow stages.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "risk_fixes",
-                "type": "TEXTAREA",
-                "label": "For 2 risks, write the fix and the exact message you will send",
-                "helperText": "Example: Risk 1: Customer did not get email. Fix: Check spam, resend manually. Message: Hi! I noticed you might not have received my email. Here it is again...",
-                "required": true
+                "id": "d15_do1_i2",
+                "label": "Defined entry and exit conditions for each stage",
+                "required": true,
+                "helperText": "Paste entry and exit conditions for every stage.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "next_automation",
-                "type": "TEXT",
-                "label": "One automation or template you will build next (one sentence)",
-                "helperText": "Example: Create a Zapier automation to send confirmation emails",
-                "required": true
+                "id": "d15_do1_i3",
+                "label": "Marked three evidence checkpoints in the workflow",
+                "required": true,
+                "helperText": "List three evidence checkpoints and where they occur.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "customer_storage",
-                "type": "TEXT",
-                "label": "Where will you store customer info and orders?",
-                "helperText": "Example: Google Sheet, Notion database, Airtable, CRM",
-                "required": true
+                "id": "d15_do1_i4",
+                "label": "Defined a standard timeline promise for each stage",
+                "required": true,
+                "helperText": "Add timeline notes for each stage (for example, within 1 hour, within 48 hours).",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do2_i1",
+                "label": "Wrote a 10 to 14 step delivery SOP",
+                "required": true,
+                "helperText": "Paste your 10 to 14 SOP steps.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do2_i2",
+                "label": "Added 3 quality checks",
+                "required": true,
+                "helperText": "List 3 quality checks you will perform during delivery.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do2_i3",
+                "label": "Added a revision request template",
+                "required": true,
+                "helperText": "Paste the revision request format you will use.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do2_i4",
+                "label": "Defined your done criteria for delivery",
+                "required": true,
+                "helperText": "List 3 bullets that define done for a delivery.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do3_i1",
+                "label": "Created a tracker table with 8 columns",
+                "required": true,
+                "helperText": "List 8 column headings for your tracker.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do3_i2",
+                "label": "Added a sample row filled with realistic data",
+                "required": true,
+                "helperText": "Paste one filled sample row using your headings.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do3_i3",
+                "label": "Wrote an exception playbook for 5 issues",
+                "required": true,
+                "helperText": "Write 5 issue-response pairs for common exceptions.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d15_do3_i4",
+                "label": "Wrote a weekly review routine",
+                "required": true,
+                "helperText": "Write 4 to 6 lines describing your weekly review routine.",
+                "type": "TEXTAREA"
             }
         ]
     },
     "16": {
         "fields": [
             {
-                "id": "benefit_clarity",
-                "type": "SELECT",
-                "label": "How clear is the customer benefit today?",
-                "helperText": "1 = very unclear, 5 = crystal clear",
+                "id": "d16_do1_i1",
+                "label": "Listed 10 to 15 tasks from interest to paid delivery",
                 "required": true,
-                "options": [
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5"
-                ]
+                "helperText": "List 10 to 15 tasks from first interest to completed delivery.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "income_clarity",
-                "type": "SELECT",
-                "label": "How clear is your income plan today?",
-                "helperText": "1 = very unclear, 5 = crystal clear",
+                "id": "d16_do1_i2",
+                "label": "Marked 5 critical tasks and wrote why each is critical",
                 "required": true,
-                "options": [
-                    "1",
-                    "2",
-                    "3",
-                    "4",
-                    "5"
-                ]
+                "helperText": "Mark 5 tasks as critical and add one-line reasons for each.",
+                "type": "TEXTAREA"
             },
             {
-                "id": "benefit_actions",
-                "type": "TEXTAREA",
-                "label": "List 3 actions that improve customer benefit (specific)",
-                "helperText": "Example: 1. Add a quick-start checklist to the product. 2. Record a walkthrough video. 3. Simplify the first step.",
-                "required": true
-            },
-            {
-                "id": "income_actions",
-                "type": "TEXTAREA",
-                "label": "List 3 actions that increase income (specific)",
-                "helperText": "Example: 1. Send 3 outreach DMs to potential customers. 2. Post the offer on LinkedIn. 3. Ask a happy customer for a referral.",
-                "required": true
-            },
-            {
-                "id": "stop_tasks",
-                "type": "TEXTAREA",
-                "label": "List 3 low-value tasks you will stop or postpone",
-                "helperText": "Example: 1. Stop tweaking the logo. 2. Pause social media scheduling setup. 3. Defer building an email sequence.",
-                "required": true
-            },
-            {
-                "id": "morning_block_task",
-                "type": "TEXT",
-                "label": "Your 25-minute Make Something block for tomorrow morning (exact task)",
-                "helperText": "Example: Tomorrow at 7am I will write the welcome email sequence",
-                "required": true
-            },
-            {
-                "id": "ten_percent_commitment",
-                "type": "CHECKBOX_GROUP",
-                "label": "I will spend 10 percent more time on:",
+                "id": "d16_do1_i3",
+                "label": "Marked 5 optional tasks you will pause this week",
                 "required": true,
-                "options": [
-                    "Customer benefit",
-                    "Income"
-                ]
+                "helperText": "List 5 optional tasks you will pause.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do1_i4",
+                "label": "Wrote tomorrow's 45-minute plan with time blocks",
+                "required": true,
+                "helperText": "Write time blocks with minutes that add up to about 45 minutes.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do2_i1",
+                "label": "Created a launch kit doc with sections for links and scripts",
+                "required": true,
+                "helperText": "Paste your launch kit outline with section headings.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do2_i2",
+                "label": "Added your outreach message, payment link location, and intake link location",
+                "required": true,
+                "helperText": "Paste the outreach message and note where payment and intake links live.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do2_i3",
+                "label": "Added your buyer flow and scope warning line",
+                "required": true,
+                "helperText": "Paste your buyer flow steps and your scope warning sentence.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do2_i4",
+                "label": "Wrote a reply-handling rule for Yes, Maybe, No",
+                "required": true,
+                "helperText": "Write three short rules: how you respond to Yes, Maybe, and No.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do3_i1",
+                "label": "Defined 5 workflow metrics",
+                "required": true,
+                "helperText": "List 5 metrics that match your workflow.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do3_i2",
+                "label": "Set weekly targets for each metric",
+                "required": true,
+                "helperText": "Enter 5 target numbers, one per metric, and note the timeframe is weekly.",
+                "type": "NUMBER"
+            },
+            {
+                "id": "d16_do3_i3",
+                "label": "Wrote one weekly review routine for the scorecard",
+                "required": true,
+                "helperText": "Write 4 lines describing when and how you will review the scorecard.",
+                "type": "TEXTAREA"
+            },
+            {
+                "id": "d16_do3_i4",
+                "label": "Wrote one adjustment rule tied to metrics",
+                "required": true,
+                "helperText": "Write one rule: if a metric is below target, what you will change.",
+                "type": "TEXTAREA"
             }
         ]
     },

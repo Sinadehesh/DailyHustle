@@ -1,0 +1,149 @@
+{
+    "day": 13,
+    "title": "Day 13 - Create a Side Hustle Shopping List",
+    "week": 3,
+    "mainPromise": "You will create a lean shopping list that covers only what you need to sell and deliver, with costs, alternatives, and a setup order.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Tools should earn their place",
+            "content": "Tools feel productive because they are tangible. But tools also create overhead: logins, learning curves, subscriptions, and distractions.\n\nA lean side hustle uses as few tools as possible. Your goal is not to build a perfect stack. Your goal is to deliver the promise and get paid.\n\nA good rule is: if a tool does not reduce buyer risk, reduce delivery time, or reduce mistakes, it is optional for now.",
+            "soWhat": "If you do not choose tools intentionally, you will waste money and time before you sell."
+        },
+        {
+            "id": "t2",
+            "title": "Shopping lists need costs and exits",
+            "content": "A shopping list is incomplete without cost and exit. Cost is the monthly or per-use amount. Exit is how you cancel, downgrade, or stop using it if it is not needed.\n\nAlso consider substitutes. Many paid tools can be replaced by a document template, a spreadsheet, or a free tier. You are not avoiding quality. You are avoiding complexity before revenue.\n\nToday you will build a shopping list that includes cost, alternative, and exit plan.",
+            "soWhat": "If you do not include exits, small subscriptions become permanent leaks."
+        },
+        {
+            "id": "t3",
+            "title": "Setup order matters",
+            "content": "Even a lean stack becomes confusing if you set it up randomly. You need an order that matches your workflow: payment first, intake second, delivery templates third, tracking last.\n\nYou will define the smallest setup sequence that gets you to ready to sell. This prevents tool setup from becoming a never-ending project.\n\nA good setup plan also includes a time cap for each step. That keeps you moving.",
+            "soWhat": "If you do not define a setup order, you will bounce between tools and finish none."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d13_do1",
+            "title": "Define your tool requirements",
+            "estimatedMinutes": 12,
+            "steps": [
+                "List the tasks your service requires from lead to delivery.",
+                "For each task, write the minimum tool capability needed.",
+                "Mark what you already have vs what you must add."
+            ],
+            "items": [
+                {
+                    "id": "d13_do1_i1",
+                    "label": "Listed 8 to 12 tasks in your service lifecycle",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 8 to 12 tasks from lead to delivery."
+                },
+                {
+                    "id": "d13_do1_i2",
+                    "label": "Wrote the minimum tool requirement per task",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide task-to-requirement mapping (one line per task)."
+                },
+                {
+                    "id": "d13_do1_i3",
+                    "label": "Marked each requirement as Have, Use Free, or Need Paid",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Add labels to each task requirement: Have, Use Free, Need Paid."
+                },
+                {
+                    "id": "d13_do1_i4",
+                    "label": "Wrote one rule for no new tools unless",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one sentence that limits new tools."
+                }
+            ],
+            "example": "Task: Collect intake -> Requirement: simple form + export responses. Label: Use Free. Rule: No new tools unless it removes a known bottleneck in delivery."
+        },
+        {
+            "id": "d13_do2",
+            "title": "Build the lean shopping list",
+            "estimatedMinutes": 12,
+            "steps": [
+                "List each tool you plan to use (including free tools).",
+                "For each, record cost, purpose, and free alternative.",
+                "Add a cancellation note and a review date."
+            ],
+            "items": [
+                {
+                    "id": "d13_do2_i1",
+                    "label": "Listed 6 to 12 tools or resources you will use",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 6 to 12 tools/resources you plan to use."
+                },
+                {
+                    "id": "d13_do2_i2",
+                    "label": "Recorded cost and billing frequency for each",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide cost and billing frequency per tool."
+                },
+                {
+                    "id": "d13_do2_i3",
+                    "label": "Listed a free alternative or downgrade for each",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Provide an alternative or downgrade option for each tool."
+                },
+                {
+                    "id": "d13_do2_i4",
+                    "label": "Added a cancellation note and review date for each paid tool",
+                    "evidenceType": "note",
+                    "evidencePrompt": "For paid tools, write cancellation notes and a review date."
+                }
+            ],
+            "example": "Tool: Payment processor cost: 2.9% + fee alternative: invoice + bank transfer exit: keep account, stop links. Tool: Form tool cost: free alternative: email intake template."
+        },
+        {
+            "id": "d13_do3",
+            "title": "Write your setup sequence",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Choose the 5 to 7 setup steps that create a working system.",
+                "Assign a time cap to each step.",
+                "Define the ready to sell condition."
+            ],
+            "items": [
+                {
+                    "id": "d13_do3_i1",
+                    "label": "Wrote a 5 to 7 step setup sequence",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write 5 to 7 numbered setup steps."
+                },
+                {
+                    "id": "d13_do3_i2",
+                    "label": "Assigned a time cap to each step",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Add minutes to each setup step."
+                },
+                {
+                    "id": "d13_do3_i3",
+                    "label": "Defined the ready-to-sell condition in one sentence",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence that defines ready-to-sell."
+                },
+                {
+                    "id": "d13_do3_i4",
+                    "label": "Chose one tool you will postpone and why",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one line naming the postponed tool and your reason."
+                }
+            ],
+            "example": "Ready-to-sell: I have a payment link, an intake form, and a handoff template ready. Postpone: Website builder postponed until after first paid delivery."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Task-to-tool requirements map with Have/Free/Paid labels",
+            "Lean shopping list with costs, alternatives, and exit notes",
+            "Setup sequence with time caps",
+            "Ready-to-sell condition and one postponed tool decision"
+        ],
+        "tomorrowPreview": "Tomorrow you will set up a clean way to get paid, including a payment link, a basic receipt description, and a test transaction flow."
+    }
+}

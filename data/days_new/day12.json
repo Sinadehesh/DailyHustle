@@ -1,0 +1,149 @@
+{
+    "day": 12,
+    "title": "Day 12 - Decide How to Price Your Offer",
+    "week": 3,
+    "mainPromise": "You will decide a pricing approach that protects your time, matches market evidence, and supports a clean delivery.",
+    "timeEstimate": "34 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Price is a boundary, not a guess",
+            "content": "Pricing is often treated like a magic number. In reality, pricing is a boundary that shapes who buys, what they expect, and how much time you can afford to spend.\n\nYour price must protect your delivery time. If the price is too low, you will hesitate to do careful work, or you will overwork and resent the project. Neither outcome helps the customer.\n\nA practical pricing decision includes a floor (the lowest price that still makes sense) and a target (the price you prefer). Today you will write both with assumptions.",
+            "soWhat": "If you do not define a floor and target price, you will negotiate with yourself every time someone asks."
+        },
+        {
+            "id": "t2",
+            "title": "Target price must match the offer shape",
+            "content": "Your target price should match three things: market bands, your scope boundaries, and your buyer's urgency.\n\nIf you promise fast delivery, you are selling speed and relief. That often supports a higher price than a slow, open-ended service. If you keep scope fixed, you reduce risk for yourself and for the buyer. That also supports a confident price.\n\nInstead of debating one number, create a simple price ladder: target price, backup price, and a stretch price you test later if demand is strong.",
+            "soWhat": "If you do not define a price ladder, you will swing wildly between too cheap and too expensive."
+        },
+        {
+            "id": "t3",
+            "title": "Testing price is part of the plan",
+            "content": "Price is not final until the market responds. That does not mean you change it daily. It means you test it with a small number of real conversations and keep notes.\n\nA clean price test has rules: how many people you ask, what you say, and what counts as a positive signal. You should also decide what you will change if the signal is weak: scope, price, or channel.\n\nToday you will write a price test plan you can run next week without overthinking.",
+            "soWhat": "If you do not plan your price test, you will interpret silence as failure and panic-adjust."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d12_do1",
+            "title": "Calculate your price floor",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Estimate delivery time per customer, including support buffer.",
+                "Choose a minimum acceptable profit per hour.",
+                "Add variable costs and calculate your floor price."
+            ],
+            "items": [
+                {
+                    "id": "d12_do1_i1",
+                    "label": "Estimated delivery time including buffer",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter minutes for delivery and minutes for buffer, and describe the buffer."
+                },
+                {
+                    "id": "d12_do1_i2",
+                    "label": "Chose a minimum acceptable profit per hour",
+                    "evidenceType": "number",
+                    "evidencePrompt": "Enter your minimum profit per hour (number) and note currency in your log."
+                },
+                {
+                    "id": "d12_do1_i3",
+                    "label": "Listed variable costs per delivery",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List variable costs per delivery with amounts."
+                },
+                {
+                    "id": "d12_do1_i4",
+                    "label": "Calculated a floor price with the formula you used",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste your calculation lines showing the formula and result."
+                }
+            ],
+            "example": "Time: 120 minutes + 20 minutes buffer = 140 minutes. Minimum profit/hour: $40. Variable costs: $3 tools. Floor price: (2.33 hours x $40) + $3 = $96."
+        },
+        {
+            "id": "d12_do2",
+            "title": "Build your price ladder",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Choose target, backup, and stretch prices.",
+                "For each price, define the exact scope and deliverables.",
+                "Write a one-line who this is for to prevent mismatch."
+            ],
+            "items": [
+                {
+                    "id": "d12_do2_i1",
+                    "label": "Chose target, backup, and stretch prices",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three prices labeled backup, target, stretch with currency."
+                },
+                {
+                    "id": "d12_do2_i2",
+                    "label": "Defined scope and deliverables for each price",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste three short package definitions tied to the three prices."
+                },
+                {
+                    "id": "d12_do2_i3",
+                    "label": "Wrote a who-it's-for line per package",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Write three one-line audience statements, one per package."
+                },
+                {
+                    "id": "d12_do2_i4",
+                    "label": "Wrote one why-this-price justification for your target price",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Write 2 to 3 lines explaining why your target price fits scope and evidence."
+                }
+            ],
+            "example": "Backup: $69 Template setup only. Target: $89 Done-for-you setup + walkthrough + one revision. Stretch: $129 Done-for-you + add-on audit. Who it's for: People who want this handled in one week without learning new tools."
+        },
+        {
+            "id": "d12_do3",
+            "title": "Write your pricing test plan",
+            "estimatedMinutes": 10,
+            "steps": [
+                "Define your test audience and outreach count.",
+                "Write two message scripts that include the price.",
+                "Define success signals and what you will change if signals are weak."
+            ],
+            "items": [
+                {
+                    "id": "d12_do3_i1",
+                    "label": "Defined a test audience and outreach count",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write who you will test with and how many people you will contact."
+                },
+                {
+                    "id": "d12_do3_i2",
+                    "label": "Wrote two price-included message scripts",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste two outreach messages that include the price."
+                },
+                {
+                    "id": "d12_do3_i3",
+                    "label": "Defined 3 success signals",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List three measurable success signals for the price test."
+                },
+                {
+                    "id": "d12_do3_i4",
+                    "label": "Defined 2 adjustment rules based on results",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write two rules: if result, then change (scope, price, or channel)."
+                }
+            ],
+            "example": "Audience: 10 freelancers I know or can reach in a community. Signal: At least 2 people ask for the intake link at $89. Adjustment rule: If zero interest at $89, tighten scope and test $69 package."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Price floor calculation with assumptions",
+            "Price ladder with package definitions and who-it's-for lines",
+            "Two price message scripts for testing",
+            "Success signals and adjustment rules"
+        ],
+        "tomorrowPreview": "Tomorrow you will decide what tools, templates, and small purchases are actually needed, and what can be skipped to stay lean."
+    }
+}

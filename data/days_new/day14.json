@@ -1,0 +1,149 @@
+{
+    "day": 14,
+    "title": "Day 14 - Set Up a Way to Get Paid",
+    "week": 3,
+    "mainPromise": "You will set up a simple payment method, create a payment link or invoice template, and test the full paid-to-intake flow.",
+    "timeEstimate": "32 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Payment is part of trust",
+            "content": "Getting paid is not just money. It is credibility. A clean payment flow signals that you are organized and that the buyer will not be stuck in awkward back-and-forth.\n\nYour payment method should match your service type: one-time fixed package, digital delivery, clear scope. You want a checkout that can include the offer description and reduce mismatch.\n\nA payment setup also protects you. It can enforce scope, collect the buyer's email, and trigger intake.",
+            "soWhat": "If payment is unclear, interested buyers hesitate and you lose momentum."
+        },
+        {
+            "id": "t2",
+            "title": "Checkout copy prevents bad customers",
+            "content": "Checkout is not a place for marketing paragraphs. It is a place for clarity. Your best defense against bad-fit customers is to restate scope, timeline, and what is required from them.\n\nA small online service benefits from a simple what you get list and a scope warning line. This reduces refund pressure and reduces scope creep.\n\nYou also need basic policies: revision and refund rules that match what you wrote earlier.",
+            "soWhat": "If checkout copy is vague, you will attract buyers who expect something else."
+        },
+        {
+            "id": "t3",
+            "title": "Test the flow like a customer",
+            "content": "A payment setup is not real until you test it end-to-end. Many small issues appear only when you act like a buyer: missing confirmation, unclear next step, wrong link, or confusing instructions.\n\nTesting is not only technical. It is also emotional. The buyer should feel guided: pay, confirm, intake, delivery timeline.\n\nToday you will run a test transaction flow without needing a real customer.",
+            "soWhat": "If you do not test now, your first real buyer becomes your tester, and that damages trust."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d14_do1",
+            "title": "Choose your payment method",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Pick one primary payment method and one backup.",
+                "Define what the buyer sees at checkout.",
+                "Write the required payment fields you need to capture."
+            ],
+            "items": [
+                {
+                    "id": "d14_do1_i1",
+                    "label": "Chose a primary and backup payment method",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write two payment methods labeled Primary and Backup."
+                },
+                {
+                    "id": "d14_do1_i2",
+                    "label": "Wrote the checkout description draft",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste 80 to 120 words describing the offer at checkout."
+                },
+                {
+                    "id": "d14_do1_i3",
+                    "label": "Listed the buyer information fields you must capture",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List required fields you must capture at payment or intake."
+                },
+                {
+                    "id": "d14_do1_i4",
+                    "label": "Wrote one sentence on how payment connects to intake",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence describing the payment-to-intake connection."
+                }
+            ],
+            "example": "Primary: Payment link checkout. Backup: Invoice with card or bank transfer. Checkout description: Fixed scope, 48-hour delivery after intake, one revision, digital handoff. Payment to intake: After payment, buyer receives intake link automatically."
+        },
+        {
+            "id": "d14_do2",
+            "title": "Create the pay page content",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Write the checkout headline and one-sentence promise.",
+                "Write a 5-bullet what you get list and a 5-bullet what you provide list.",
+                "Add revision and refund policy lines."
+            ],
+            "items": [
+                {
+                    "id": "d14_do2_i1",
+                    "label": "Wrote checkout headline and one-sentence promise",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the headline and one-sentence promise."
+                },
+                {
+                    "id": "d14_do2_i2",
+                    "label": "Wrote a 5-bullet what-you-get list",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 bullets describing what the buyer gets."
+                },
+                {
+                    "id": "d14_do2_i3",
+                    "label": "Wrote a 5-bullet what-you-provide list",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 bullets describing what the buyer must provide."
+                },
+                {
+                    "id": "d14_do2_i4",
+                    "label": "Added revision and refund lines",
+                    "evidenceType": "note",
+                    "evidencePrompt": "Paste 4 to 8 lines of revision and refund policy text."
+                }
+            ],
+            "example": "Promise: In 48 hours, you get a simple workflow that cuts weekly admin time and reduces friction. Policy: One revision within 7 days. Refund only if delivery is not provided as described."
+        },
+        {
+            "id": "d14_do3",
+            "title": "Run an end-to-end test",
+            "estimatedMinutes": 8,
+            "steps": [
+                "Simulate the buyer path: open checkout, read copy, proceed to payment.",
+                "Confirm what happens after payment: confirmation page, email, intake link.",
+                "Document fixes and update your assets."
+            ],
+            "items": [
+                {
+                    "id": "d14_do3_i1",
+                    "label": "Completed a simulated buyer walkthrough and wrote friction notes",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 5 friction notes found during your buyer walkthrough."
+                },
+                {
+                    "id": "d14_do3_i2",
+                    "label": "Confirmed confirmation message content and saved it",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the confirmation content or describe it precisely."
+                },
+                {
+                    "id": "d14_do3_i3",
+                    "label": "Confirmed intake link delivery and saved the link location",
+                    "evidenceType": "link",
+                    "evidencePrompt": "Provide the intake link or note exactly where the link appears after payment."
+                },
+                {
+                    "id": "d14_do3_i4",
+                    "label": "Created a fix list with priorities",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List fixes labeled High, Medium, or Low priority."
+                }
+            ],
+            "example": "Friction note: Policy text is too long, move scope warning higher. Fix list: High: add intake link to confirmation email, Medium: shorten bullets, Low: add FAQ later."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Payment method choice with backup",
+            "Checkout content pack: promise, bullets, and policies",
+            "End-to-end test notes and a prioritized fix list",
+            "Confirmed payment-to-intake connection"
+        ],
+        "tomorrowPreview": "Tomorrow you will design your first workflow so delivery happens the same way each time and nothing falls through the cracks."
+    }
+}

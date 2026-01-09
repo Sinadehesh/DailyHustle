@@ -1,0 +1,149 @@
+{
+    "day": 11,
+    "title": "Day 11 - Assemble the Nuts and Bolts",
+    "week": 3,
+    "mainPromise": "You will assemble the core assets needed to deliver your small online service once, cleanly, with minimal confusion.",
+    "timeEstimate": "34 min",
+    "teachings": [
+        {
+            "id": "t1",
+            "title": "Delivery assets prevent chaos",
+            "content": "A service becomes stressful when you reinvent it for each customer. The fastest way to reduce stress is to pre-build the assets you will reuse: intake, templates, checklists, and a handoff format.\n\nThink of your service as a small machine. A machine has parts. If the parts are missing, you compensate with memory and extra messages, and that increases mistakes.\n\nToday you will build the minimum set of parts to run your service once. Not a full business. A deliverable kit.",
+            "soWhat": "If you do not assemble these parts now, your first delivery will take longer and feel messy."
+        },
+        {
+            "id": "t2",
+            "title": "Intake is a quality gate",
+            "content": "A good intake process does two things. It collects the minimum information you need to deliver well, and it prevents mismatches before money is wasted.\n\nIntake is not a long questionnaire. It is a controlled doorway. If the customer cannot provide the right inputs, your service becomes guesswork and revisions explode.\n\nYour intake also protects you. It gives you written proof of scope, deadlines, and expectations.",
+            "soWhat": "If you do not define intake clearly, your delivery will be slower and less consistent."
+        },
+        {
+            "id": "t3",
+            "title": "Templates are speed and consistency",
+            "content": "Templates are not about being robotic. They are about not forgetting what matters. They let you deliver the same quality every time while still tailoring the details.\n\nFor a digital service, you need templates for the outputs and for communication. That includes a handoff document, a walkthrough format, and a message flow that prevents confusion.\n\nToday you will create a simple template set that can deliver your promise: save time and reduce frustration.",
+            "soWhat": "If you do not create templates, you will waste time rewriting and explaining basic steps."
+        }
+    ],
+    "doBlocks": [
+        {
+            "id": "d11_do1",
+            "title": "Build your project kit",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Create a folder structure for your side hustle.",
+                "Name the 10 to 14 files you will rely on.",
+                "Add a single source of truth doc that links everything."
+            ],
+            "items": [
+                {
+                    "id": "d11_do1_i1",
+                    "label": "Created a folder structure for delivery and admin",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List your folders with names (one per line)."
+                },
+                {
+                    "id": "d11_do1_i2",
+                    "label": "Listed 10 to 14 core files you will create or reuse",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 10 to 14 file names with a short purpose for each."
+                },
+                {
+                    "id": "d11_do1_i3",
+                    "label": "Created a single source of truth doc outline",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Paste the outline headings and link placeholders."
+                },
+                {
+                    "id": "d11_do1_i4",
+                    "label": "Defined where customer assets will be stored per client",
+                    "evidenceType": "decision",
+                    "evidencePrompt": "Write one sentence describing the location and naming convention."
+                }
+            ],
+            "example": "Folders: /Intake, /Delivery, /Templates, /Payments, /Tracking. Files: Offer one-pager, Intake form, Scope checklist, Handoff doc, Walkthrough script, Tracking sheet. Storage rule: Each client gets /Clients/ClientName_Date/ with Intake + Delivery subfolders."
+        },
+        {
+            "id": "d11_do2",
+            "title": "Create your intake pack",
+            "estimatedMinutes": 12,
+            "steps": [
+                "Draft an intake form with 8 to 12 questions.",
+                "Create a scope confirmation checklist the customer must agree to.",
+                "Create an intake review checklist you use before starting work."
+            ],
+            "items": [
+                {
+                    "id": "d11_do2_i1",
+                    "label": "Drafted an intake form with 8 to 12 questions",
+                    "evidenceType": "list",
+                    "evidencePrompt": "Paste your 8 to 12 intake questions."
+                },
+                {
+                    "id": "d11_do2_i2",
+                    "label": "Wrote a scope confirmation checklist with 6 bullets",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 6 scope confirmation bullets."
+                },
+                {
+                    "id": "d11_do2_i3",
+                    "label": "Wrote an intake review checklist with 6 bullets",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 6 intake review checklist bullets."
+                },
+                {
+                    "id": "d11_do2_i4",
+                    "label": "Wrote one sentence that defines when intake is complete",
+                    "evidenceType": "text",
+                    "evidencePrompt": "Write one sentence defining intake completion."
+                }
+            ],
+            "example": "Intake question: What is the one recurring task that wastes time each week? Scope confirmation bullet: This is a one-time setup, not ongoing daily management. Intake complete rule: Intake is complete when all required fields are answered and scope is accepted."
+        },
+        {
+            "id": "d11_do3",
+            "title": "Create delivery templates",
+            "estimatedMinutes": 10,
+            "steps": [
+                "Draft a handoff document template with 6 sections.",
+                "Draft a short walkthrough script outline (video or written).",
+                "Draft two customer messages: confirmation and delivery."
+            ],
+            "items": [
+                {
+                    "id": "d11_do3_i1",
+                    "label": "Created a handoff doc template with 6 sections",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 6 section headings for your handoff document."
+                },
+                {
+                    "id": "d11_do3_i2",
+                    "label": "Created a walkthrough script outline with 7 beats",
+                    "evidenceType": "list",
+                    "evidencePrompt": "List 7 numbered beats for your walkthrough."
+                },
+                {
+                    "id": "d11_do3_i3",
+                    "label": "Drafted a payment-confirmation message",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the message text you will send after payment."
+                },
+                {
+                    "id": "d11_do3_i4",
+                    "label": "Drafted a delivery-complete message with next steps",
+                    "evidenceType": "message",
+                    "evidencePrompt": "Paste the message text you will send at delivery completion."
+                }
+            ],
+            "example": "Handoff sections: What changed, Your new workflow, Weekly routine, Common issues, One revision rules, Contact window. Delivery message: Here is your setup + a 5-minute walkthrough. Try it once this week, then send one revision request within 7 days."
+        }
+    ],
+    "wrap": {
+        "outputs": [
+            "Folder structure and file list for your service",
+            "Intake form, scope confirmation, and intake review checklist",
+            "Handoff doc template and walkthrough outline",
+            "Two customer messages: confirmation and delivery"
+        ],
+        "tomorrowPreview": "Tomorrow you will lock in your pricing approach using a floor price, a target price, and a simple plan to test without panic."
+    }
+}
