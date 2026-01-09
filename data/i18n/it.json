@@ -1,0 +1,169 @@
+{
+    "site": {
+        "name": "Daily Hustle",
+        "tagline": "Una pratica quotidiana per un'attenzione più nitida."
+    },
+    "nav": {
+        "home": "Home",
+        "courses": "Corsi",
+        "categories": "Categorie",
+        "about": "Chi Siamo",
+        "blog": "Blog",
+        "contact": "Contatti",
+        "dashboard": "Dashboard",
+        "search": "Cerca",
+        "login": "Accedi",
+        "signup": "Registrati"
+    },
+    "hero": {
+        "tagline": "Una pratica quotidiana per un'attenzione più nitida.",
+        "subline": "Corsi costruiti come rituali: semplici, strutturati, ripetibili.",
+        "cta_primary": "Esplora i Corsi",
+        "cta_secondary": "Inizia Daily Hustle"
+    },
+    "trust": {
+        "courses": "Corsi",
+        "learners": "Studenti",
+        "hours": "Ore di Contenuto"
+    },
+    "sections": {
+        "featured": "Corsi in Evidenza",
+        "featured_subtitle": "Inizia da qui. Questi corsi hanno aiutato migliaia di persone a sviluppare migliori abitudini di attenzione.",
+        "how_it_works": "Come Funziona",
+        "how_it_works_subtitle": "Un framework semplice per la pratica quotidiana.",
+        "testimonials": "Cosa Dicono gli Studenti",
+        "testimonials_subtitle": "Risultati reali da persone reali.",
+        "blog": "Dal Blog",
+        "blog_subtitle": "Idee su focus, creatività e lavoro sostenibile.",
+        "newsletter": "Resta Concentrato",
+        "newsletter_subtitle": "Ricevi un'idea di lezione a settimana. Niente spam, mai."
+    },
+    "steps": {
+        "step1_title": "Scegli un Corso",
+        "step1_text": "Scegli un corso che corrisponde ai tuoi obiettivi. Inizia con un'introduzione gratuita o immergiti in una pratica strutturata.",
+        "step2_title": "Una Lezione al Giorno",
+        "step2_text": "Ogni lezione richiede 5–12 minuti. Completane una al giorno. Nessuna abbuffata, niente sovraccarico.",
+        "step3_title": "Traccia e Ripeti",
+        "step3_text": "Traccia i tuoi progressi. Costruisci serie. Lascia che la costanza si trasformi in cambiamento duraturo."
+    },
+    "course": {
+        "view": "Vedi Corso",
+        "enroll": "Iscriviti Ora",
+        "preview": "Anteprima Lezione",
+        "start": "Inizia Corso",
+        "continue": "Continua",
+        "reset": "Azzera Progressi",
+        "curriculum": "Programma",
+        "outcomes": "Cosa Imparerai",
+        "instructor": "Il Tuo Istruttore",
+        "pricing": "Prezzi",
+        "faqs": "Domande Frequenti",
+        "related": "Potrebbe Piacerti Anche",
+        "duration": "Durata",
+        "daily_time": "Tempo Giornaliero",
+        "level": "Livello",
+        "format": "Formato",
+        "rating": "Valutazione",
+        "reviews": "recensioni",
+        "lessons": "lezioni",
+        "modules": "moduli",
+        "minutes": "min",
+        "days": "giorni",
+        "free": "Gratis",
+        "beginner": "Principiante",
+        "intermediate": "Intermedio",
+        "advanced": "Avanzato"
+    },
+    "lesson": {
+        "mark_complete": "Segna Completata",
+        "completed": "Completata",
+        "next": "Prossima Lezione",
+        "previous": "Precedente",
+        "progress": "Progresso",
+        "reflection_title": "Riflessione",
+        "reflection_hint": "Le tue note sono salvate localmente e non saranno condivise.",
+        "quiz_check": "Verifica Risposta",
+        "quiz_correct": "Corretto!",
+        "quiz_incorrect": "Non proprio. Riprova o rivedi il materiale sopra."
+    },
+    "dashboard": {
+        "welcome": "Bentornato",
+        "continue": "Continua da Dove Eri Rimasto",
+        "enrolled": "I Tuoi Corsi",
+        "recommendations": "Consigliati per Te",
+        "progress": "I Tuoi Progressi",
+        "completed": "Completati",
+        "in_progress": "In Corso"
+    },
+    "filters": {
+        "search": "Cerca corsi...",
+        "category": "Categoria",
+        "level": "Livello",
+        "price": "Prezzo",
+        "format": "Formato",
+        "sort": "Ordina per",
+        "all": "Tutti",
+        "free": "Gratis",
+        "paid": "A Pagamento",
+        "popular": "Più Popolari",
+        "newest": "Più Recenti",
+        "highest_rated": "Più Votati",
+        "shortest": "Più Brevi"
+    },
+    "categories": {
+        "self": "Sviluppo Personale",
+        "creative": "Creatività",
+        "business": "Business",
+        "other": "Altro"
+    },
+    "formats": {
+        "reading": "Lettura",
+        "video": "Video",
+        "mixed": "Misto",
+        "email": "Corso Email"
+    },
+    "footer": {
+        "brand_text": "L'attenzione è la base. La costanza è la pratica. Daily Hustle è il framework.",
+        "courses": "Corsi",
+        "company": "Azienda",
+        "legal": "Legale",
+        "newsletter_text": "Idee settimanali su focus ed esecuzione.",
+        "newsletter_placeholder": "La tua email",
+        "newsletter_button": "Iscriviti",
+        "privacy": "Privacy Policy",
+        "terms": "Termini di Servizio",
+        "about": "Chi Siamo",
+        "copyright": "© 2025 Daily Hustle. Tutti i diritti riservati."
+    },
+    "buttons": {
+        "submit": "Invia",
+        "cancel": "Annulla",
+        "save": "Salva",
+        "close": "Chiudi",
+        "back": "Indietro",
+        "learn_more": "Scopri di Più",
+        "view_all": "Vedi Tutti",
+        "read_more": "Leggi di Più"
+    },
+    "forms": {
+        "email": "Email",
+        "password": "Password",
+        "name": "Nome",
+        "message": "Messaggio",
+        "required": "Questo campo è obbligatorio",
+        "invalid_email": "Inserisci un'email valida"
+    },
+    "errors": {
+        "not_found": "Pagina non trovata",
+        "generic": "Qualcosa è andato storto. Riprova."
+    },
+    "a11y": {
+        "menu": "Menu principale",
+        "close_menu": "Chiudi menu",
+        "skip_to_content": "Vai al contenuto principale",
+        "open_search": "Apri ricerca",
+        "toggle_theme": "Cambia modalità scura",
+        "toggle_language": "Cambia lingua",
+        "back_to_top": "Torna su"
+    }
+}

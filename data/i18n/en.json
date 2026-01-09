@@ -1,0 +1,169 @@
+{
+    "site": {
+        "name": "Daily Hustle",
+        "tagline": "A daily practice for sharper attention."
+    },
+    "nav": {
+        "home": "Home",
+        "courses": "Courses",
+        "categories": "Categories",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact",
+        "dashboard": "Dashboard",
+        "search": "Search",
+        "login": "Log In",
+        "signup": "Sign Up"
+    },
+    "hero": {
+        "tagline": "A daily practice for sharper attention.",
+        "subline": "Courses built like rituals: simple, structured, repeatable.",
+        "cta_primary": "Browse Courses",
+        "cta_secondary": "Start Daily Hustle"
+    },
+    "trust": {
+        "courses": "Courses",
+        "learners": "Learners",
+        "hours": "Hours of Content"
+    },
+    "sections": {
+        "featured": "Featured Courses",
+        "featured_subtitle": "Start here. These courses have helped thousands build better attention habits.",
+        "how_it_works": "How It Works",
+        "how_it_works_subtitle": "A simple framework for daily practice.",
+        "testimonials": "What Learners Say",
+        "testimonials_subtitle": "Real results from real people.",
+        "blog": "From the Blog",
+        "blog_subtitle": "Ideas on focus, creativity, and sustainable work.",
+        "newsletter": "Stay Focused",
+        "newsletter_subtitle": "Get one lesson idea per week. No spam, ever."
+    },
+    "steps": {
+        "step1_title": "Choose a Course",
+        "step1_text": "Pick a course that matches your goals. Start with a free introduction or dive into a structured practice.",
+        "step2_title": "Do One Lesson Per Day",
+        "step2_text": "Each lesson takes 5–12 minutes. Complete one per day. No binging, no overwhelm.",
+        "step3_title": "Track and Repeat",
+        "step3_text": "Track your progress. Build streaks. Let consistency compound into lasting change."
+    },
+    "course": {
+        "view": "View Course",
+        "enroll": "Enroll Now",
+        "preview": "Preview Lesson",
+        "start": "Start Course",
+        "continue": "Continue",
+        "reset": "Reset Progress",
+        "curriculum": "Curriculum",
+        "outcomes": "What You'll Learn",
+        "instructor": "Your Instructor",
+        "pricing": "Pricing",
+        "faqs": "Frequently Asked Questions",
+        "related": "You Might Also Like",
+        "duration": "Duration",
+        "daily_time": "Daily Time",
+        "level": "Level",
+        "format": "Format",
+        "rating": "Rating",
+        "reviews": "reviews",
+        "lessons": "lessons",
+        "modules": "modules",
+        "minutes": "min",
+        "days": "days",
+        "free": "Free",
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "advanced": "Advanced"
+    },
+    "lesson": {
+        "mark_complete": "Mark Complete",
+        "completed": "Completed",
+        "next": "Next Lesson",
+        "previous": "Previous",
+        "progress": "Progress",
+        "reflection_title": "Reflection",
+        "reflection_hint": "Your notes are saved locally and won't be shared.",
+        "quiz_check": "Check Answer",
+        "quiz_correct": "Correct!",
+        "quiz_incorrect": "Not quite. Try again or review the material above."
+    },
+    "dashboard": {
+        "welcome": "Welcome back",
+        "continue": "Continue Where You Left Off",
+        "enrolled": "Your Courses",
+        "recommendations": "Recommended for You",
+        "progress": "Your Progress",
+        "completed": "Completed",
+        "in_progress": "In Progress"
+    },
+    "filters": {
+        "search": "Search courses...",
+        "category": "Category",
+        "level": "Level",
+        "price": "Price",
+        "format": "Format",
+        "sort": "Sort by",
+        "all": "All",
+        "free": "Free",
+        "paid": "Paid",
+        "popular": "Most Popular",
+        "newest": "Newest",
+        "highest_rated": "Highest Rated",
+        "shortest": "Shortest"
+    },
+    "categories": {
+        "self": "Self Development",
+        "creative": "Creative",
+        "business": "Business",
+        "other": "Other"
+    },
+    "formats": {
+        "reading": "Reading",
+        "video": "Video",
+        "mixed": "Mixed",
+        "email": "Email Course"
+    },
+    "footer": {
+        "brand_text": "Attention is the foundation. Consistency is the practice. Daily Hustle is the framework.",
+        "courses": "Courses",
+        "company": "Company",
+        "legal": "Legal",
+        "newsletter_text": "Weekly ideas on focus and execution.",
+        "newsletter_placeholder": "Your email",
+        "newsletter_button": "Subscribe",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "about": "About Us",
+        "copyright": "© 2025 Daily Hustle. All rights reserved."
+    },
+    "buttons": {
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "close": "Close",
+        "back": "Back",
+        "learn_more": "Learn More",
+        "view_all": "View All",
+        "read_more": "Read More"
+    },
+    "forms": {
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "message": "Message",
+        "required": "This field is required",
+        "invalid_email": "Please enter a valid email"
+    },
+    "errors": {
+        "not_found": "Page not found",
+        "generic": "Something went wrong. Please try again."
+    },
+    "a11y": {
+        "menu": "Main menu",
+        "close_menu": "Close menu",
+        "skip_to_content": "Skip to main content",
+        "open_search": "Open search",
+        "toggle_theme": "Toggle dark mode",
+        "toggle_language": "Change language",
+        "back_to_top": "Back to top"
+    }
+}

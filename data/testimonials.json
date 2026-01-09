@@ -1,0 +1,66 @@
+[
+    {
+        "id": "t1",
+        "quote": "I've tried every productivity system. Daily Hustle is the first one that actually stuck. The one-lesson-per-day constraint is genius.",
+        "name": "Elena R.",
+        "role": "Product Designer",
+        "outcome": "consistency",
+        "course": "daily-hustle"
+    },
+    {
+        "id": "t2",
+        "quote": "After three weeks, I stopped checking my phone first thing in the morning. That single change transformed my entire day.",
+        "name": "James T.",
+        "role": "Freelance Writer",
+        "outcome": "focus",
+        "course": "daily-hustle"
+    },
+    {
+        "id": "t3",
+        "quote": "The Morning Container concept alone was worth the price. I now protect my first two hours like they're sacred.",
+        "name": "Sofia M.",
+        "role": "Startup Founder",
+        "outcome": "focus",
+        "course": "daily-hustle"
+    },
+    {
+        "id": "t4",
+        "quote": "Simple, practical, no fluff. This is what productivity advice should be.",
+        "name": "David K.",
+        "role": "Engineer",
+        "outcome": "skill",
+        "course": "focus-foundations"
+    },
+    {
+        "id": "t5",
+        "quote": "I've shipped more creative work in the past month than in the previous six. The constraint exercises broke something open.",
+        "name": "Ana L.",
+        "role": "Illustrator",
+        "outcome": "skill",
+        "course": "creative-momentum"
+    },
+    {
+        "id": "t6",
+        "quote": "Finally, someone who understands that more tools and systems are not the answer. Less is more.",
+        "name": "Michael B.",
+        "role": "Marketing Director",
+        "outcome": "consistency",
+        "course": "daily-hustle"
+    },
+    {
+        "id": "t7",
+        "quote": "The Shutdown Ritual changed my evenings. I actually rest now instead of running work anxiety on repeat.",
+        "name": "Lisa P.",
+        "role": "Consultant",
+        "outcome": "focus",
+        "course": "daily-hustle"
+    },
+    {
+        "id": "t8",
+        "quote": "Business Clarity helped me see that 80% of what I was doing wasn't moving the needle. Painful but necessary.",
+        "name": "Robert H.",
+        "role": "CEO",
+        "outcome": "skill",
+        "course": "business-clarity"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "id": "attention-economy",
+        "slug": "surviving-the-attention-economy",
+        "title": "Surviving the Attention Economy",
+        "excerpt": "Every app on your phone was designed by people who understand psychology better than you understand yourself. Here's how to fight back.",
+        "category": "Focus",
+        "author": "Marco Bellini",
+        "date": "2025-12-15",
+        "readTime": 8,
+        "featured": true,
+        "thumbnail": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop"
+    },
+    {
+        "id": "morning-ritual",
+        "slug": "the-case-for-morning-rituals",
+        "title": "The Case for Morning Rituals",
+        "excerpt": "What you do in the first hour after waking sets the trajectory for everything that follows. Make it intentional.",
+        "category": "Habits",
+        "author": "Marco Bellini",
+        "date": "2025-12-08",
+        "readTime": 6,
+        "featured": false,
+        "thumbnail": "https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=600&h=400&fit=crop"
+    },
+    {
+        "id": "deep-work-myth",
+        "slug": "the-deep-work-myth",
+        "title": "The Deep Work Myth",
+        "excerpt": "Cal Newport was right about deep work. But most people implement it wrong. Here's what actually matters.",
+        "category": "Productivity",
+        "author": "Marco Bellini",
+        "date": "2025-11-28",
+        "readTime": 10,
+        "featured": false,
+        "thumbnail": "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=600&h=400&fit=crop"
+    },
+    {
+        "id": "creative-blocks",
+        "slug": "creative-blocks-are-attention-problems",
+        "title": "Creative Blocks Are Attention Problems",
+        "excerpt": "You don't have a creativity problem. You have an attention problem. Here's how to distinguish between them.",
+        "category": "Creativity",
+        "author": "Marco Bellini",
+        "date": "2025-11-15",
+        "readTime": 7,
+        "featured": false,
+        "thumbnail": "https://images.unsplash.com/photo-1456324504439-367cee3b3c32?w=600&h=400&fit=crop"
+    },
+    {
+        "id": "consistency-over-intensity",
+        "slug": "consistency-beats-intensity",
+        "title": "Consistency Beats Intensity Every Time",
+        "excerpt": "Stop trying to have perfect days. Start trying to have many mediocre ones in a row.",
+        "category": "Habits",
+        "author": "Marco Bellini",
+        "date": "2025-11-01",
+        "readTime": 5,
+        "featured": false,
+        "thumbnail": "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop"
+    }
+]
