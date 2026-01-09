@@ -1829,67 +1829,126 @@
     "11": {
         "fields": [
             {
-                "id": "tools_needed",
-                "type": "TEXTAREA",
-                "label": "Tools and platforms needed (be specific)",
+                "id": "spine_checklist",
+                "type": "CHECKBOX_GROUP",
+                "label": "Which nuts and bolts did you set up today?",
+                "helperText": "Check all the spine pieces you already have or set up today",
+                "required": true,
+                "options": [
+                    "Landing page",
+                    "Offer description doc",
+                    "Email capture",
+                    "Support email",
+                    "Basic agreement",
+                    "Delivery method",
+                    "Scheduling tool"
+                ]
+            },
+            {
+                "id": "biggest_missing_piece",
+                "type": "TEXT",
+                "label": "What is the biggest missing piece right now?",
+                "helperText": "The one thing blocking you from launching. Example: No landing page to explain my offer",
                 "required": true
             },
             {
-                "id": "content_needed",
-                "type": "TEXTAREA",
-                "label": "Content to create (sales page, product, etc.)",
+                "id": "resourceful_shortcut",
+                "type": "TEXT",
+                "label": "What is your most resourceful shortcut to get it done fast?",
+                "helperText": "Example: Use a free Carrd template, borrow a friend's Notion layout, copy a competitor's structure",
                 "required": true
             },
             {
-                "id": "accounts_needed",
-                "type": "TEXTAREA",
-                "label": "Accounts to set up",
+                "id": "help_source",
+                "type": "TEXT",
+                "label": "Who or what will you ask for help today?",
+                "helperText": "A person, community, template, tool, or tutorial. Example: Ask my designer friend for a quick logo, use Canva templates",
                 "required": true
             },
             {
-                "id": "priority_must_have",
-                "type": "TEXTAREA",
-                "label": "Must-have before accepting payment",
+                "id": "agreement_drafted",
+                "type": "CHECKBOX",
+                "label": "I drafted a basic agreement (what, how much, when)",
                 "required": true
             },
             {
-                "id": "priority_nice_to_have",
+                "id": "basic_agreement",
                 "type": "TEXTAREA",
-                "label": "Nice-to-have (can defer)",
-                "required": false
+                "label": "Paste your basic agreement in 3 lines (what, how much, when)",
+                "helperText": "Example: I will deliver a 30-minute coaching call within 7 days. Cost is $75. Payment due before the call via PayPal.",
+                "required": true
+            },
+            {
+                "id": "next_action",
+                "type": "TEXT",
+                "label": "Your next action in the next 24 hours (one sentence)",
+                "helperText": "Example: Set up a Carrd landing page and share the link with 3 friends for feedback",
+                "required": true
             }
         ]
     },
     "12": {
         "fields": [
             {
-                "id": "cost_to_deliver",
-                "type": "CURRENCY",
-                "label": "Your cost to deliver (time + materials + tools)",
+                "id": "offer_sentence",
+                "type": "TEXT",
+                "label": "What are you selling today? (one sentence offer)",
+                "helperText": "Example: A 60-minute resume rewrite plus a 15-minute feedback call",
                 "required": true
             },
             {
-                "id": "competitor_pricing",
-                "type": "TEXTAREA",
-                "label": "Competitor pricing (from Day 7 research)",
+                "id": "direct_cash_cost",
+                "type": "NUMBER",
+                "label": "Direct cash cost per sale (fees, materials, shipping, tools)",
+                "helperText": "Add up platform fees, materials, shipping, and any tool costs per sale. Example: 5",
                 "required": true
             },
             {
-                "id": "value_to_customer",
-                "type": "TEXTAREA",
-                "label": "Value to customer: What's this worth to them?",
+                "id": "time_cost_hours",
+                "type": "NUMBER",
+                "label": "Time cost per sale (hours, realistic estimate)",
+                "helperText": "Include prep, delivery, and follow-up. Be honest. Example: 2.5",
                 "required": true
             },
             {
-                "id": "initial_price",
-                "type": "CURRENCY",
-                "label": "Your initial price",
+                "id": "minimum_hourly_value",
+                "type": "NUMBER",
+                "label": "Minimum hourly value you want (or equivalent)",
+                "helperText": "The minimum you are willing to earn per hour. Example: 25",
                 "required": true
+            },
+            {
+                "id": "minimum_price",
+                "type": "NUMBER",
+                "label": "Your minimum workable price (cost-plus result)",
+                "helperText": "Formula: (hours x hourly value) + cash costs. Example: (2.5 x 25) + 5 = 67.50",
+                "required": true
+            },
+            {
+                "id": "starting_price",
+                "type": "NUMBER",
+                "label": "Your starting launch price",
+                "helperText": "A realistic price between your minimum and what the market can bear. Example: 75",
+                "required": true
+            },
+            {
+                "id": "pricing_model",
+                "type": "SELECT",
+                "label": "Pricing model you will use (for now)",
+                "required": true,
+                "options": [
+                    "Flat fee",
+                    "Hourly",
+                    "Tiered packages",
+                    "Subscription",
+                    "Other"
+                ]
             },
             {
                 "id": "pricing_reasoning",
                 "type": "TEXTAREA",
-                "label": "Reasoning: Why this price?",
+                "label": "Why this price makes sense (and how it feels to publish it)",
+                "helperText": "Example: $75 covers my costs and gives me $25 per hour. It feels slightly scary but fair for the value.",
                 "required": true
             }
         ]
@@ -1897,35 +1956,59 @@
     "13": {
         "fields": [
             {
-                "id": "accounts_setup",
-                "type": "CHECKBOX_GROUP",
-                "label": "Accounts set up today",
+                "id": "three_step_recipe",
+                "type": "TEXTAREA",
+                "label": "Write your 3-step recipe (Step 1 create, Step 2 publish, Step 3 revenue)",
+                "helperText": "Example: Step 1: Record video tutorials. Step 2: Upload to Gumroad with sales page. Step 3: Share link and accept payment.",
+                "required": true
+            },
+            {
+                "id": "ingredients_list",
+                "type": "TEXTAREA",
+                "label": "List the ingredients you must source or create (tools, assets, access, help)",
+                "helperText": "Example: Screen recording software, microphone, Gumroad account, thumbnail designs, email template",
+                "required": true
+            },
+            {
+                "id": "customer_deliverables",
+                "type": "TEXTAREA",
+                "label": "List the deliverables the customer receives (exact items)",
+                "helperText": "Example: 5 video lessons (10 min each), 1 PDF checklist, 1 template spreadsheet, access to private Discord",
+                "required": true
+            },
+            {
+                "id": "most_urgent_ingredient",
+                "type": "TEXT",
+                "label": "What is the single most urgent missing ingredient?",
+                "helperText": "The one thing blocking progress. Example: Screen recording software",
+                "required": true
+            },
+            {
+                "id": "ingredient_source",
+                "type": "TEXT",
+                "label": "Where will you get it within 48 hours? (link, shop, person, platform)",
+                "helperText": "Example: Download Loom free trial from loom.com",
+                "required": true
+            },
+            {
+                "id": "sourcing_method",
+                "type": "SELECT",
+                "label": "How will you source it?",
                 "required": true,
                 "options": [
-                    "Payment processor",
-                    "Email service",
-                    "Website/landing page",
-                    "Social media",
-                    "Domain name",
-                    "Other"
+                    "Borrow",
+                    "Free trial",
+                    "Buy used",
+                    "Rent",
+                    "Trade skills",
+                    "Buy new"
                 ]
             },
             {
-                "id": "purchases_made",
-                "type": "TEXTAREA",
-                "label": "Purchases made (list with costs)",
-                "required": true
-            },
-            {
-                "id": "total_spent",
-                "type": "CURRENCY",
-                "label": "Total startup cost so far",
-                "required": true
-            },
-            {
-                "id": "credentials_documented",
-                "type": "CHECKBOX",
-                "label": "I have documented all login credentials securely",
+                "id": "ingredient_cost",
+                "type": "NUMBER",
+                "label": "Estimated cost to acquire the urgent ingredient",
+                "helperText": "Enter 0 if free. Example: 0",
                 "required": true
             }
         ]
@@ -1933,41 +2016,59 @@
     "14": {
         "fields": [
             {
-                "id": "payment_platform",
-                "type": "SELECT",
-                "label": "Payment platform chosen",
+                "id": "payment_methods",
+                "type": "CHECKBOX_GROUP",
+                "label": "Which payment method(s) will you accept at launch?",
+                "helperText": "Check all that apply for your first launch",
                 "required": true,
                 "options": [
                     "Stripe",
                     "PayPal",
                     "Gumroad",
-                    "Square",
-                    "Shopify",
+                    "Bank transfer",
+                    "Invoice link",
                     "Other"
                 ]
             },
             {
-                "id": "account_setup",
-                "type": "CHECKBOX",
-                "label": "Account created and payout connected",
-                "required": true
-            },
-            {
-                "id": "product_created",
-                "type": "CHECKBOX",
-                "label": "First product/price created in system",
-                "required": true
-            },
-            {
-                "id": "test_completed",
-                "type": "CHECKBOX",
-                "label": "Test checkout flow completed",
-                "required": true
-            },
-            {
                 "id": "payment_link",
                 "type": "URL",
-                "label": "Your payment/checkout link",
+                "label": "Paste your payment link or checkout URL",
+                "helperText": "Example: https://pay.stripe.com/link123 or your Gumroad product page",
+                "required": true
+            },
+            {
+                "id": "payment_tested",
+                "type": "CHECKBOX",
+                "label": "I tested the payment flow end to end (pay, confirmation, delivery)",
+                "required": true
+            },
+            {
+                "id": "refund_policy",
+                "type": "TEXT",
+                "label": "Write your one-sentence refund policy",
+                "helperText": "Example: Full refund if you are not satisfied within 7 days, no questions asked.",
+                "required": true
+            },
+            {
+                "id": "delivery_promise",
+                "type": "TEXT",
+                "label": "Write your one-sentence delivery promise (what happens after they pay)",
+                "helperText": "Example: You will receive a confirmation email with download link within 5 minutes of purchase.",
+                "required": true
+            },
+            {
+                "id": "basic_agreement",
+                "type": "TEXTAREA",
+                "label": "Paste your basic agreement (what you do, how much, when paid)",
+                "helperText": "Your 3-line agreement from Day 11, updated with any changes",
+                "required": true
+            },
+            {
+                "id": "support_email",
+                "type": "EMAIL",
+                "label": "Support email customers should use",
+                "helperText": "Example: help@yoursite.com or your personal email",
                 "required": true
             }
         ]
@@ -1977,38 +2078,52 @@
             {
                 "id": "workflow_steps",
                 "type": "TEXTAREA",
-                "label": "Post-purchase workflow: Step-by-step",
-                "required": true,
-                "helperText": "What happens after someone buys?"
-            },
-            {
-                "id": "automated_steps",
-                "type": "TEXTAREA",
-                "label": "Which steps can be automated?",
+                "label": "Write your workflow from discovery to delivery (numbered steps)",
+                "helperText": "At least 12 steps. Example: 1. Customer finds landing page. 2. Reads offer. 3. Clicks buy...",
                 "required": true
             },
             {
-                "id": "manual_steps",
+                "id": "onboarding_messages",
                 "type": "TEXTAREA",
-                "label": "Which steps require your time?",
+                "label": "Write 4 onboarding messages (welcome, how to start, tips, check-in)",
+                "helperText": "1. Welcome message with next steps. 2. How to get started. 3. One helpful tip. 4. Check-in after a few days.",
                 "required": true
             },
             {
-                "id": "templates_created",
+                "id": "workflow_risks",
                 "type": "CHECKBOX_GROUP",
-                "label": "Templates drafted",
-                "required": false,
+                "label": "What could go wrong? Select your top risks",
+                "helperText": "Check the most likely failure points for your workflow",
+                "required": true,
                 "options": [
-                    "Confirmation email",
-                    "Delivery instructions",
-                    "Follow-up message",
-                    "Receipt/invoice"
+                    "Customer did not get email",
+                    "Wrong details submitted",
+                    "Time zone scheduling issue",
+                    "Delivery failed",
+                    "Refund request",
+                    "No-show",
+                    "Other"
                 ]
             },
             {
-                "id": "estimated_delivery_time",
+                "id": "risk_fixes",
+                "type": "TEXTAREA",
+                "label": "For 2 risks, write the fix and the exact message you will send",
+                "helperText": "Example: Risk 1: Customer did not get email. Fix: Check spam, resend manually. Message: Hi! I noticed you might not have received my email. Here it is again...",
+                "required": true
+            },
+            {
+                "id": "next_automation",
                 "type": "TEXT",
-                "label": "Estimated time from purchase to delivery",
+                "label": "One automation or template you will build next (one sentence)",
+                "helperText": "Example: Create a Zapier automation to send confirmation emails",
+                "required": true
+            },
+            {
+                "id": "customer_storage",
+                "type": "TEXT",
+                "label": "Where will you store customer info and orders?",
+                "helperText": "Example: Google Sheet, Notion database, Airtable, CRM",
                 "required": true
             }
         ]
@@ -2016,28 +2131,70 @@
     "16": {
         "fields": [
             {
-                "id": "all_remaining_tasks",
+                "id": "benefit_clarity",
+                "type": "SELECT",
+                "label": "How clear is the customer benefit today?",
+                "helperText": "1 = very unclear, 5 = crystal clear",
+                "required": true,
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            {
+                "id": "income_clarity",
+                "type": "SELECT",
+                "label": "How clear is your income plan today?",
+                "helperText": "1 = very unclear, 5 = crystal clear",
+                "required": true,
+                "options": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },
+            {
+                "id": "benefit_actions",
                 "type": "TEXTAREA",
-                "label": "All tasks remaining before launch",
+                "label": "List 3 actions that improve customer benefit (specific)",
+                "helperText": "Example: 1. Add a quick-start checklist to the product. 2. Record a walkthrough video. 3. Simplify the first step.",
                 "required": true
             },
             {
-                "id": "revenue_tasks",
+                "id": "income_actions",
                 "type": "TEXTAREA",
-                "label": "Tasks that directly lead to revenue",
+                "label": "List 3 actions that increase income (specific)",
+                "helperText": "Example: 1. Send 3 outreach DMs to potential customers. 2. Post the offer on LinkedIn. 3. Ask a happy customer for a referral.",
                 "required": true
             },
             {
-                "id": "deferred_tasks",
+                "id": "stop_tasks",
                 "type": "TEXTAREA",
-                "label": "Tasks deferred or deleted (not essential)",
+                "label": "List 3 low-value tasks you will stop or postpone",
+                "helperText": "Example: 1. Stop tweaking the logo. 2. Pause social media scheduling setup. 3. Defer building an email sequence.",
                 "required": true
             },
             {
-                "id": "time_blocked",
-                "type": "CHECKBOX",
-                "label": "Time blocked for highest-leverage tasks",
+                "id": "morning_block_task",
+                "type": "TEXT",
+                "label": "Your 25-minute Make Something block for tomorrow morning (exact task)",
+                "helperText": "Example: Tomorrow at 7am I will write the welcome email sequence",
                 "required": true
+            },
+            {
+                "id": "ten_percent_commitment",
+                "type": "CHECKBOX_GROUP",
+                "label": "I will spend 10 percent more time on:",
+                "required": true,
+                "options": [
+                    "Customer benefit",
+                    "Income"
+                ]
             }
         ]
     },

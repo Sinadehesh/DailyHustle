@@ -565,187 +565,319 @@
         "day": 11,
         "title": "Assemble the Nuts and Bolts",
         "week": 3,
-        "goal": "List everything you need to launch your offer",
-        "timeEstimate": "25-35 min",
+        "goal": "Create the minimum setup spine so your hustle can launch without chaos",
+        "timeEstimate": "35-45 min",
+        "hook": "Resourcefulness beats perfection. Today you clear the logistics so you can focus on value and selling.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Before you can sell, you need to build. Today you'll create a comprehensive list of everything required to make your offer real—tools, content, processes, and platforms.\n\nThis is practical logistics work. What tools do you need? What content must you create? What accounts do you need to set up? What processes need documentation?\n\nThe goal is a clear checklist you can execute over the coming days. Vague plans create paralysis. Specific checklists create momentum."
+            "content": "You have an idea, an avatar, an offer, and a story. Now you need a place to put it all. Today is about logistics, not creativity.\n\nThe goal is a setup spine: the minimum operational pieces required to launch. Nothing fancy. Nothing polished. Just the essentials that let you accept money and deliver value.\n\nHere is what a basic spine looks like:\n\n1. A place to explain the offer. This could be a simple landing page, a Google Doc, or even a well-written email. The format matters less than clarity. Can someone read it and understand what they get?\n\n2. A way to capture interest. An email address to contact you, a form to fill out, or a DM button. Make it easy for interested people to raise their hand.\n\n3. A delivery method. How does the customer receive what they paid for? A file sent by email? A scheduling link for a call? A shipped package? Know the mechanism.\n\n4. A basic agreement. What you will do, how much it costs, and when they pay. This does not need to be a legal contract. It can be three lines in an email. Clarity protects both parties.\n\n5. A support channel. An email address where customers can reach you if something goes wrong.\n\nThat is the spine. Everything else is optional for now.\n\nConsider Sarah, who wanted to launch a meal planning service. She spent three weeks designing a logo and perfecting her Instagram grid. Meanwhile, her friend Jake wrote a one-page Google Doc explaining his offer, added a PayPal link, and got two paying customers in a week. Jake had a spine. Sarah had decoration.\n\nMake it easier: Start with what you already have. A free Carrd page. A simple Notion doc. Your existing email address. You can upgrade later when you have revenue.\n\nCommon mistake: Overbuilding before validation. You do not need a custom website, a full brand package, or automated workflows to make your first sale. You need clarity and a way to get paid."
+        },
+        "practice": {
+            "title": "The Launch Spine Audit (5-7 minutes)",
+            "content": "Set a timer for 6 minutes.\n\nOn paper or in a notes app, draw a simple checklist with these 5 items:\n\n1. Place to explain the offer\n2. Way to capture interest\n3. Delivery method\n4. Basic agreement\n5. Support channel\n\nFor each item, write what you already have or what you need to create. Be honest. If you have nothing for an item, write nothing.\n\nNow circle the one item that is most urgent. This is the blocker. If you do not solve it, you cannot launch.\n\nFinally, write one resourceful shortcut to get that item done today. Borrow a template. Use a free tool. Ask someone for help. Perfection is not the goal. Done is."
         },
         "mission": [
             {
-                "task": "List all tools and platforms you'll need (be specific)",
-                "time": "10 min"
+                "task": "Complete the Launch Spine Audit practice",
+                "time": "7 min"
             },
             {
-                "task": "List all content you need to create (sales page, product, etc.)",
-                "time": "10 min"
+                "task": "Check off which spine pieces you already have",
+                "time": "3 min"
             },
             {
-                "task": "List all accounts you need to set up",
+                "task": "Identify the biggest missing piece",
+                "time": "3 min"
+            },
+            {
+                "task": "Find a resourceful shortcut to get it done fast",
                 "time": "5 min"
             },
             {
-                "task": "Prioritize: what must happen before you can accept payment?",
+                "task": "Identify who or what you can ask for help today",
+                "time": "3 min"
+            },
+            {
+                "task": "Draft a basic agreement in 3 lines (what, how much, when)",
                 "time": "10 min"
+            },
+            {
+                "task": "Set up your support email if not already done",
+                "time": "5 min"
+            },
+            {
+                "task": "Write your next action for the next 24 hours",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't overcomplicate. The minimum viable version needs fewer things than you think. Ask: 'Can I launch without this?' If yes, defer it.",
-        "doneMeans": "You have a prioritized checklist of exactly what you need to launch."
+        "commonMistakes": "Overbuilding before anyone has paid. You do not need a custom logo, branded templates, or a full website. You need clarity and a payment method.\n\nWaiting for everything to be ready. Launch with 80 percent and fix the rest after you have a customer.\n\nIgnoring the basic agreement. Misunderstandings about scope, price, and timing kill relationships. Write it down, even informally.\n\nUsing complexity as an excuse. If your setup feels complicated, simplify it. The best first hustles have three moving parts, not thirty.\n\nNot asking for help. Someone has the template, tool, or knowledge you need. Ask.",
+        "doneMeans": "You have a documented spine with all 5 pieces either done or scheduled, a basic agreement drafted, and a next action for the next 24 hours.",
+        "reviewCTA": "Want feedback on your launch spine? Submit your Day 11 workbook for review and get suggestions on simplifying your setup."
     },
     {
         "day": 12,
         "title": "Decide How to Price Your Offer",
         "week": 3,
-        "goal": "Set your initial price with clear reasoning",
-        "timeEstimate": "30-40 min",
+        "goal": "Pick a starting price that is not random, not fear-based, and sustainable",
+        "timeEstimate": "35-45 min",
+        "hook": "No price means hobby. Today you set a number that respects your work and makes sense for your customer.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Pricing is psychology as much as math. Today you'll decide what to charge, grounded in research and strategy rather than guesswork.\n\nConsider three anchors: cost-based (what does it cost you to deliver?), competition-based (what do alternatives cost?), and value-based (what's it worth to the customer?).\n\nFor side hustles, I recommend starting slightly lower than you're comfortable with, then raising prices as you gain evidence of value. Your first customers are learning opportunities as much as revenue.\n\nRemember: you can always change your price. This isn't permanent—it's a starting point."
+            "content": "Many people skip this step or guess at random. They pick a number that sounds nice or copy a competitor without thinking. That is how you end up resenting your own hustle.\n\nToday you will use a simple cost-plus approach to find your minimum workable price. Then you will choose a starting price within a realistic range.\n\nFor services:\n\nStart by estimating how many hours it takes to deliver. Be realistic. Include prep time, communication, and follow-up. Multiply by the minimum hourly value you are willing to accept. Then add any direct costs like software or materials. That is your floor.\n\nFor products:\n\nStart with your unit cost: materials, production, packaging. Add shipping and platform fees. Then add the minimum profit you need per sale. That is your floor.\n\nNow look at the range. Your floor is the bottom. Your ceiling is what the market will bear. Somewhere in between is your starting price.\n\nThree common pricing models:\n\nFlat package: One price for a defined scope. Works well when you can predict effort.\n\nHourly: Charge for time. Works when scope varies or customers want flexibility.\n\nTiered options: Good, better, best. Gives customers choice and anchors them to the middle.\n\nConsider Marcus, who offered resume writing. He charged 25 dollars because he felt nervous. Each resume took him 3 hours. He was earning less than minimum wage and started dreading the work. When he raised his price to 75 dollars, he attracted better clients and enjoyed the process. Underpricing creates hidden damage.\n\nPrice sanity check: If you sell 5 units this month, are you happy? If you sell 50, can you deliver? If either answer is no, adjust.\n\nCommon mistake: Pricing based on fear instead of value. Your price should cover your costs, respect your time, and leave room to improve the offer."
+        },
+        "practice": {
+            "title": "The Cost-Plus Calculation (4-6 minutes)",
+            "content": "Set a timer for 5 minutes.\n\nOn paper, answer these questions:\n\n1. What is the direct cash cost per sale? (fees, materials, tools)\n2. How many hours does it take to deliver one sale?\n3. What is the minimum hourly value I want?\n4. Minimum price = (hours x hourly value) + cash costs\n\nNow write:\n\n5. My starting price will be _____ because _____.\n\nFinally, consider one higher tier. What could you add to justify a price 50 percent higher? Write it down."
         },
         "mission": [
             {
-                "task": "Calculate your costs to deliver (time, materials, tools)",
-                "time": "10 min"
+                "task": "Complete the Cost-Plus Calculation practice",
+                "time": "6 min"
             },
             {
-                "task": "Document competitor pricing from your Day 7 research",
+                "task": "Write what you are selling in one sentence",
+                "time": "3 min"
+            },
+            {
+                "task": "Calculate direct cash cost per sale",
                 "time": "5 min"
             },
             {
-                "task": "Estimate the value to your customer (what problem is worth solving?)",
-                "time": "10 min"
+                "task": "Estimate time cost per sale in hours",
+                "time": "5 min"
             },
             {
-                "task": "Set your initial price and write the reasoning",
-                "time": "10 min"
+                "task": "Decide on your minimum hourly value",
+                "time": "3 min"
+            },
+            {
+                "task": "Calculate your minimum workable price",
+                "time": "3 min"
+            },
+            {
+                "task": "Set your starting launch price",
+                "time": "5 min"
+            },
+            {
+                "task": "Choose a pricing model (flat, hourly, tiered)",
+                "time": "3 min"
+            },
+            {
+                "task": "Write why this price makes sense and how it feels to publish it",
+                "time": "5 min"
             }
         ],
-        "commonMistakes": "Don't race to the bottom on price. Cheap signals low value. Also don't price based on your insecurity—price based on the value delivered.",
-        "doneMeans": "You have a specific price with written reasoning based on costs, competition, and value."
+        "commonMistakes": "Underpricing because of fear. New sellers want to be safe. But too low signals low value and creates resentment.\n\nPricing without understanding costs. If you do not know your floor, you cannot price sustainably.\n\nCopying competitors without context. Their costs and goals are different. Use their prices as reference, not gospel.\n\nIgnoring time cost. Your hours have value. If you forget to include them, you are subsidizing your customers.\n\nNot doing a sanity check. If 5 sales makes you miserable or 50 sales breaks you, adjust before you launch.",
+        "doneMeans": "You have a calculated minimum price, a starting launch price, a pricing model chosen, and written reasoning for why it makes sense.",
+        "reviewCTA": "Want feedback on your pricing logic? Submit your Day 12 workbook for review and get suggestions on positioning."
     },
     {
         "day": 13,
         "title": "Create a Side Hustle Shopping List",
         "week": 3,
-        "goal": "Purchase or sign up for everything on your Day 11 list",
-        "timeEstimate": "30-45 min",
+        "goal": "Turn your hustle into a recipe with steps and ingredients so you know what to source",
+        "timeEstimate": "35-45 min",
+        "hook": "A hustle launches faster when you break it into steps and gather ingredients per step.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "Planning is easy. Spending money makes things real. Today you'll actually acquire the tools, domains, accounts, and resources you need.\n\nThis is an execution day. Take your prioritized list from Day 11 and start checking items off. Set up accounts. Buy the domain. Subscribe to the tools.\n\nKeep costs minimal at first. Free trials are your friend. You can upgrade when you have revenue. The goal is to have everything in place, not to have everything perfect."
+            "content": "Right now your hustle might feel like a cloud of tasks. Today you turn it into a recipe: clear steps with specific ingredients.\n\nThink of it as cooking. You cannot make a cake without knowing the steps and the ingredients. Your hustle is the same.\n\nThe 3-step recipe:\n\nStep 1: Create the thing. This is the core value. A draft, a prototype, a lesson, a template, a product. Whatever the customer receives.\n\nStep 2: Put it somewhere. This is where people find it. A page, a listing, a checkout, an email capture. The container.\n\nStep 3: Revenue mechanism. This is how money happens. A payment link, an invoice, a checkout flow, a booking with deposit.\n\nFor each step, list the ingredients: tools, resources, deliverables, and skills you need.\n\nExample recipe for a freelance writing service:\n\nStep 1: Create the thing. Ingredients: writing samples, service description, scope template.\n\nStep 2: Put it somewhere. Ingredients: simple website or Notion page, contact form, LinkedIn profile.\n\nStep 3: Revenue mechanism. Ingredients: PayPal account, invoice template, basic contract.\n\nNow you know what to source.\n\nResourceful sourcing: Borrow before you buy. Use free trials. Buy used. Rent. Trade skills. The goal is to get the ingredient, not to own the fanciest version.\n\nDo not overbuy: Ask yourself, can I launch without this? If yes, defer it. Premature spending kills cash flow and creates pressure.\n\nCommon mistake: Buying premium tools before validation. Start with free or cheap. Upgrade when you have revenue."
+        },
+        "practice": {
+            "title": "The Recipe Builder (5-7 minutes)",
+            "content": "Set a timer for 6 minutes.\n\nWrite the 3-step recipe for your hustle:\n\nStep 1: Create the thing. What do I need to make?\nStep 2: Put it somewhere. Where will people find it?\nStep 3: Revenue mechanism. How does money happen?\n\nFor each step, list 2 to 4 ingredients you need.\n\nCircle the one most urgent missing ingredient. This is your blocker.\n\nWrite where you will get it within 48 hours. Be specific: a link, a shop, a person, a platform."
         },
         "mission": [
             {
-                "task": "Review your Day 11 checklist of required items",
+                "task": "Complete the Recipe Builder practice",
+                "time": "7 min"
+            },
+            {
+                "task": "Write your 3-step recipe",
                 "time": "5 min"
             },
             {
-                "task": "Sign up for all necessary accounts and tools",
-                "time": "20 min"
+                "task": "List all ingredients you must source or create",
+                "time": "10 min"
             },
             {
-                "task": "Purchase any essential items (domain, templates, materials)",
-                "time": "15 min"
-            },
-            {
-                "task": "Document all login credentials and costs",
+                "task": "List the exact deliverables the customer receives",
                 "time": "5 min"
+            },
+            {
+                "task": "Identify the single most urgent missing ingredient",
+                "time": "3 min"
+            },
+            {
+                "task": "Find where you will get it within 48 hours",
+                "time": "5 min"
+            },
+            {
+                "task": "Choose how you will source it (borrow, free trial, buy used, etc.)",
+                "time": "3 min"
+            },
+            {
+                "task": "Estimate the cost to acquire the urgent ingredient",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't buy premium tools before you've validated the idea. Start with free or cheap options. Upgrade when you have customers.",
-        "doneMeans": "Every essential tool and account is set up and ready to use."
+        "commonMistakes": "Not breaking down the hustle into steps. Vague plans create paralysis. Specific recipes create momentum.\n\nBuying premium tools before you have revenue. Start cheap or free. Upgrade later.\n\nOverbuying ingredients. More tools do not equal better results. Minimal is often better.\n\nForgetting to list deliverables. Know exactly what the customer receives so you can create it.\n\nNot setting a deadline to source the missing ingredient. 48 hours is enough. Longer and you lose momentum.",
+        "doneMeans": "You have a 3-step recipe, a shopping list grouped by step, the most urgent missing ingredient identified, and a plan to get it within 48 hours.",
+        "reviewCTA": "Want feedback on your recipe and shopping list? Submit your Day 13 workbook for review."
     },
     {
         "day": 14,
         "title": "Set Up a Way to Get Paid",
         "week": 3,
-        "goal": "Configure your payment processing system",
-        "timeEstimate": "25-35 min",
+        "goal": "Make payment boring, simple, and reliable so you can send a link and get paid today",
+        "timeEstimate": "35-45 min",
+        "hook": "Money must reach your bank account. Start with simple tech and upgrade later.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "You can't earn money if people can't pay you. Today you'll set up the infrastructure to accept payments, making your side hustle legitimately operational.\n\nFor most side hustles, this means a payment processor (Stripe, PayPal, Gumroad, etc.) and potentially a simple checkout page. Don't overcomplicate it.\n\nThe key is removing friction. The fewer clicks between 'I want this' and 'I bought this,' the better. Test the flow yourself before asking customers to use it."
+            "content": "You can have the best offer in the world, but if people cannot pay you easily, you will not make money. Today you fix that.\n\nEasy to pay beats fancy payment stack. Your customer should be able to pay in under 2 minutes. Fewer steps, fewer fields, fewer clicks.\n\nSimple options that work:\n\nStripe: Create a payment link in 5 minutes. Low fees. Works globally.\n\nPayPal: Ubiquitous. Many people already have accounts. Easy invoicing.\n\nGumroad: Good for digital products. Handles checkout and delivery.\n\nBank transfer: Works for higher-ticket services where trust already exists.\n\nInvoice tools: Wave, Invoice Ninja, or even a PDF invoice for simple cases.\n\nUnderstand fees: Most platforms charge 2.9 percent plus a small fixed fee. This affects your real profit. Factor it into your pricing.\n\nReduce payment friction:\n\n1. Fewer form fields. Name, email, card. That is often enough.\n2. Clear refund sentence. People fear commitment. A simple refund policy reduces hesitation.\n3. Clear delivery expectations. What happens after they pay? Tell them.\n\nThe basic agreement reminder: What you will do, how much, when paid. If you have not written this, do it now. It protects both parties.\n\nConsider this story: Mia set up a payment link but never tested it. Her first customer tried to pay, got an error, and gave up. Mia lost the sale because she skipped the test run. Always test your payment flow end to end before you launch.\n\nCommon mistake: Using complicated checkout for a simple offer. If you are selling one thing at one price, a single payment link is enough."
+        },
+        "practice": {
+            "title": "The Payment Test Run (5-7 minutes)",
+            "content": "Set a timer for 6 minutes.\n\nOpen your payment platform of choice. Create a test product or payment link.\n\nRun through the entire flow as if you were the customer:\n\n1. See the offer\n2. Click pay\n3. Enter details\n4. Complete payment\n5. Receive confirmation\n\nNote any friction. Too many steps? Confusing fields? Slow loading?\n\nNow write:\n\n1. One-sentence refund policy: Example: Full refund if you are not satisfied within 7 days.\n2. One-sentence delivery promise: Example: You will receive the PDF within 24 hours.\n3. One-sentence support instruction: Example: Email help@example.com if anything goes wrong."
         },
         "mission": [
             {
-                "task": "Choose a payment platform (Stripe, PayPal, Gumroad, etc.)",
+                "task": "Complete the Payment Test Run practice",
+                "time": "7 min"
+            },
+            {
+                "task": "Choose your payment method(s) for launch",
+                "time": "5 min"
+            },
+            {
+                "task": "Set up your payment link or checkout URL",
                 "time": "10 min"
             },
             {
-                "task": "Set up your account and connect bank/payout info",
-                "time": "15 min"
-            },
-            {
-                "task": "Create your first product/price in the system",
+                "task": "Test the payment flow end to end",
                 "time": "5 min"
             },
             {
-                "task": "Test the checkout flow yourself (use test mode if available)",
+                "task": "Write your one-sentence refund policy",
+                "time": "3 min"
+            },
+            {
+                "task": "Write your one-sentence delivery promise",
+                "time": "3 min"
+            },
+            {
+                "task": "Update your basic agreement with payment terms",
                 "time": "5 min"
+            },
+            {
+                "task": "Confirm your support email is ready",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't skip the test transaction. Problems with payment flow kill sales. Also, understand the fees—they affect your real profit.",
-        "doneMeans": "You have a working payment system that can accept money for your offer."
+        "commonMistakes": "Not testing the payment flow. Problems with payment kill sales. Always test before you launch.\n\nIgnoring fees. If you forget to factor in 3 percent fees, you are giving away profit.\n\nMaking checkout too complicated. One product, one price, one button. Simple wins.\n\nNo refund policy. Silence creates anxiety. Even a clear no-refund policy is better than confusion.\n\nNo delivery clarity. Customers want to know what happens after they pay. Tell them.",
+        "doneMeans": "You have a working payment link, tested the flow end to end, and written your refund policy, delivery promise, and support instruction.",
+        "reviewCTA": "Want feedback on your payment setup? Submit your Day 14 workbook for review."
     },
     {
         "day": 15,
         "title": "Design Your First Workflow",
         "week": 3,
-        "goal": "Document exactly how you'll deliver after someone buys",
-        "timeEstimate": "25-35 min",
+        "goal": "Map every step from discovery to payment to delivery so nothing breaks during launch week",
+        "timeEstimate": "40-50 min",
+        "hook": "A workflow is the sequence that prevents mishaps. Design it from the customer's point of view.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "What happens after someone clicks 'buy'? If you don't know, you're not ready to sell. Today you'll map the complete customer experience from purchase to delivery.\n\nThis workflow becomes your operating system. Step 1, step 2, step 3—clear enough that you could follow it at 6 AM after bad sleep.\n\nFor products, this might be automated. For services, it might involve scheduling, communication, and delivery. Either way, document it now so you're not scrambling later."
+            "content": "What happens after someone clicks buy? If you do not know, you are not ready to sell. Today you map the complete journey.\n\nA workflow is simply: what happens next. It is a numbered list of steps from the moment someone discovers your offer to the moment they have received value and you have been paid.\n\nThe core path:\n\nDiscovery: They find your offer. (Social post, search, referral)\nDecision: They read and decide to buy.\nPayment: They complete checkout.\nConfirmation: They get immediate acknowledgment.\nDelivery: They receive the value.\nSupport: They have a way to ask questions.\nFollow-up: You check in and ask for feedback or referrals.\n\nWhat could go wrong:\n\nCustomer does not get the confirmation email. Solution: check spam, have a backup message.\n\nWrong details submitted. Solution: confirmation step that asks them to verify.\n\nScheduling conflicts with time zones. Solution: use a tool that shows your availability in their timezone.\n\nRefund request. Solution: have a clear policy and a response template ready.\n\nOnboarding messages:\n\n1. Confirmation message: Thank you, here is what happens next.\n2. How to start: Brief instructions or login details.\n3. Tips: One helpful tip to get value faster.\n4. Check-in: A few days later, ask if they need help.\n\nExample workflow for a digital product:\n\n1. Customer finds landing page.\n2. Reads offer and clicks buy.\n3. Completes Gumroad checkout.\n4. Receives confirmation email with download link.\n5. Downloads product.\n6. Receives follow-up email 3 days later asking for feedback.\n\nExample workflow for a service call:\n\n1. Customer finds landing page.\n2. Reads offer and clicks book.\n3. Selects time slot via Calendly.\n4. Pays via Stripe link.\n5. Receives confirmation with call details.\n6. Reminder email 24 hours before.\n7. Call happens.\n8. Follow-up email with summary and next steps.\n9. Check-in 1 week later.\n\nCommon mistake: Assuming you will figure it out later. The first customer experience shapes whether they recommend you or complain about you."
+        },
+        "practice": {
+            "title": "The Workflow Walkthrough (6-8 minutes)",
+            "content": "Set a timer for 7 minutes.\n\nImagine you are the customer. You just found the offer. Walk through every step until you have received the value and the transaction is complete.\n\nWrite each step as a numbered list. Include:\n\n1. What the customer does\n2. What they see or receive\n3. What you do (if anything)\n\nAim for 10 to 15 steps.\n\nNow pick 2 things that could go wrong. For each, write the fix and the exact message you would send."
         },
         "mission": [
             {
-                "task": "Map every step after purchase: confirmation, delivery, follow-up",
-                "time": "15 min"
+                "task": "Complete the Workflow Walkthrough practice",
+                "time": "8 min"
             },
             {
-                "task": "Identify which steps can be automated and which require your time",
-                "time": "5 min"
-            },
-            {
-                "task": "Draft any templates you'll need (emails, messages, documents)",
+                "task": "Write your workflow from discovery to delivery (numbered steps)",
                 "time": "10 min"
             },
             {
-                "task": "Set up basic automation if applicable (email sequences, etc.)",
+                "task": "Write 4 onboarding messages (welcome, how to start, tips, check-in)",
+                "time": "10 min"
+            },
+            {
+                "task": "Identify what could go wrong (select top risks)",
                 "time": "5 min"
+            },
+            {
+                "task": "For 2 risks, write the fix and the exact message you will send",
+                "time": "8 min"
+            },
+            {
+                "task": "Identify one automation or template you will build next",
+                "time": "3 min"
+            },
+            {
+                "task": "Decide where you will store customer info and orders",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't assume you'll figure it out later. The first customer experience shapes whether they recommend you or complain about you.",
-        "doneMeans": "You have a documented, step-by-step workflow for what happens after someone purchases."
+        "commonMistakes": "No workflow at all. Winging it creates mistakes and stress.\n\nToo few steps. If your workflow has 5 steps, you probably forgot something. 10 to 15 is normal.\n\nIgnoring failure scenarios. Things will go wrong. Have a plan.\n\nNo onboarding messages. Customers appreciate guidance. Silence after payment feels bad.\n\nNot storing customer info. You need to track who paid and what they received. A simple spreadsheet works.",
+        "doneMeans": "You have a numbered workflow with at least 12 steps, 4 onboarding messages written, 2 failure scenarios with fixes, and a plan for storing customer info.",
+        "reviewCTA": "Want feedback on your workflow? Submit your Day 15 workbook for review."
     },
     {
         "day": 16,
-        "title": "Spend 10 Percent More Time on the Most Important",
-        "week": 4,
-        "goal": "Identify and focus on your highest-leverage activities",
-        "timeEstimate": "20-30 min",
+        "title": "Spend 10 Percent More Time on the Most Important Tasks",
+        "week": 3,
+        "goal": "Stop getting busy with low-value tasks and redirect effort toward benefit and income",
+        "timeEstimate": "30-40 min",
+        "hook": "When you are unsure what to do, spend at least 10 percent more time on customer benefit and income.",
         "lesson": {
             "title": "Why Today Matters",
-            "content": "You've done a lot of preparation. Before launch, let's make sure you're focused on what actually matters.\n\nNot all activities are equal. Some things feel productive but don't move you toward revenue. Others feel simple but create disproportionate results. Today you identify the difference.\n\nLook at everything on your plate. What directly leads to someone paying you? That's where your time should go. Everything else is secondary.\n\n10% more time on the right things beats 50% more time on the wrong things."
+            "content": "You have been building. But not all building is equal. Some tasks move the needle. Most do not.\n\nThe trap of the mundane: It is easy to feel productive tweaking a logo, reorganizing files, or researching competitors for the fifth time. These tasks feel safe. They do not require you to put yourself out there. But they do not generate revenue.\n\nTwo things matter:\n\n1. Creating real benefit for customers. Improving the deliverable, clarifying the promise, simplifying onboarding. Anything that makes the customer's experience better.\n\n2. Increasing income for you. Sending outreach, publishing the offer, asking for referrals, following up with leads. Anything that directly leads to money in your account.\n\nThe 10 percent rule: Find 30 minutes in your day. Add 3 extra minutes to benefit tasks and 3 extra minutes to income tasks. That is 10 percent more on the work that matters.\n\nThe morning 25-minute block: Before distractions hit, spend 25 minutes on one focused build session. Do not check email. Do not browse. Just build or sell.\n\nDecision rule: If the task does not improve benefit or income, pause it. You can return to it after launch. Right now, focus.\n\nExamples of high-impact actions:\n\nBenefit: Record a quick tutorial video, write clearer instructions, add a checklist for customers.\n\nIncome: Send 3 outreach messages, post your offer publicly, email past contacts, ask a happy customer for a referral.\n\nExamples of low-value tasks to stop:\n\nPerfecting your logo. Reorganizing your folder structure. Reading one more book about business. Waiting for the perfect moment.\n\nCommon mistake: Confusing busy with productive. If you spent 2 hours and did not improve benefit or income, you were not working on the hustle. You were hiding from it."
+        },
+        "practice": {
+            "title": "The Priority Audit (4-6 minutes)",
+            "content": "Set a timer for 5 minutes.\n\nList everything you have been working on in the past 3 days.\n\nFor each item, ask: Did this improve customer benefit? Did this increase income?\n\nMark each item: B for benefit, I for income, or X for neither.\n\nCount your Xs. These are the tasks to pause.\n\nNow write:\n\n1. Three actions that improve customer benefit (specific)\n2. Three actions that increase income (specific)\n3. Three tasks to stop doing this week\n\nFinally, schedule a 25-minute morning block for tomorrow and write the exact task you will do."
         },
         "mission": [
             {
-                "task": "List all tasks remaining before launch",
+                "task": "Complete the Priority Audit practice",
+                "time": "6 min"
+            },
+            {
+                "task": "Rate how clear the customer benefit is today (1-5)",
+                "time": "2 min"
+            },
+            {
+                "task": "Rate how clear your income plan is today (1-5)",
+                "time": "2 min"
+            },
+            {
+                "task": "List 3 actions that improve customer benefit",
                 "time": "5 min"
             },
             {
-                "task": "Categorize: which directly lead to revenue vs. nice-to-have?",
-                "time": "10 min"
-            },
-            {
-                "task": "Defer or delete anything that's not essential for first sale",
+                "task": "List 3 actions that increase income",
                 "time": "5 min"
             },
             {
-                "task": "Block time for the highest-leverage remaining tasks",
+                "task": "List 3 low-value tasks you will stop or postpone",
                 "time": "5 min"
+            },
+            {
+                "task": "Schedule your 25-minute morning block for tomorrow",
+                "time": "3 min"
+            },
+            {
+                "task": "Write the exact task you will do in that block",
+                "time": "3 min"
             }
         ],
-        "commonMistakes": "Don't confuse busy with productive. Logo design, website polish, and social media setup are seductive but rarely essential for the first sale.",
-        "doneMeans": "You've ruthlessly prioritized your remaining tasks and deferred the non-essential."
+        "commonMistakes": "Spending time on tasks that feel productive but do not move the needle. Logo design, website polish, and social media setup are rarely essential for the first sale.\n\nNot scheduling focused time. If it is not on the calendar, it will not happen.\n\nWaiting for motivation. Do the 25 minutes even when you do not feel like it.\n\nNot asking for the sale. Outreach feels uncomfortable, but it is the fastest path to income.\n\nOvercomplicating benefit. Sometimes the simplest improvement, like clearer instructions, has the biggest impact.",
+        "doneMeans": "You have listed 3 benefit actions, 3 income actions, 3 tasks to stop, and scheduled a 25-minute morning block for tomorrow with a specific task.",
+        "reviewCTA": "Want feedback on your priorities? Submit your Day 16 workbook for review."
     },
     {
         "day": 17,
