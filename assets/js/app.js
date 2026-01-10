@@ -252,8 +252,8 @@ const App = {
         <div class="hero-bg"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop" alt=""></div>
         <div class="hero-overlay"></div>
         <div class="hero-content container">
-          <h1 class="hero-tagline">Build a side hustle in 27 days—by doing one real step per day.</h1>
-          <p class="hero-subline">A structured, guided program with a built-in workbook. Daily actions that take 20–45 minutes. Real accountability. Real progress.</p>
+          <h1 class="hero-tagline">Build a side hustle in 27 days by doing one real step per day.</h1>
+          <p class="hero-subline">A structured, guided program with a built-in workbook. Daily actions that take 20-45 minutes. Real accountability. Real progress.</p>
           <div class="hero-ctas">
             <a href="#/program" class="btn btn-primary btn-lg">Start the 27-Day Plan</a>
             <a href="#/pricing" class="btn btn-outline-light btn-lg">See How It Works</a>
@@ -270,7 +270,7 @@ const App = {
             <div class="home-what-item">
               <div class="home-what-icon">📋</div>
               <h3 class="home-what-title">27 Days of Action</h3>
-              <p class="home-what-text">One focused step per day. Each day builds on the last. No skipping, no shortcuts—just steady progress.</p>
+              <p class="home-what-text">One focused step per day. Each day builds on the last. No skipping, no shortcuts, just steady progress.</p>
             </div>
             <div class="home-what-item">
               <div class="home-what-icon">📝</div>
