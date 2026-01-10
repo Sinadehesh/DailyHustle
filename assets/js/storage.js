@@ -107,6 +107,21 @@ const Storage = {
     getWebhookSettings() { return this.get('webhook') || { url: '', apiKey: '', enabled: false }; },
     setWebhookSettings(settings) { this.set('webhook', settings); },
 
+    // Subscription management
+    getSubscription() { return this.get('subscription'); },
+    setSubscription(subscription) {
+        this.set('subscription', {
+            ...subscription,
+            subscribedAt: new Date().toISOString(),
+            active: true
+        });
+    },
+    isSubscribed() {
+        const sub = this.getSubscription();
+        return sub && sub.active === true;
+    },
+    clearSubscription() { this.remove('subscription'); },
+
     // Export all data
     exportAllJSON() {
         const data = {

@@ -30,7 +30,7 @@ const Components = {
         <div class="day-card-number">${day.day}</div>
         <div class="day-card-info">
           <div class="day-card-title">${day.title}</div>
-          <div class="day-card-goal">${day.goal}</div>
+          <div class="day-card-goal">${day.mainPromise}</div>
         </div>
         <div class="day-card-meta">
           <span class="day-card-time">${this.icons.clock} ${day.timeEstimate}</span>
@@ -64,27 +64,55 @@ const Components = {
     `;
   },
 
-  // Mission list with checkboxes
-  missionList(missions, day) {
-    const checked = Storage.getMissionState(day);
-    return `
-      <ul class="checklist mission-list" data-day="${day}">
-        ${missions.map((m, i) => `
-          <li class="checklist-item">
-            <div class="checklist-checkbox ${checked.includes(i) ? 'checked' : ''}" 
-                 data-index="${i}" 
-                 tabindex="0" 
-                 role="checkbox" 
-                 aria-checked="${checked.includes(i)}"
-                 onclick="App.toggleMission(${day}, ${i}, this)">
-              ${checked.includes(i) ? this.icons.check : ''}
-            </div>
-            <span class="checklist-text">${m.task}</span>
-            <span class="checklist-time">${m.time}</span>
-          </li>
-        `).join('')}
-      </ul>
-    `;
+  // Mission list with checkboxes (works with doBlocks structure)
+  missionList(doBlocks, day) {
+    if (!doBlocks || !Array.isArray(doBlocks)) return '<p class="text-muted">No tasks for today.</p>';
+
+    return doBlocks.map((block, blockIndex) => `
+      <div class="do-block mb-6">
+        <h3 class="font-semibold mb-2">${block.title}</h3>
+        <p class="text-muted text-sm mb-3">⏱ ${block.estimatedMinutes} minutes</p>
+        
+        ${block.steps ? `
+          <div class="do-block-steps mb-3">
+            <p class="text-muted text-sm mb-2"><strong>Steps:</strong></p>
+            <ol class="steps-list">
+              ${block.steps.map(step => `<li>${step}</li>`).join('')}
+            </ol>
+          </div>
+        ` : ''}
+        
+        ${block.items ? `
+          <div class="do-block-items">
+            <ul class="checklist mission-list" data-day="${day}">
+              ${block.items.map((item, i) => {
+      const checked = Storage.getMissionState(day);
+      const itemIndex = blockIndex * 100 + i;
+      return `
+                  <li class="checklist-item">
+                    <div class="checklist-checkbox ${checked.includes(itemIndex) ? 'checked' : ''}" 
+                         data-index="${itemIndex}" 
+                         tabindex="0" 
+                         role="checkbox" 
+                         aria-checked="${checked.includes(itemIndex)}"
+                         onclick="App.toggleMission(${day}, ${itemIndex}, this)">
+                      ${checked.includes(itemIndex) ? this.icons.check : ''}
+                    </div>
+                    <span class="checklist-text">${item.label}</span>
+                  </li>
+                `;
+    }).join('')}
+            </ul>
+          </div>
+        ` : ''}
+        
+        ${block.example ? `
+          <div class="do-block-example mt-3">
+            <p class="text-muted text-sm"><strong>Example:</strong> ${block.example}</p>
+          </div>
+        ` : ''}
+      </div>
+    `).join('');
   },
 
   // Form field renderer
@@ -271,6 +299,34 @@ const Components = {
       .replace(/</g, '&lt;')
       .replace(/>/g, '&gt;')
       .replace(/"/g, '&quot;');
+  },
+
+  // Subscription gate - shown when user needs to subscribe
+  subscriptionGate() {
+    return `
+      <div class="subscription-gate">
+        <div class="subscription-gate-content">
+          <div class="subscription-gate-icon">🔒</div>
+          <h2 class="subscription-gate-title">Subscribe to Access Course Content</h2>
+          <p class="subscription-gate-text">Get full access to all 27 days of the Side Hustle Launch program, including lessons, workbooks, and progress tracking.</p>
+          <div class="subscription-gate-features">
+            <div class="subscription-gate-feature">✓ 27 daily action steps</div>
+            <div class="subscription-gate-feature">✓ Built-in workbook</div>
+            <div class="subscription-gate-feature">✓ Progress tracking</div>
+            <div class="subscription-gate-feature">✓ Export your work</div>
+          </div>
+          <a href="#/subscribe" class="btn btn-primary btn-lg">Subscribe Now</a>
+          <p class="subscription-gate-login">Already subscribed? <a href="#/subscribe">Sign in here</a></p>
+        </div>
+      </div>
+    `;
+  },
+
+  // Subscription badge for header
+  subscriptionBadge() {
+    const sub = Storage.getSubscription();
+    if (!sub) return '';
+    return `<span class="badge badge-success">Subscribed</span>`;
   }
 };
 

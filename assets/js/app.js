@@ -468,20 +468,27 @@ const App = {
               <div class="day-section">
                 <h2 class="day-section-title">
                   <span class="day-section-icon">📖</span>
-                  Why Today Matters
+                  Today's Promise
                 </h2>
                 <div class="lesson-content">
-                  ${day.lesson.content.split('\n\n').map(p => `<p>${p}</p>`).join('')}
+                  <p class="mb-4"><strong>${day.mainPromise}</strong></p>
+                  ${day.teachings ? day.teachings.map(t => `
+                    <div class="teaching-block mb-4">
+                      <h3 class="font-semibold mb-2">${t.title}</h3>
+                      ${t.content.split('\n\n').map(p => `<p class="mb-2">${p}</p>`).join('')}
+                      ${t.soWhat ? `<p class="text-muted italic mt-2"><strong>So what?</strong> ${t.soWhat}</p>` : ''}
+                    </div>
+                  `).join('') : ''}
                 </div>
               </div>
               
               <div class="day-section">
                 <h2 class="day-section-title">
                   <span class="day-section-icon">✓</span>
-                  Today's Mission
+                  Today's Tasks
                 </h2>
                 <p class="text-muted mb-4">Estimated time: ${day.timeEstimate}</p>
-                ${Components.missionList(day.mission, dayNumber)}
+                ${Components.missionList(day.doBlocks, dayNumber)}
               </div>
               
               <div class="day-section">
@@ -502,12 +509,12 @@ const App = {
                 </div>
               </div>
               
-              ${day.commonMistakes ? `
-                ${Components.callout('warning', 'Common Mistakes', day.commonMistakes)}
+              ${day.wrap?.outputs ? `
+                ${Components.callout('success', 'Today\'s Outputs', day.wrap.outputs.map(o => `• ${o}`).join('<br>'))}
               ` : ''}
               
-              ${day.doneMeans ? `
-                ${Components.callout('success', 'Done Means...', day.doneMeans)}
+              ${day.wrap?.tomorrowPreview ? `
+                ${Components.callout('info', 'Tomorrow Preview', day.wrap.tomorrowPreview)}
               ` : ''}
               
             </div>
