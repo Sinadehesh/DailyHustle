@@ -53,7 +53,7 @@
   --gradient-gold-glow: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(251, 191, 36, 0.05) 100%);
   --gradient-blue-depth: linear-gradient(180deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
   --gradient-surface-subtle: linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%);
-  --gradient-progress: linear-gradient(90deg, #1E3A8A 0%, #3B82F6 50%, #F59E0B 100%);
+  --gradient-progress: linear-gradient(90deg, #1E3A8A 0%, #10B981 50%, #F59E0B 100%);
 
   /* === Typography === */
   --font-heading: 'Playfair Display', Georgia, serif;
