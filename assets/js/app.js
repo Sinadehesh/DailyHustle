@@ -73,11 +73,55 @@ const App = {
     const day = parseInt(form.dataset.day);
     let saveTimeout;
 
+    // Initial progress update
+    this.updateFormProgress(day);
+
     form.addEventListener('input', () => {
       clearTimeout(saveTimeout);
       saveTimeout = setTimeout(() => this.saveDraft(day), 500);
       this.updateSaveStatus('saving');
+      this.updateFormProgress(day);
     });
+  },
+
+  updateFormProgress(day) {
+    const form = document.getElementById('workbook-form');
+    if (!form) return;
+
+    const allFields = form.querySelectorAll('input:not([type="checkbox"]):not([type="radio"]), textarea, select');
+    const radioGroups = new Set();
+    form.querySelectorAll('input[type="radio"]').forEach(r => radioGroups.add(r.name));
+    const checkboxGroups = new Set();
+    form.querySelectorAll('.form-checkbox-group').forEach(g => {
+      const name = g.querySelector('input')?.name;
+      if (name) checkboxGroups.add(name);
+    });
+
+    let filled = 0;
+    let total = allFields.length + radioGroups.size + checkboxGroups.size;
+
+    // Count filled text/textarea/select fields
+    allFields.forEach(field => {
+      if (field.value && field.value.trim() !== '') filled++;
+    });
+
+    // Count filled radio groups
+    radioGroups.forEach(name => {
+      if (form.querySelector(`input[name="${name}"]:checked`)) filled++;
+    });
+
+    // Count filled checkbox groups
+    checkboxGroups.forEach(name => {
+      if (form.querySelector(`.form-checkbox-group input[name="${name}"]:checked`)) filled++;
+    });
+
+    const percent = total > 0 ? Math.round((filled / total) * 100) : 0;
+
+    // Update progress bar
+    const fillEl = document.getElementById(`progress-fill-${day}`);
+    const percentEl = document.getElementById(`progress-percent-${day}`);
+    if (fillEl) fillEl.style.width = `${percent}%`;
+    if (percentEl) percentEl.textContent = `${percent}%`;
   },
 
   saveDraft(day) {
@@ -522,6 +566,7 @@ const App = {
                   <span class="day-section-icon">📝</span>
                   Workbook Submission
                 </h2>
+                ${Components.dayProgressBar(dayNumber, form)}
                 <div id="save-status" class="workbook-status ${status === 'submitted' ? 'submitted' : 'saved'}">${status === 'submitted' ? '✓ Submitted' : ''}</div>
                 ${Components.renderForm(form, savedData || {}, dayNumber)}
                 

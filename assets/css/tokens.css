@@ -33,10 +33,14 @@
   --color-status-submitted: #10B981;
 
   /* Gradients */
-  --gradient-hero-overlay: linear-gradient(180deg, rgba(11, 27, 58, 0.85) 0%, rgba(11, 27, 58, 0.4) 100%);
-  --gradient-accent-sheen: linear-gradient(90deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0) 100%);
-  --gradient-card-hover: linear-gradient(180deg, rgba(30, 58, 138, 0.02) 0%, rgba(30, 58, 138, 0.06) 100%);
-
+  --gradient-hero-overlay: linear-gradient(180deg, rgba(11, 27, 58, 0.9) 0%, rgba(11, 27, 58, 0.6) 50%, rgba(11, 27, 58, 0.4) 100%);
+  --gradient-accent-sheen: linear-gradient(90deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0) 100%);
+  --gradient-card-hover: linear-gradient(180deg, rgba(30, 58, 138, 0.03) 0%, rgba(30, 58, 138, 0.08) 100%);
+  --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #3B5998 100%);
+  --gradient-accent: linear-gradient(135deg, #D4AF37 0%, #E5C85C 100%);
+  --gradient-gold-glow: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.05) 100%);
+  --gradient-blue-depth: linear-gradient(180deg, #0B1B3A 0%, #1A2F52 50%, #1E3A8A 100%);
+  --gradient-surface-subtle: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-muted) 100%);
   /* === Typography === */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
@@ -359,7 +363,7 @@ button {
 }
 
 .btn-primary {
-  background: var(--color-accent);
+  background: var(--gradient-accent);
   color: var(--color-primary-dark);
   border-color: var(--color-accent);
 }
@@ -368,7 +372,7 @@ button {
   background: var(--color-accent-dark);
   border-color: var(--color-accent-dark);
   transform: translateY(-2px);
-  box-shadow: var(--shadow-glow-accent);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
 }
 
 .btn-secondary {
@@ -547,8 +551,8 @@ button {
 .form-select:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15), 0 2px 8px rgba(30, 58, 138, 0.1);
 }
 
 .form-input::placeholder {

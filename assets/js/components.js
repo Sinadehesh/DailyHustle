@@ -64,55 +64,59 @@ const Components = {
     `;
   },
 
-  // Mission list with checkboxes (works with doBlocks structure)
-  missionList(doBlocks, day) {
+  // Task guidance cards (replaces checkboxes - just shows what to do)
+  taskGuidance(doBlocks, day) {
     if (!doBlocks || !Array.isArray(doBlocks)) return '<p class="text-muted">No tasks for today.</p>';
 
     return doBlocks.map((block, blockIndex) => `
-      <div class="do-block mb-6">
-        <h3 class="font-semibold mb-2">${block.title}</h3>
-        <p class="text-muted text-sm mb-3">⏱ ${block.estimatedMinutes} minutes</p>
+      <div class="task-card">
+        <div class="task-card-header">
+          <div class="task-card-icon">📋</div>
+          <div class="task-card-meta">
+            <h3 class="task-card-title">${block.title}</h3>
+            <span class="task-card-time">⏱ ${block.estimatedMinutes} min</span>
+          </div>
+        </div>
         
         ${block.steps ? `
-          <div class="do-block-steps mb-3">
-            <p class="text-muted text-sm mb-2"><strong>Steps:</strong></p>
+          <div class="task-card-steps">
             <ol class="steps-list">
-              ${block.steps.map(step => `<li>${step}</li>`).join('')}
+              ${block.steps.map((step, i) => `<li><span class="step-number">${i + 1}</span>${step}</li>`).join('')}
             </ol>
           </div>
         ` : ''}
         
-        ${block.items ? `
-          <div class="do-block-items">
-            <ul class="checklist mission-list" data-day="${day}">
-              ${block.items.map((item, i) => {
-      const checked = Storage.getMissionState(day);
-      const itemIndex = blockIndex * 100 + i;
-      return `
-                  <li class="checklist-item">
-                    <div class="checklist-checkbox ${checked.includes(itemIndex) ? 'checked' : ''}" 
-                         data-index="${itemIndex}" 
-                         tabindex="0" 
-                         role="checkbox" 
-                         aria-checked="${checked.includes(itemIndex)}"
-                         onclick="App.toggleMission(${day}, ${itemIndex}, this)">
-                      ${checked.includes(itemIndex) ? this.icons.check : ''}
-                    </div>
-                    <span class="checklist-text">${item.label}</span>
-                  </li>
-                `;
-    }).join('')}
-            </ul>
-          </div>
-        ` : ''}
-        
         ${block.example ? `
-          <div class="do-block-example mt-3">
-            <p class="text-muted text-sm"><strong>Example:</strong> ${block.example}</p>
+          <div class="task-card-example">
+            <span class="example-label">💡 Example:</span>
+            <p>${block.example}</p>
           </div>
         ` : ''}
       </div>
     `).join('');
+  },
+
+  // Dynamic progress bar for day completion (tracks form fields)
+  dayProgressBar(dayNumber, formSchema) {
+    const fieldCount = formSchema?.fields?.length || 0;
+    return `
+      <div class="day-progress-wrapper" data-day="${dayNumber}" data-total-fields="${fieldCount}">
+        <div class="day-progress-header">
+          <span class="day-progress-label">Today's Progress</span>
+          <span class="day-progress-percent" id="progress-percent-${dayNumber}">0%</span>
+        </div>
+        <div class="day-progress-track">
+          <div class="day-progress-fill" id="progress-fill-${dayNumber}" style="width: 0%"></div>
+          <div class="day-progress-glow"></div>
+        </div>
+        <p class="day-progress-hint">Fill in the form fields below to track your progress</p>
+      </div>
+    `;
+  },
+
+  // Legacy missionList - kept for backwards compatibility but redirects to taskGuidance
+  missionList(doBlocks, day) {
+    return this.taskGuidance(doBlocks, day);
   },
 
   // Form field renderer
