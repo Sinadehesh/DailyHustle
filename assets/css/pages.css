@@ -1222,6 +1222,168 @@
     flex-shrink: 0;
 }
 
+/* === Subscription Gate (Paywall) === */
+.subscription-gate {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: calc(var(--header-height) + var(--space-8)) var(--space-6) var(--space-10);
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, #1a1a2e 50%, #16213e 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.subscription-gate::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 70%, rgba(212, 175, 55, 0.05) 0%, transparent 40%);
+    animation: pulse-glow 8s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+    0% { opacity: 0.5; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1.05); }
+}
+
+.subscription-gate-content {
+    position: relative;
+    z-index: 1;
+    max-width: 520px;
+    width: 100%;
+    background: var(--color-surface);
+    border-radius: var(--radius-xl);
+    padding: var(--space-12) var(--space-10);
+    text-align: center;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5),
+                0 0 40px rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.subscription-gate-icon {
+    font-size: 4rem;
+    margin-bottom: var(--space-6);
+    display: inline-block;
+    animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+@keyframes bounce-subtle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.subscription-gate-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-3xl);
+    font-weight: var(--font-bold);
+    margin-bottom: var(--space-4);
+    color: var(--color-text);
+    line-height: 1.2;
+}
+
+.subscription-gate-text {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--space-8);
+    line-height: var(--leading-relaxed);
+}
+
+.subscription-gate-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3);
+    margin-bottom: var(--space-8);
+    text-align: left;
+}
+
+.subscription-gate-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+    padding: var(--space-3);
+    background: var(--color-surface-muted);
+    border-radius: var(--radius-md);
+}
+
+/* Override Gumroad button default styles */
+.subscription-gate .gumroad-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    padding: var(--space-4) var(--space-8) !important;
+    font-size: var(--text-lg) !important;
+    font-weight: var(--font-semibold) !important;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: var(--radius-md) !important;
+    cursor: pointer !important;
+    transition: all var(--transition-base) !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3) !important;
+    margin-bottom: var(--space-6) !important;
+    background-image: none !important;
+}
+
+.subscription-gate .gumroad-button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 30px rgba(212, 175, 55, 0.4) !important;
+}
+
+.subscription-gate .gumroad-button::before,
+.subscription-gate .gumroad-button::after {
+    display: none !important;
+}
+
+/* Remove Gumroad logo overlay */
+.subscription-gate .gumroad-button-logo {
+    display: none !important;
+}
+
+.subscription-gate-login {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--space-4);
+}
+
+.subscription-gate-login a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    font-weight: var(--font-medium);
+}
+
+.subscription-gate-login a:hover {
+    color: var(--color-accent);
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .subscription-gate-content {
+        padding: var(--space-8) var(--space-6);
+        margin: var(--space-4);
+    }
+
+    .subscription-gate-title {
+        font-size: var(--text-2xl);
+    }
+
+    .subscription-gate-features {
+        grid-template-columns: 1fr;
+    }
+
+    .subscription-gate-icon {
+        font-size: 3rem;
+    }
+}
+
 /* === Print Styles === */
 @media print {
 
