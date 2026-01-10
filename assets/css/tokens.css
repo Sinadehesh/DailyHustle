@@ -129,18 +129,34 @@
   --z-toast: 700;
 }
 
-/* Dark Mode */
+/* Dark Mode - WCAG Compliant (4.5:1 contrast ratios) */
 [data-theme="dark"] {
-  --color-background: #0B1B3A;
-  --color-surface: #132444;
-  --color-surface-muted: #1A2F52;
-  --color-text-primary: #F1F5F9;
-  --color-text-secondary: #CBD5E1;
-  --color-text-muted: #94A3B8;
-  --color-border: #1E3A5C;
-  --color-border-light: #1A2F52;
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.35);
+  /* Surfaces (avoid pure black, use dark grays per Material Design) */
+  --color-background: #121212;
+  --color-surface: #1E1E1E;
+  --color-surface-muted: #2D2D2D;
+  --color-surface-elevated: #383838;
+
+  /* Text (off-white for readability, not pure white) */
+  --color-text-primary: #F8FAFC;
+  --color-text-secondary: #E2E8F0;
+  --color-text-muted: #A1A1AA;
+
+  /* Borders (subtle but visible) */
+  --color-border: #404040;
+  --color-border-light: #2D2D2D;
+
+  /* Desaturated accent for dark mode (better contrast) */
+  --color-accent: #FBBF24;
+  --color-accent-light: #FCD34D;
+  --color-primary-light: #60A5FA;
+
+  /* Shadows for elevation */
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.6);
+
+  /* Gradients adjusted for dark mode */
+  --gradient-surface-subtle: linear-gradient(135deg, #1E1E1E 0%, #2D2D2D 100%);
 }
 
 /* Reduced Motion */
@@ -566,7 +582,7 @@ button {
 .form-textarea:focus {
   outline: none;
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15), 0 2px 8px rgba(30, 58, 138, 0.1);
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2), 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .form-input::placeholder {
