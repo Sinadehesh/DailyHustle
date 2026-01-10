@@ -4,28 +4,40 @@
    ============================================ */
 
 :root {
-  /* === Color System === */
+  /* === Color System (Split-Complementary: Navy Blue 220° + Gold 45°) === */
+
+  /* Primary: Deep Navy Blue (220° hue) */
   --color-primary: #1E3A8A;
-  --color-primary-dark: #0B1B3A;
-  --color-primary-light: #3B5998;
+  --color-primary-dark: #0F172A;
+  --color-primary-light: #3B82F6;
+  --color-primary-muted: #1E40AF;
 
-  --color-accent: #D4AF37;
-  --color-accent-dark: #B8922E;
-  --color-accent-light: #E5C85C;
+  /* Accent: Warm Gold (45° hue - split-complementary to blue) */
+  --color-accent: #F59E0B;
+  --color-accent-dark: #D97706;
+  --color-accent-light: #FBBF24;
+  --color-accent-muted: #FCD34D;
 
+  /* Neutrals (desaturated blue undertones for harmony) */
   --color-background: #F8FAFC;
   --color-surface: #FFFFFF;
-  --color-surface-muted: #EFF6FF;
+  --color-surface-muted: #F1F5F9;
+  --color-surface-elevated: #FEFEFE;
+
+  /* Text (warm grays with slight blue undertone) */
   --color-text-primary: #0F172A;
   --color-text-secondary: #334155;
   --color-text-muted: #64748B;
+
+  /* Borders (cool gray) */
   --color-border: #E2E8F0;
   --color-border-light: #F1F5F9;
 
-  --color-success: #059669;
-  --color-warning: #D97706;
-  --color-error: #DC2626;
-  --color-info: #0284C7;
+  /* Semantic Colors */
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
 
   /* Status Colors */
   --color-status-not-started: #94A3B8;
@@ -33,14 +45,16 @@
   --color-status-submitted: #10B981;
 
   /* Gradients */
-  --gradient-hero-overlay: linear-gradient(180deg, rgba(11, 27, 58, 0.9) 0%, rgba(11, 27, 58, 0.6) 50%, rgba(11, 27, 58, 0.4) 100%);
-  --gradient-accent-sheen: linear-gradient(90deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0) 100%);
-  --gradient-card-hover: linear-gradient(180deg, rgba(30, 58, 138, 0.03) 0%, rgba(30, 58, 138, 0.08) 100%);
-  --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #3B5998 100%);
-  --gradient-accent: linear-gradient(135deg, #D4AF37 0%, #E5C85C 100%);
-  --gradient-gold-glow: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.05) 100%);
-  --gradient-blue-depth: linear-gradient(180deg, #0B1B3A 0%, #1A2F52 50%, #1E3A8A 100%);
-  --gradient-surface-subtle: linear-gradient(135deg, var(--color-surface) 0%, var(--color-surface-muted) 100%);
+  --gradient-hero-overlay: linear-gradient(180deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.5) 100%);
+  --gradient-accent-sheen: linear-gradient(90deg, rgba(245, 158, 11, 0.12) 0%, transparent 100%);
+  --gradient-card-hover: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, rgba(59, 130, 246, 0.06) 100%);
+  --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
+  --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+  --gradient-gold-glow: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(251, 191, 36, 0.05) 100%);
+  --gradient-blue-depth: linear-gradient(180deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
+  --gradient-surface-subtle: linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%);
+  --gradient-progress: linear-gradient(90deg, #1E3A8A 0%, #3B82F6 50%, #F59E0B 100%);
+
   /* === Typography === */
   --font-heading: 'Playfair Display', Georgia, serif;
   --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
