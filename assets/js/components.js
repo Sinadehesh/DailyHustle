@@ -307,7 +307,7 @@ const Components = {
       <div class="subscription-gate">
         <div class="subscription-gate-content">
           <div class="subscription-gate-icon">🔒</div>
-          <h2 class="subscription-gate-title">Subscribe to Access Course Content</h2>
+          <h2 class="subscription-gate-title">Enroll to Access Course Content</h2>
           <p class="subscription-gate-text">Get full access to all 27 days of the Side Hustle Launch program, including lessons, workbooks, and progress tracking.</p>
           <div class="subscription-gate-features">
             <div class="subscription-gate-feature">✓ 27 daily action steps</div>
@@ -315,8 +315,8 @@ const Components = {
             <div class="subscription-gate-feature">✓ Progress tracking</div>
             <div class="subscription-gate-feature">✓ Export your work</div>
           </div>
-          <a href="#/subscribe" class="btn btn-primary btn-lg">Subscribe Now</a>
-          <p class="subscription-gate-login">Already subscribed? <a href="#/subscribe">Sign in here</a></p>
+          <a class="gumroad-button btn btn-primary btn-lg" href="https://sinadehesh.gumroad.com/l/kghybn">Enroll in the 27-Day Course</a>
+          <p class="subscription-gate-login">Already enrolled? <a href="#" onclick="App.showEnrollmentVerification(); return false;">Verify your access here</a></p>
         </div>
       </div>
     `;

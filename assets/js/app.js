@@ -215,6 +215,22 @@ const App = {
     window.print();
   },
 
+  showEnrollmentVerification() {
+    const email = prompt('Please enter the email you used to purchase the course:');
+    if (email && email.includes('@')) {
+      // Store the subscription (in production, this would verify with Gumroad's API)
+      Storage.setSubscription({
+        email: email,
+        plan: 'full',
+        verifiedAt: new Date().toISOString()
+      });
+      alert('Access granted! Welcome to the 27-Day Side Hustle Launch program.');
+      Router.handleRoute();
+    } else if (email) {
+      alert('Please enter a valid email address.');
+    }
+  },
+
   setStartDate() {
     const input = document.getElementById('start-date-input');
     if (input && input.value) {
@@ -364,6 +380,11 @@ const App = {
   },
 
   async renderProgram() {
+    // Check subscription
+    if (!Storage.isSubscribed()) {
+      return Components.subscriptionGate();
+    }
+
     const [course, days] = await Promise.all([Data.getCourse(), Data.getDays()]);
     const progress = Storage.getProgress();
     const todayDay = Data.getTodayDay();
@@ -411,6 +432,11 @@ const App = {
   },
 
   async renderDay(dayNumber) {
+    // Check subscription
+    if (!Storage.isSubscribed()) {
+      return Components.subscriptionGate();
+    }
+
     if (dayNumber < 1 || dayNumber > 27) {
       return `<div class="section text-center"><div class="container"><h1>Day not found</h1><a href="#/program" class="btn btn-primary mt-6">Back to Program</a></div></div>`;
     }
@@ -534,6 +560,11 @@ const App = {
   },
 
   async renderWorkbook() {
+    // Check subscription
+    if (!Storage.isSubscribed()) {
+      return Components.subscriptionGate();
+    }
+
     const submissions = Storage.getAllSubmissions();
     const days = await Data.getDays();
     const progress = Storage.getProgress();
@@ -689,6 +720,11 @@ const App = {
   },
 
   async renderDashboard() {
+    // Check subscription
+    if (!Storage.isSubscribed()) {
+      return Components.subscriptionGate();
+    }
+
     const progress = Storage.getProgress();
     const user = Storage.getUser();
     const lastDay = Storage.getLastActiveDay();
