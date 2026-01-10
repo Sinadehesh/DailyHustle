@@ -552,23 +552,29 @@ const App = {
                 </div>
               </div>
               
-              <div class="day-section">
+              <div class="day-section day-work-section">
                 <h2 class="day-section-title">
                   <span class="day-section-icon">✓</span>
-                  Today's Tasks
+                  Today's Work
                 </h2>
                 <p class="text-muted mb-4">Estimated time: ${day.timeEstimate}</p>
-                ${Components.missionList(day.doBlocks, dayNumber)}
-              </div>
-              
-              <div class="day-section">
-                <h2 class="day-section-title">
-                  <span class="day-section-icon">📝</span>
-                  Workbook Submission
-                </h2>
-                ${Components.dayProgressBar(dayNumber, form)}
-                <div id="save-status" class="workbook-status ${status === 'submitted' ? 'submitted' : 'saved'}">${status === 'submitted' ? '✓ Submitted' : ''}</div>
-                ${Components.renderForm(form, savedData || {}, dayNumber)}
+                
+                <!-- Sticky Progress Bar -->
+                <div class="day-progress-sticky">
+                  ${Components.dayProgressBar(dayNumber, form)}
+                </div>
+                
+                <!-- Task Guidance Cards -->
+                <div class="day-tasks-guidance">
+                  ${Components.missionList(day.doBlocks, dayNumber)}
+                </div>
+                
+                <!-- Workbook Form -->
+                <div class="day-workbook-form">
+                  <h3 class="workbook-form-title">📝 Your Responses</h3>
+                  <div id="save-status" class="workbook-status ${status === 'submitted' ? 'submitted' : 'saved'}">${status === 'submitted' ? '✓ Submitted' : ''}</div>
+                  ${Components.renderForm(form, savedData || {}, dayNumber)}
+                </div>
                 
                 <div class="day-actions">
                   <div class="day-actions-left">

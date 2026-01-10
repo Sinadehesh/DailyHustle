@@ -1586,6 +1586,43 @@
     margin: 0;
 }
 
+/* === Merged Day Work Section === */
+.day-work-section {
+    position: relative;
+}
+
+.day-progress-sticky {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-4));
+    z-index: var(--z-sticky);
+    margin-bottom: var(--space-6);
+}
+
+.day-progress-sticky .day-progress-wrapper {
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--color-accent);
+}
+
+.day-tasks-guidance {
+    margin-bottom: var(--space-8);
+}
+
+.day-workbook-form {
+    background: var(--gradient-surface-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6);
+    margin-bottom: var(--space-6);
+}
+
+.workbook-form-title {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: var(--font-semibold);
+    margin-bottom: var(--space-4);
+    color: var(--color-text-primary);
+}
+
 /* === Print Styles === */
 @media print {
 
