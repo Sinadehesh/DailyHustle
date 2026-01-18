@@ -1846,12 +1846,19 @@
 /* Course Card */
 .course-card {
     background: var(--color-surface);
-    border: 1px solid var(--color-border);
+    border: 2px solid var(--color-border);
     border-radius: var(--radius-xl);
     overflow: hidden;
     transition: all var(--transition-base);
     display: flex;
     flex-direction: column;
+    box-shadow: var(--shadow-md);
+}
+
+/* Light mode specific - stronger visibility */
+:root .course-card {
+    border-color: #CBD5E1;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.12);
 }
 
 .course-card:hover {
@@ -2035,6 +2042,11 @@ a.course-card {
 /* Home Courses Section */
 .home-courses {
     background: var(--color-surface);
+}
+
+/* Light mode - subtle background tint for section separation */
+:root .home-courses {
+    background: linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
 }
 
 /* Home CTA Section */
