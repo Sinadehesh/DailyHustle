@@ -1326,56 +1326,73 @@
     border-radius: var(--radius-md);
 }
 
-/* Override Gumroad button default styles */
-.subscription-gate .gumroad-button {
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 100% !important;
-    padding: var(--space-4) var(--space-8) !important;
-    font-size: var(--text-lg) !important;
-    font-weight: var(--font-semibold) !important;
-    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%) !important;
-    color: white !important;
-    border: none !important;
-    border-radius: var(--radius-md) !important;
-    cursor: pointer !important;
-    transition: all var(--transition-base) !important;
-    text-decoration: none !important;
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3) !important;
-    margin-bottom: var(--space-6) !important;
-    background-image: none !important;
+/* CTA Section */
+.subscription-gate-cta-section {
+    margin: var(--space-8) 0;
+    text-align: center;
 }
 
-.subscription-gate .gumroad-button:hover {
-    transform: translateY(-2px) !important;
-    box-shadow: 0 6px 30px rgba(212, 175, 55, 0.4) !important;
+.subscription-gate-enroll-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 320px;
+    padding: var(--space-5) var(--space-8);
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+    color: #0F172A !important;
+    border: none;
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-decoration: none;
+    box-shadow: 0 6px 24px rgba(245, 158, 11, 0.4);
 }
 
-.subscription-gate .gumroad-button::before,
-.subscription-gate .gumroad-button::after {
-    display: none !important;
+.subscription-gate-enroll-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 36px rgba(245, 158, 11, 0.5);
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
 }
 
-/* Remove Gumroad logo overlay */
-.subscription-gate .gumroad-button-logo {
-    display: none !important;
-}
-
-.subscription-gate-login {
+.subscription-gate-cta-note {
+    margin-top: var(--space-3);
     font-size: var(--text-sm);
     color: var(--color-text-muted);
-    margin-top: var(--space-4);
 }
 
-.subscription-gate-login a {
-    color: var(--color-primary);
-    text-decoration: underline;
+/* Verify Access Section */
+.subscription-gate-verify {
+    margin-top: var(--space-8);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--color-border);
+    text-align: center;
+}
+
+.subscription-gate-verify p {
+    margin-bottom: var(--space-3);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+}
+
+.subscription-gate-verify-btn {
+    display: inline-flex;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-base);
     font-weight: var(--font-medium);
+    background: var(--color-surface);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--transition-fast);
 }
 
-.subscription-gate-login a:hover {
-    color: var(--color-accent);
+.subscription-gate-verify-btn:hover {
+    background: var(--color-primary);
+    color: white;
 }
 
 /* Mobile responsive */

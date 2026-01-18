@@ -324,15 +324,28 @@ const Components = {
         <div class="subscription-gate-content">
           <div class="subscription-gate-icon">🔒</div>
           <h2 class="subscription-gate-title">Enroll to Access Course Content</h2>
-          <p class="subscription-gate-text">Get full access to all 27 days of the Side Hustle Launch program, including lessons, workbooks, and progress tracking.</p>
+          <p class="subscription-gate-text">Get full access to all 27 days of the Side Hustle Launch program.</p>
+          
+          <div class="subscription-gate-cta-section">
+            <a class="btn btn-lg subscription-gate-enroll-btn" href="https://sinadehesh.gumroad.com/l/kghybn">
+              🚀 Enroll Now - $59
+            </a>
+            <p class="subscription-gate-cta-note">One-time payment • Lifetime access</p>
+          </div>
+          
           <div class="subscription-gate-features">
             <div class="subscription-gate-feature">✓ 27 daily action steps</div>
             <div class="subscription-gate-feature">✓ Built-in workbook</div>
             <div class="subscription-gate-feature">✓ Progress tracking</div>
             <div class="subscription-gate-feature">✓ Export your work</div>
           </div>
-          <a class="gumroad-button btn btn-primary btn-lg" href="https://sinadehesh.gumroad.com/l/kghybn">Enroll in the 27-Day Course</a>
-          <p class="subscription-gate-login">Already enrolled? <a href="#" onclick="App.showEnrollmentVerification(); return false;">Verify your access here</a></p>
+          
+          <div class="subscription-gate-verify">
+            <p>Already enrolled?</p>
+            <button class="btn btn-secondary subscription-gate-verify-btn" onclick="App.showEnrollmentVerification()">
+              Verify Your Access
+            </button>
+          </div>
         </div>
       </div>
     `;
