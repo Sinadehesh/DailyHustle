@@ -332,7 +332,6 @@ const App = {
         </div>
         <div class="hero-bg-gradient"></div>
         <div class="hero-content container">
-          <div class="hero-badge">🔥 Your Future Self Is Watching</div>
           <h1 class="hero-tagline">I Want YOU to Launch That Side Hustle!</h1>
           <p class="hero-subline">Need Money? Tired of Procrastinating? Don't Know How to Start?<br>You will learn by doing. Just click here.</p>
           <div class="hero-ctas">

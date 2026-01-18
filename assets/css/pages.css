@@ -1755,7 +1755,7 @@
 /* Left Uncle Sam - mirrored, stick to left edge */
 .hero-bg-left {
     left: 0;
-    width: 40%;
+    width: 35%;
 }
 
 .hero-bg-left img {
@@ -1771,6 +1771,7 @@
 }
 
 .hero-bg-right img {
+    object-fit: cover;
     object-position: right bottom;
 }
 
@@ -1791,17 +1792,47 @@
     padding-top: var(--header-height);
 }
 
+/* Light Mode Hero Visibility Overrides */
+[data-theme="light"] .hero-platform {
+    background: linear-gradient(135deg, #FFF1F2 0%, #FFF7ED 50%, #FFEDD5 100%);
+}
+
+[data-theme="light"] .hero-bg-gradient {
+    opacity: 0.4;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8) 0%, transparent 70%);
+}
+
+[data-theme="light"] .hero-bg-image img {
+    opacity: 0.15;
+    mix-blend-mode: multiply;
+}
+
+[data-theme="light"] .hero-platform .hero-content {
+    color: var(--color-text-primary);
+}
+
+[data-theme="light"] .hero-tagline {
+    color: var(--color-primary);
+    text-shadow: none;
+}
+
+[data-theme="light"] .hero-subline {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+[data-theme="light"] .hero-platform .btn-outline-light {
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+[data-theme="light"] .hero-platform .btn-outline-light:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
 .hero-badge {
-    display: inline-block;
-    padding: var(--space-2) var(--space-4);
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-full);
-    font-size: var(--text-sm);
-    font-weight: var(--font-medium);
-    color: var(--color-accent);
-    margin-bottom: var(--space-6);
+    display: none;
 }
 
 .hero-platform .hero-tagline {
