@@ -13,6 +13,7 @@ const App = {
 
   setupRoutes() {
     Router.register('/', () => this.renderHome());
+    Router.register('/course/:slug', (p) => this.renderCourseLanding(p.slug));
     Router.register('/program', () => this.renderProgram());
     Router.register('/day/:day', (p) => this.renderDay(parseInt(p.day)));
     Router.register('/workbook', () => this.renderWorkbook());
@@ -120,8 +121,20 @@ const App = {
     // Update progress bar
     const fillEl = document.getElementById(`progress-fill-${day}`);
     const percentEl = document.getElementById(`progress-percent-${day}`);
+    const hintEl = document.getElementById(`progress-hint-${day}`);
+    const completeEl = document.getElementById(`progress-complete-${day}`);
+
     if (fillEl) fillEl.style.width = `${percent}%`;
     if (percentEl) percentEl.textContent = `${percent}%`;
+
+    // Show/hide congratulations section based on completion
+    if (percent === 100) {
+      if (hintEl) hintEl.style.display = 'none';
+      if (completeEl) completeEl.style.display = 'block';
+    } else {
+      if (hintEl) hintEl.style.display = 'block';
+      if (completeEl) completeEl.style.display = 'none';
+    }
   },
 
   saveDraft(day) {
@@ -288,19 +301,97 @@ const App = {
   // ============================================
 
   async renderHome() {
+    const [platform, courses] = await Promise.all([
+      Data.getPlatformInfo(),
+      Data.getAllCourses()
+    ]);
+
+    return `
+      <section class="hero hero-platform">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-content container">
+          <div class="hero-badge">🚀 Learning Platform</div>
+          <h1 class="hero-tagline">${platform?.tagline || 'Transform Your Ideas Into Income'}</h1>
+          <p class="hero-subline">${platform?.description || 'Structured programs that guide you step-by-step from idea to launch.'}</p>
+          <div class="hero-ctas">
+            <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
+            <a href="#/about" class="btn btn-outline-light btn-lg">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </section>
+      
+      <section class="section home-courses" id="courses">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-eyebrow">Our Programs</span>
+            <h2 class="section-title">Choose Your Path</h2>
+            <p class="section-subtitle">Structured, actionable programs designed to get you from idea to income</p>
+          </div>
+          ${Components.coursesGrid(courses)}
+        </div>
+      </section>
+      
+      <section class="section section-muted home-why">
+        <div class="container">
+          <div class="section-header text-center">
+            <h2 class="section-title">Why DailyHustle?</h2>
+          </div>
+          <div class="home-what-grid">
+            <div class="home-what-item">
+              <div class="home-what-icon">📋</div>
+              <h3 class="home-what-title">Daily Action Steps</h3>
+              <p class="home-what-text">No overwhelming content dumps. Just one focused step per day that builds momentum.</p>
+            </div>
+            <div class="home-what-item">
+              <div class="home-what-icon">📝</div>
+              <h3 class="home-what-title">Built-In Workbooks</h3>
+              <p class="home-what-text">Every program includes interactive workbooks that capture your decisions and progress.</p>
+            </div>
+            <div class="home-what-item">
+              <div class="home-what-icon">🎯</div>
+              <h3 class="home-what-title">Real Results</h3>
+              <p class="home-what-text">Each program ends with tangible outcomes you can measure, not just knowledge you'll forget.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section home-cta-section">
+        <div class="container text-center">
+          <h2 class="section-title">Ready to Start?</h2>
+          <p class="section-subtitle mb-8">Pick a program and take your first step today.</p>
+          <a href="#courses" class="btn btn-primary btn-lg">View All Courses</a>
+        </div>
+      </section>
+    `;
+  },
+
+  async renderCourseLanding(slug) {
+    const courseInfo = await Data.getCourseBySlug(slug);
+
+    if (!courseInfo) {
+      return `<div class="section text-center"><div class="container"><h1>Course not found</h1><a href="#/" class="btn btn-primary mt-6">Back to Home</a></div></div>`;
+    }
+
+    // Load the full course data
     const course = await Data.getCourse();
     const progress = Storage.getProgress();
 
     return `
       <section class="hero">
-        <div class="hero-bg"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop" alt=""></div>
+        <div class="hero-bg"><img src="${courseInfo.image}" alt=""></div>
         <div class="hero-overlay"></div>
         <div class="hero-content container">
-          <h1 class="hero-tagline">Build a side hustle in 27 days by doing one real step per day.</h1>
-          <p class="hero-subline">A structured, guided program with a built-in workbook. Daily actions that take 20-45 minutes. Real accountability. Real progress.</p>
+          <div class="hero-badge">${courseInfo.icon} ${courseInfo.duration}</div>
+          <h1 class="hero-tagline">${courseInfo.title}</h1>
+          <p class="hero-subline">${courseInfo.description}</p>
           <div class="hero-ctas">
-            <a href="#/program" class="btn btn-primary btn-lg">Start the 27-Day Plan</a>
-            <a href="#/pricing" class="btn btn-outline-light btn-lg">See How It Works</a>
+            <a href="#/program" class="btn btn-primary btn-lg">Start the ${courseInfo.duration} Plan</a>
+            <a href="#/pricing" class="btn btn-outline-light btn-lg">See Pricing</a>
           </div>
         </div>
       </section>
@@ -308,12 +399,12 @@ const App = {
       <section class="section home-what">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">What This Is</h2>
+            <h2 class="section-title">What You'll Get</h2>
           </div>
           <div class="home-what-grid">
             <div class="home-what-item">
               <div class="home-what-icon">📋</div>
-              <h3 class="home-what-title">27 Days of Action</h3>
+              <h3 class="home-what-title">${courseInfo.duration} of Action</h3>
               <p class="home-what-text">One focused step per day. Each day builds on the last. No skipping, no shortcuts, just steady progress.</p>
             </div>
             <div class="home-what-item">
@@ -323,8 +414,8 @@ const App = {
             </div>
             <div class="home-what-item">
               <div class="home-what-icon">🎯</div>
-              <h3 class="home-what-title">From Idea to Offer</h3>
-              <p class="home-what-text">By Day 27: a validated idea, a defined offer, a pricing strategy, and real feedback from the market.</p>
+              <h3 class="home-what-title">Real Outcomes</h3>
+              <p class="home-what-text">${courseInfo.outcomes ? courseInfo.outcomes.join('. ') + '.' : 'Tangible results you can measure and build on.'}</p>
             </div>
           </div>
         </div>
@@ -351,10 +442,7 @@ const App = {
               <h2 class="section-title">The Workbook</h2>
               <p class="section-subtitle mb-6">Every day, you complete a structured form. Your decisions, calculations, and progress are captured automatically.</p>
               <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--space-3)">
-                <li>✓ Autosave as you type</li>
-                <li>✓ Submit each day when complete</li>
-                <li>✓ Export to PDF, CSV, or JSON</li>
-                <li>✓ Track your progress visually</li>
+                ${courseInfo.features.map(f => `<li>✓ ${f}</li>`).join('')}
               </ul>
             </div>
             <div class="home-workbook-preview">
@@ -376,7 +464,7 @@ const App = {
       <section class="section section-muted home-outcomes">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">By Day 27, You'll Have</h2>
+            <h2 class="section-title">By the End, You'll Have</h2>
           </div>
           <div class="home-outcomes-grid">
             <div class="home-outcome-item"><div><span class="home-outcome-day">Day 9</span><p class="home-outcome-text">A defined offer: who pays, what they get, why now</p></div></div>
@@ -515,7 +603,7 @@ const App = {
             <div class="day-header-top">
               <div class="day-header-content">
                 <div class="day-week-label">Week ${week?.number || Math.ceil(dayNumber / 7)}: ${week?.title || ''}</div>
-                <h1 class="day-title"><span class="day-number">Day ${dayNumber}</span> – ${day.title}</h1>
+                <h1 class="day-title"><span class="day-number">Day ${dayNumber}</span> – ${day.title.replace(/^Day \d+\s*[-–]\s*/i, '')}</h1>
               </div>
               <div class="day-header-status">
                 ${Components.statusBadge(status)}

@@ -109,7 +109,19 @@ const Components = {
           <div class="day-progress-fill" id="progress-fill-${dayNumber}" style="width: 0%"></div>
           <div class="day-progress-glow"></div>
         </div>
-        <p class="day-progress-hint">Fill in the form fields below to track your progress</p>
+        <p class="day-progress-hint" id="progress-hint-${dayNumber}">Fill in the form fields below to track your progress</p>
+        <div class="day-progress-complete" id="progress-complete-${dayNumber}" style="display: none;">
+          <div class="progress-congrats">
+            <span class="progress-congrats-icon">🎉</span>
+            <div class="progress-congrats-content">
+              <h4 class="progress-congrats-title">Congratulations!</h4>
+              <p class="progress-congrats-text">You've completed all fields for today. Ready to submit?</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-lg progress-submit-btn" onclick="App.submitDay(${dayNumber})">
+            Submit Day ${dayNumber} ✓
+          </button>
+        </div>
       </div>
     `;
   },
@@ -331,6 +343,78 @@ const Components = {
     const sub = Storage.getSubscription();
     if (!sub) return '';
     return `<span class="badge badge-success">Subscribed</span>`;
+  },
+
+  // Course card for catalog
+  courseCard(course) {
+    const badgeClass = course.badgeColor === 'gold' ? 'badge-gold' : 'badge-info';
+    return `
+      <div class="course-card">
+        <div class="course-card-image">
+          ${course.image
+        ? `<img src="${course.image}" alt="${course.title}" loading="lazy">`
+        : `<div class="course-card-icon-placeholder">${course.icon || '📚'}</div>`
+      }
+          ${course.badge ? `<span class="course-card-badge ${badgeClass}">${course.badge}</span>` : ''}
+        </div>
+        <div class="course-card-content">
+          <div class="course-card-meta">
+            <span class="course-card-duration">${this.icons.clock} ${course.duration}</span>
+            <span class="course-card-time">${course.timePerDay}</span>
+          </div>
+          <h3 class="course-card-title">${course.title}</h3>
+          <p class="course-card-subtitle">${course.subtitle}</p>
+          <p class="course-card-description">${course.description}</p>
+          <div class="course-card-features">
+            ${course.features.slice(0, 3).map(f => `<span class="course-feature-tag">✓ ${f}</span>`).join('')}
+          </div>
+          <div class="course-card-footer">
+            <div class="course-card-price">
+              <span class="price-amount">$${course.price}</span>
+              <span class="price-label">one-time</span>
+            </div>
+            <a href="#/course/${course.slug}" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  // Coming soon card
+  comingSoonCard(course) {
+    return `
+      <div class="course-card course-card-coming-soon">
+        <div class="course-card-image coming-soon-image">
+          <div class="course-card-icon-placeholder">${course.icon || '📚'}</div>
+          <span class="course-card-badge badge-coming-soon">${course.badge}</span>
+        </div>
+        <div class="course-card-content">
+          <div class="course-card-meta">
+            <span class="course-card-duration">${this.icons.clock} ${course.duration}</span>
+            <span class="course-card-time">${course.timePerDay}</span>
+          </div>
+          <h3 class="course-card-title">${course.title}</h3>
+          <p class="course-card-subtitle">${course.subtitle}</p>
+          <p class="course-card-description">${course.description}</p>
+          <div class="course-card-footer">
+            <button class="btn btn-secondary btn-disabled" disabled>Coming Soon</button>
+          </div>
+        </div>
+      </div>
+    `;
+  },
+
+  // Courses grid
+  coursesGrid(courses) {
+    return `
+      <div class="courses-grid">
+        ${courses.map(course =>
+      course.status === 'available'
+        ? this.courseCard(course)
+        : this.comingSoonCard(course)
+    ).join('')}
+      </div>
+    `;
   }
 };
 

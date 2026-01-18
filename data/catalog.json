@@ -1,0 +1,81 @@
+{
+  "platform": {
+    "name": "DailyHustle",
+    "tagline": "Transform Your Ideas Into Income",
+    "description": "Structured programs that guide you step-by-step from idea to launch. No fluff, just daily action."
+  },
+  "courses": [
+    {
+      "id": "side-hustle-27",
+      "slug": "27-day-launch",
+      "title": "Side Hustle: 27-Day Launch",
+      "subtitle": "From Idea to First Sale",
+      "description": "A structured 27-day guided program that converts ideas into a real offer and first sales attempts. Daily action steps with a built-in workbook.",
+      "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=500&fit=crop",
+      "icon": "🚀",
+      "duration": "27 days",
+      "timePerDay": "20-45 min/day",
+      "price": 97,
+      "currency": "USD",
+      "badge": "Featured",
+      "badgeColor": "gold",
+      "features": [
+        "27 structured daily lessons",
+        "Built-in workbook with forms",
+        "Progress tracking",
+        "Export to PDF, CSV, JSON",
+        "Lifetime access"
+      ],
+      "outcomes": [
+        "A validated business idea",
+        "A clear pricing strategy",
+        "A live offer page",
+        "Your first sales attempts"
+      ],
+      "dataFiles": {
+        "course": "courses.json",
+        "days": "days.json",
+        "forms": "forms.json"
+      },
+      "status": "available"
+    },
+    {
+      "id": "coming-soon-1",
+      "slug": null,
+      "title": "Content Creator Launchpad",
+      "subtitle": "Build Your Audience",
+      "description": "Learn to create consistent content, grow your following, and monetize your expertise across platforms.",
+      "image": null,
+      "icon": "📱",
+      "duration": "30 days",
+      "timePerDay": "30-45 min/day",
+      "price": null,
+      "currency": "USD",
+      "badge": "Coming Soon",
+      "badgeColor": "blue",
+      "features": [],
+      "outcomes": [],
+      "dataFiles": null,
+      "status": "coming-soon"
+    },
+    {
+      "id": "coming-soon-2",
+      "slug": null,
+      "title": "Freelance Accelerator",
+      "subtitle": "Land Premium Clients",
+      "description": "Master the art of freelancing: from pricing and proposals to client management and scaling your services.",
+      "image": null,
+      "icon": "💼",
+      "duration": "21 days",
+      "timePerDay": "25-40 min/day",
+      "price": null,
+      "currency": "USD",
+      "badge": "Coming Soon",
+      "badgeColor": "blue",
+      "features": [],
+      "outcomes": [],
+      "dataFiles": null,
+      "status": "coming-soon"
+    }
+  ]
+}

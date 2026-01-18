@@ -19,6 +19,30 @@ const Data = {
         }
     },
 
+    async getCatalog() {
+        return await this.load('catalog.json');
+    },
+
+    async getPlatformInfo() {
+        const catalog = await this.getCatalog();
+        return catalog?.platform || null;
+    },
+
+    async getAllCourses() {
+        const catalog = await this.getCatalog();
+        return catalog?.courses || [];
+    },
+
+    async getCourseBySlug(slug) {
+        const courses = await this.getAllCourses();
+        return courses.find(c => c.slug === slug) || null;
+    },
+
+    async getAvailableCourses() {
+        const courses = await this.getAllCourses();
+        return courses.filter(c => c.status === 'available');
+    },
+
     async getCourse() {
         return await this.load('courses.json');
     },
