@@ -1718,9 +1718,24 @@
     overflow: hidden;
 }
 
+/* Hero Background Image */
+.hero-bg-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.hero-bg-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.25;
+}
+
 .hero-bg-gradient {
     position: absolute;
     inset: 0;
+    z-index: 1;
     background:
         radial-gradient(circle at 20% 80%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
@@ -1755,6 +1770,11 @@
     color: rgba(255, 255, 255, 0.85);
     max-width: 600px;
     margin: 0 auto var(--space-8);
+}
+
+/* Center hero CTA buttons */
+.hero-platform .hero-ctas {
+    justify-content: center;
 }
 
 .hero-scroll-indicator {

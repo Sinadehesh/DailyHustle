@@ -9,6 +9,7 @@ const App = {
     this.setupEventListeners();
     this.initHeader();
     this.initBackToTop();
+    this.updateSignOutButton();
   },
 
   setupRoutes() {
@@ -60,6 +61,21 @@ const App = {
   updateThemeIcon() {
     const btn = document.getElementById('theme-toggle');
     if (btn) btn.innerHTML = Storage.getTheme() === 'dark' ? Components.icons.sun : Components.icons.moon;
+  },
+
+  updateSignOutButton() {
+    const signOutBtn = document.getElementById('sign-out-btn');
+    if (signOutBtn) {
+      signOutBtn.style.display = Storage.isSubscribed() ? 'inline-flex' : 'none';
+    }
+  },
+
+  signOut() {
+    if (confirm('Are you sure you want to sign out?')) {
+      Storage.clearSubscription();
+      this.updateSignOutButton();
+      Router.navigate('/');
+    }
   },
 
   initComponents() {
@@ -308,11 +324,14 @@ const App = {
 
     return `
       <section class="hero hero-platform">
+        <div class="hero-bg-image">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=80" alt="" loading="eager">
+        </div>
         <div class="hero-bg-gradient"></div>
         <div class="hero-content container">
           <div class="hero-badge">🚀 Learning Platform</div>
           <h1 class="hero-tagline">${platform?.tagline || 'Transform Your Ideas Into Income'}</h1>
-          <p class="hero-subline">${platform?.description || 'Structured programs that guide you step-by-step from idea to launch.'}</p>
+          <p class="hero-subline">${platform?.description || 'Structured programs that guide you step-by-step from idea to launch. No fluff, just daily action.'}</p>
           <div class="hero-ctas">
             <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
             <a href="#/about" class="btn btn-outline-light btn-lg">Learn More</a>
