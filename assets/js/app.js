@@ -325,16 +325,16 @@ const App = {
     return `
       <section class="hero hero-platform">
         <div class="hero-bg-image">
-          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80" alt="" loading="eager">
+          <img src="assets/images/uncle-sam.jpg" alt="" loading="eager">
         </div>
         <div class="hero-bg-gradient"></div>
         <div class="hero-content container">
-          <div class="hero-badge">🔥 Stop Thinking. Start Doing.</div>
-          <h1 class="hero-tagline">Your Side Hustle Won't Build Itself</h1>
-          <p class="hero-subline">You've been "researching" for months. Reading books. Watching videos. Still nothing launched. Time to cut the BS and actually ship something.</p>
+          <div class="hero-badge">🔥 Your Future Self Is Watching</div>
+          <h1 class="hero-tagline">I Want YOU to Finally Launch That Side Hustle</h1>
+          <p class="hero-subline">You know exactly what you should be doing. You've known for months. The only question is: are you going to keep lying to yourself, or are you finally ready to become the person who actually ships?</p>
           <div class="hero-ctas">
-            <a href="#courses" class="btn btn-primary btn-lg">Start Now</a>
-            <a href="#/about" class="btn btn-outline-light btn-lg">Why This Works</a>
+            <a href="#courses" class="btn btn-primary btn-lg">I'm Ready</a>
+            <a href="#/about" class="btn btn-outline-light btn-lg">Prove It To Me</a>
           </div>
         </div>
         <div class="hero-scroll-indicator">
@@ -346,9 +346,9 @@ const App = {
       <section class="section home-courses" id="courses">
         <div class="container">
           <div class="section-header text-center">
-            <span class="section-eyebrow">Pick One. Do It.</span>
-            <h2 class="section-title">No More Excuses</h2>
-            <p class="section-subtitle">Each program is structured daily action. You do the work, you get results. Simple.</p>
+            <span class="section-eyebrow">The Moment of Truth</span>
+            <h2 class="section-title">Pick Your Battle</h2>
+            <p class="section-subtitle">Every successful entrepreneur started exactly where you are. The difference? They stopped researching and started doing. Which one will you be?</p>
           </div>
           ${Components.coursesGrid(courses)}
         </div>
@@ -357,23 +357,23 @@ const App = {
       <section class="section section-muted home-why">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">Why This Isn't Like Other Courses</h2>
+            <h2 class="section-title">Why Most People Fail (And You Won't)</h2>
           </div>
           <div class="home-what-grid">
             <div class="home-what-item">
-              <div class="home-what-icon">⚡</div>
-              <h3 class="home-what-title">One Task Per Day</h3>
-              <p class="home-what-text">No 40-hour video courses you'll never finish. One focused task. Do it. Move on. Done.</p>
+              <div class="home-what-icon">🧠</div>
+              <h3 class="home-what-title">Overwhelm Kills Dreams</h3>
+              <p class="home-what-text">Other courses dump 100 hours on you. We give you ONE task per day. Impossible to fail if you just show up.</p>
             </div>
             <div class="home-what-item">
-              <div class="home-what-icon">📝</div>
-              <h3 class="home-what-title">You'll Actually Do The Work</h3>
-              <p class="home-what-text">Built-in workbook forces you to make decisions, not just consume content passively.</p>
+              <div class="home-what-icon">✍️</div>
+              <h3 class="home-what-title">Decisions, Not Daydreams</h3>
+              <p class="home-what-text">Our workbook forces you to commit. Write it down, make it real. No more "thinking about it."</p>
             </div>
             <div class="home-what-item">
-              <div class="home-what-icon">💰</div>
-              <h3 class="home-what-title">Real Output, Not Certificates</h3>
-              <p class="home-what-text">By the end you'll have an actual offer, actual customers, actual money. Not a PDF to print.</p>
+              <div class="home-what-icon">🏆</div>
+              <h3 class="home-what-title">Built for Action Takers</h3>
+              <p class="home-what-text">This isn't for everyone. Only for people ready to stop making excuses and start making money.</p>
             </div>
           </div>
         </div>
@@ -381,9 +381,9 @@ const App = {
       
       <section class="section home-cta-section">
         <div class="container text-center">
-          <h2 class="section-title">Still Scrolling?</h2>
-          <p class="section-subtitle mb-8">Every day you wait is another day your competition gets ahead. Pick a program and start.</p>
-          <a href="#courses" class="btn btn-primary btn-lg">Stop Waiting. Start Now.</a>
+          <h2 class="section-title">The Clock Is Ticking</h2>
+          <p class="section-subtitle mb-8">A year from now, you'll wish you started today. What's it going to be?</p>
+          <a href="#courses" class="btn btn-primary btn-lg">I Choose Action</a>
         </div>
       </section>
     `;
