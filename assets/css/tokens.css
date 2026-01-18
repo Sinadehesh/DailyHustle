@@ -4,56 +4,56 @@
    ============================================ */
 
 :root {
-  /* === Color System (Split-Complementary: Navy Blue 220° + Gold 45°) === */
+  /* === Color System (Energetic: Crimson Red + Vibrant Orange) === */
 
-  /* Primary: Deep Navy Blue (220° hue) */
-  --color-primary: #1E3A8A;
-  --color-primary-dark: #0F172A;
-  --color-primary-light: #3B82F6;
-  --color-primary-muted: #1E40AF;
+  /* Primary: Bold Crimson Red */
+  --color-primary: #DC2626;
+  --color-primary-dark: #1C1917;
+  --color-primary-light: #EF4444;
+  --color-primary-muted: #B91C1C;
 
-  /* Accent: Warm Gold (45° hue - split-complementary to blue) */
-  --color-accent: #F59E0B;
-  --color-accent-dark: #D97706;
-  --color-accent-light: #FBBF24;
-  --color-accent-muted: #FCD34D;
+  /* Accent: Vibrant Orange-Gold */
+  --color-accent: #F97316;
+  --color-accent-dark: #EA580C;
+  --color-accent-light: #FB923C;
+  --color-accent-muted: #FDBA74;
 
-  /* Neutrals (desaturated blue undertones for harmony) */
-  --color-background: #F8FAFC;
+  /* Neutrals (warm undertones) */
+  --color-background: #FFFBF5;
   --color-surface: #FFFFFF;
-  --color-surface-muted: #F1F5F9;
+  --color-surface-muted: #FEF3E2;
   --color-surface-elevated: #FEFEFE;
 
-  /* Text (warm grays with slight blue undertone) */
-  --color-text-primary: #0F172A;
-  --color-text-secondary: #334155;
-  --color-text-muted: #64748B;
+  /* Text (warm grays) */
+  --color-text-primary: #1C1917;
+  --color-text-secondary: #44403C;
+  --color-text-muted: #78716C;
 
-  /* Borders (cool gray) */
-  --color-border: #E2E8F0;
-  --color-border-light: #F1F5F9;
+  /* Borders (warm gray) */
+  --color-border: #E7E5E4;
+  --color-border-light: #F5F5F4;
 
   /* Semantic Colors */
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
-  --color-info: #3B82F6;
+  --color-success: #16A34A;
+  --color-warning: #F97316;
+  --color-error: #DC2626;
+  --color-info: #0EA5E9;
 
   /* Status Colors */
-  --color-status-not-started: #94A3B8;
-  --color-status-in-progress: #F59E0B;
-  --color-status-submitted: #10B981;
+  --color-status-not-started: #A8A29E;
+  --color-status-in-progress: #F97316;
+  --color-status-submitted: #16A34A;
 
   /* Gradients */
-  --gradient-hero-overlay: linear-gradient(180deg, rgba(15, 23, 42, 0.92) 0%, rgba(15, 23, 42, 0.7) 50%, rgba(15, 23, 42, 0.5) 100%);
-  --gradient-accent-sheen: linear-gradient(90deg, rgba(245, 158, 11, 0.12) 0%, transparent 100%);
-  --gradient-card-hover: linear-gradient(180deg, rgba(59, 130, 246, 0.02) 0%, rgba(59, 130, 246, 0.06) 100%);
-  --gradient-primary: linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%);
-  --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
-  --gradient-gold-glow: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(251, 191, 36, 0.05) 100%);
-  --gradient-blue-depth: linear-gradient(180deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
-  --gradient-surface-subtle: linear-gradient(135deg, #FFFFFF 0%, #F1F5F9 100%);
-  --gradient-progress: linear-gradient(90deg, #1E3A8A 0%, #10B981 50%, #F59E0B 100%);
+  --gradient-hero-overlay: linear-gradient(180deg, rgba(28, 25, 23, 0.85) 0%, rgba(28, 25, 23, 0.6) 50%, rgba(28, 25, 23, 0.4) 100%);
+  --gradient-accent-sheen: linear-gradient(90deg, rgba(249, 115, 22, 0.15) 0%, transparent 100%);
+  --gradient-card-hover: linear-gradient(180deg, rgba(249, 115, 22, 0.02) 0%, rgba(249, 115, 22, 0.08) 100%);
+  --gradient-primary: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+  --gradient-accent: linear-gradient(135deg, #F97316 0%, #FB923C 100%);
+  --gradient-gold-glow: linear-gradient(135deg, rgba(249, 115, 22, 0.2) 0%, rgba(251, 146, 60, 0.05) 100%);
+  --gradient-blue-depth: linear-gradient(180deg, #1C1917 0%, #DC2626 50%, #F97316 100%);
+  --gradient-surface-subtle: linear-gradient(135deg, #FFFFFF 0%, #FEF3E2 100%);
+  --gradient-progress: linear-gradient(90deg, #DC2626 0%, #F97316 50%, #16A34A 100%);
 
   /* === Typography === */
   --font-heading: 'Playfair Display', Georgia, serif;

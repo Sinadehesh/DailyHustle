@@ -1738,16 +1738,37 @@
 /* Hero Background Image */
 .hero-bg-image {
     position: absolute;
-    inset: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
     z-index: 0;
+    pointer-events: none;
 }
 
 .hero-bg-image img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    opacity: 0.4;
+}
+
+/* Left Uncle Sam - mirrored */
+.hero-bg-left {
+    left: 0;
+}
+
+.hero-bg-left img {
+    object-position: left center;
+    transform: scaleX(-1);
+}
+
+/* Right Uncle Sam - original */
+.hero-bg-right {
+    right: 0;
+}
+
+.hero-bg-right img {
     object-position: right center;
-    opacity: 0.35;
 }
 
 .hero-bg-gradient {

@@ -324,13 +324,16 @@ const App = {
 
     return `
       <section class="hero hero-platform">
-        <div class="hero-bg-image">
+        <div class="hero-bg-image hero-bg-left">
+          <img src="assets/images/uncle-sam.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-bg-image hero-bg-right">
           <img src="assets/images/uncle-sam.jpg" alt="" loading="eager">
         </div>
         <div class="hero-bg-gradient"></div>
         <div class="hero-content container">
           <div class="hero-badge">🔥 Your Future Self Is Watching</div>
-          <h1 class="hero-tagline">I Want YOU to Finally Launch That Side Hustle</h1>
+          <h1 class="hero-tagline">I Want YOU to Launch That Side Hustle!</h1>
           <p class="hero-subline">You know exactly what you should be doing. You've known for months. The only question is: are you going to keep lying to yourself, or are you finally ready to become the person who actually ships?</p>
           <div class="hero-ctas">
             <a href="#courses" class="btn btn-primary btn-lg">I'm Ready</a>
