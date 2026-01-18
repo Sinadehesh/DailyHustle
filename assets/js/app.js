@@ -325,7 +325,7 @@ const App = {
     return `
       <section class="hero hero-platform">
         <div class="hero-bg-image">
-          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=80" alt="" loading="eager">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&q=80" alt="" loading="eager">
         </div>
         <div class="hero-bg-gradient"></div>
         <div class="hero-content container">

@@ -349,7 +349,7 @@ const Components = {
   courseCard(course) {
     const badgeClass = course.badgeColor === 'gold' ? 'badge-gold' : 'badge-info';
     return `
-      <div class="course-card">
+      <a href="#/course/${course.slug}" class="course-card">
         <div class="course-card-image">
           ${course.image
         ? `<img src="${course.image}" alt="${course.title}" loading="lazy">`
@@ -365,18 +365,15 @@ const Components = {
           <h3 class="course-card-title">${course.title}</h3>
           <p class="course-card-subtitle">${course.subtitle}</p>
           <p class="course-card-description">${course.description}</p>
-          <div class="course-card-features">
-            ${course.features.slice(0, 3).map(f => `<span class="course-feature-tag">✓ ${f}</span>`).join('')}
-          </div>
           <div class="course-card-footer">
             <div class="course-card-price">
               <span class="price-amount">$${course.price}</span>
               <span class="price-label">one-time</span>
             </div>
-            <a href="#/course/${course.slug}" class="btn btn-primary">Learn More</a>
+            <span class="btn btn-primary btn-sm">Learn More</span>
           </div>
         </div>
-      </div>
+      </a>
     `;
   },
 
