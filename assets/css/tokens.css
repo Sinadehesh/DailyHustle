@@ -1035,6 +1035,23 @@ button {
   color: white;
 }
 
+/* Light Mode Header Overrides */
+[data-theme="light"] .header.transparent .header-nav-link {
+  color: var(--color-text-primary);
+}
+
+[data-theme="light"] .header.transparent .header-nav-link:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .header.transparent .header-logo {
+  color: var(--color-text-primary);
+}
+
+[data-theme="light"] .header.transparent .header-icon-btn {
+  color: var(--color-text-primary);
+}
+
 .header.transparent .header-nav-link:hover {
   background: rgba(255, 255, 255, 0.1);
 }
