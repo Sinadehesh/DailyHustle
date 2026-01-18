@@ -329,12 +329,12 @@ const App = {
         </div>
         <div class="hero-bg-gradient"></div>
         <div class="hero-content container">
-          <div class="hero-badge">🚀 Learning Platform</div>
-          <h1 class="hero-tagline">${platform?.tagline || 'Transform Your Ideas Into Income'}</h1>
-          <p class="hero-subline">${platform?.description || 'Structured programs that guide you step-by-step from idea to launch. No fluff, just daily action.'}</p>
+          <div class="hero-badge">🔥 Stop Thinking. Start Doing.</div>
+          <h1 class="hero-tagline">Your Side Hustle Won't Build Itself</h1>
+          <p class="hero-subline">You've been "researching" for months. Reading books. Watching videos. Still nothing launched. Time to cut the BS and actually ship something.</p>
           <div class="hero-ctas">
-            <a href="#courses" class="btn btn-primary btn-lg">Explore Courses</a>
-            <a href="#/about" class="btn btn-outline-light btn-lg">Learn More</a>
+            <a href="#courses" class="btn btn-primary btn-lg">Start Now</a>
+            <a href="#/about" class="btn btn-outline-light btn-lg">Why This Works</a>
           </div>
         </div>
         <div class="hero-scroll-indicator">
@@ -346,9 +346,9 @@ const App = {
       <section class="section home-courses" id="courses">
         <div class="container">
           <div class="section-header text-center">
-            <span class="section-eyebrow">Our Programs</span>
-            <h2 class="section-title">Choose Your Path</h2>
-            <p class="section-subtitle">Structured, actionable programs designed to get you from idea to income</p>
+            <span class="section-eyebrow">Pick One. Do It.</span>
+            <h2 class="section-title">No More Excuses</h2>
+            <p class="section-subtitle">Each program is structured daily action. You do the work, you get results. Simple.</p>
           </div>
           ${Components.coursesGrid(courses)}
         </div>
@@ -357,23 +357,23 @@ const App = {
       <section class="section section-muted home-why">
         <div class="container">
           <div class="section-header text-center">
-            <h2 class="section-title">Why DailyHustle?</h2>
+            <h2 class="section-title">Why This Isn't Like Other Courses</h2>
           </div>
           <div class="home-what-grid">
             <div class="home-what-item">
-              <div class="home-what-icon">📋</div>
-              <h3 class="home-what-title">Daily Action Steps</h3>
-              <p class="home-what-text">No overwhelming content dumps. Just one focused step per day that builds momentum.</p>
+              <div class="home-what-icon">⚡</div>
+              <h3 class="home-what-title">One Task Per Day</h3>
+              <p class="home-what-text">No 40-hour video courses you'll never finish. One focused task. Do it. Move on. Done.</p>
             </div>
             <div class="home-what-item">
               <div class="home-what-icon">📝</div>
-              <h3 class="home-what-title">Built-In Workbooks</h3>
-              <p class="home-what-text">Every program includes interactive workbooks that capture your decisions and progress.</p>
+              <h3 class="home-what-title">You'll Actually Do The Work</h3>
+              <p class="home-what-text">Built-in workbook forces you to make decisions, not just consume content passively.</p>
             </div>
             <div class="home-what-item">
-              <div class="home-what-icon">🎯</div>
-              <h3 class="home-what-title">Real Results</h3>
-              <p class="home-what-text">Each program ends with tangible outcomes you can measure, not just knowledge you'll forget.</p>
+              <div class="home-what-icon">💰</div>
+              <h3 class="home-what-title">Real Output, Not Certificates</h3>
+              <p class="home-what-text">By the end you'll have an actual offer, actual customers, actual money. Not a PDF to print.</p>
             </div>
           </div>
         </div>
@@ -381,9 +381,9 @@ const App = {
       
       <section class="section home-cta-section">
         <div class="container text-center">
-          <h2 class="section-title">Ready to Start?</h2>
-          <p class="section-subtitle mb-8">Pick a program and take your first step today.</p>
-          <a href="#courses" class="btn btn-primary btn-lg">View All Courses</a>
+          <h2 class="section-title">Still Scrolling?</h2>
+          <p class="section-subtitle mb-8">Every day you wait is another day your competition gets ahead. Pick a program and start.</p>
+          <a href="#courses" class="btn btn-primary btn-lg">Stop Waiting. Start Now.</a>
         </div>
       </section>
     `;

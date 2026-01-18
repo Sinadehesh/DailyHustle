@@ -322,28 +322,28 @@ const Components = {
     return `
       <div class="subscription-gate">
         <div class="subscription-gate-content">
-          <div class="subscription-gate-icon">🔒</div>
-          <h2 class="subscription-gate-title">Enroll to Access Course Content</h2>
-          <p class="subscription-gate-text">Get full access to all 27 days of the Side Hustle Launch program.</p>
+          <div class="subscription-gate-icon">⚡</div>
+          <h2 class="subscription-gate-title">Ready to Stop Procrastinating?</h2>
+          <p class="subscription-gate-text">27 days. One task per day. No excuses. By the end, you'll have actually launched something.</p>
           
           <div class="subscription-gate-cta-section">
             <a class="btn btn-lg subscription-gate-enroll-btn" href="https://sinadehesh.gumroad.com/l/kghybn">
-              🚀 Enroll Now - $59
+              🔥 Let's Do This - $59
             </a>
-            <p class="subscription-gate-cta-note">One-time payment • Lifetime access</p>
+            <p class="subscription-gate-cta-note">One-time. No subscriptions. No BS.</p>
           </div>
           
           <div class="subscription-gate-features">
-            <div class="subscription-gate-feature">✓ 27 daily action steps</div>
-            <div class="subscription-gate-feature">✓ Built-in workbook</div>
-            <div class="subscription-gate-feature">✓ Progress tracking</div>
-            <div class="subscription-gate-feature">✓ Export your work</div>
+            <div class="subscription-gate-feature">⚡ 27 daily action steps</div>
+            <div class="subscription-gate-feature">📝 Workbook that forces decisions</div>
+            <div class="subscription-gate-feature">📊 Track your actual progress</div>
+            <div class="subscription-gate-feature">💾 Export everything you build</div>
           </div>
           
           <div class="subscription-gate-verify">
-            <p>Already enrolled?</p>
+            <p>Already paid? Don't waste time.</p>
             <button class="btn btn-secondary subscription-gate-verify-btn" onclick="App.showEnrollmentVerification()">
-              Verify Your Access
+              Unlock My Access
             </button>
           </div>
         </div>
