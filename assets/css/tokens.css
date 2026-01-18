@@ -393,16 +393,18 @@ button {
 }
 
 .btn-primary {
-  background: var(--gradient-accent);
-  color: var(--color-primary-dark);
-  border-color: var(--color-accent);
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  color: #1C1917;
+  border-color: #F59E0B;
+  font-weight: var(--font-bold);
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.4);
 }
 
 .btn-primary:hover {
-  background: var(--color-accent-dark);
-  border-color: var(--color-accent-dark);
+  background: linear-gradient(135deg, #FCD34D 0%, #FBBF24 100%);
+  border-color: #FBBF24;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 8px 25px rgba(251, 191, 36, 0.5);
 }
 
 .btn-secondary {

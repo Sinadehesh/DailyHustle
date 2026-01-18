@@ -1752,23 +1752,25 @@
     opacity: 0.4;
 }
 
-/* Left Uncle Sam - mirrored */
+/* Left Uncle Sam - mirrored, stick to left edge */
 .hero-bg-left {
     left: 0;
+    width: 35%;
 }
 
 .hero-bg-left img {
-    object-position: left center;
+    object-position: left bottom;
     transform: scaleX(-1);
 }
 
-/* Right Uncle Sam - original */
+/* Right Uncle Sam - original, stick to right edge */
 .hero-bg-right {
     right: 0;
+    width: 35%;
 }
 
 .hero-bg-right img {
-    object-position: right center;
+    object-position: right bottom;
 }
 
 .hero-bg-gradient {

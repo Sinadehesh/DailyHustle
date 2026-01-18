@@ -334,10 +334,10 @@ const App = {
         <div class="hero-content container">
           <div class="hero-badge">🔥 Your Future Self Is Watching</div>
           <h1 class="hero-tagline">I Want YOU to Launch That Side Hustle!</h1>
-          <p class="hero-subline">You know exactly what you should be doing. You've known for months. The only question is: are you going to keep lying to yourself, or are you finally ready to become the person who actually ships?</p>
+          <p class="hero-subline">Need Money? Tired of Procrastinating? Don't Know How to Start?<br>You will learn by doing. Just click here.</p>
           <div class="hero-ctas">
-            <a href="#courses" class="btn btn-primary btn-lg">I'm Ready</a>
-            <a href="#/about" class="btn btn-outline-light btn-lg">Prove It To Me</a>
+            <a href="#courses" class="btn btn-primary btn-lg">I'll Do It!</a>
+            <a href="#/course/27-day-launch" class="btn btn-outline-light btn-lg">Explain the Course</a>
           </div>
         </div>
         <div class="hero-scroll-indicator">
