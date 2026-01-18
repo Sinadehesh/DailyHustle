@@ -336,7 +336,7 @@ const App = {
           <h1 class="hero-tagline">I Want YOU to Launch That Side Hustle!</h1>
           <p class="hero-subline">Need Money? Tired of Procrastinating? Don't Know How to Start?<br>You will learn by doing. Just click here.</p>
           <div class="hero-ctas">
-            <a href="#courses" class="btn btn-primary btn-lg">I'll Do It!</a>
+            <a href="https://sinadehesh.gumroad.com/l/kghybn" class="btn btn-primary btn-lg">I'll Do It!</a>
             <a href="#/course/27-day-launch" class="btn btn-outline-light btn-lg">Explain the Course</a>
           </div>
         </div>
