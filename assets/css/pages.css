@@ -1755,11 +1755,12 @@
 /* Left Uncle Sam - mirrored, stick to left edge */
 .hero-bg-left {
     left: 0;
-    width: 35%;
+    width: 40%;
 }
 
 .hero-bg-left img {
-    object-position: left bottom;
+    object-fit: cover;
+    object-position: right bottom;
     transform: scaleX(-1);
 }
 
