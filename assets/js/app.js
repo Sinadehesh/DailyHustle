@@ -403,9 +403,14 @@ const App = {
     const progress = Storage.getProgress();
 
     return `
-      <section class="hero">
-        <div class="hero-bg"><img src="${courseInfo.image}" alt=""></div>
-        <div class="hero-overlay"></div>
+      <section class="hero hero-platform">
+        <div class="hero-bg-image hero-bg-left">
+          <img src="assets/images/shia-left.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-bg-image hero-bg-right">
+          <img src="assets/images/shia-right.jpg" alt="" loading="eager">
+        </div>
+        <div class="hero-bg-gradient"></div>
         <div class="hero-content container">
           <div class="hero-badge">${courseInfo.icon} ${courseInfo.duration}</div>
           <h1 class="hero-tagline">${courseInfo.title}</h1>
