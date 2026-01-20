@@ -343,7 +343,7 @@ const Components = {
           <div class="subscription-gate-verify">
             <p>Already paid? Don't waste time.</p>
             <button class="btn btn-secondary subscription-gate-verify-btn" onclick="App.showEnrollmentVerification()">
-              Unlock My Access
+              Sign In
             </button>
           </div>
         </div>
